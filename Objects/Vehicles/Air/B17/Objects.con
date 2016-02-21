@@ -1,0 +1,552 @@
+
+
+rem *** B17 ***
+ObjectTemplate.create PlayerControlObject B17
+ObjectTemplate.NameTagOffset 0/-0.415/4.578
+ObjectTemplate.setNetworkableInfo B17BodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.125
+ObjectTemplate.mass 25000
+ObjectTemplate.inertiaModifier 0.6/0.6/0.3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 450
+ObjectTemplate.maxhitpoints 450
+ObjectTemplate.material 60
+ObjectTemplate.criticalDamage 60
+ObjectTemplate.hpLostWhileCriticalDamage 4
+ObjectTemplate.explosionForceMod 5
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 230 em_B17Damage -2.998/-0.548/4.6
+ObjectTemplate.addArmorEffect 230 em_PlaneDamage -2.998/-1.048/4.6
+ObjectTemplate.addArmorEffect 160 em_B17Damage -2.998/-0.548/4.6
+ObjectTemplate.addArmorEffect 160 em_PlaneDamage -2.998/-1.048/4.6
+ObjectTemplate.addArmorEffect 160 em_B17Damage 6.5/-0.548/4.2
+ObjectTemplate.addArmorEffect 160 em_PlaneDamage 6.5/-1.048/4.2
+ObjectTemplate.addArmorEffect 120 em_B17Damage 6.5/-0.548/4.2
+ObjectTemplate.addArmorEffect 120 em_PlaneDamage 6.5/-1.048/4.2
+ObjectTemplate.addArmorEffect 120 em_B17Damage -2.998/-0.548/4.6
+ObjectTemplate.addArmorEffect 120 em_PlaneDamage -2.998/-1.048/4.6
+ObjectTemplate.addArmorEffect 120 em_B17Damage -6.3/-0.548/4.2
+ObjectTemplate.addArmorEffect 120 em_PlaneDamage -6.3/-1.048/4.2
+ObjectTemplate.addArmorEffect 90 em_B17Damage 3/-0.548/4.6
+ObjectTemplate.addArmorEffect 90 em_PlaneDamage 3/-1.048/4.6
+ObjectTemplate.addArmorEffect 90 em_B17Damage 6.5/-0.548/4.2
+ObjectTemplate.addArmorEffect 90 em_PlaneDamage 6.5/-1.048/4.2
+ObjectTemplate.addArmorEffect 90 em_B17Damage -2.998/-0.548/4.6
+ObjectTemplate.addArmorEffect 90 em_PlaneDamage -2.998/-1.048/4.6
+ObjectTemplate.addArmorEffect 90 em_B17Damage -6.3/-0.548/4.2
+ObjectTemplate.addArmorEffect 90 em_PlaneDamage -6.3/-1.048/4.2
+ObjectTemplate.addArmorEffect 60 e_B17Fire 0/0.75/1.2
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_B17 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.timetoliveafterdeath 600
+ObjectTemplate.timeToStartFadeAfterDeath 570
+ObjectTemplate.aiTemplate B17
+rem -------------------------------------
+ObjectTemplate.addTemplate lodB17
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.9/-0.5/-4.2 0/0/0
+ObjectTemplate.GUIIndex 28
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_b17.tga"
+ObjectTemplate.setVehicleIconPos 79/112
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bomb.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTBomber
+ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+
+
+rem *** lodB17 ***
+ObjectTemplate.create LodObject lodB17
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate B17Complex
+ObjectTemplate.addTemplate B17Simple
+ObjectTemplate.addTemplate B17Wreck
+rem -------------------------------------
+ObjectTemplate.lodSelector B17LodSelector
+
+
+rem *** B17Complex ***
+ObjectTemplate.create Bundle B17Complex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodB17Cockpit
+ObjectTemplate.addTemplate B17_Camera
+ObjectTemplate.setPosition -0.15/1.04/4.15
+ObjectTemplate.addTemplate B17_Entry
+ObjectTemplate.setPosition 0/-0.999/2
+ObjectTemplate.addTemplate B17_Entry
+ObjectTemplate.setPosition 0/-0.999/-3.499
+ObjectTemplate.addTemplate B17_Entry
+ObjectTemplate.setPosition 0/-0.999/-8.999
+ObjectTemplate.addTemplate B17_Bay_Left
+ObjectTemplate.setPosition -0.798/-0.839/1.054
+ObjectTemplate.setRotation 0.5/0.5/0
+ObjectTemplate.addTemplate B17_Bay_Right
+rem ObjectTemplate.setPosition 0.788/-0.807/1.057
+ObjectTemplate.setPosition 0.798/-0.839/1.054
+ObjectTemplate.setRotation -0.5/0.5/0
+ObjectTemplate.addTemplate B17BombRack
+ObjectTemplate.setPosition 0/-1.299/1.057
+ObjectTemplate.addTemplate B17_Body_Wing
+ObjectTemplate.setPosition 0/0/-0.799
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate B17AirbreakR
+ObjectTemplate.setPosition 3/0.4/1
+ObjectTemplate.addTemplate B17AirbreakL
+ObjectTemplate.setPosition -3/0.4/1
+ObjectTemplate.addTemplate B17_Rudder_Front1
+ObjectTemplate.setPosition -11.9/0.2/-0.799
+ObjectTemplate.setRotation 4.93/0.101/-4.275
+ObjectTemplate.addTemplate B17_Rudder_Front2
+ObjectTemplate.setPosition 11.9/0.2/-0.799
+ObjectTemplate.setRotation -4.93/0.101/4.275
+ObjectTemplate.addTemplate B17_Rudder_Back3
+ObjectTemplate.setPosition -3.2/0.639/-10.799
+ObjectTemplate.setRotation -2.16/0/0.02
+ObjectTemplate.addTemplate B17_Rudder_Back4
+ObjectTemplate.setPosition 3.2/0.639/-10.799
+ObjectTemplate.setRotation 2.16/0/-0.02
+ObjectTemplate.addTemplate B17_Rudder_Back5
+ObjectTemplate.setPosition 0/2.977/-11.866
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate B17_PCO1
+ObjectTemplate.setPosition 0.051/1.287/3.007
+ObjectTemplate.addTemplate B17_PCO2
+ObjectTemplate.setPosition 0.056/-1.066/-3.015
+ObjectTemplate.addTemplate B17_MG3
+ObjectTemplate.setPosition -0.218/0.35/-14.041
+ObjectTemplate.setRotation -88.839/0/0
+ObjectTemplate.addTemplate B17_MG4
+ObjectTemplate.setPosition 0.072/0.353/-14.055
+ObjectTemplate.setRotation -89.899/0/0.02
+ObjectTemplate.addTemplate B17_Engine1
+ObjectTemplate.setPosition -6.5/-0.415/4.6
+ObjectTemplate.addTemplate B17_Engine2
+ObjectTemplate.setPosition -3/-0.59/5.19
+ObjectTemplate.addTemplate B17_Engine3
+ObjectTemplate.setPosition 3/-0.59/5.19
+ObjectTemplate.addTemplate B17_Engine4
+ObjectTemplate.setPosition 6.5/-0.387/4.6
+rem -------------------------------------
+
+
+rem *** lodB17Cockpit ***
+ObjectTemplate.create LodObject lodB17Cockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate B17CockpitExternal
+ObjectTemplate.addTemplate B17CockpitInternal
+ObjectTemplate.setPosition 0/0.9/4
+rem -------------------------------------
+ObjectTemplate.lodSelector b17cockpitSelector
+
+
+rem *** B17CockpitExternal ***
+ObjectTemplate.create SimpleObject B17CockpitExternal
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry B17_fus_M1
+
+
+rem *** B17CockpitInternal ***
+ObjectTemplate.create SimpleObject B17CockpitInternal
+ObjectTemplate.geometry 1P_B17_Int_M1
+
+
+rem *** b17cockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector b17cockpitSelector
+LodSelectorTemplate.addLodDistance 20
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** B17_Camera ***
+ObjectTemplate.create Camera B17_Camera
+ObjectTemplate.setMinRotation -75/-40/0
+ObjectTemplate.setMaxRotation 75/0/0
+ObjectTemplate.setMaxSpeed 90/-90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0/0/2.5
+
+
+rem *** B17_Entry ***
+ObjectTemplate.create EntryPoint B17_Entry
+ObjectTemplate.setEntryRadius 7.5
+
+
+rem *** B17_Bay_Left ***
+ObjectTemplate.create RotationalBundle B17_Bay_Left
+ObjectTemplate.geometry B17_BayL_M1
+
+
+rem *** B17_Bay_Right ***
+ObjectTemplate.create RotationalBundle B17_Bay_Right
+ObjectTemplate.geometry B17_BayR_M1
+
+
+rem *** B17_PCO1 ***
+ObjectTemplate.create PlayerControlObject B17_PCO1
+ObjectTemplate.setNetworkableInfo B17BodyInfo
+ObjectTemplate.aiTemplate B17MG
+rem -------------------------------------
+ObjectTemplate.addTemplate B17_Turret_Ventral
+ObjectTemplate.addTemplate B17_Entry
+ObjectTemplate.setPosition -0.05/-2.286/-6.506
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0/0 0/0/0
+ObjectTemplate.GUIIndex 29
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_b17.tga"
+ObjectTemplate.setVehicleIconPos 63/93
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTBomber
+ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+
+rem *** B17_Turret_Ventral ***
+ObjectTemplate.create RotationalBundle B17_Turret_Ventral
+ObjectTemplate.setNetworkableInfo B17VentralTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/B17TurretVentral.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodB17TurTop
+ObjectTemplate.addTemplate B17_MG1
+ObjectTemplate.setPosition 0/0.2/0
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** lodB17TurTop ***
+ObjectTemplate.create LodObject lodB17TurTop
+rem -------------------------------------
+ObjectTemplate.addTemplate B17TurTopExternal
+ObjectTemplate.addTemplate B17TurTopInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector b17turtopSelector
+
+
+rem *** B17TurTopExternal ***
+ObjectTemplate.create SimpleObject B17TurTopExternal
+ObjectTemplate.geometry B17_Tur_Top_M1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** B17TurTopInternal ***
+ObjectTemplate.create SimpleObject B17TurTopInternal
+ObjectTemplate.geometry 1P_B17_Turret_m1
+
+
+rem *** b17turtopSelector ***
+LodSelectorTemplate.create DistCompareSelector b17turtopSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** B17_MG1 ***
+ObjectTemplate.create RotationalBundle B17_MG1
+ObjectTemplate.setNetworkableInfo B17MG1Info
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/B17TurretVentral.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodB17GunT
+ObjectTemplate.addTemplate B17_Camera2
+ObjectTemplate.setPosition 0/0.2/-0.099
+ObjectTemplate.addTemplate B17_MG1_FB
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-50/0
+ObjectTemplate.setMaxRotation 0/4/0
+ObjectTemplate.setMaxSpeed 0/80/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** lodB17GunT ***
+ObjectTemplate.create LodObject lodB17GunT
+rem -------------------------------------
+ObjectTemplate.addTemplate B17GunTInternal
+ObjectTemplate.addTemplate B17GunTExternal
+rem -------------------------------------
+ObjectTemplate.lodSelector b17GunTSelector
+
+
+rem *** B17GunTInternal ***
+ObjectTemplate.create SimpleObject B17GunTInternal
+ObjectTemplate.geometry 1P_B17_Turret_Gun_m1
+
+
+rem *** B17GunTExternal ***
+ObjectTemplate.create SimpleObject B17GunTExternal
+ObjectTemplate.geometry B17_GunT_M1
+LodSelectorTemplate.create DistanceSelector b17GunTSelector
+LodSelectorTemplate.addLodDistance 1
+
+
+rem *** B17_Camera2 ***
+ObjectTemplate.create Camera B17_Camera2
+ObjectTemplate.setMaxSpeed 200/200/0
+ObjectTemplate.setAcceleration 100000/100000/0
+
+
+rem *** B17_PCO2 ***
+ObjectTemplate.create PlayerControlObject B17_PCO2
+ObjectTemplate.NameTagOffset 0/0/0
+ObjectTemplate.setNetworkableInfo B17BodyInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/B17TurretVentral.ssc
+ObjectTemplate.aiTemplate B17MG
+rem -------------------------------------
+ObjectTemplate.addTemplate B17_Turret_Dorsal
+ObjectTemplate.addTemplate B17_Entry
+ObjectTemplate.setPosition -0.055/0.067/-0.483
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0/0 0/0/0
+ObjectTemplate.GUIIndex 30
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_b17.tga"
+ObjectTemplate.setVehicleIconPos 61/108
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTBomber
+ObjectTemplate.setToolTipType  TTBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+
+
+rem *** B17_Turret_Dorsal ***
+ObjectTemplate.create RotationalBundle B17_Turret_Dorsal
+ObjectTemplate.setNetworkableInfo B17DorsalTurretInfo
+ObjectTemplate.loadSoundScript Sounds/B17TurretDorsal.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate B17_Entry
+ObjectTemplate.addTemplate B17_MG2
+ObjectTemplate.setRotation 0.02/12/0.02
+rem -------------------------------------
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** B17_MG2 ***
+ObjectTemplate.create RotationalBundle B17_MG2
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/B17TurretVentral.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodB17GunB
+ObjectTemplate.addTemplate lodB17TurDown
+ObjectTemplate.addTemplate B17_Camera3
+ObjectTemplate.setPosition 0/0/0.1
+ObjectTemplate.addTemplate B17_MG2_FB
+ObjectTemplate.setPosition 0/0/0
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/50/0
+ObjectTemplate.setMaxSpeed 0/80/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** lodB17GunB ***
+ObjectTemplate.create LodObject lodB17GunB
+rem -------------------------------------
+ObjectTemplate.addTemplate B17GunBInternal
+ObjectTemplate.addTemplate B17GunBExternal
+rem -------------------------------------
+ObjectTemplate.lodSelector b17GunBSelector
+
+
+rem *** B17GunBInternal ***
+ObjectTemplate.create SimpleObject B17GunBInternal
+ObjectTemplate.geometry 1p_B17_Bellygun_m1
+
+
+rem *** B17GunBExternal ***
+ObjectTemplate.create SimpleObject B17GunBExternal
+ObjectTemplate.geometry B17_GunB_M1
+LodSelectorTemplate.create DistanceSelector b17GunBSelector
+LodSelectorTemplate.addLodDistance 1
+
+
+rem *** lodB17TurDown ***
+ObjectTemplate.create LodObject lodB17TurDown
+rem -------------------------------------
+ObjectTemplate.addTemplate B17TurDownExternal
+ObjectTemplate.addTemplate B17TurDownInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector b17turdownSelector
+
+
+rem *** B17TurDownExternal ***
+ObjectTemplate.create SimpleObject B17TurDownExternal
+ObjectTemplate.geometry B17_Tur_Dwn_M1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** B17TurDownInternal ***
+ObjectTemplate.create SimpleObject B17TurDownInternal
+ObjectTemplate.geometry 1p_B17_BellyTurret_m1
+
+
+rem *** b17turdownSelector ***
+LodSelectorTemplate.create DistCompareSelector b17turdownSelector
+LodSelectorTemplate.addLodDistance 10
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** B17_Camera3 ***
+ObjectTemplate.create Camera B17_Camera3
+ObjectTemplate.setMaxSpeed 200/200/0
+ObjectTemplate.setAcceleration 100000/100000/0
+
+
+rem *** B17_MG3 ***
+ObjectTemplate.create RotationalBundle B17_MG3
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/25/0
+ObjectTemplate.setAcceleration 0/5/0.1
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** B17_MG4 ***
+ObjectTemplate.create RotationalBundle B17_MG4
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/25/0
+ObjectTemplate.setAcceleration 0/5/0
+ObjectTemplate.setInputToPitch c_PIPitch
+
+
+rem *** lodB17Propeller ***
+ObjectTemplate.create LodObject lodB17Propeller
+rem -------------------------------------
+ObjectTemplate.addTemplate B17PropellerStatic
+ObjectTemplate.addTemplate B17PropellerBlurred
+rem -------------------------------------
+ObjectTemplate.lodSelector b17propSelector
+
+
+rem *** B17PropellerStatic ***
+ObjectTemplate.create SimpleObject B17PropellerStatic
+ObjectTemplate.geometry B17_prp1
+
+
+rem *** B17PropellerBlurred ***
+ObjectTemplate.create SimpleObject B17PropellerBlurred
+ObjectTemplate.geometry B17_prp2
+LodSelectorTemplate.create CompareSelector b17propSelector
+LodSelectorTemplate.addLodComparison 0.07
+
+
+rem *** B17_Gear_Front1 ***
+ObjectTemplate.create LandingGear B17_Gear_Front1
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry B17_gea1_Fro_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate B17_Wheel_Front2
+ObjectTemplate.setPosition -0.3/-2.099/0.02
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-75/0
+ObjectTemplate.setMaxSpeed 0/26/0
+ObjectTemplate.setAcceleration 0/-90/0
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearDownEngineInput 0.4
+ObjectTemplate.setGearUpEngineInput 0.7
+
+
+rem *** B17_Gear_Front2 ***
+ObjectTemplate.create LandingGear B17_Gear_Front2
+ObjectTemplate.loadSoundScript ../Common/Sounds/LandingGear.ssc
+ObjectTemplate.geometry B17_gea2_Fro_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate B17_Wheel_Front1
+ObjectTemplate.setPosition 0.3/-2.099/0.02
+rem ObjectTemplate.rotation 180/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-75/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/-90/0
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearDownEngineInput 0.4
+ObjectTemplate.setGearUpEngineInput 0.7
+
+
+rem *** B17_Gear_Back1 ***
+ObjectTemplate.create LandingGear B17_Gear_Back1
+ObjectTemplate.geometry B17_gea3_Bac_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate B17_Wheel_Back1Rotation
+ObjectTemplate.setPosition 0/0.207/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/-75/0
+ObjectTemplate.setGearDownHeight 25
+ObjectTemplate.setGearDownEngineInput 0.4
+ObjectTemplate.setGearUpEngineInput 0.7
+
+
+rem *** B17_Wheel_Back1Rotation ***
+ObjectTemplate.create RotationalBundle B17_Wheel_Back1Rotation
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate B17_Wheel_Back1
+ObjectTemplate.setPosition 0/-0.999/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -25/0/0
+ObjectTemplate.setMaxRotation 25/0/0
+ObjectTemplate.setMaxSpeed 150/0/0
+ObjectTemplate.setAcceleration -150/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** B17Simple ***
+ObjectTemplate.create SimpleObject B17Simple
+ObjectTemplate.geometry B17_fus_L1
+
+
+rem *** B17Wreck ***
+ObjectTemplate.create SimpleObject B17Wreck
+ObjectTemplate.geometry Wreck_B17_1_m1
+
+
+rem *** B17LodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 B17LodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 5000

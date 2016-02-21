@@ -1,0 +1,103 @@
+
+
+rem *** SBD-6_guns ***
+ObjectTemplate.create FireArms SBD-T6_guns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/SBDRearGuns.ssc
+ObjectTemplate.geometry 1p_SBD-6_guns_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzHeavy
+ObjectTemplate.setPosition 0.1/0.05/0.6
+ObjectTemplate.addTemplate e_MuzzHeavy
+ObjectTemplate.setPosition -0.099/0.05/0.6
+rem -------------------------------------
+ObjectTemplate.projectileTemplate SBD-T_Gun_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 2000
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 845
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 20
+ObjectTemplate.AmmoType 10
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.22/0.0/-0.95 -30/80/90
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.05/0.0/-0.95 30/-100/-90
+
+
+rem *** SBD_Gun_Projectile ***
+ObjectTemplate.create Projectile SBD-T_Gun_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/Projectile.ssc
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/600/0/0
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.material 224
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1
+
+
+rem *** SBD-TGunBarrel ***
+ObjectTemplate.create FireArms SBD-TGuns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/sbdgunbarrel.ssc
+ObjectTemplate.aiTemplate SBD-TMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem ObjectTemplate.setPosition 0/0.9/1.8
+rem ObjectTemplate.addTemplate em_ShellAir
+rem ObjectTemplate.setPosition 0/0/1
+rem -------------------------------------
+ObjectTemplate.projectileTemplate SBD-TProjectile
+ObjectTemplate.projectilePosition 0/0.0/2.5
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/3/0/0
+ObjectTemplate.magSize 700
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 930
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 12
+ObjectTemplate.addFireArmsPosition 0.25/0.9/1.8 0/0/0
+ObjectTemplate.addFireArmsPosition -0.25/0.9/1.8 0/0/0
+ObjectTemplate.AmmoType 10
+
+
+
+rem *** SBD-TProjectile ***
+ObjectTemplate.create Projectile SBD-TProjectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/Projectile.ssc
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/600/0/0
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.material 213
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1
+
+
+rem *** SBD-TBombDummy ***
+ObjectTemplate.create FireArms SBD-TBombDummy
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate SBD-TBombs
+rem ObjectTemplate.geometry Torpedo_Sml_m1
+ObjectTemplate.visibleDummyProjectileTemplate SBD-TDummyTorpedo
+ObjectTemplate.projectileTemplate AircraftTorpedo
+ObjectTemplate.projectilePosition 0/-0.6/0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 0.1
+ObjectTemplate.autoReload 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.AmmoType 9
+
+ObjectTemplate.create SimpleObject SBD-TDummyTorpedo
+ObjectTemplate.geometry Torpedo_Sml_m1

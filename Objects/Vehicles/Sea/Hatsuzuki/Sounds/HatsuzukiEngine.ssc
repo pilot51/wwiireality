@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/HatsuzukiEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/HatsuzukiEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/HatsuzukiEngine.ssc

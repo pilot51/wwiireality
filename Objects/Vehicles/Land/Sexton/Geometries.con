@@ -1,0 +1,62 @@
+renderer.beginGlobalCluster Sexton
+
+GeometryTemplate.create StandardMesh Sexton_Barrel_M1
+GeometryTemplate.file Sexton_Gun_Barrel_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Sexton_Hull_M1
+GeometryTemplate.file Sexton_Hull_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create AnimatedMesh Sexton_TrackL_M1
+GeometryTemplate.file Sexton_TrackL_M1
+rem GeometryTemplate.file Sherman_TrackL_M1
+GeometryTemplate.setSkin animations/Sexton_TrackL_M1.skn
+rem GeometryTemplate.setSkin animations/Sherman_TrackL_M1.skn
+
+GeometryTemplate.create AnimatedMesh Sexton_TrackR_M1
+GeometryTemplate.file Sexton_TrackR_M1
+rem GeometryTemplate.file Sherman_TrackR_M1
+GeometryTemplate.setSkin animations/Sexton_TrackR_M1.skn
+rem GeometryTemplate.setSkin animations/Sherman_TrackR_M1.skn
+
+GeometryTemplate.create StandardMesh Sexton_whe1RBig_M1
+GeometryTemplate.file Sexton_WheelR_B_M1
+geometryTemplate.cullFactor 0.03
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Sexton_whe1LBig_M1
+GeometryTemplate.file Sexton_WheelL_B_M1
+geometryTemplate.cullFactor 0.03
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Sexton_whe3R_M1
+GeometryTemplate.file Sexton_WheelR_S_M1
+geometryTemplate.cullFactor 0.03
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Sexton_whe3L_M1
+GeometryTemplate.file Sexton_WheelL_S_M1
+geometryTemplate.cullFactor 0.03
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Sexton_Gun_Turret_M1
+GeometryTemplate.file Sexton_Gun_Turret_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Sexton_Cannon_M1
+GeometryTemplate.file Sexton_Gun_Canon_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1P_Sexton_Driver_M1
+GeometryTemplate.file 1P_Sherman_Gunner_M1
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh Sexton_Hull_L1
+GeometryTemplate.file Sexton_Hull_L1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Wreck_Sexton_M1
+GeometryTemplate.file Sexton_Wreck_M1
+GeometryTemplate.setLodDistance 0 0

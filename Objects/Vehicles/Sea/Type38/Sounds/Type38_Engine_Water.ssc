@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Type38_Engine_Water.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Type38_Engine_Water.ssc
+	
+#templateLevel LOW
+
+	#include Low/Type38_Engine_Water.ssc

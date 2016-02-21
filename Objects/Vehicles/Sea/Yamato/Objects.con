@@ -1,0 +1,545 @@
+
+rem *** Yamato ***
+ObjectTemplate.create PlayerControlObject Yamato
+ObjectTemplate.aiTemplate YamatoAI
+ObjectTemplate.setNetworkableInfo YamatoBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 2.6
+ObjectTemplate.mass 70000000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 600
+ObjectTemplate.MaxHitpoints 600
+ObjectTemplate.material 55
+ObjectTemplate.criticalDamage 100
+ObjectTemplate.hpLostWhileCriticalDamage 5
+ObjectTemplate.explosionForceMod 5
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.addArmorEffect 400 em_ExFumePOW 0/35/-25
+ObjectTemplate.addArmorEffect 350 em_ExFumePOW 0/35/-25
+ObjectTemplate.addArmorEffect 350 em_YamatoDamage 0/0/0
+ObjectTemplate.addArmorEffect 350 em_YamatoDamage 0/0/20
+ObjectTemplate.addArmorEffect 350 em_YamatoDamage 0/0/-30
+ObjectTemplate.addArmorEffect 150 em_YamatoDamage 0/0/0
+ObjectTemplate.addArmorEffect 150 em_YamatoDamage 0/0/20
+ObjectTemplate.addArmorEffect 150 em_YamatoDamage 0/0/-30
+ObjectTemplate.addArmorEffect 150 e_waterBoatSink 0/10/0
+ObjectTemplate.addArmorEffect 100 em_YamatoDamage 0/0/0
+ObjectTemplate.addArmorEffect 100 em_YamatoDamage 0/0/20
+ObjectTemplate.addArmorEffect 100 em_YamatoDamage 0/0/-30
+ObjectTemplate.addArmorEffect 100 e_waterBoatSink 0/10/0
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 19/6/-5
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 17/2/-45
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 14/2/-85
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 10/2/-115
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 13/3/25
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 18/3/45
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 16/2/65
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 14/2/85
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/3/115
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/6/35
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/5/-25
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/15/-5
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/3/-90
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -19/6/-5
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -17/3/-35
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -14/2/-75
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -10/2/-115
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -13/3/25
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -18/3/45
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -16/2/65
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -14/2/85
+ObjectTemplate.timetoliveafterdeath 600
+ObjectTemplate.timeToStartFadeAfterDeath 570
+rem -------------------------------------
+ObjectTemplate.addTemplate lodYamato
+ObjectTemplate.addTemplate YamatoFloater
+ObjectTemplate.setPosition -1.999/10.5/50
+ObjectTemplate.addTemplate YamatoFloater
+ObjectTemplate.setPosition 2/10.5/50
+ObjectTemplate.addTemplate YamatoFloater
+ObjectTemplate.setPosition -4.999/10.5/17
+ObjectTemplate.addTemplate YamatoFloater
+ObjectTemplate.setPosition 5/10.5/17
+ObjectTemplate.addTemplate YamatoFloater
+ObjectTemplate.setPosition -4.999/10.5/-16.999
+ObjectTemplate.addTemplate YamatoFloater
+ObjectTemplate.setPosition 5/10.5/-16.999
+ObjectTemplate.addTemplate YamatoFloater
+ObjectTemplate.setPosition -1.999/10.5/-49.999
+ObjectTemplate.addTemplate YamatoFloater
+ObjectTemplate.setPosition 2/10.5/-49.999
+ObjectTemplate.addTemplate YamatoDriverSoldierSpawn
+ObjectTemplate.setPosition 0/12.5/3.5
+ObjectTemplate.addTemplate YamatoSoldierSpawn
+ObjectTemplate.setPosition -18.6/12.5/-44.999
+ObjectTemplate.addTemplate YamatoSoldierSpawn
+ObjectTemplate.setPosition 18.6/12.5/-44.999
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.6/11.9/25.2 210/0/0
+ObjectTemplate.GUIIndex 55
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_yamato.tga"
+ObjectTemplate.setVehicleIconPos 66/78
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTBattleship
+ObjectTemplate.setToolTipType TTBattleship
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 110
+ObjectTemplate.DirBarYScaleAbove 15
+ObjectTemplate.DirBarYScaleBelow 1
+ObjectTemplate.DirBarYScaleMin -92
+ObjectTemplate.DirBarYScaleMax -75
+
+rem *** lodYamato ***
+ObjectTemplate.create LodObject lodYamato
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoComplex
+ObjectTemplate.addTemplate YamatoSimple
+rem -------------------------------------
+ObjectTemplate.lodSelector YamatoLodSelector
+
+
+rem *** YamatoComplex ***
+ObjectTemplate.create Bundle YamatoComplex
+rem ObjectTemplate.setNetworkableInfo YamatoBodyInfo
+ObjectTemplate.geometry Yamato_hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoDaihatsuSpawner
+ObjectTemplate.setPosition -21.7/10.6/-44.999
+ObjectTemplate.addTemplate YamatoDaihatsuSpawner
+ObjectTemplate.setPosition 21.7/10.6/-44.999
+ObjectTemplate.addTemplate YamatoMediumTurretWithCamera
+ObjectTemplate.setPosition 0/18.788/15.066
+ObjectTemplate.addTemplate YamatoFatTurret
+ObjectTemplate.setPosition 0/12.458/52.669
+ObjectTemplate.addTemplate YamatoFatTurret
+ObjectTemplate.setPosition 0/16.2/29.718
+ObjectTemplate.addTemplate YamatoEngine
+ObjectTemplate.setPosition 0/-4/-40
+ObjectTemplate.addTemplate YamatoHullWing
+ObjectTemplate.setPosition 0/-9/90
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate YamatoRudder
+ObjectTemplate.setPosition 0/-9/-90
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate YamatoEntry
+ObjectTemplate.setPosition 0/12.5/3.5
+ObjectTemplate.addTemplate YamatoEntry
+ObjectTemplate.setPosition 0/12.5/21.5
+ObjectTemplate.addTemplate YamatoRearPCO
+ObjectTemplate.addTemplate YamatoLeftPCO
+ObjectTemplate.addTemplate YamatoRightPCO
+ObjectTemplate.addTemplate ClimbingNet_6mx11m
+ObjectTemplate.setPosition -19.578/5.315/-21.999
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ClimbingNet_6mx11m
+ObjectTemplate.setPosition -19.578/5.315/-12.999
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ClimbingNet_6mx11m
+ObjectTemplate.setPosition 19.578/5.315/-21.999
+ObjectTemplate.setRotation -89.999/0/0
+ObjectTemplate.addTemplate ClimbingNet_6mx11m
+ObjectTemplate.setPosition 19.578/5.315/-12.999
+ObjectTemplate.setRotation -89.999/0/0
+ObjectTemplate.addTemplate AnimatedJapFlag
+ObjectTemplate.setPosition 0.1/50.8/-38.598
+ObjectTemplate.setRotation 80.756/-4.155/-15.657
+ObjectTemplate.addTemplate AnimatedJapFlag
+ObjectTemplate.setPosition 0.1/13.8/-132.999
+ObjectTemplate.setRotation 80.756/-4.155/-15.657
+ObjectTemplate.addTemplate AnimatedJapFlag
+ObjectTemplate.setPosition 0.1/19.8/130.5
+ObjectTemplate.setRotation 78.756/-6.155/-3.657
+ObjectTemplate.addTemplate e_waterfrontBig
+ObjectTemplate.setPosition 0/1/123
+ObjectTemplate.addTemplate e_waterBoatSvallNarrow
+ObjectTemplate.setPosition 0/-1/128
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate e_waterBoatSvall
+ObjectTemplate.setPosition 0/-1/-125
+ObjectTemplate.setRotation 270/0/0
+ObjectTemplate.addTemplate e_waterBackBig
+ObjectTemplate.setPosition 0/0.5/-119.999
+ObjectTemplate.addTemplate Ammobox
+ObjectTemplate.setPosition 5.79/11.265/-35.648
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+
+
+rem *** YamatoDriverSoldierSpawn ***
+ObjectTemplate.create SpawnPoint YamatoDriverSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 65
+rem ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** YamatoSoldierSpawn ***
+ObjectTemplate.create SpawnPoint YamatoSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 64
+rem ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** YamatoDaihatsuSpawner ***
+ObjectTemplate.create ObjectSpawner YamatoDaihatsuSpawner
+ObjectTemplate.setObjectTemplate 1 DaiHatsu
+ObjectTemplate.setObjectTemplate 2 DaiHatsu
+ObjectTemplate.minSpawnDelay 20
+ObjectTemplate.maxSpawnDelay 20
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.holdObject 1
+ObjectTemplate.MaxNrOfObjectSpawned 3
+ObjectTemplate.damageWhenLost 10
+
+rem *** YamatoEntry ***
+ObjectTemplate.create EntryPoint YamatoEntry
+ObjectTemplate.setEntryRadius 5
+
+
+rem *** YamatoRearPCO ***
+ObjectTemplate.create PlayerControlObject YamatoRearPCO
+ObjectTemplate.setNetworkableInfo YamatoBodyInfo
+ObjectTemplate.aiTemplate YamatoRearAI
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoEntryRear
+ObjectTemplate.setPosition 3/13/-36.999
+ObjectTemplate.addTemplate YamatoEntryRear
+ObjectTemplate.setPosition -3/13/-36.999
+ObjectTemplate.addTemplate YamatoMediumTurretWithCamera
+ObjectTemplate.setPosition 0/17.97/-47.915
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate YamatoFatTurret
+ObjectTemplate.setPosition 0/14.39/-64.301
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 2.8/12.6/-36.5 125/0/0
+ObjectTemplate.GUIIndex 56
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_yamato.tga"
+ObjectTemplate.setVehicleIconPos 32/57
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTBattleship
+ObjectTemplate.setToolTipType TTBattleship
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 110
+ObjectTemplate.DirBarYScaleAbove 15
+ObjectTemplate.DirBarYScaleBelow 1
+ObjectTemplate.DirBarYScaleMin -92
+ObjectTemplate.DirBarYScaleMax -75
+ObjectTemplate.DirBarRotate 180
+rem ObjectTemplate.DirBarYScaleAbove 15
+rem ObjectTemplate.DirBarYScaleBelow 1
+rem ObjectTemplate.DirBarYScaleMin -92
+rem ObjectTemplate.DirBarYScaleMax -60
+
+rem *** YamatoEntryRear ***
+ObjectTemplate.create EntryPoint YamatoEntryRear
+ObjectTemplate.setEntryRadius 5
+
+
+rem *** YamatoMediumTurretWithCamera ***
+ObjectTemplate.create RotationalBundle YamatoMediumTurretWithCamera
+ObjectTemplate.setNetworkableInfo YamatoTurretInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/midturret.ssc
+ObjectTemplate.geometry Yamato_Medium_Turret_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoMediumCannonBase
+ObjectTemplate.setPosition 0/0.6/0
+ObjectTemplate.addTemplate YamatoCamera0
+ObjectTemplate.setPosition 0/2.85/-0.699
+ObjectTemplate.addTemplate lodShipCockpit2
+ObjectTemplate.setPosition 0.538/2.83/-0.601
+rem -------------------------------------
+ObjectTemplate.setMinRotation -150/0/0
+ObjectTemplate.setMaxRotation 150/0/0
+ObjectTemplate.setMaxSpeed 40/0/0
+ObjectTemplate.setAcceleration 80/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** YamatoMediumCannonBase ***
+ObjectTemplate.create RotationalBundle YamatoMediumCannonBase
+ObjectTemplate.setNetworkableInfo YamatoCannonInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/midtower.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoMediumCannon
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/35/0
+ObjectTemplate.setAcceleration 0/90/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** YamatoCamera0 ***
+ObjectTemplate.create Camera YamatoCamera0
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.CVMExternTrace 1
+
+rem *** YamatoFatTurret ***
+ObjectTemplate.create RotationalBundle YamatoFatTurret
+ObjectTemplate.setNetworkableInfo YamatoTurretInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/bigturret.ssc
+ObjectTemplate.geometry Yamato_Fat_Turret_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoFatCannonBase
+ObjectTemplate.setPosition 0/0/4
+rem -------------------------------------
+ObjectTemplate.setMinRotation -150/0/0
+ObjectTemplate.setMaxRotation 150/0/0
+ObjectTemplate.setMaxSpeed 40/0/0
+ObjectTemplate.setAcceleration 80/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** YamatoFatCannonBase ***
+ObjectTemplate.create RotationalBundle YamatoFatCannonBase
+ObjectTemplate.setNetworkableInfo YamatoCannonInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/bigtower.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoFatCannon
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/5/0
+ObjectTemplate.setMaxSpeed 0/35/0
+ObjectTemplate.setAcceleration 0/90/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** YamatoLeftPCO ***
+ObjectTemplate.create PlayerControlObject YamatoLeftPCO
+ObjectTemplate.setNetworkableInfo YamatoBodyInfo
+ObjectTemplate.aiTemplate YamatoAALeftAI
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoEntryLeft
+ObjectTemplate.setPosition -13.199/12.35/-21.999
+ObjectTemplate.addTemplate YamatoSmall1Turret
+ObjectTemplate.setPosition -19.595/12.663/-4.753
+ObjectTemplate.addTemplate YamatoSmall1Turret
+ObjectTemplate.setPosition -19.851/12.663/-28.656
+ObjectTemplate.addTemplate YamatoSmall2Turret
+ObjectTemplate.setPosition -12.359/15.07/-6.225
+ObjectTemplate.addTemplate YamatoSmall2TurretWithCamera
+ObjectTemplate.setPosition -11.72/15.07/-17.357
+ObjectTemplate.addTemplate YamatoSmall2Turret
+ObjectTemplate.setPosition -12.963/15.07/-27.595
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -13.2/12.7/-22 -90/0/0
+ObjectTemplate.GUIIndex 57
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_yamato.tga"
+ObjectTemplate.setVehicleIconPos 57/62
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTBattleship
+ObjectTemplate.setToolTipType TTBattleship
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+rem *** YamatoEntryLeft ***
+ObjectTemplate.create EntryPoint YamatoEntryLeft
+ObjectTemplate.setEntryRadius 5
+
+
+rem *** YamatoSmall1Turret ***
+ObjectTemplate.create RotationalBundle YamatoSmall1Turret
+ObjectTemplate.setNetworkableInfo YamatoTurretInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/smallturret.ssc
+ObjectTemplate.geometry Yamato_Small_Turret_1_m1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoSmall1CannonBase
+ObjectTemplate.setPosition -0.599/0.2/0.3
+rem -------------------------------------
+ObjectTemplate.setMinRotation -70/0/0
+ObjectTemplate.setMaxRotation 70/0/0
+ObjectTemplate.setMaxSpeed 45/0/0
+ObjectTemplate.setAcceleration 90/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** YamatoSmall1CannonBase ***
+ObjectTemplate.create RotationalBundle YamatoSmall1CannonBase
+ObjectTemplate.setNetworkableInfo YamatoCannonInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/smalltower.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoSmall1Cannon
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-79
+ObjectTemplate.setMaxRotation 0/0/18
+ObjectTemplate.setMaxSpeed 0/0/60
+ObjectTemplate.setAcceleration 0/0/75
+ObjectTemplate.setInputToRoll c_PIMouseLookY
+
+
+rem *** YamatoSmall2Turret ***
+ObjectTemplate.create RotationalBundle YamatoSmall2Turret
+ObjectTemplate.setNetworkableInfo YamatoTurretInfo
+ObjectTemplate.geometry Yamato_Small_Turret_2_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoSmall2CannonBase
+ObjectTemplate.setPosition 0.8/0.7/-0.049
+rem -------------------------------------
+ObjectTemplate.setMinRotation -70/0/0
+ObjectTemplate.setMaxRotation 70/0/0
+ObjectTemplate.setMaxSpeed 45/0/0
+ObjectTemplate.setAcceleration 90/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** YamatoSmall2CannonBase ***
+ObjectTemplate.create RotationalBundle YamatoSmall2CannonBase
+ObjectTemplate.setNetworkableInfo YamatoCannonInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoSmall2Cannon
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-79
+ObjectTemplate.setMaxRotation 0/0/18
+ObjectTemplate.setMaxSpeed 0/0/60
+ObjectTemplate.setAcceleration 0/0/75
+ObjectTemplate.setInputToRoll c_PIMouseLookY
+
+
+rem *** YamatoSmall2TurretWithCamera ***
+ObjectTemplate.create RotationalBundle YamatoSmall2TurretWithCamera
+ObjectTemplate.setNetworkableInfo YamatoTurretInfo
+ObjectTemplate.geometry Yamato_Small_Turret_2_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoSmall2CannonBaseWithCamera
+ObjectTemplate.setPosition 0.8/0.7/-0.049
+rem -------------------------------------
+ObjectTemplate.setMinRotation -70/0/0
+ObjectTemplate.setMaxRotation 70/0/0
+ObjectTemplate.setMaxSpeed 45/0/0
+ObjectTemplate.setAcceleration 90/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+
+rem *** YamatoSmall2CannonBaseWithCamera ***
+ObjectTemplate.create RotationalBundle YamatoSmall2CannonBaseWithCamera
+ObjectTemplate.setNetworkableInfo YamatoCannonInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoSmall2Cannon
+ObjectTemplate.addTemplate YamatoCameraBundle
+ObjectTemplate.setPosition -1.693/-1.218/0.05
+ObjectTemplate.setRotation 0/0/-9.999
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-79
+ObjectTemplate.setMaxRotation 0/0/18
+ObjectTemplate.setMaxSpeed 0/0/60
+ObjectTemplate.setAcceleration 0/0/75
+ObjectTemplate.setInputToRoll c_PIMouseLookY
+
+
+rem *** YamatoCameraBundle ***
+ObjectTemplate.create Bundle YamatoCameraBundle
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoCamera0
+ObjectTemplate.setPosition 0/2.2/0
+ObjectTemplate.setRotation -89.999/0/0
+ObjectTemplate.addTemplate lodShipCockpit
+ObjectTemplate.setPosition -0.099/2.18/0.53
+ObjectTemplate.setRotation -89.999/0/0
+rem -------------------------------------
+
+
+rem *** YamatoRightPCO ***
+ObjectTemplate.create PlayerControlObject YamatoRightPCO
+ObjectTemplate.setNetworkableInfo YamatoBodyInfo
+ObjectTemplate.aiTemplate YamatoAARightAI
+rem -------------------------------------
+ObjectTemplate.addTemplate YamatoEntryRight
+ObjectTemplate.setPosition 13.2/12.35/-21.999
+ObjectTemplate.addTemplate YamatoSmall1Turret
+ObjectTemplate.setPosition 19.851/12.663/-4.687
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate YamatoSmall1Turret
+ObjectTemplate.setPosition 19.851/12.663/-28.656
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate YamatoSmall2Turret
+ObjectTemplate.setPosition 12.36/15.07/-6.225
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate YamatoSmall2TurretWithCamera
+ObjectTemplate.setPosition 11.721/15.07/-17.357
+ObjectTemplate.setRotation -179.999/0/0
+ObjectTemplate.addTemplate YamatoSmall2Turret
+ObjectTemplate.setPosition 12.964/15.07/-27.595
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 13.2/12.7/-22 90/0/0
+ObjectTemplate.GUIIndex 58
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_yamato.tga"
+ObjectTemplate.setVehicleIconPos 37/73
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTBattleship
+ObjectTemplate.setToolTipType TTBattleship
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+rem *** YamatoEntryRight ***
+ObjectTemplate.create EntryPoint YamatoEntryRight
+ObjectTemplate.setEntryRadius 5
+
+
+rem *** AnimatedJapFlag ***
+ObjectTemplate.create AnimatedBundle AnimatedJapFlag
+ObjectTemplate.geometry flagJp_m1
+
+
+rem *** YamatoSimple ***
+ObjectTemplate.create SimpleObject YamatoSimple
+ObjectTemplate.geometry Yamato_hull_L1
+
+
+rem *** YamatoLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 YamatoLodSelector
+LodSelectorTemplate.addLodDistance 5000

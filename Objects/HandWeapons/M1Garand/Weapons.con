@@ -1,0 +1,16 @@
+ObjectTemplate.create Projectile M1GarandProjectile
+ObjectTemplate.geometry bullet_m1
+ObjectTemplate.timeToLive CRD_NONE/600/0/0
+Rem ObjectTemplate.endEffectTemplate e_RichoSand
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.gravityModifier 1
+rem ObjectTemplate.hasStartEffect 0
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 0
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.invisible 1
+ObjectTemplate.material 220
+ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc
+

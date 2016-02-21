@@ -1,0 +1,3 @@
+ObjectTemplate.create SimpleObject Milif_lowcol_gate_m1
+ObjectTemplate.geometry Milif_lowcol_gate_m1
+ObjectTemplate.setHasCollisionPhysics 1

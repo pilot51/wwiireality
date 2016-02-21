@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include VentralHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include VentralMedium.ssc
+	
+#templateLevel LOW
+
+	#include VentralLow.ssc

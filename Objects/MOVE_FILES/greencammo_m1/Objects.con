@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject greencammo_m1
+ObjectTemplate.aiTemplate greencammo
+ObjectTemplate.geometry greencammo_m1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addToCollisionGroup c_CGProjectiles

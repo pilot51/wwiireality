@@ -1,0 +1,13 @@
+NetworkableInfo.createNewInfo EnterpriseWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo EnterpriseEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+NetworkableInfo.createNewInfo EnterpriseBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+
+

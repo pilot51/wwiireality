@@ -1,0 +1,18 @@
+GeometryTemplate.create StandardMesh Small_Bomb_M1
+GeometryTemplate.file Small_Bomb_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Big_Bomb_M1
+GeometryTemplate.file Big_Bomb_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Torpedo_Hull_M1
+GeometryTemplate.file Torpedo_Hull_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Torpedo_Sml_M1
+GeometryTemplate.file Torpedo_Sml_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1P_PanzerIV_Gunner_M1
+GeometryTemplate.file 1P_PanzerIV_Gunner_M1

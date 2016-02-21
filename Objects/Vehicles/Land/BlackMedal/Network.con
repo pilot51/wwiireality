@@ -1,0 +1,16 @@
+NetworkableInfo.createNewInfo BlackMedalEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo BlackMedalSteeringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo BlackMedalBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo BlackMedalSpringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo BlackMedalTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+

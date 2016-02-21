@@ -1,0 +1,33 @@
+
+
+rem *** KatyushaFireArms ***
+ObjectTemplate.create FireArms KatyushaFireArmsBundle
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.aiTemplate KatyushaMainGun
+ObjectTemplate.projectileTemplate KatyushaRocket
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.visibleDummyProjectileTemplate KatyushaRocketDummy
+ObjectTemplate.magSize 12
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 355
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 2
+ObjectTemplate.fireingForce 0
+ObjectTemplate.addFireArmsPosition -1.15/-0.188/-0.2 0/0/0
+ObjectTemplate.addFireArmsPosition -0.69/-0.188/-0.2 0/0/0
+ObjectTemplate.addFireArmsPosition -0.24/-0.188/-0.2 0/0/0
+ObjectTemplate.addFireArmsPosition 0.24/-0.188/-0.2 0/0/0
+ObjectTemplate.addFireArmsPosition 0.69/-0.188/-0.2 0/0/0
+ObjectTemplate.addFireArmsPosition 1.15/-0.188/-0.2 0/0/0
+ObjectTemplate.addFireArmsPosition -1.17/-0.63/-0.2 0/0/0
+ObjectTemplate.addFireArmsPosition -0.7/-0.63/-0.2 0/0/0
+ObjectTemplate.addFireArmsPosition -0.23/-0.63/-0.2 0/0/0
+ObjectTemplate.addFireArmsPosition 0.24/-0.63/-0.2 0/0/0
+ObjectTemplate.addFireArmsPosition 0.71/-0.63/-0.2 0/0/0
+ObjectTemplate.addFireArmsPosition 1.18/-0.63/-0.2 0/0/0
+
+ObjectTemplate.create SimpleObject KatyushaRocketDummy
+ObjectTemplate.geometry r_rocket_m1
+

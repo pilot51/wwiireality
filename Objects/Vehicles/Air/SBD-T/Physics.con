@@ -1,0 +1,207 @@
+
+
+rem *** SBD-TBodyWing ***
+ObjectTemplate.create Wing SBD-TBodyWing
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/-0.1
+ObjectTemplate.setWingLift 2
+ObjectTemplate.setFlapLift 0
+
+
+ObjectTemplate.create Wing SBD-TAirbreak
+ObjectTemplate.setNetworkableInfo SBDWingInfo
+ObjectTemplate.geometry SBD-6_flap_mid_m1
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 0/0.347/0.792
+ObjectTemplate.setFlapLift 4
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 1
+
+
+ObjectTemplate.create Wing SBD-TFlapR
+ObjectTemplate.geometry SBD-6_flap_right_M1
+ObjectTemplate.networkableInfo SBDWingInfo
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -2.926/0.083/0.553
+ObjectTemplate.setFlapLift 2
+ObjectTemplate.setRegulateToLift 4.91
+objectTemplate.setWingToRegulatorRatio 1
+
+
+ObjectTemplate.create Wing SBD-TFlapL
+ObjectTemplate.geometry SBD-6_flap_left_M1
+ObjectTemplate.networkableInfo SBDWingInfo
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/30/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 2.925/0.083/0.553
+ObjectTemplate.setFlapLift 2
+ObjectTemplate.setRegulateToLift 4.91
+objectTemplate.setWingToRegulatorRatio 1
+
+
+rem *** SBD-TRudderFR ***
+ObjectTemplate.create Wing SBD-TRudderFR
+ObjectTemplate.setNetworkableInfo SBDWingInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
+ObjectTemplate.geometry SBD-6_wing_rod_right_M1
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/150/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -1.5/0/0.104
+ObjectTemplate.setWingLift 1.85
+ObjectTemplate.setFlapLift 1.85
+
+
+rem *** SBD-TRudderFL ***
+ObjectTemplate.create Wing SBD-TRudderFL
+ObjectTemplate.setNetworkableInfo SBDWingInfo
+ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
+ObjectTemplate.geometry SBD-6_wing_rod_left_M1
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/150/0
+ObjectTemplate.setAcceleration 0/-150/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 1.5/0/0.104
+ObjectTemplate.setWingLift 1.85
+ObjectTemplate.setFlapLift 1.85
+
+
+rem *** SBDRudderRL ***
+ObjectTemplate.create Wing SBD-TRudderRL
+ObjectTemplate.setNetworkableInfo SBDWingInfo
+ObjectTemplate.geometry SBD-6_fus_rod_left_M1
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0.5/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 0.5
+
+
+rem *** SBD-TRudderRR ***
+ObjectTemplate.create Wing SBD-TRudderRR
+ObjectTemplate.setNetworkableInfo SBDWingInfo
+ObjectTemplate.geometry SBD-6_fus_rod_right_M1
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/-60/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset -0.5/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 0.5
+
+
+rem *** SBD-TRudderRC ***
+ObjectTemplate.create Wing SBD-TRudderRC
+ObjectTemplate.setNetworkableInfo SBD-TWingInfo
+ObjectTemplate.geometry SBD-6_fus_rod_mid_M1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/60/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 1.5
+
+
+rem *** SBD-TBackWheel ***
+ObjectTemplate.create Spring SBD-TBackWheel
+ObjectTemplate.geometry SBD-6_backwheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+
+rem *** SBD-TEngine ***
+ObjectTemplate.create Engine SBD-TEngine
+ObjectTemplate.setNetworkableInfo SBD-TEngineInfo
+ObjectTemplate.loadSoundScript Sounds/SBDEngine.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodSBD-TPropeller
+ObjectTemplate.addTemplate SBD-TGear1
+ObjectTemplate.setPosition 1.59/-0.529/-2.047
+ObjectTemplate.addTemplate SBD-TGear2
+ObjectTemplate.setPosition -1.589/-0.529/-2.047
+ObjectTemplate.addTemplate SBD-TGearHatchR
+ObjectTemplate.setPosition 1.588/-0.631/-2.05
+ObjectTemplate.setRotation 0/0/130
+ObjectTemplate.addTemplate SBD-TGearHatchL
+ObjectTemplate.setPosition -1.587/-0.631/-2.05
+ObjectTemplate.setRotation 0/0/-129.999
+rem -------------------------------------
+ObjectTemplate.setMinRotation -0.3/0/-3000
+ObjectTemplate.setMaxRotation 0.3/0/5000
+ObjectTemplate.setMaxSpeed 1000/0/500
+ObjectTemplate.setAcceleration 500/0/1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 14.25
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 70
+
+
+rem *** SBD-TWheel1 ***
+ObjectTemplate.create Spring SBD-TWheel1
+ObjectTemplate.geometry SBD-6_whe_right_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+
+
+rem *** SBD-TWheel2 ***
+ObjectTemplate.create Spring SBD-TWheel2
+ObjectTemplate.geometry SBD-6_whe_left_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 24
+ObjectTemplate.setDamping 12
+

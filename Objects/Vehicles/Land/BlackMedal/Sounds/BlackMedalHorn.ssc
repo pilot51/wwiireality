@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/BlackMedalHorn.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/BlackMedalHorn.ssc
+	
+#templateLevel LOW
+
+	#include Low/BlackMedalHorn.ssc

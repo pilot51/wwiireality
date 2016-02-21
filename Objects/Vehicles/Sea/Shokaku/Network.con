@@ -1,0 +1,12 @@
+NetworkableInfo.createNewInfo ShokakuWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo ShokakuEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo ShokakuBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+
+

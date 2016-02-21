@@ -1,0 +1,9 @@
+NetworkableInfo.createNewInfo Mustang_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Mustang_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Mustang_body_info
+NetworkableInfo.setPredictionMode PMLinear
+

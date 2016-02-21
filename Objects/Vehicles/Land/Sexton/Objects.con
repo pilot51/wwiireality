@@ -1,0 +1,254 @@
+
+
+rem *** Sexton ***
+ObjectTemplate.create PlayerControlObject Sexton
+ObjectTemplate.NameTagOffset 0/-0.5/0
+ObjectTemplate.setNetworkableInfo SextonBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 25500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 50
+ObjectTemplate.maxhitpoints 50
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 12
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileCriticalDamage 2
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.addArmorEffect 30 e_PanzDamage 0/1.5/-2.399
+ObjectTemplate.addArmorEffect 12 e_PanzFire 0/1.5/-2.399
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.timetoliveafterdeath 600
+ObjectTemplate.timeToStartFadeAfterDeath 570
+ObjectTemplate.aiTemplate Sexton
+rem -------------------------------------
+ObjectTemplate.addTemplate lodSexton
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2/0.5/0 0/0/0
+ObjectTemplate.GUIIndex 73
+ObjectTemplate.setVehicleIcon "Vehicle/IconSexton.tga"
+ObjectTemplate.setVehicleIconPos 65/80
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTArtillery
+ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_tank_16x16.tga"
+
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 15
+ObjectTemplate.DirBarYScaleAbove 40
+ObjectTemplate.DirBarYScaleBelow 0
+ObjectTemplate.DirBarYScaleMin -90
+ObjectTemplate.DirBarYScaleMax -50
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodSexton ***
+ObjectTemplate.create LodObject lodSexton
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate SextonComplex
+ObjectTemplate.addTemplate SextonSimple
+ObjectTemplate.addTemplate SextonWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector SextonLodSelector
+
+
+rem *** SextonComplex ***
+ObjectTemplate.create Bundle SextonComplex
+ObjectTemplate.geometry Sexton_Hull_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate SextonCamera
+ObjectTemplate.setPosition 0.50/1.10/0.95
+ObjectTemplate.addTemplate SextonGunBase
+ObjectTemplate.setPosition -0.029/1.35/1.13
+ObjectTemplate.addTemplate SextonEntry
+ObjectTemplate.setPosition -0.399/-0.149/1.2
+ObjectTemplate.addTemplate SextonEntry
+ObjectTemplate.setPosition -0.399/-0.149/-1.199
+ObjectTemplate.addTemplate SextonSeat
+ObjectTemplate.setPosition 0.449/1.02/0.68
+ObjectTemplate.addTemplate Attach_R_Hand
+ObjectTemplate.setPosition 0.75/0.62/0.67
+ObjectTemplate.setRotation -62.088/78.967/65.188
+ObjectTemplate.addTemplate Attach_L_Hand
+ObjectTemplate.setPosition 0.2/0.65/0.67
+ObjectTemplate.setRotation -121.94/-75.006/-2.728
+ObjectTemplate.addTemplate SextonEngine
+rem -------------------------------------
+
+rem *** SextonSeat ***
+ObjectTemplate.create SeatObject SextonSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatAnimationLowerBody Lb_PassengerInHanomag
+
+rem *** SextonEntry ***
+ObjectTemplate.create EntryPoint SextonEntry
+ObjectTemplate.setEntryRadius 3.8
+
+
+rem *** SextonCamera ***
+ObjectTemplate.create Camera SextonCamera
+ObjectTemplate.setMinRotation -25/-40/0
+ObjectTemplate.setMaxRotation 15/9/0
+ObjectTemplate.setMaxSpeed 20/15/0
+ObjectTemplate.setAcceleration 1000/1000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+rem ObjectTemplate.setInputToRoll 
+ObjectTemplate.CVMExternTrace 1
+
+
+rem *** Sexton_TrackL ***
+ObjectTemplate.create AnimatedBundle Sexton_TrackL
+ObjectTemplate.geometry Sexton_TrackL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/Sexton_TrackL_M1.ske
+rem ObjectTemplate.createSkeleton animations/ShermanTrackL.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.008/0
+rem -------------------------------------
+ObjectTemplate.addTemplate SextonWheelLBig
+ObjectTemplate.setPosition -1.05/0.721/2.18
+ObjectTemplate.addTemplate SextonWheelL3Dummy
+ObjectTemplate.setPosition -1.101/0.171/1.764
+ObjectTemplate.useAsBone 0/-0.12/0
+ObjectTemplate.setBoneOriginOffset 0/-0.5/0
+ObjectTemplate.addTemplate SextonWheelL3
+ObjectTemplate.setPosition -1.101/0.171/0.974
+ObjectTemplate.useAsBone 0/-0.12/0
+ObjectTemplate.setBoneOriginOffset 0/-0.5/0
+ObjectTemplate.addTemplate SextonWheelL3Dummy
+ObjectTemplate.setPosition -1.101/0.171/0.353
+ObjectTemplate.useAsBone 0/-0.12/0
+ObjectTemplate.setBoneOriginOffset 0/-0.5/0
+ObjectTemplate.addTemplate SextonWheelL3DummySmoke
+ObjectTemplate.setPosition -1.101/0.171/-0.465
+ObjectTemplate.useAsBone 0/-0.12/0
+ObjectTemplate.setBoneOriginOffset 0/-0.5/0
+ObjectTemplate.addTemplate SextonWheelL3
+ObjectTemplate.setPosition -1.101/0.171/-1.059
+ObjectTemplate.useAsBone 0/-0.12/0
+ObjectTemplate.setBoneOriginOffset 0/-0.5/0
+ObjectTemplate.addTemplate SextonWheelL3Dummy
+ObjectTemplate.setPosition -1.101/0.171/-1.876
+ObjectTemplate.useAsBone 0/-0.12/0
+ObjectTemplate.setBoneOriginOffset 0/-0.5/0
+ObjectTemplate.addTemplate SextonWheelLBig
+ObjectTemplate.setPosition -1.05/0.771/-2.498
+rem -------------------------------------
+beginrem
+	ObjectTemplate.setCheckBoneDistance 0.5
+	ObjectTemplate.buildSkeleton animations/Sexton_TrackL_M1.ske
+	ObjectTemplate.buildSkin Sexton_TrackL_M1 animations/Sexton_TrackL_M1.skn
+endrem
+
+rem *** Sexton_TrackR ***
+ObjectTemplate.create AnimatedBundle Sexton_TrackR
+ObjectTemplate.geometry Sexton_TrackR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/Sexton_TrackR_M1.ske
+rem ObjectTemplate.createSkeleton animations/ShermanTrackR.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.008/0
+rem -------------------------------------
+ObjectTemplate.addTemplate SextonWheelRBig
+ObjectTemplate.setPosition 1.05/0.721/2.18
+ObjectTemplate.addTemplate SextonWheelR3Dummy
+ObjectTemplate.setPosition 1.081/0.171/1.764
+ObjectTemplate.useAsBone 0/-0.12/0
+ObjectTemplate.setBoneOriginOffset 0/-0.5/0
+ObjectTemplate.addTemplate SextonWheelR3
+ObjectTemplate.setPosition 1.081/0.171/0.974
+ObjectTemplate.useAsBone 0/-0.12/0
+ObjectTemplate.setBoneOriginOffset 0/-0.5/0
+ObjectTemplate.addTemplate SextonWheelR3Dummy
+ObjectTemplate.setPosition 1.081/0.171/0.353
+ObjectTemplate.useAsBone 0/-0.12/0
+ObjectTemplate.setBoneOriginOffset 0/-0.5/0
+ObjectTemplate.addTemplate SextonWheelR3DummySmoke
+ObjectTemplate.setPosition 1.081/0.171/-0.465
+ObjectTemplate.useAsBone 0/-0.12/0
+ObjectTemplate.setBoneOriginOffset 0/-0.5/0
+ObjectTemplate.addTemplate SextonWheelR3
+ObjectTemplate.setPosition 1.081/0.171/-1.059
+ObjectTemplate.useAsBone 0/-0.12/0
+ObjectTemplate.setBoneOriginOffset 0/-0.5/0
+ObjectTemplate.addTemplate SextonWheelR3Dummy
+ObjectTemplate.setPosition 1.081/0.171/-1.876
+ObjectTemplate.useAsBone 0/-0.12/0
+ObjectTemplate.setBoneOriginOffset 0/-0.5/0
+ObjectTemplate.addTemplate SextonWheelRBig
+ObjectTemplate.setPosition 1.05/0.771/-2.498
+rem -------------------------------------
+beginrem
+	ObjectTemplate.setCheckBoneDistance 0.5
+	ObjectTemplate.buildSkeleton animations/Sexton_TrackR_M1.ske
+	ObjectTemplate.buildSkin Sexton_TrackR_M1 animations/Sexton_TrackR_M1.skn
+endrem
+
+
+rem *** SextonGunBase ***
+ObjectTemplate.create RotationalBundle SextonGunBase
+ObjectTemplate.setNetworkableInfo SextonGunInfo
+ObjectTemplate.loadSoundScript Sounds/SextonTurret.ssc
+ObjectTemplate.geometry Sexton_Gun_Turret_M1
+rem -------------------------------------
+ObjectTemplate.addTemplate SextonCannonBase
+ObjectTemplate.setPosition 0/-0.049/-0.139
+rem -------------------------------------
+ObjectTemplate.setMinRotation -25/0/0
+ObjectTemplate.setMaxRotation 15/0/0
+ObjectTemplate.setMaxSpeed 20/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** SextonCannonBase ***
+ObjectTemplate.create RotationalBundle SextonCannonBase
+ObjectTemplate.setNetworkableInfo SextonGunInfo
+ObjectTemplate.loadSoundScript Sounds/Sextongunbase.ssc
+ObjectTemplate.geometry Sexton_Cannon_M1
+rem -------------------------------------
+ObjectTemplate.addTemplate SextonCannon
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-40/0
+ObjectTemplate.setMaxRotation 0/9/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** SextonSimple ***
+ObjectTemplate.create SimpleObject SextonSimple
+ObjectTemplate.geometry Sexton_Hull_L1
+
+
+rem *** SextonWreck ***
+ObjectTemplate.create SimpleObject SextonWreck
+ObjectTemplate.geometry Wreck_Sexton_m1
+
+
+rem *** SextonLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 SextonLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 5000

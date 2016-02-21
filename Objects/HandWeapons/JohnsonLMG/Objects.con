@@ -1,0 +1,99 @@
+ObjectTemplate.create HandFireArms JohnsonLMG
+ObjectTemplate.itemIndex 3
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate barProjectile
+rem ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_UNIFORM/1/3/0
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.magSize 20
+ObjectTemplate.numOfMag 5
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 5.4
+ObjectTemplate.roundOfFire 7.5
+objectTemplate.aiTemplate JohnsonLMGAI
+ObjectTemplate.zoomFov 0.5
+ObjectTemplate.soldierZoomFov 0.6 
+ObjectTemplate.soldierZoomPosition -0.04/0/0
+ObjectTemplate.soldierCameraPosition -0.03/-0.02/-0.07
+ObjectTemplate.addRootSpeed 1
+ObjectTemplate.AmmoType	1
+
+ObjectTemplate.altFireOnce 1
+rem objectTemplate.UseScope 1
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 850
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/0.35/0.43/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.3/0.3/0
+ObjectTemplate.setHasRecoilForce 1.2
+ObjectTemplate.setGoBackOnRecoil 0
+
+ObjectTemplate.setFireDev 3.8 0.25 0.03
+ObjectTemplate.setDevMod 1.1 0.85 0.5
+ObjectTemplate.setMinDev 0.75
+ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 2.55 0.2 0.2 0.1
+ObjectTemplate.setMiscDev 2.5 2.5 0.1
+`
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/JohnsonLMG.ssc
+ObjectTemplate.GUIIndex 18
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_Bar_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Bar_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 48
+ObjectTemplate.setAmmoBarPosX 5
+ObjectTemplate.setAmmoBarPosY -11
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+ObjectTemplate.createSkeleton animations/JohnsonLMG.ske
+ObjectTemplate.useSkeletonPartAsMain Base
+ObjectTemplate.addTemplate JohnsonLMGLod
+
+ObjectTemplate.addTemplate e_MuzzSG44
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 0
+ObjectTemplate.setPosition 0/0.03/0.675
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_shell792mm
+ObjectTemplate.setInputId -1
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0/0.04/0.121
+ObjectTemplate.setRotation 0/0/0
+
+rem ** SimpleObjects
+
+ObjectTemplate.create SimpleObject JohnsonLMGTrigger
+ObjectTemplate.geometry JohnsonLMGTrigger
+
+ObjectTemplate.create SimpleObject JohnsonLMGMag
+ObjectTemplate.geometry JohnsonLMGMag
+
+ObjectTemplate.create SimpleObject JohnsonLMGReload
+ObjectTemplate.geometry JohnsonLMGReload
+
+ObjectTemplate.create SimpleObject JohnsonLMGSimple
+ObjectTemplate.geometry Shad_JohnsonLMG
+
+ObjectTemplate.create AnimatedBundle JohnsonLMGComplex
+ObjectTemplate.geometry JohnsonLMG
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.createSkeleton animations/JohnsonLMG.ske
+ObjectTemplate.addTemplate JohnsonLMGTrigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate JohnsonLMGMag
+ObjectTemplate.bindToSkeletonPart Mag
+ObjectTemplate.addTemplate JohnsonLMGReload
+ObjectTemplate.bindToSkeletonPart reload
+
+ObjectTemplate.create LodObject JohnsonLMGLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate JohnsonLMGComplex
+ObjectTemplate.addTemplate JohnsonLMGSimple
+
+
+

@@ -1,0 +1,36 @@
+renderer.beginGlobalCluster Lynx
+
+GeometryTemplate.create StandardMesh Lynx_Hull_M1
+GeometryTemplate.file Lynx_Hull_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Lynx_WheelR_M1
+GeometryTemplate.file Lynx_WheelR_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Lynx_WheelL_M1
+GeometryTemplate.file Lynx_WheelL_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Lynx_Steering_M1
+GeometryTemplate.file Willy_str_M1
+geometryTemplate.cullFactor 0.4
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1P_Lynx_Hul_M1
+GeometryTemplate.file 1PLynx_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1P_Lynx_str_M1
+GeometryTemplate.file 1P_Willy_str_M1
+GeometryTemplate.cullFactor 2
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh Lynx_Hull_L1
+GeometryTemplate.file Lynx_Hull_L1
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_Lynx_M1
+GeometryTemplate.file Lynx_Wreck_M1
+GeometryTemplate.setLodDistance 0 0

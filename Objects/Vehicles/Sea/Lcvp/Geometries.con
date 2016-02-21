@@ -1,0 +1,29 @@
+
+GeometryTemplate.create StandardMesh Lcvp_Hull_M1
+GeometryTemplate.file Lcvp_Hull_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Lcvp_ramp_M1
+GeometryTemplate.file Lcvp_ramp_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Lcvp_door_M1
+GeometryTemplate.file Lcvp_door_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Lcvp_prop_M1
+GeometryTemplate.file Lcvp_prop_M1
+geometryTemplate.cullFactor 0.2
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Lcvp_rod_M1
+GeometryTemplate.file Lcvp_rod_M1
+geometryTemplate.cullFactor 0.2
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Lcvp_Hull_L1
+GeometryTemplate.file Lcvp_Hull_L1
+
+GeometryTemplate.create StandardMesh 1p_lcvp_hull_m1
+GeometryTemplate.file 1p_lcvp_hull_m1
+GeometryTemplate.setLodDistance 0 0

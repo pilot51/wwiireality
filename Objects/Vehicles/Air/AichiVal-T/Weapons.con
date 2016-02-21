@@ -1,0 +1,57 @@
+
+rem *** Aichival-TGunBarrel ***
+ObjectTemplate.create FireArms Aichival-TGuns
+ObjectTemplate.loadSoundScript Sounds/AichiValMG.ssc
+ObjectTemplate.aiTemplate Aichival-TMachineGun
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem ObjectTemplate.addTemplate em_ShellAir
+rem ObjectTemplate.setPosition 0/-0.299/-0.299
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Aichival-TProjectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/3/0/0
+ObjectTemplate.magSize 600
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 723.9
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 8.3
+ObjectTemplate.addFireArmsPosition 0.1/0.5/2.7 0/0/0
+ObjectTemplate.addFireArmsPosition -0.1/0.5/2.7 0/0/0
+ObjectTemplate.AmmoType 8
+
+
+rem *** Aichival-TProjectile ***
+ObjectTemplate.create Projectile Aichival-TProjectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/600/0/0
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.material 213
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.dieAfterColl 0
+
+
+rem *** Aichival-TBombDummy ***
+ObjectTemplate.create FireArms Aichival-TBombRack
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate Aichival-TBombs
+ObjectTemplate.visibleDummyProjectileTemplate Aichival-TDummyTorpedo
+ObjectTemplate.projectileTemplate AircraftTorpedo
+ObjectTemplate.projectilePosition 0/-1/0
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.roundOfFire 0.1
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadTime 10
+ObjectTemplate.AmmoType 7
+ObjectTemplate.setInputFire c_PIAltFire
+
+
+ObjectTemplate.create SimpleObject Aichival-TDummyTorpedo
+ObjectTemplate.geometry Torpedo_Sml_m1

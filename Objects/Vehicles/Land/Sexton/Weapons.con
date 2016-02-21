@@ -1,0 +1,40 @@
+
+
+rem *** SextonCannon ***
+ObjectTemplate.create FireArms SextonCannon
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/SextonCannon.ssc
+ObjectTemplate.geometry Sexton_Barrel_M1
+ObjectTemplate.aiTemplate SextonMainGun
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzSexton
+ObjectTemplate.setPosition 0/0/0.5
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+ObjectTemplate.projectileTemplate SextonProjectile
+ObjectTemplate.projectilePosition 0/0/1
+ObjectTemplate.magSize 112
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 518
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 0.2
+ObjectTemplate.roundOfFire 0.12
+ObjectTemplate.fireingForce 60
+ObjectTemplate.recoilSpeed 20
+ObjectTemplate.recoilSize 4.5
+
+
+rem *** SextonProjectile ***
+ObjectTemplate.create Projectile SextonProjectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.geometry projectile_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/600/0/0
+ObjectTemplate.damageType 1
+ObjectTemplate.material 240
+ObjectTemplate.material2 201
+ObjectTemplate.radius 15
+ObjectTemplate.hasCollisionEffect 1
+rem ObjectTemplate.addTemplate e_PanzShootTrail

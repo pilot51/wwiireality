@@ -1,0 +1,15 @@
+
+GeometryTemplate.create StandardMesh Shokaku_m1
+GeometryTemplate.file Shokaku_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Shokaku_L1
+GeometryTemplate.file Shokaku_L1
+
+GeometryTemplate.create StandardMesh Shokaku_ladder_5m_m1
+GeometryTemplate.file ladder_5m_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Shokaku_Radar_m1
+GeometryTemplate.file Shokaku_Radar_m1
+GeometryTemplate.setLodDistance 0 0

@@ -1,0 +1,49 @@
+GeometryTemplate.create StandardMesh UsMarine_Hip_Pack
+GeometryTemplate.file US_Mar_hippack_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 100
+
+GeometryTemplate.create StandardMesh UsMarine_Helmet
+GeometryTemplate.file US_Mar_Helm_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 100
+
+GeometryTemplate.create StandardMesh USMC_Eng_Backpack
+GeometryTemplate.file US_M_Eng_Bacpac_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh USMC_Backpack
+GeometryTemplate.file US_M_AssaultBacpac_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh USMC_Med_Backpack
+GeometryTemplate.file US_M_MedicBacpac_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+
+GeometryTemplate.create StandardMesh Kit_USMarine_Engineer
+GeometryTemplate.file Kit_USEngineer_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+

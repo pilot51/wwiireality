@@ -1,0 +1,51 @@
+
+GeometryTemplate.create StandardMesh PrinceOW_Hul1_M1
+GeometryTemplate.file PrinceOW_Hul1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh PrinceOW_Hul1_L1
+GeometryTemplate.file PrinceOW_Hul1_L1
+
+renderer.beginGlobalCluster PrinceOW
+
+GeometryTemplate.create StandardMesh PrinceOW_gun1_M1
+GeometryTemplate.file PrinceOW_gun1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh PrinceOW_gun2_M1
+GeometryTemplate.file PrinceOW_gun2_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh PrinceOW_aag1_bar1_M1
+GeometryTemplate.file PrinceOW_aag1_bar1_M1
+GeometryTemplate.setLodDistance 0 0
+
+beginrem
+GeometryTemplate.create StandardMesh PrinceOW_gun_bar_M1
+GeometryTemplate.file PrinceOW_gun_bar_M1
+GeometryTemplate.setLodDistance 0 0
+endrem
+
+GeometryTemplate.create StandardMesh PrinceOW_gun_bar_M1
+GeometryTemplate.file PrinceOW_gun_bar_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh PrinceOW_SmlGun_m1
+GeometryTemplate.file PrinceOW_SmlGun_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh PrinceOW_BigGun_m1
+GeometryTemplate.file PrinceOW_BigGun_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh PrinceOW_aag1_M1
+GeometryTemplate.file PrinceOW_aag1_M1
+GeometryTemplate.setLodDistance 0 0
+
+renderer.endGlobalCluster
+
+beginrem
+GeometryTemplate.create StandardMesh stestone1_M1
+GeometryTemplate.file stestone1_M1
+GeometryTemplate.setLodDistance 0 0
+endrem

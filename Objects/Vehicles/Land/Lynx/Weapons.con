@@ -1,0 +1,14 @@
+
+rem *** LynxHorn ***
+ObjectTemplate.create FireArms LynxHorn
+ObjectTemplate.setNetworkableInfo LynxSteeringInfo
+ObjectTemplate.loadSoundScript Sounds/LynxHorn.ssc
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.magType 0
+ObjectTemplate.fireOnce 1
+ObjectTemplate.reloadtime 1
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.AmmoType	6
+ObjectTemplate.velocity 0

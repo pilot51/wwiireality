@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/PriestEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/PriestEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/PriestEngine.ssc

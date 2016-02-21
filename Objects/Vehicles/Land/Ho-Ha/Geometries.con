@@ -1,0 +1,60 @@
+renderer.beginGlobalCluster HoHa
+
+GeometryTemplate.create StandardMesh HoHa_Hull_M1
+GeometryTemplate.file HoHa_Hull_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create AnimatedMesh HoHa_TrackL_M1
+GeometryTemplate.file HoHa_TrackL_M1
+GeometryTemplate.setSkin animations/HoHa_TrackL_M1.skn
+
+GeometryTemplate.create AnimatedMesh HoHa_TrackR_M1
+GeometryTemplate.file HoHa_TrackR_M1
+GeometryTemplate.setSkin animations/HoHa_TrackR_M1.skn
+
+rem *** Front tires used for steering ***
+GeometryTemplate.create StandardMesh HoHa_tireL_M1
+GeometryTemplate.file HoHa_WheelL_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh HoHa_tireR_M1
+GeometryTemplate.file HoHa_WheelR_M1
+GeometryTemplate.setLodDistance 0 0
+
+rem *** Wheels used for tracks ***
+GeometryTemplate.create StandardMesh HoHa_SmallWheel_M1
+GeometryTemplate.file HoHa_TrackWheelS_M1
+geometryTemplate.cullFactor 0.005
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh HoHa_MediumWheel_M1
+GeometryTemplate.file HoHa_TrackWheelM_M1
+geometryTemplate.cullFactor 0.005
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh HoHa_LargeWheel_M1
+GeometryTemplate.file HoHa_TrackWheelB_M1
+geometryTemplate.cullFactor 0.005
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh HoHa_Cockpit_M1
+GeometryTemplate.file HoHa_Cockpit_M1
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh HoHa_Hull_L1
+GeometryTemplate.file Jap_HoHa_L1
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_HoHa_m1
+GeometryTemplate.file HoHa_Wreck_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh HoHa_Steering_M1
+GeometryTemplate.file HoHa_Str_M1
+geometryTemplate.cullFactor 0.4
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1P_HoHa_Str_M1
+GeometryTemplate.file 1P_Willy_str_M1
+GeometryTemplate.cullFactor 2

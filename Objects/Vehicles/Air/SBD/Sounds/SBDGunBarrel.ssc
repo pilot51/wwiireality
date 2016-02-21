@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include BarrelHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include BarrelMedium.ssc
+	
+#templateLevel LOW
+
+	#include BarrelLow.ssc

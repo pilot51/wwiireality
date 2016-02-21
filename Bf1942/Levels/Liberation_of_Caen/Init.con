@@ -1,0 +1,91 @@
+rem
+rem **** Initialize level specific rendering settings. 
+rem
+ShaderManager.setTextureParam envmap bf1942\levels\Liberation_of_Caen\Textures\ENVMAP_G_.rcm
+renderer.vertexFogEnable 1
+renderer.fogColorVec 0.60/0.61/0.58
+renderer.fogstart 100
+renderer.fogend 600
+renderer.globalLodPercent 1
+renderer.globalAmbientColor .1/.1/.12
+renderer.ambientColor .12/.12/.12
+renderer.diffuseColor .4/.38/.35
+renderer.specularColor .38/.4/.25
+renderer.animatedMeshDiffuseFactor 0.42/0.40/0.35
+renderer.animatedMeshAmbientColor 0.28
+textureManager.alternativePath Texture/Canadian
+textureManager.alternativePath bf1942/Levels/Liberation_of_Caen/Texture
+
+shadow.shadowColor 0.5
+
+Game.setViewDistance 600
+Game.spawnPlayers 1
+
+game.setTeamSkin 1 GermanSoldier
+game.setKit 1 0 German_Scout
+game.setKit 1 1 German_Assault
+game.setKit 1 2 German_AT
+game.setKit 1 3 German_Medic
+game.setKit 1 4 German_Engineer
+
+game.setTeamSkin 2 CanadianSoldier
+game.setKit 2 0 Canadian_Scout
+game.setKit 2 1 Canadian_Assault
+game.setKit 2 2 Canadian_AT
+game.setKit 2 3 Canadian_Medic
+game.setKit 2 4 Canadian_Engineer
+
+beginrem
+game.setTeamSkin 2 BritishSoldier
+game.setKit 2 0 GB_Scout
+game.setKit 2 1 GB_Assault
+game.setKit 2 2 GB_AT
+game.setKit 2 3 GB_Medic
+game.setKit 2 4 GB_Engineer
+endrem
+
+rem *** Active Combat Area ***
+game.setActiveCombatArea 360 460 1229 1229
+
+rem
+rem *** Shader Default Color ***
+rem
+shaderManager.setDefaultShaderSolidColor 0.2/0.2/0.2
+
+run Init/SkyAndSun
+run Init/Terrain
+
+water.specularEnable 1
+water.texLayer1 texture/water01
+water.texLayer2 texture/water02
+water.normalMap texture/normalMap02
+water.scrollDirectionNormalmap -0.7/-0.7
+water.scrollDirection1 -1/-0.5
+water.scrollDirection2 -1/0.5
+water.specularColor 0.35/0.32/0.23
+water.scrollLayer1 0.02
+water.scrollLayer2 0.03
+water.scrollNormalmap 0.01
+water.specularStreakFactor 0.001
+water.tileLayer1 0.5
+water.tileLayer2 0.5
+water.tileNormalmap 0.5
+water.lightDirection -0.3/0.5/-0.65
+water.color 0.8/0.7/0.4
+water.waterColorDepth 40
+water.envmapcolor 0.70/0.80/0.70
+water.deepColor 0.35/0.425/0.4
+water.waterAlphaDepth 0.2
+water.waterShallowAlpha 1
+
+run Sounds/Environment
+
+rem *** Set team 1 ***
+game.setBeforeSpawnCameraPosition 1 954.02/50.5805/575.735
+rem *** Set team 2 ***
+game.setBeforeSpawnCameraPosition 2 973.18/47.8816/1088.8
+
+rem *** special object for this level. /TBM ***
+run objects/objects
+
+game.setLevelCheck 2073778453

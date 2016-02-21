@@ -1,0 +1,33 @@
+Game.setLocalized 1
+
+rem ** Allied Briefing **
+game.setAlliedCampaign BRIEFING_ALLIED_CAMPAIGN_MIDWAY
+game.setAlliedHints BRIEFING_ALLIED_HINTS_MIDWAY
+game.setAlliedObjectives BRIEFING_ALLIED_OBJECTIVES_MIDWAY
+game.setAlliedSkirmish BRIEFING_ALLIED_SKIRMISH_MIDWAY
+
+rem ** Axis Briefing **
+game.setAxisCampaign BRIEFING_AXIS_CAMPAIGN_MIDWAY
+game.setAxisHints BRIEFING_AXIS_HINTS_MIDWAY
+game.setAxisObjectives BRIEFING_AXIS_OBJECTIVES_MIDWAY
+game.setAxisSkirmish BRIEFING_AXIS_SKIRMISH_MIDWAY
+
+rem ** Allied Debriefing **
+game.setAlliedDebriefingMajorVictory DEBRIEFING_ALLIED_MAJOR_VICTORY_MIDWAY
+game.setAlliedDebriefingMinorVictory DEBRIEFING_ALLIED_MINOR_VICTORY_MIDWAY
+game.setAlliedDebriefingMajorDefeat DEBRIEFING_ALLIED_MAJOR_DEFEAT_MIDWAY
+game.setAlliedDebriefingMinorDefeat DEBRIEFING_ALLIED_MINOR_DEFEAT_MIDWAY
+
+rem ** Axis Debriefing **
+game.setAxisDebriefingMajorVictory DEBRIEFING_AXIS_MAJOR_VICTORY_MIDWAY
+game.setAxisDebriefingMinorVictory DEBRIEFING_AXIS_MINOR_VICTORY_MIDWAY
+game.setAxisDebriefingMajorDefeat DEBRIEFING_AXIS_MAJOR_DEFEAT_MIDWAY
+game.setAxisDebriefingMinorDefeat DEBRIEFING_AXIS_MINOR_DEFEAT_MIDWAY
+
+rem ** Multiplayer Briefing **
+game.setMultiplayerBriefingObjectives MULTIPLAYER_BRIEFING_MIDWAY
+game.setMultiplayerBriefingMapType MULTIPLAYER_MAP_TYPE_HEADON_MAP
+
+game.setLoadPicture Load/Pacific.tga
+game.setServerInfoIcon "serverInfo.dds"
+game.setMapId "WWIIReality"

@@ -1,0 +1,115 @@
+ObjectTemplate.create HandFireArms M1Garand
+ObjectTemplate.itemIndex 3
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate M1GarandProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 8
+ObjectTemplate.numOfMag 4
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 4.0
+ObjectTemplate.roundOfFire 3.2
+rem ObjectTemplate.roundOfFire 4
+objectTemplate.aiTemplate M1GarandAI
+ObjectTemplate.zoomFov 0.6
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.8 
+ObjectTemplate.soldierZoomPosition -0.04/-0.03/0
+ObjectTemplate.soldierCameraPosition -0.02/-0.03/0.01
+ObjectTemplate.addRootSpeed 1
+ObjectTemplate.ammoType 1
+ObjectTemplate.autoReload 0
+ObjectTemplate.allowReloadOnEmptyClipOnly 1
+ObjectTemplate.ejectClipTime 0.6
+
+ObjectTemplate.GUIIndex 3
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_Rifle_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Rifle_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 20
+ObjectTemplate.setAmmoBarPosX 6
+ObjectTemplate.setAmmoBarPosY -17
+ObjectTemplate.setAmmoBarTextPosX 5
+ObjectTemplate.setAmmoBarTextPosY 10
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 853
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/1.2/1.2/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 1.8 0.3 0.08
+rem ObjectTemplate.setFireDev 1.8 0.25 0.03
+ObjectTemplate.setDevMod  1 0.7 0.5
+rem ObjectTemplate.setDevMod  1 0.7 0.5
+ObjectTemplate.setMinDev 0.25
+ObjectTemplate.setTurnDev 0.3 0.2 0.2 0.1
+rem ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 1.3 0.4 0.4 0.2
+rem ObjectTemplate.setSpeedDev 1.2 0.3 0.3 0.1
+
+ObjectTemplate.setMiscDev 1.8 1.8 0.1
+
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/M1Garand.ssc
+
+ObjectTemplate.createSkeleton animations/M1Garand.ske
+ObjectTemplate.useSkeletonPartAsMain Base
+
+rem *** LodObject must be located as first child to work on handweapons.
+ObjectTemplate.addTemplate M1GarandLod
+
+ObjectTemplate.addTemplate e_MuzzGun
+ObjectTemplate.setPosition 0/0.05/0.84
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_shellM1Garand
+ObjectTemplate.setPosition 0/0.1/0.41
+ObjectTemplate.setRotation 0/0/0
+
+
+ObjectTemplate.create SimpleObject M1GarandSimple
+ObjectTemplate.geometry M1GarandSimple
+
+ObjectTemplate.create SimpleObject M1GarandMagasin
+ObjectTemplate.geometry M1GarandMagasin
+
+ObjectTemplate.create SimpleObject M1GarandClip
+ObjectTemplate.geometry M1GarandClip
+
+ObjectTemplate.create SimpleObject M1GarandReload
+ObjectTemplate.geometry M1GarandReload
+
+ObjectTemplate.create SimpleObject M1GarandPlupp
+ObjectTemplate.geometry M1GarandPlupp
+
+ObjectTemplate.create SimpleObject M1Garandtrigger
+ObjectTemplate.geometry M1Garandtrigger
+
+ObjectTemplate.create AnimatedBundle M1GarandComplex
+ObjectTemplate.createSkeleton animations/M1Garand.ske
+ObjectTemplate.geometry M1Garand
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.addTemplate M1Garandtrigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate M1GarandReload
+ObjectTemplate.bindToSkeletonPart reload
+ObjectTemplate.addTemplate M1GarandPlupp
+ObjectTemplate.bindToSkeletonPart plupp
+ObjectTemplate.addTemplate M1GarandMagasin
+ObjectTemplate.bindToSkeletonPart mag
+ObjectTemplate.addTemplate M1GarandClip
+ObjectTemplate.bindToSkeletonPart clip
+
+ObjectTemplate.create LodObject M1GarandLod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate M1GarandComplex
+ObjectTemplate.addTemplate M1GarandSimple
+

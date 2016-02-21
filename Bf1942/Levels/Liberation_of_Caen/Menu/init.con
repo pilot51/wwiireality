@@ -1,0 +1,33 @@
+Game.setLocalized 1
+
+rem ** Allied Briefing **
+game.setAlliedCampaign BRIEFING_ALLIED_CAMPAIGN_MARKET_GARDEN
+game.setAlliedHints BRIEFING_ALLIED_HINTS_MARKET_GARDEN
+game.setAlliedObjectives BRIEFING_ALLIED_OBJECTIVES_MARKET_GARDEN
+game.setAlliedSkirmish BRIEFING_ALLIED_SKIRMISH_MARKET_GARDEN
+
+rem ** Axis Briefing **
+game.setAxisCampaign BRIEFING_AXIS_CAMPAIGN_MARKET_GARDEN
+game.setAxisHints BRIEFING_AXIS_HINTS_MARKET_GARDEN
+game.setAxisObjectives BRIEFING_AXIS_OBJECTIVES_MARKET_GARDEN
+game.setAxisSkirmish BRIEFING_AXIS_SKIRMISH_MARKET_GARDEN
+
+rem ** Allied Debriefing **
+game.setAlliedDebriefingMajorVictory DEBRIEFING_ALLIED_MAJOR_VICTORY_MARKET_GARDEN
+game.setAlliedDebriefingMinorVictory DEBRIEFING_ALLIED_MINOR_VICTORY_MARKET_GARDEN
+game.setAlliedDebriefingMajorDefeat DEBRIEFING_ALLIED_MAJOR_DEFEAT_MARKET_GARDEN
+game.setAlliedDebriefingMinorDefeat DEBRIEFING_ALLIED_MINOR_DEFEAT_MARKET_GARDEN
+
+rem ** Axis Debriefing **
+game.setAxisDebriefingMajorVictory DEBRIEFING_AXIS_MAJOR_VICTORY_MARKET_GARDEN
+game.setAxisDebriefingMinorVictory DEBRIEFING_AXIS_MINOR_VICTORY_MARKET_GARDEN
+game.setAxisDebriefingMajorDefeat DEBRIEFING_AXIS_MAJOR_DEFEAT_MARKET_GARDEN
+game.setAxisDebriefingMinorDefeat DEBRIEFING_AXIS_MINOR_DEFEAT_MARKET_GARDEN
+
+rem ** Multiplayer Briefing **
+game.setMultiplayerBriefingObjectives MULTIPLAYER_BRIEFING_CAEN
+game.setMultiplayerBriefingMapType MULTIPLAYER_MAP_TYPE_ASSAULT_MAP
+
+game.setLoadPicture ../../bf1942/levels/liberation_of_caen/menu/texture/Load/Caen_Load.tga
+game.setServerInfoIcon "serverInfo.dds"
+game.setMapId "WWIIReality"

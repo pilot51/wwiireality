@@ -1,0 +1,91 @@
+
+
+rem *** HoHaEngine ***
+ObjectTemplate.create Engine HoHaEngine
+ObjectTemplate.setNetworkableInfo TigerEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/HoHaEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHa_TrackL
+ObjectTemplate.setPosition -0.099/-0.949/-0.499
+ObjectTemplate.addTemplate HoHa_TrackR
+ObjectTemplate.setPosition 0.1/-0.949/-0.499
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 4/0/10
+ObjectTemplate.setAcceleration 4/0/10
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 2.5
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setNumberOfGears 4
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+
+
+rem *** HoHa_LargeWheel ***
+ObjectTemplate.create Spring HoHa_LargeWheel
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry HoHa_LargeWheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.setStrength 16
+ObjectTemplate.setDamping 4
+
+
+rem *** HoHa_LargeWheel_Dummy ***
+ObjectTemplate.create Spring HoHa_LargeWheel_Dummy
+ObjectTemplate.geometry HoHa_LargeWheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** HoHa_MediumWheel ***
+ObjectTemplate.create Spring HoHa_MediumWheel
+ObjectTemplate.geometry HoHa_MediumWheel_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** HoHaWheelFRSpring ***
+ObjectTemplate.create Spring HoHaWheelFRSpring
+rem Add networkable here
+ObjectTemplate.geometry HoHa_tireR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 4
+ObjectTemplate.setDamping 1
+
+rem *** HoHaWheelFLSpring ***
+ObjectTemplate.create Spring HoHaWheelFLSpring
+rem Add networkable here
+ObjectTemplate.geometry HoHa_tireL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+ObjectTemplate.setStrength 4
+ObjectTemplate.setDamping 1
+
+

@@ -1,0 +1,94 @@
+rem *** Ilyushin-6_guns ***
+ObjectTemplate.create FireArms Ilyushin_Rearguns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/IlyushinRearGuns.ssc
+ObjectTemplate.geometry Ilyushin_Rearguns_M1
+rem -------------------------------------
+ObjectTemplate.addTemplate e_MuzzHeavy
+ObjectTemplate.setPosition 0.1/0.045/0.625
+ObjectTemplate.addTemplate e_MuzzHeavy
+ObjectTemplate.setPosition -0.003/0.1/0.625
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Ilyushin_Gun_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.magSize 150
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 832
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 15
+ObjectTemplate.AmmoType 10
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.20/-0.20/-0.85 -30/80/90
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.20/-0.20/-0.90 30/-100/-90
+
+rem *** Ilyushin_Gun_Projectile ***
+ObjectTemplate.create Projectile Ilyushin_Gun_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/Projectile.ssc
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/600/0/0
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.material 224
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1
+
+
+rem *** IlyushinGunBarrel ***
+ObjectTemplate.create FireArms IlyushinGuns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/Ilyushingunbarrel.ssc
+ObjectTemplate.aiTemplate IlyushinMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate IlyushinProjectile
+ObjectTemplate.projectilePosition 0/0.0/2.5
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/3/0/0
+ObjectTemplate.magSize 300
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 905
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.roundOfFire 12
+ObjectTemplate.addFireArmsPosition 2.559/-0.349/2.6 -1.3/-0.4/0
+ObjectTemplate.addFireArmsPosition -2.559/-0.349/2.6 1.3/-0.4/0
+ObjectTemplate.AmmoType 10
+
+
+rem *** IlyushinProjectile ***
+ObjectTemplate.create Projectile IlyushinProjectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/Projectile.ssc
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/600/0/0
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.material 213
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1
+
+
+rem *** IlyushinBombDummy ***
+ObjectTemplate.create FireArms IlyushinBombRack
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate IlyushinBombs
+ObjectTemplate.projectileTemplate DiveBomberBomb
+ObjectTemplate.projectilePosition 0/-1/0
+ObjectTemplate.visibleDummyProjectileTemplate DummyBigBomb
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.reloadtime 0.3
+ObjectTemplate.roundOfFire 1
+ObjectTemplate.SetAsynchronyFire 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.addFireArmsPosition -0.798/-0.748/1.85 0/0/0
+ObjectTemplate.addFireArmsPosition 0.798/-0.748/1.85 0/0/0
+ObjectTemplate.AmmoType 9

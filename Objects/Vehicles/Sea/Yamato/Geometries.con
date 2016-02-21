@@ -1,0 +1,59 @@
+
+GeometryTemplate.create StandardMesh Yamato_Hull_m1
+GeometryTemplate.file Yamato_Hull_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Yamato_Hull_L1
+GeometryTemplate.file Yamato_Hull_L1
+
+renderer.beginGlobalCluster Yamato
+
+GeometryTemplate.create StandardMesh Yamato_Fat_Cannon_m1
+GeometryTemplate.file Yamato_Fat_Cannon_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Yamato_Medium_Cannon_m1
+GeometryTemplate.file Yamato_Medium_Cannon_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Yamato_Small_Cannon_1_m1
+GeometryTemplate.file Yamato_Small_Cannon_1_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Yamato_Small_Cannon_1b_m1
+GeometryTemplate.file Yamato_Small_Cannon_1b_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Yamato_Small_Cannon_2_m1
+GeometryTemplate.file Yamato_Small_Cannon_2_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Yamato_Small_Cannon_3_m1
+GeometryTemplate.file Yamato_Small_Cannon_3_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Yamato_Fat_Turret_m1
+GeometryTemplate.file Yamato_Fat_Turret_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Yamato_Medium_Turret_m1
+GeometryTemplate.file Yamato_Medium_Turret_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Yamato_Small_Turret_1_m1
+GeometryTemplate.file Yamato_Small_Turret_1_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Yamato_Small_Turret_1b_m1
+GeometryTemplate.file Yamato_Small_Turret_1b_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Yamato_Small_Turret_2_m1
+GeometryTemplate.file Yamato_Small_Turret_2_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Yamato_Small_Turret_3_m1
+GeometryTemplate.file Yamato_Small_Turret_3_m1
+GeometryTemplate.setLodDistance 0 0
+
+renderer.endGlobalCluster

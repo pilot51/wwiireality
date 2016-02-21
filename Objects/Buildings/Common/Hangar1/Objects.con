@@ -1,0 +1,94 @@
+ObjectTemplate.create Bundle hangar1_m1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 1
+objectTemplate.aiTemplate hangar1_m1
+rem -------------------------------------------
+ObjectTemplate.addTemplate lodhangar1
+rem -------------------------------------------
+objectTemplate.loadSoundScript Sounds/Hangar.ssc
+
+LodSelectorTemplate.create DistanceSelector hangar1Selector
+LodSelectorTemplate.addLodDistance 100
+ObjectTemplate.create LodObject lodhangar1
+ObjectTemplate.lodselector hangar1Selector
+ObjectTemplate.addTemplate hangar1Interior
+ObjectTemplate.addTemplate hangar1Exterior
+
+ObjectTemplate.create Bundle hangar1Interior
+ObjectTemplate.geometry hangar1_m1
+rem -------------------------------------------
+
+ObjectTemplate.addTemplate AirplaneRepairpoint
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate militable_m1
+ObjectTemplate.setPosition 13.1/3.07/-19.696
+ObjectTemplate.setRotation 0/0/0
+
+
+ObjectTemplate.addTemplate planeeng_M1
+ObjectTemplate.setPosition 13.1/3.97/-19.696
+ObjectTemplate.setRotation 8/0/0
+
+
+ObjectTemplate.addTemplate stecrate1_M1
+ObjectTemplate.setPosition -6.799/3.07/-10.996
+ObjectTemplate.setRotation 0/0/0
+
+
+ObjectTemplate.addTemplate mililocker_m1
+ObjectTemplate.setPosition 19.3/3.12/-14.3
+ObjectTemplate.setRotation -90/0/0
+
+
+ObjectTemplate.addTemplate stecrate1_M1
+ObjectTemplate.setPosition -17.4/3.12/-16.297
+ObjectTemplate.setRotation 45/0/0
+
+
+rem -------------------------------------------
+
+ObjectTemplate.create SimpleObject hangar1Exterior
+ObjectTemplate.geometry hangar1_m1
+
+ObjectTemplate.create SimpleObject landrep1_supplyExterior
+ObjectTemplate.geometry landrep1_m2
+
+ObjectTemplate.create SupplyDepot AirplaneRepairpoint
+ObjectTemplate.radius 20
+ObjectTemplate.team 0
+rem ObjectTemplate.addVehicleType tiger -1 2 0
+rem ObjectTemplate.addVehicleType Panzeriv -1 2 0
+rem ObjectTemplate.addVehicleType hanomag -1 2 0
+rem ObjectTemplate.addVehicleType wespe -1 2 0
+rem ObjectTemplate.addVehicleType kubelwagen -1 2 0
+rem ObjectTemplate.addVehicleType sherman -1 2 0
+rem ObjectTemplate.addVehicleType m3a1 -1 2 0
+rem ObjectTemplate.addVehicleType priest -1 2 0
+rem ObjectTemplate.addVehicleType willy -1 2 0
+rem ObjectTemplate.addVehicleType m10 -1 2 0
+rem ObjectTemplate.addVehicleType chi-ha -1 2 0
+rem ObjectTemplate.addVehicleType T34 -1 2 0
+rem ObjectTemplate.addVehicleType T34-84 -1 2 0
+ObjectTemplate.addVehicleType corsair -1 4 0
+ObjectTemplate.addVehicleType sbd -1 4 0
+ObjectTemplate.addVehicleType sbd-t -1 4 0
+ObjectTemplate.addVehicleType mustang -1 4 0
+ObjectTemplate.addVehicleType spitfire -1 4 0
+ObjectTemplate.addVehicleType bf109 -1 4 0
+ObjectTemplate.addVehicleType stuka -1 4 0
+ObjectTemplate.addVehicleType aichival -1 4 0
+ObjectTemplate.addVehicleType aichival-t -1 4 0
+ObjectTemplate.addVehicleType zero -1 4 0
+ObjectTemplate.addVehicleType yak9 -1 4 0
+rem ObjectTemplate.addVehicleType Sturmgeschutz -1 4 0
+rem ObjectTemplate.addVehicleType M3GMC -1 4 0
+rem ObjectTemplate.addVehicleType M3Grant -1 4 0
+rem ObjectTemplate.addVehicleType m11-39 -1 4 0
+ObjectTemplate.addVehicleType BF110 -1 4 0
+ObjectTemplate.addVehicleType Mosquito -1 4 0
+
+ObjectTemplate.addAmmoType 0 -1 10 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0

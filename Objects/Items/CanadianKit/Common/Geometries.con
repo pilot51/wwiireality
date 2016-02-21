@@ -1,0 +1,11 @@
+GeometryTemplate.create StandardMesh Canadian_helmet
+GeometryTemplate.file Can_helmet_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 100
+
+GeometryTemplate.create StandardMesh British_hippack
+GeometryTemplate.file British_hippack_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 100

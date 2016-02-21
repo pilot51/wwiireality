@@ -1,0 +1,67 @@
+ObjectTemplate.create Bundle dockrepair_supply
+ObjectTemplate.aiTemplate Boat_Repair_M1
+ObjectTemplate.geometry Boat_Repair_M1
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Boat_RepairLadder_M1
+ObjectTemplate.setPosition 1.65/0.051/-27.349
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Boat_RepairLadder_M1
+ObjectTemplate.setPosition -1.65/0.051/-29.649
+ObjectTemplate.setRotation 90/0/0
+
+ObjectTemplate.create SimpleObject Boat_RepairLadder_M1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+ObjectTemplate.geometry Boat_RepairLadder_M1
+
+
+ObjectTemplate.create Bundle PTBoat_Repair_Supply
+rem -------------------------------------
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition -5.0/3/-48
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition 5.0/3/-48
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition -5.0/3/-46
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition 5.0/3/-46
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition -5.0/3/-44
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition 5.0/3/-44
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition -5.0/3/-42
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition 5.0/3/-42
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition -5.0/3/-40
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition 5.0/3/-40
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition -5.0/3/-38
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition 5.0/3/-38
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition -5.0/3/-36
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition 5.0/3/-36
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition -5.0/3/-34
+ObjectTemplate.addTemplate dockrepairpoint
+ObjectTemplate.setPosition 5.0/3/-34
+
+ObjectTemplate.create SupplyDepot dockrepairpoint
+ObjectTemplate.radius 6
+ObjectTemplate.team 0
+ObjectTemplate.addVehicleType Elco80 -1 4 0
+ObjectTemplate.addVehicleType Type38 -1 4 0
+ObjectTemplate.addVehicleType Lcvp -1 4 0
+ObjectTemplate.addVehicleType daihatsu -1 4 0
+
+ObjectTemplate.addAmmoType 14 -1 10 0
+ObjectTemplate.addAmmoType 15 -1 1.5 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SextonTurret.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/SextonTurret.ssc
+	
+#templateLevel LOW
+
+	#include Low/SextonTurret.ssc

@@ -1,0 +1,17 @@
+NetworkableInfo.createNewInfo YamatoBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo YamatoCannonInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo YamatoTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo YamatoRudderInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo YamatoEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+rem *** end of file ***

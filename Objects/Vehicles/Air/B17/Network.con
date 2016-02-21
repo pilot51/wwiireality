@@ -1,0 +1,22 @@
+NetworkableInfo.createNewInfo B17WingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo B17EngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo B17BodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo B17VentralTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo B17MG1Info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo B17DorsalTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo B17CannonInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+

@@ -1,0 +1,48 @@
+
+
+rem *** YamatoEngine ***
+ObjectTemplate.create Engine YamatoEngine
+ObjectTemplate.setNetworkableInfo YamatoEngineInfo
+ObjectTemplate.loadSoundScript Sounds/yamatoEngine.ssc
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 2
+ObjectTemplate.setDifferential 2
+ObjectTemplate.setNoPropellerEffectAtSpeed 120
+
+
+rem *** YamatoHullWing ***
+ObjectTemplate.create Wing YamatoHullWing
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/-10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** YamatoRudder ***
+ObjectTemplate.create Wing YamatoRudder
+ObjectTemplate.setNetworkableInfo YamatoRudderInfo
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** YamatoFloater ***
+ObjectTemplate.create FloatingBundle YamatoFloater
+ObjectTemplate.setHullHeight 10
+ObjectTemplate.setFloatMaxLift 6
+ObjectTemplate.setFloatMinLift 6

@@ -1,0 +1,16 @@
+NetworkableInfo.createNewInfo PrinceOWWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo PrinceOWEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo PrinceOWBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo PrinceOWTurretInfo
+NetworkableInfo.setPredictionMode PMUsePhysics
+
+NetworkableInfo.createNewInfo PrinceOWCannonInfo
+NetworkableInfo.setPredictionMode PMUsePhysics
+
+

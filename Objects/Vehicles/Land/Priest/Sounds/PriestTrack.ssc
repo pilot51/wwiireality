@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/PriestTrack.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/PriestTrack.ssc
+	
+#templateLevel LOW
+
+	#include Low/PriestTrack.ssc

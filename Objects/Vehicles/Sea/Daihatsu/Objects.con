@@ -1,0 +1,420 @@
+
+
+rem *** Daihatsu ***
+ObjectTemplate.create PlayerControlObject Daihatsu
+ObjectTemplate.setNetworkableInfo DaihatsuBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 0.42
+ObjectTemplate.mass 9500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 150
+ObjectTemplate.maxhitpoints 150
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 50
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 20
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.addArmorEffect 80 em_DaiHatsuDamage 0/0/0
+ObjectTemplate.timetoliveafterdeath 600
+ObjectTemplate.timeToStartFadeAfterDeath 570
+ObjectTemplate.aiTemplate Daihatsu
+rem -------------------------------------
+ObjectTemplate.addTemplate e_waterfront
+ObjectTemplate.setPosition 0/-2/4
+ObjectTemplate.addTemplate e_waterbacksmall
+ObjectTemplate.setPosition 0/-2/-4
+ObjectTemplate.addTemplate lodDaihatsu
+ObjectTemplate.addTemplate DaihatsuFloater
+ObjectTemplate.setPosition 1.2/-0.099/-1.999
+ObjectTemplate.addTemplate DaihatsuFloater
+ObjectTemplate.setPosition -1.199/-0.099/-1.999
+ObjectTemplate.addTemplate DaihatsuFloater
+ObjectTemplate.setPosition 1.2/-0.099/2.5
+ObjectTemplate.addTemplate DaihatsuFloater
+ObjectTemplate.setPosition -1.199/-0.099/2.5
+ObjectTemplate.addTemplate DaihatsuPassangerPCO3
+ObjectTemplate.setPosition 1/0.3/1
+ObjectTemplate.addTemplate DaihatsuPassangerPCO4
+ObjectTemplate.setPosition 1/0.3/2
+ObjectTemplate.addTemplate DaihatsuPassangerPCO5
+ObjectTemplate.setPosition -1/0.3/1
+ObjectTemplate.addTemplate DaihatsuPassangerPCO6
+ObjectTemplate.setPosition -1/0.3/2
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.setSoldierExitLocation 0/0.1/5 0/0/0
+ObjectTemplate.GUIIndex 65
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_dai-hatsu.tga"
+ObjectTemplate.setVehicleIconPos 26/48
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType  TTLcvp
+
+ObjectTemplate.exitTimer -0.5
+ObjectTemplate.exitSpeedMod 0
+
+
+rem *** lodDaihatsu ***
+ObjectTemplate.create LodObject lodDaihatsu
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate DaihatsuComplex
+ObjectTemplate.addTemplate DaihatsuSimple
+rem -------------------------------------
+ObjectTemplate.lodSelector DaihatsuLodSelector
+
+
+rem *** DaihatsuComplex ***
+ObjectTemplate.create Bundle DaihatsuComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodDaihatsuCockpit
+ObjectTemplate.addTemplate DaihatsuEngine
+ObjectTemplate.setPosition 0/-1.25/-3.5
+ObjectTemplate.addTemplate DaihatsuEntry
+ObjectTemplate.setPosition 0/0/-2.5
+ObjectTemplate.addTemplate DaihatsuEntry
+ObjectTemplate.setPosition 0/0/0.5
+ObjectTemplate.addTemplate DaihatsuCamera
+ObjectTemplate.setPosition 0.05/1.5/-3.399
+ObjectTemplate.addTemplate DaihatsuPassengerSeat
+ObjectTemplate.setPosition 0.01/0.75/-3.6
+ObjectTemplate.addTemplate DaihatsuRudderStern
+ObjectTemplate.setPosition 0/-0.8/4.5
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate DaihatsuRudderAft
+ObjectTemplate.setPosition 0/-1.1/-4.5
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate DaihatsuRudderNoMove
+ObjectTemplate.setPosition 0.01/-1.214/-6.114
+ObjectTemplate.addTemplate DaihatsuPropeller
+ObjectTemplate.setPosition 0/-1.1/-5.999
+ObjectTemplate.addTemplate DaihatsuLanding1
+ObjectTemplate.setPosition 0/-0.08/6.446
+ObjectTemplate.addTemplate DaihatsuGunnerPCO
+rem -------------------------------------
+
+ObjectTemplate.create SimpleObject DaihatsuRudderNoMove
+ObjectTemplate.geometry Daihatsu_rodder_m1
+
+rem *** lodDaihatsuCockpit ***
+ObjectTemplate.create LodObject lodDaihatsuCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate DaihatsuCockpitExternal
+ObjectTemplate.addTemplate DaihatsuCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector DaihatsucockpitSelector
+
+
+rem *** DaihatsuCockpitExternal ***
+ObjectTemplate.create SimpleObject DaihatsuCockpitExternal
+ObjectTemplate.geometry Daihatsu_m1
+
+
+rem *** DaihatsuCockpitInternal ***
+ObjectTemplate.create SimpleObject DaihatsuCockpitInternal
+ObjectTemplate.geometry 1p_dai-hatsu_m1
+
+
+rem *** DaihatsucockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector DaihatsucockpitSelector
+LodSelectorTemplate.addLodDistance 25
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** DaihatsuEntry ***
+ObjectTemplate.create EntryPoint DaihatsuEntry
+ObjectTemplate.setEntryRadius 6
+
+
+rem *** DaihatsuCamera ***
+ObjectTemplate.create Camera DaihatsuCamera
+ObjectTemplate.setMinRotation -70/-30/0
+ObjectTemplate.setMaxRotation 70/0/0
+ObjectTemplate.setMaxSpeed 100/100/0
+ObjectTemplate.setAcceleration 100000/100000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** DaihatsuPassengerSeat ***
+ObjectTemplate.create SeatObject DaihatsuPassengerSeat
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+
+
+rem *** DaihatsuPropeller ***
+ObjectTemplate.create SimpleObject DaihatsuPropeller
+ObjectTemplate.geometry Daihatsu_propeller_m1
+
+
+rem *** DaihatsuLanding1 ***
+ObjectTemplate.create RotationalBundle DaihatsuLanding1
+ObjectTemplate.setNetworkableInfo DaihatsuWingInfo
+ObjectTemplate.geometry Daihatsu_landing1_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate DaihatsuLanding2
+ObjectTemplate.setPosition 0/0.92/0.61
+rem -------------------------------------
+ObjectTemplate.setMaxRotation 0/65/0
+ObjectTemplate.setMaxSpeed 0/45/0
+ObjectTemplate.setAcceleration 0/10000/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setInputToPitch c_PIPitch
+
+
+rem *** DaihatsuLanding2 ***
+ObjectTemplate.create RotationalBundle DaihatsuLanding2
+ObjectTemplate.setNetworkableInfo DaihatsuWingInfo
+ObjectTemplate.loadSoundScript Sounds/dai_Ramp.ssc
+ObjectTemplate.geometry Daihatsu_landing2_m1
+ObjectTemplate.setMaxRotation 0/180/0
+ObjectTemplate.setMaxSpeed 0/70/0
+ObjectTemplate.setAcceleration 0/10000/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setInputToPitch c_PIPitch
+
+
+rem *** DaihatsuGunnerPCO ***
+ObjectTemplate.create PlayerControlObject DaihatsuGunnerPCO
+ObjectTemplate.setNetworkableInfo DaihatsuBodyInfo
+ObjectTemplate.aiTemplate DaihatsuMG
+rem -------------------------------------
+ObjectTemplate.addTemplate DaihatsuMG42Base
+ObjectTemplate.setPosition 1/1.25/-3.1
+ObjectTemplate.addTemplate DaihatsuEntry
+ObjectTemplate.setPosition 0/0/0.5
+ObjectTemplate.addTemplate DaihatsuPassengerSeat
+ObjectTemplate.setPosition 1/1.2/-3.8
+rem -------------------------------------
+ObjectTemplate.setPcoId 1
+ObjectTemplate.setSoldierExitLocation 0/0.1/5 0/0/0
+ObjectTemplate.GUIIndex 105
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_dai-hatsu.tga"
+ObjectTemplate.setVehicleIconPos 38/55
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType  TTLcvp
+
+
+rem *** DaihatsuMG42Base ***
+ObjectTemplate.create RotationalBundle DaihatsuMG42Base
+ObjectTemplate.setNetworkableInfo DaihatsuTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.geometry tripod_stick_mg42_m1
+rem -------------------------------------
+ObjectTemplate.addTemplate DaihatsuMG42Rotation
+ObjectTemplate.setPosition 0/0.15/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -60/0/0
+ObjectTemplate.setMaxRotation 60/0/0
+ObjectTemplate.setMaxSpeed 90/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** DaihatsMG42Base ***
+ObjectTemplate.create RotationalBundle DaihatsuMG42Rotation
+ObjectTemplate.setNetworkableInfo DaihatsuTurretInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/SBDBrowningRotation.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate DaihatsuCamera_For_PCO1
+ObjectTemplate.setPosition 0/0.4/-0.399
+ObjectTemplate.addTemplate MG42
+ObjectTemplate.setPosition 0/0.0/0.1
+ObjectTemplate.addTemplate DaihatsuMG42Holder
+ObjectTemplate.setPosition 0/-0.09/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-40/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/90/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+ObjectTemplate.create SimpleObject DaihatsuMG42Holder
+ObjectTemplate.geometry tripod_stick_2_m1
+
+
+rem *** DaihatsuCamera_For_PCO1 ***
+ObjectTemplate.create Camera DaihatsuCamera_For_PCO1
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** DaihatsuSimple ***
+ObjectTemplate.create SimpleObject DaihatsuSimple
+ObjectTemplate.geometry Daihatsu_m1
+
+
+rem *** DaihatsuLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 DaihatsuLodSelector
+LodSelectorTemplate.addLodDistance 5000
+
+
+
+
+rem ************************************************************************
+rem ************************************************************************
+rem ************************************************************************
+
+ObjectTemplate.create AnimatedBundle DaihatsuHandDummy
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.6/0.35/0 0/180/0
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.3/0.0/-0.0 0/0/-90	
+
+ObjectTemplate.create AnimatedBundle DaihatsuHandDummy2
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.3/-0.0/0 0/180/90
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.6/0.35/0 0/0/-180
+
+rem
+rem *** Passanger ***
+rem
+ObjectTemplate.create PlayerControlObject DaihatsuPassangerPCO3
+ObjectTemplate.aiTemplate DaihatsuPassanger3
+ObjectTemplate.setSoldierExitLocation 0/-0.2/4 0/0/0
+ObjectTemplate.setNetworkableInfo DaihatsuPassengerInfo
+ObjectTemplate.GUIIndex 104
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_dai-hatsu.tga"
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory Sea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType  TTLcvp
+rem -------------------------------------
+ObjectTemplate.addTemplate DaihatsuPassangerEntry
+ObjectTemplate.setPosition 0/0.0/1
+ObjectTemplate.addTemplate DaihatsuPassangerCamera
+ObjectTemplate.setPosition 0/1.6/0
+ObjectTemplate.addTemplate DaihatsuPassengerSeat
+ObjectTemplate.setPosition 0/0.15/0
+ObjectTemplate.addTemplate DaihatsuHandDummy
+ObjectTemplate.setPosition 0/0/0
+rem ObjectTemplate.addTemplate usSoldier
+rem -------------------------------------
+
+rem
+rem *** Passanger ***
+rem
+ObjectTemplate.create PlayerControlObject DaihatsuPassangerPCO4
+ObjectTemplate.aiTemplate DaihatsuPassanger4
+ObjectTemplate.setSoldierExitLocation 0/-0.2/3 0/0/0
+ObjectTemplate.setNetworkableInfo DaihatsuPassengerInfo
+ObjectTemplate.GUIIndex 104
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_dai-hatsu.tga"
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory Sea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType  TTLcvp
+rem -------------------------------------
+ObjectTemplate.addTemplate DaihatsuPassangerEntry
+ObjectTemplate.setPosition 0/0.0/1
+ObjectTemplate.addTemplate DaihatsuPassangerCamera
+ObjectTemplate.setPosition 0/1.6/0
+ObjectTemplate.addTemplate DaihatsuPassengerSeat
+ObjectTemplate.setPosition 0/0.2/0
+ObjectTemplate.addTemplate DaihatsuHandDummy
+ObjectTemplate.setPosition 0/0/0
+rem ObjectTemplate.addTemplate usSoldier
+rem -------------------------------------
+
+rem
+rem *** Passanger ***
+rem
+ObjectTemplate.create PlayerControlObject DaihatsuPassangerPCO5
+ObjectTemplate.aiTemplate DaihatsuPassanger5
+ObjectTemplate.setSoldierExitLocation 0/-0.2/4 0/0/0
+ObjectTemplate.setNetworkableInfo DaihatsuPassengerInfo
+ObjectTemplate.GUIIndex 104
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_dai-hatsu.tga"
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory Sea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType  TTLcvp
+rem -------------------------------------
+ObjectTemplate.addTemplate DaihatsuPassangerEntry
+ObjectTemplate.setPosition 0/0.0/1
+ObjectTemplate.addTemplate DaihatsuPassangerCamera
+ObjectTemplate.setPosition 0/1.6/0
+ObjectTemplate.addTemplate DaihatsuPassengerSeat
+ObjectTemplate.setPosition 0/0.2/0
+ObjectTemplate.addTemplate DaihatsuHandDummy2
+ObjectTemplate.setPosition 0/0/0
+rem ObjectTemplate.addTemplate usSoldier
+rem -------------------------------------
+
+rem
+rem *** Passanger ***
+rem
+ObjectTemplate.create PlayerControlObject DaihatsuPassangerPCO6
+ObjectTemplate.aiTemplate DaihatsuPassanger6
+ObjectTemplate.setSoldierExitLocation 0/-0.2/3 0/0/0
+ObjectTemplate.setNetworkableInfo DaihatsuPassengerInfo
+ObjectTemplate.GUIIndex 104
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_dai-hatsu.tga"
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory Sea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType  TTLcvp
+rem -------------------------------------
+ObjectTemplate.addTemplate DaihatsuPassangerEntry
+ObjectTemplate.setPosition 0/0.0/1
+ObjectTemplate.addTemplate DaihatsuPassangerCamera
+ObjectTemplate.setPosition 0/1.6/0
+ObjectTemplate.addTemplate DaihatsuPassengerSeat
+ObjectTemplate.setPosition 0/0.2/0
+ObjectTemplate.addTemplate DaihatsuHandDummy2
+ObjectTemplate.setPosition 0/0/0
+rem ObjectTemplate.addTemplate usSoldier
+rem -------------------------------------
+
+rem
+rem *** DaihatsuPassengerSeat ***
+rem
+ObjectTemplate.create EntryPoint DaihatsuPassangerEntry
+ObjectTemplate.setEntryRadius 5
+
+rem
+rem *** DaihatsuPassengerSeat ***
+rem
+ObjectTemplate.create SeatObject DaihatsuPassengerSeat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+rem ObjectTemplate.addTemplate usSoldier
+
+rem
+rem *** DaihatsuPassangerCamera ***
+rem
+ObjectTemplate.create Camera DaihatsuPassangerCamera
+ObjectTemplate.setMinRotation -90/-80/0
+ObjectTemplate.setMaxRotation 90/80/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setInputToRoll c_PINone
+ObjectTemplate.setHasTarget 0
+
+rem ************************************************************************
+rem ************************************************************************

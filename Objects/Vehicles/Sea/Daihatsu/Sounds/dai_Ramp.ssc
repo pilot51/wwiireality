@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/dai_Ramp.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/dai_Ramp.ssc
+	
+#templateLevel LOW
+
+	#include Low/dai_Ramp.ssc

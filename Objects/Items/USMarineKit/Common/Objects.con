@@ -1,0 +1,24 @@
+ObjectTemplate.create KitPart UsMarine_Helmet
+ObjectTemplate.geometry UsMarine_Helmet
+ObjectTemplate.setBoneName A
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create KitPart UsMarine_Hip_Pack
+ObjectTemplate.geometry UsMarine_Hip_Pack
+ObjectTemplate.setBoneName HipPack
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create KitPart UsMarine_Eng_Backpack
+ObjectTemplate.geometry USMC_Eng_Backpack
+ObjectTemplate.setBoneName backpack
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create KitPart UsMarine_Backpack
+ObjectTemplate.geometry USMC_Backpack
+ObjectTemplate.setBoneName backpack
+ObjectTemplate.setCopyLinksCount 0
+
+ObjectTemplate.create KitPart UsMarine_Med_Backpack
+ObjectTemplate.geometry USMC_Med_Backpack
+ObjectTemplate.setBoneName backpack
+ObjectTemplate.setCopyLinksCount 0

@@ -1,0 +1,33 @@
+Game.setLocalized 1
+
+rem ** Allied Briefing **
+game.setAlliedCampaign BRIEFING_ALLIED_CAMPAIGN_GUADALCANAL
+game.setAlliedHints BRIEFING_ALLIED_HINTS_GUADALCANAL
+game.setAlliedObjectives BRIEFING_ALLIED_OBJECTIVES_GUADALCANAL
+game.setAlliedSkirmish BRIEFING_ALLIED_SKIRMISH_GUADALCANAL
+
+rem ** Axis Briefing **
+game.setAxisCampaign BRIEFING_AXIS_CAMPAIGN_GUADALCANAL
+game.setAxisHints BRIEFING_AXIS_HINTS_GUADALCANAL
+game.setAxisObjectives BRIEFING_AXIS_OBJECTIVES_GUADALCANAL
+game.setAxisSkirmish BRIEFING_AXIS_SKIRMISH_GUADALCANAL
+
+rem ** Allied Debriefing **
+game.setAlliedDebriefingMajorVictory DEBRIEFING_ALLIED_MAJOR_VICTORY_GUADALCANAL
+game.setAlliedDebriefingMinorVictory DEBRIEFING_ALLIED_MINOR_VICTORY_GUADALCANAL
+game.setAlliedDebriefingMajorDefeat DEBRIEFING_ALLIED_MAJOR_DEFEAT_GUADALCANAL
+game.setAlliedDebriefingMinorDefeat DEBRIEFING_ALLIED_MINOR_DEFEAT_GUADALCANAL
+
+rem ** Axis Debriefing **
+game.setAxisDebriefingMajorVictory DEBRIEFING_AXIS_MAJOR_VICTORY_GUADALCANAL
+game.setAxisDebriefingMinorVictory DEBRIEFING_AXIS_MINOR_VICTORY_GUADALCANAL
+game.setAxisDebriefingMajorDefeat DEBRIEFING_AXIS_MAJOR_DEFEAT_GUADALCANAL
+game.setAxisDebriefingMinorDefeat DEBRIEFING_AXIS_MINOR_DEFEAT_GUADALCANAL
+
+rem ** Multiplayer Briefing **
+game.setMultiplayerBriefingObjectives MULTIPLAYER_BRIEFING_GUADALCANAL
+game.setMultiplayerBriefingMapType MULTIPLAYER_MAP_TYPE_HEADON_MAP
+
+game.setLoadPicture Load/Pacific.tga
+game.setServerInfoIcon "serverInfo.dds"
+game.setMapId "WWIIReality"

@@ -1,0 +1,15 @@
+aiTemplatePlugIn.create Cover citymesh2_closedCover
+aiTemplatePlugIn.coverValue 60.0
+
+aiTemplatePlugIn.create Physical citymesh2_closedPhysical
+
+rem *** AITemplate ***
+aiTemplate.create citymesh2_closed
+aiTemplate.addType ITStructure
+aiTemplate.addType ITNoTemperature
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 5
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn citymesh2_closedCover
+aiTemplate.addPlugIn citymesh2_closedPhysical

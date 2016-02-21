@@ -1,0 +1,53 @@
+
+rem *** CorsairGunBarrel ***
+ObjectTemplate.create FireArms CorsairGuns
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/CorsairMG.ssc
+ObjectTemplate.aiTemplate CorsairMachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+rem -------------------------------------
+ObjectTemplate.projectileTemplate CorsairProjectile
+ObjectTemplate.projectilePosition 0/0/2
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/3/0/0
+ObjectTemplate.magSize 2340
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 930
+ObjectTemplate.roundOfFire 12
+ObjectTemplate.addFireArmsPosition 2.229/-0.245/2.6 -1.1/0/0
+ObjectTemplate.addFireArmsPosition -2.229/-0.245/2.6 1.1/0/0
+ObjectTemplate.addFireArmsPosition 2.360/-0.245/2.6 0/0/0
+ObjectTemplate.addFireArmsPosition -2.360/-0.245/2.6 0/0/0
+ObjectTemplate.addFireArmsPosition 2.100/-0.245/2.6 -2/0/0
+ObjectTemplate.addFireArmsPosition -2.100/-0.245/2.6 2/0/0
+ObjectTemplate.AmmoType 10
+
+
+rem *** CorsairProjectile ***
+ObjectTemplate.create Projectile CorsairProjectile
+ObjectTemplate.createNotInGrid 1
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/600/0/0
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.material 213
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1
+
+rem *** CorsairBombDummy ***
+ObjectTemplate.create FireArms CorsairBombDummy
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aitemplate CorsairBombs
+ObjectTemplate.projectileTemplate FighterBomb
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.visibleDummyProjectileTemplate DummyBigBomb
+ObjectTemplate.magSize 1
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.roundOfFire 0.2
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.addFireArmsPosition 0/-0.3/1 0/0/0
+ObjectTemplate.AmmoType 9

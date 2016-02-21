@@ -1,0 +1,9 @@
+NetworkableInfo.createNewInfo AichiVal_wing_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo AichiVal_engine_info
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo AichiVal_body_info
+NetworkableInfo.setPredictionMode PMLinear
+

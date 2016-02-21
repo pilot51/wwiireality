@@ -1,0 +1,51 @@
+GeometryTemplate.create StandardMesh M1Garand
+GeometryTemplate.file M1_Garand_base_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh M1GarandMagasin
+GeometryTemplate.file M1_Garand_mag_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh M1GarandClip
+GeometryTemplate.file M1_Garand_clip_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh M1Garandtrigger
+GeometryTemplate.file M1_Garand_trigger_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 30
+
+GeometryTemplate.create StandardMesh M1GarandReload
+GeometryTemplate.file M1_Garand_reload_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 30
+
+GeometryTemplate.create StandardMesh M1GarandPlupp
+GeometryTemplate.file M1_Garand_Plupp_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 30
+
+GeometryTemplate.create StandardMesh M1GarandSimple
+GeometryTemplate.file M1_Garand_base_L1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300

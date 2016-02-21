@@ -1,0 +1,33 @@
+Game.setLocalized 1
+
+rem ** Allied Briefing **
+game.setAlliedCampaign BRIEFING_ALLIED_CAMPAIGN_BATTLEAXE
+game.setAlliedHints BRIEFING_ALLIED_HINTS_BATTLEAXE
+game.setAlliedObjectives BRIEFING_ALLIED_OBJECTIVES_BATTLEAXE
+game.setAlliedSkirmish BRIEFING_ALLIED_SKIRMISH_BATTLEAXE
+
+rem ** Axis Briefing **
+game.setAxisCampaign BRIEFING_AXIS_CAMPAIGN_BATTLEAXE
+game.setAxisHints BRIEFING_AXIS_HINTS_BATTLEAXE
+game.setAxisObjectives BRIEFING_AXIS_OBJECTIVES_BATTLEAXE
+game.setAxisSkirmish BRIEFING_AXIS_SKIRMISH_BATTLEAXE
+
+rem ** Allied Debriefing **
+game.setAlliedDebriefingMajorVictory DEBRIEFING_ALLIED_MAJOR_VICTORY_BATTLEAXE
+game.setAlliedDebriefingMinorVictory DEBRIEFING_ALLIED_MINOR_VICTORY_BATTLEAXE
+game.setAlliedDebriefingMajorDefeat DEBRIEFING_ALLIED_MAJOR_DEFEAT_BATTLEAXE
+game.setAlliedDebriefingMinorDefeat DEBRIEFING_ALLIED_MINOR_DEFEAT_BATTLEAXE
+
+rem ** Axis Debriefing **
+game.setAxisDebriefingMajorVictory DEBRIEFING_AXIS_MAJOR_VICTORY_BATTLEAXE
+game.setAxisDebriefingMinorVictory DEBRIEFING_AXIS_MINOR_VICTORY_BATTLEAXE
+game.setAxisDebriefingMajorDefeat DEBRIEFING_AXIS_MAJOR_DEFEAT_BATTLEAXE
+game.setAxisDebriefingMinorDefeat DEBRIEFING_AXIS_MINOR_DEFEAT_BATTLEAXE
+
+rem ** Multiplayer Briefing **
+game.setMultiplayerBriefingObjectives MULTIPLAYER_BRIEFING_BATTLEAXE
+game.setMultiplayerBriefingMapType MULTIPLAYER_MAP_TYPE_HEADON_MAP
+
+game.setLoadPicture Load/Desert.tga
+game.setServerInfoIcon "serverInfo.dds"
+game.setMapId "WWIIReality"

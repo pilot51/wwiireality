@@ -1,0 +1,616 @@
+rem *** Ho-Ha ***
+ObjectTemplate.create PlayerControlObject Ho-Ha
+ObjectTemplate.NameTagOffset 0/-0.6/2
+ObjectTemplate.setNetworkableInfo HoHaInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.exitTimer 1
+ObjectTemplate.drag 2
+ObjectTemplate.mass 6500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 100
+ObjectTemplate.maxhitpoints 100
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 16
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 13
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 60 e_HoHaDamage 0/2/1.9
+ObjectTemplate.addArmorEffect 16 e_HoHaFire 0.05/0.7/2.5
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.timetoliveafterdeath 600
+ObjectTemplate.timeToStartFadeAfterDeath 570
+ObjectTemplate.aiTemplate Hanomag
+rem -------------------------------------
+ObjectTemplate.addTemplate lodHoHa
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.5/0/0 0/0/0
+ObjectTemplate.GUIIndex 59
+ObjectTemplate.setVehicleIcon "Vehicle/IconHoHa.tga"
+ObjectTemplate.setVehicleIconPos 90/75
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodHoHa ***
+ObjectTemplate.create LodObject lodHoHa
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaComplex
+ObjectTemplate.addTemplate HoHaSimple
+ObjectTemplate.addTemplate HoHaWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector HoHaLodSelector
+
+rem *** HoHaComplex ***
+ObjectTemplate.create Bundle HoHaComplex
+ObjectTemplate.loadSoundScript Sounds/HoHaTrack.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodHoHaCockpit
+ObjectTemplate.addTemplate HoHaDriverSeat
+ObjectTemplate.setPosition -0.429/0.3/1.1
+ObjectTemplate.addTemplate HoHaCamera
+ObjectTemplate.setPosition -0.414/0.85/1.15
+ObjectTemplate.addTemplate HoHa_MG42_PCO1
+ObjectTemplate.setPosition -0.376/-0.646/0.43
+ObjectTemplate.setRotation -80/0/0
+ObjectTemplate.addTemplate HoHa_MG42_PCO2
+ObjectTemplate.setPosition 0.376/-0.646/0.43
+ObjectTemplate.setRotation 80/0/0
+ObjectTemplate.addTemplate HoHa_Passanger_PCO2
+ObjectTemplate.setPosition -0.159/-0.398/0
+ObjectTemplate.addTemplate HoHa_Passanger_PCO3
+ObjectTemplate.setPosition 0.15/-0.398/0
+ObjectTemplate.addTemplate HoHa_Passanger_PCO4
+ObjectTemplate.setPosition -0.449/-0.398/0
+ObjectTemplate.addTemplate HoHaSupplyDepot
+ObjectTemplate.setPosition 0/0.484/-1.38
+ObjectTemplate.addTemplate HoHaVehicleSupplyDepot
+ObjectTemplate.setPosition 0/0.464/-1.999
+ObjectTemplate.addTemplate HoHaEntry
+ObjectTemplate.setPosition -1.849/-0.649/0.7
+ObjectTemplate.addTemplate HoHaEntry
+ObjectTemplate.setPosition 1.85/-0.649/0.7
+ObjectTemplate.addTemplate HoHaEntry
+ObjectTemplate.setPosition 0/-0.649/2.5
+ObjectTemplate.addTemplate HoHaEngine
+
+ObjectTemplate.addTemplate HoHaWheelFR
+ObjectTemplate.setPosition 0.59/0.305/2.472
+ObjectTemplate.addTemplate HoHaWheelFL
+ObjectTemplate.setPosition -0.589/0.305/2.472
+
+
+
+ObjectTemplate.addTemplate HoHaSteeringDummy
+ObjectTemplate.setPosition -0.429/0.455/1.58
+ObjectTemplate.setRotation 0.164/18.975/0.98
+
+
+rem *** HoHaSimple ***
+ObjectTemplate.create SimpleObject HoHaSimple
+ObjectTemplate.geometry HoHa_Hull_L1
+
+rem *** HoHaWreck ***
+ObjectTemplate.create SimpleObject HoHaWreck
+ObjectTemplate.geometry Wreck_HoHa_m1
+
+rem *** HoHaLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 HoHaLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 5000
+
+rem ****************************************************
+rem                Ho-Ha Cameras
+rem ****************************************************
+
+rem *** HoHaCamera ***
+ObjectTemplate.create Camera HoHaCamera
+ObjectTemplate.setMinRotation -90/-50/0
+ObjectTemplate.setMaxRotation 90/10/0
+ObjectTemplate.setMaxSpeed 180/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+rem *** HoHaCamera2 ***
+ObjectTemplate.create Camera HoHaCamera2
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMenuSelect3
+ObjectTemplate.setInputToPitch c_PIMenuSelect3
+ObjectTemplate.setInputToRoll c_PIMenuSelect3
+
+rem *** HoHaPassangerCamera ***
+ObjectTemplate.create Camera HoHaPassangerCamera
+ObjectTemplate.setMinRotation -90/-20/0
+ObjectTemplate.setMaxRotation 90/10/0
+ObjectTemplate.setMaxSpeed 180/180/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setInputToRoll c_PIMenuSelect3
+
+rem ****************************************************
+rem                Ho-Ha Cockpit
+rem ****************************************************
+
+rem *** lodHoHaCockpit ***
+ObjectTemplate.create LodObject lodHoHaCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaCockpitExternal
+ObjectTemplate.addTemplate HoHaCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector HoHacockpitSelector
+
+rem *** HoHaCockpitExternal ***
+ObjectTemplate.create SimpleObject HoHaCockpitExternal
+ObjectTemplate.geometry HoHa_Hull_M1
+
+rem *** HoHaCockpitInternal ***
+ObjectTemplate.create SimpleObject HoHaCockpitInternal
+ObjectTemplate.geometry HoHa_Cockpit_M1
+
+rem *** HoHacockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector HoHacockpitSelector
+LodSelectorTemplate.addLodDistance 4
+LodSelectorTemplate.addLodComparison 0.5
+
+rem ****************************************************
+rem                Ho-Ha EntryPoints
+rem ****************************************************
+
+rem *** HoHaEntry ***
+ObjectTemplate.create EntryPoint HoHaEntry
+ObjectTemplate.setEntryRadius 2.8
+
+rem *** HoHaEntry2 ***
+ObjectTemplate.create EntryPoint HoHaEntry2
+ObjectTemplate.setEntryRadius 2.3
+
+rem ****************************************************
+rem                Ho-Ha Gunners w/Objects
+rem ****************************************************
+
+rem *** HoHa_MG42_PCO1 ***
+ObjectTemplate.create PlayerControlObject HoHa_MG42_PCO1
+ObjectTemplate.NameTagOffset 0/0.60/0
+ObjectTemplate.setNetworkableInfo HoHaInfo
+ObjectTemplate.aiTemplate HanomagTopMG
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaEntry
+ObjectTemplate.setPosition 0/0/1.5
+ObjectTemplate.addTemplate HoHaEntry
+ObjectTemplate.setPosition 2.1/0/0
+ObjectTemplate.addTemplate HoHaMG42HolderPCO1
+ObjectTemplate.setPosition 0/1.39/0.475
+ObjectTemplate.addTemplate HoHaMG42Seat
+ObjectTemplate.setPosition 0/1.2/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/0/1.5 0/0/0
+ObjectTemplate.GUIIndex 60
+ObjectTemplate.setVehicleIcon "Vehicle/IconHoHa.tga"
+ObjectTemplate.setVehicleIconPos 85/67
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** HoHa_MG42_PCO2 ***
+ObjectTemplate.create PlayerControlObject HoHa_MG42_PCO2
+ObjectTemplate.NameTagOffset 0/0.60/0
+ObjectTemplate.setNetworkableInfo HoHaInfo
+ObjectTemplate.aiTemplate HanomagTopMG
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaEntry
+ObjectTemplate.setPosition 0/0/1.5
+ObjectTemplate.addTemplate HoHaEntry
+ObjectTemplate.setPosition -2.099/0/0
+ObjectTemplate.addTemplate HoHaMG42HolderPCO2
+ObjectTemplate.setPosition 0/1.39/0.475
+ObjectTemplate.addTemplate HoHaMG42Seat
+ObjectTemplate.setPosition 0/1.2/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 0/0/1.5 0/0/0
+ObjectTemplate.GUIIndex 60
+ObjectTemplate.setVehicleIcon "Vehicle/IconHoHa.tga"
+ObjectTemplate.setVehicleIconPos 57/80
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** HoHaMG42HolderPCO1 ***
+ObjectTemplate.create RotationalBundle HoHaMG42HolderPCO1
+ObjectTemplate.setNetworkableInfo HoHaInfo
+ObjectTemplate.loadSoundScript Sounds/HoHaTurret.ssc
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaRotation_MG42
+rem -------------------------------------
+ObjectTemplate.setMinRotation -90/0/0
+ObjectTemplate.setMaxRotation 75/0/0
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setAutomaticYawStabilization 1
+
+rem *** HoHaMG42HolderPCO2 ***
+ObjectTemplate.create RotationalBundle HoHaMG42HolderPCO2
+ObjectTemplate.setNetworkableInfo HoHaInfo
+ObjectTemplate.loadSoundScript Sounds/HoHaTurret.ssc
+ObjectTemplate.hasCollisionPhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaRotation_MG42
+rem -------------------------------------
+ObjectTemplate.setMinRotation -75/0/0
+ObjectTemplate.setMaxRotation 90/0/0
+ObjectTemplate.setMaxSpeed 80/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setAutomaticYawStabilization 1
+
+rem *** HoHaGunMount ***
+ObjectTemplate.create SimpleObject HoHaGunMount
+ObjectTemplate.geometry Chi-ha_MGun_mount_M1
+
+rem *** HoHaRotation_MG42 ***
+ObjectTemplate.create RotationalBundle HoHaRotation_MG42
+ObjectTemplate.setNetworkableInfo HoHaInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaGunMount
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate MG42
+ObjectTemplate.setPosition 0/0.06/0.141
+ObjectTemplate.addTemplate HoHaCamera2
+ObjectTemplate.setPosition 0/0.35/-0.129
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-45/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/80/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setAutomaticPitchStabilization 1
+
+rem ****************************************************
+rem                Ho-Ha Passengers
+rem ****************************************************
+
+rem *** HoHa_Passanger_PCO2 ***
+ObjectTemplate.create PlayerControlObject HoHa_Passanger_PCO2
+ObjectTemplate.NameTagOffset 0/-0.2/-1
+ObjectTemplate.setNetworkableInfo HoHaPassengerInfo
+ObjectTemplate.aiTemplate HanomagPassenger3
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaEntry2
+ObjectTemplate.setPosition 0/0/-2.599
+ObjectTemplate.addTemplate HoHaPassangerCamera
+ObjectTemplate.setPosition -0.359/1.01/-0.199
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate HoHaPassangerSeat
+ObjectTemplate.setPosition -0.299/1/-0.199
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.9/0.3/-1.5 180/0/0
+ObjectTemplate.GUIIndex 61
+ObjectTemplate.setVehicleIcon "Vehicle/IconHoHa.tga"
+ObjectTemplate.setVehicleIconPos 70/60
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** HoHa_Passanger_PCO3 ***
+ObjectTemplate.create PlayerControlObject HoHa_Passanger_PCO3
+ObjectTemplate.NameTagOffset 0/-0.4/-1
+ObjectTemplate.setNetworkableInfo HoHaPassengerInfo
+ObjectTemplate.aiTemplate HanomagPassenger4
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaEntry2
+ObjectTemplate.setPosition -0.299/0/-2.599
+ObjectTemplate.addTemplate HoHaPassangerCamera
+ObjectTemplate.setPosition 0.36/1.01/-0.699
+ObjectTemplate.setRotation -89.999/0/0
+ObjectTemplate.addTemplate HoHaPassangerSeat
+ObjectTemplate.setPosition 0.3/1/-0.699
+ObjectTemplate.setRotation -89.999/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.9/0.3/-1.5 180/0/0
+ObjectTemplate.GUIIndex 62
+ObjectTemplate.setVehicleIcon "Vehicle/IconHoHa.tga"
+ObjectTemplate.setVehicleIconPos 40/60
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** HoHa_Passanger_PCO4 ***
+ObjectTemplate.create PlayerControlObject HoHa_Passanger_PCO4
+ObjectTemplate.NameTagOffset 0/-0.6/-1
+ObjectTemplate.setNetworkableInfo HoHaPassengerInfo
+ObjectTemplate.aiTemplate HanomagPassenger5
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaEntry2
+ObjectTemplate.setPosition 0.3/0/-2.599
+ObjectTemplate.addTemplate HoHaPassangerCamera
+ObjectTemplate.setPosition 0/1.01/-1.199
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate HoHaPassangerSeat
+ObjectTemplate.setPosition 0/1/-1.199
+ObjectTemplate.setRotation 90/0/0
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.9/0.3/-1.5 180/0/0
+ObjectTemplate.GUIIndex 63
+ObjectTemplate.setVehicleIcon "Vehicle/IconHoHa.tga"
+ObjectTemplate.setVehicleIconPos 50/49
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTApc
+ObjectTemplate.setToolTipType  TTApc
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_apc_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem ****************************************************
+rem                Ho-Ha SeatObjects
+rem ****************************************************
+
+rem *** HoHaDriverSeat ***
+ObjectTemplate.create SeatObject HoHaDriverSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem *** HoHaMG42Seat ***
+ObjectTemplate.create SeatObject HoHaMG42Seat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+rem *** HoHaPassangerSeat ***
+ObjectTemplate.create SeatObject HoHaPassangerSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatAnimationUpperBody Ub_PassengerInHanomag
+ObjectTemplate.seatAnimationLowerBody Lb_PassengerInHanomag
+
+rem ****************************************************
+rem                 Ho-Ha SteeringWheel
+rem ****************************************************
+
+rem *** HoHaSteeringDummy ***
+ObjectTemplate.create AnimatedBundle HoHaSteeringDummy
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaSteering
+
+
+rem *** HoHaSteering ***
+ObjectTemplate.create RotationalBundle HoHaSteering
+ObjectTemplate.setNetworkableInfo HoHaSteeringInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate lodHoHaSteering
+ObjectTemplate.addTemplate HoHaSteeringRHand
+ObjectTemplate.setPosition 0.1/0/-0.199
+ObjectTemplate.setRotation 87.583/32.098/101.911
+ObjectTemplate.addTemplate HoHaSteeringLHand
+ObjectTemplate.setPosition -0.149/0/-0.189
+ObjectTemplate.setRotation 116.92/-29.323/104.627
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-60
+ObjectTemplate.setMaxRotation 0/0/60
+ObjectTemplate.setMaxSpeed 0/0/180
+ObjectTemplate.setAcceleration 0/0/-180
+ObjectTemplate.setInputToRoll c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** lodHoHaSteering ***
+ObjectTemplate.create LodObject lodHoHaSteering
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaHighRSteering
+rem Additional offset because of the long steering column
+ObjectTemplate.setPosition 0/0/0.6
+ObjectTemplate.addTemplate HoHaLowSteering
+rem -------------------------------------
+ObjectTemplate.lodSelector HoHaSteeringSelector
+
+rem *** HoHaSteeringRHand ***
+ObjectTemplate.create AnimatedBundle HoHaSteeringRHand
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0/0/0 0/0/0
+
+rem *** HoHaSteeringLHand ***
+ObjectTemplate.create AnimatedBundle HoHaSteeringLHand
+ObjectTemplate.addSkeletonIK Bip01_L_Hand 0/0/0 0/0/0
+
+rem *** HoHaHighRSteering ***
+ObjectTemplate.create SimpleObject HoHaHighRSteering
+ObjectTemplate.geometry 1P_HoHa_Str_M1
+
+rem *** HoHaLowSteering ***
+ObjectTemplate.create SimpleObject HoHaLowSteering
+ObjectTemplate.geometry HoHa_Steering_M1
+
+rem *** HoHaSteeringSelector ***
+LodSelectorTemplate.create DistanceSelector HoHaSteeringSelector
+LodSelectorTemplate.addLodDistance 1
+
+rem ****************************************************
+rem                 Ho-Ha SupplyDepots
+rem ****************************************************
+
+rem *** HoHaSupplyDepot ***
+ObjectTemplate.create SupplyDepot HoHaSupplyDepot
+ObjectTemplate.radius 1.4
+ObjectTemplate.team 0
+ObjectTemplate.setHealth -1 4.0 0
+ObjectTemplate.addAmmoType 1 -1 15 0
+ObjectTemplate.addAmmoType 2 -1 1.2 0
+ObjectTemplate.addAmmoType 3 -1 1.2 0
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
+
+rem *** HoHaVehicleSupplyDepot ***
+ObjectTemplate.create SupplyDepot HoHaVehicleSupplyDepot
+ObjectTemplate.radius 20
+ObjectTemplate.team 1
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 0 -1 20 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/SupplyDepot.ssc
+
+rem ****************************************************
+rem              Ho-Ha Tires/Track Wheels
+rem ****************************************************
+
+rem *** HoHa_SmallWheel ***
+ObjectTemplate.create SimpleObject HoHa_SmallWheel
+ObjectTemplate.geometry HoHa_SmallWheel_M1
+ObjectTemplate.hasCollisionPhysics 1
+
+rem *** HoHaWheelFR ***
+ObjectTemplate.create RotationalBundle HoHaWheelFR
+ObjectTemplate.setNetworkableInfo HoHaInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaWheelFRSpring
+ObjectTemplate.setPosition 0.236/-0.799/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 240/0/0
+ObjectTemplate.setAcceleration 120/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem *** HoHaWheelFL ***
+ObjectTemplate.create RotationalBundle HoHaWheelFL
+ObjectTemplate.setNetworkableInfo HoHaInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHaWheelFLSpring
+ObjectTemplate.setPosition -0.236/-0.799/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 240/0/0
+ObjectTemplate.setAcceleration 120/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+rem ****************************************************
+rem                  Ho-Ha Tracks
+rem ****************************************************
+
+rem *** HoHa_TrackL_M1 ***
+ObjectTemplate.create AnimatedBundle HoHa_TrackL
+ObjectTemplate.geometry HoHa_TrackL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/HoHa_TrackL_M1.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.012/0
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHa_MediumWheel
+ObjectTemplate.setPosition -0.719/0.511/1.7
+ObjectTemplate.useAsBone 0/-0.04/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate HoHa_LargeWheel
+ObjectTemplate.setPosition -0.719/0.258/1.151
+ObjectTemplate.useAsBone 0/-0.04/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate HoHa_LargeWheel_Dummy
+ObjectTemplate.setPosition -0.719/0.258/0.518
+ObjectTemplate.useAsBone 0/-0.04/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate HoHa_SmallWheel
+ObjectTemplate.setPosition -0.719/0.601/0.04
+ObjectTemplate.addTemplate HoHa_LargeWheel
+ObjectTemplate.setPosition -0.719/0.258/-0.418
+ObjectTemplate.useAsBone 0/-0.04/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate HoHa_LargeWheel_Dummy
+ObjectTemplate.setPosition -0.719/0.258/-1.048
+ObjectTemplate.useAsBone 0/-0.04/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate HoHa_MediumWheel
+ObjectTemplate.setPosition -0.719/0.511/-1.649
+ObjectTemplate.useAsBone 0/-0.04/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+beginrem
+	ObjectTemplate.setCheckBoneDistance 0.5
+	ObjectTemplate.buildSkeleton animations/HoHa_TrackL_M1.ske
+	ObjectTemplate.buildSkin HoHa_TrackL_M1 animations/HoHa_TrackL_M1.skn
+endrem
+
+rem *** HoHa_TrackR_M1 ***
+ObjectTemplate.create AnimatedBundle HoHa_TrackR
+ObjectTemplate.geometry HoHa_TrackR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.createSkeleton animations/HoHa_TrackR_M1.ske
+ObjectTemplate.setAnimatedTextureSpeed -0.012/0
+rem -------------------------------------
+ObjectTemplate.addTemplate HoHa_MediumWheel
+ObjectTemplate.setPosition 0.719/0.511/1.7
+ObjectTemplate.useAsBone 0/-0.04/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate HoHa_LargeWheel
+ObjectTemplate.setPosition 0.719/0.258/1.151
+ObjectTemplate.useAsBone 0/-0.04/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate HoHa_LargeWheel_Dummy
+ObjectTemplate.setPosition 0.719/0.258/0.518
+ObjectTemplate.useAsBone 0/-0.04/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate HoHa_SmallWheel
+ObjectTemplate.setPosition 0.719/0.601/0.04
+ObjectTemplate.addTemplate HoHa_LargeWheel
+ObjectTemplate.setPosition 0.719/0.258/-0.418
+ObjectTemplate.useAsBone 0/-0.04/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate HoHa_LargeWheel_Dummy
+ObjectTemplate.setPosition 0.719/0.258/-1.048
+ObjectTemplate.useAsBone 0/-0.04/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+ObjectTemplate.addTemplate HoHa_MediumWheel
+ObjectTemplate.setPosition 0.719/0.511/-1.649
+ObjectTemplate.useAsBone 0/-0.04/0
+ObjectTemplate.setBoneOriginOffset 0/0/0
+beginrem
+	ObjectTemplate.setCheckBoneDistance 0.5
+	ObjectTemplate.buildSkeleton animations/HoHa_TrackR_M1.ske
+	ObjectTemplate.buildSkin HoHa_TrackR_M1 animations/HoHa_TrackR_M1.skn
+endrem

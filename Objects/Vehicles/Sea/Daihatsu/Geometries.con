@@ -1,0 +1,35 @@
+renderer.beginGlobalCluster Daihatsu
+
+GeometryTemplate.create StandardMesh Daihatsu_m1
+GeometryTemplate.file Dai-hatsu_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Daihatsu_propeller_m1
+GeometryTemplate.file Dai-hatsu_propeller_m1
+geometryTemplate.cullFactor 0.2
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Daihatsu_rodder_m1
+GeometryTemplate.file Dai-hatsu_rodder_m1
+geometryTemplate.cullFactor 0.2
+GeometryTemplate.setLodDistance 0 0
+
+BeginRem
+GeometryTemplate.create StandardMesh Daihatsu_wires_m1
+GeometryTemplate.file Dai-hatsu_wires_m1
+geometryTemplate.cullFactor 0.2
+GeometryTemplate.setLodDistance 0 0
+EndRem
+GeometryTemplate.create StandardMesh Daihatsu_landing1_m1
+GeometryTemplate.file Dai-hatsu_landing1_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Daihatsu_landing2_m1
+GeometryTemplate.file Dai-hatsu_landing1_landing2_m1
+GeometryTemplate.setLodDistance 0 0
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh 1p_dai-hatsu_m1
+GeometryTemplate.file 1p_dai-hatsu_m1
+GeometryTemplate.setLodDistance 0 0

@@ -1,0 +1,240 @@
+ObjectTemplate.create Wing B17AirbreakR
+ObjectTemplate.setNetworkableInfo B17WingInfo
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/3/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -3/0.4/1
+ObjectTemplate.setFlapLift 1.0
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 3.0
+
+ObjectTemplate.create Wing B17AirbreakL
+ObjectTemplate.setNetworkableInfo B17WingInfo
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/3/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 3/0.4/1
+ObjectTemplate.setFlapLift 1.0
+ObjectTemplate.setRegulateToLift 4.91
+ObjectTemplate.setWingToRegulatorRatio 3.0
+
+rem *** B17_Body_Wing ***
+ObjectTemplate.create Wing B17_Body_Wing
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 2
+
+rem *** B17_Rudder_Front1 ***
+ObjectTemplate.create Wing B17_Rudder_Front1
+ObjectTemplate.setNetworkableInfo B17WingInfo
+ObjectTemplate.geometry B17_Rud1_Fro_M1
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/120/0
+ObjectTemplate.setAcceleration 0/-120/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset 4/0/0
+ObjectTemplate.setWingLift 1.8
+ObjectTemplate.setFlapLift 1.2
+
+
+rem *** B17_Rudder_Front2 ***
+ObjectTemplate.create Wing B17_Rudder_Front2
+ObjectTemplate.setNetworkableInfo B17WingInfo
+ObjectTemplate.geometry B17_Rud2_Fro_M1
+ObjectTemplate.setMinRotation 0/-30/0
+ObjectTemplate.setMaxRotation 0/30/0
+ObjectTemplate.setMaxSpeed 0/120/0
+ObjectTemplate.setAcceleration 0/120/0
+ObjectTemplate.setInputToPitch c_PIRoll
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPitchOffset 0.5
+ObjectTemplate.setPositionOffset -4/0/0
+ObjectTemplate.setWingLift 1.8
+ObjectTemplate.setFlapLift 1.2
+
+
+rem *** B17_Rudder_Back3 ***
+ObjectTemplate.create Wing B17_Rudder_Back3
+ObjectTemplate.setNetworkableInfo B17WingInfo
+ObjectTemplate.geometry B17_Rud3_Bac_M1
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/50/0
+ObjectTemplate.setAcceleration 0/-50/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 0.4
+
+
+rem *** B17_Rudder_Back4 ***
+ObjectTemplate.create Wing B17_Rudder_Back4
+ObjectTemplate.setNetworkableInfo B17WingInfo
+ObjectTemplate.geometry B17_Rud4_Bac_M1
+ObjectTemplate.setMinRotation 0/-10/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/50/0
+ObjectTemplate.setAcceleration 0/-50/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.rememberExcessInput 1
+ObjectTemplate.setWingLift 0.5
+ObjectTemplate.setFlapLift 0.4
+
+
+rem *** B17_Rudder_Back5 ***
+ObjectTemplate.create Wing B17_Rudder_Back5
+ObjectTemplate.setNetworkableInfo B17WingInfo
+ObjectTemplate.geometry B17_Rud5_Bac_M1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/60/0
+ObjectTemplate.setAcceleration 0/60/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 1.5
+ObjectTemplate.setFlapLift 1
+
+
+rem *** B17_Engine1 ***
+ObjectTemplate.create Engine B17_Engine1
+ObjectTemplate.setNetworkableInfo B17EngineInfo
+ObjectTemplate.loadSoundScript Sounds/B17Engine1.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodB17Propeller
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-3000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/600
+ObjectTemplate.setAcceleration 0/0/1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 2.6
+ObjectTemplate.setDifferential 1.9
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 70
+
+
+rem *** B17_Engine2 ***
+ObjectTemplate.create Engine B17_Engine2
+ObjectTemplate.setNetworkableInfo B17EngineInfo
+ObjectTemplate.loadSoundScript Sounds/B17Engine2.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodB17Propeller
+ObjectTemplate.addTemplate B17_Gear_Front1
+ObjectTemplate.setPosition 0.28/-0.01/-3.889
+ObjectTemplate.addTemplate B17_Gear_Front2
+ObjectTemplate.setPosition 5.8/-0.01/-3.889
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-3000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 0/0/1100
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 2.6
+ObjectTemplate.setDifferential 1.9
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 70
+
+
+rem *** B17_Wheel_Front2 ***
+ObjectTemplate.create Spring B17_Wheel_Front2
+ObjectTemplate.geometry B17_Whe_Fro_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 15
+ObjectTemplate.setDamping 7.5
+
+
+rem *** B17_Engine3 ***
+ObjectTemplate.create Engine B17_Engine3
+ObjectTemplate.setNetworkableInfo B17EngineInfo
+ObjectTemplate.loadSoundScript Sounds/B17Engine3.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodB17Propeller
+ObjectTemplate.addTemplate B17_Gear_Back1
+ObjectTemplate.setPosition -2.929/0.384/-14.641
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-3000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/600
+ObjectTemplate.setAcceleration 0/0/900
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 2.6
+ObjectTemplate.setDifferential 1.9
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 120
+
+
+rem *** B17_Wheel_Front1 ***
+ObjectTemplate.create Spring B17_Wheel_Front1
+ObjectTemplate.geometry B17_Whe_Fro_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_WaterTouchPlane
+ObjectTemplate.addTemplate e_wdustPlane
+ObjectTemplate.addTemplate e_wdustPlaneL
+rem -------------------------------------
+ObjectTemplate.setStrength 15
+ObjectTemplate.setDamping 7.5
+
+
+rem *** B17_Wheel_Back1 ***
+ObjectTemplate.create Spring B17_Wheel_Back1
+ObjectTemplate.geometry B17_Whe_Bac_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFRollGripWhenOccupied
+ObjectTemplate.setStrength 15
+ObjectTemplate.setDamping 7.5
+
+
+rem *** B17_Engine4 ***
+ObjectTemplate.create Engine B17_Engine4
+ObjectTemplate.setNetworkableInfo B17EngineInfo
+ObjectTemplate.loadSoundScript Sounds/B17Engine4.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate lodB17Propeller
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-3000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/500
+ObjectTemplate.setAcceleration 0/0/1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETPlane
+ObjectTemplate.setTorque 2.6
+ObjectTemplate.setDifferential 1.9
+ObjectTemplate.setGearUp 0.7
+ObjectTemplate.setGearDown 0.3
+ObjectTemplate.setNoPropellerEffectAtSpeed 120

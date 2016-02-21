@@ -1,0 +1,82 @@
+renderer.beginGlobalCluster Zero
+GeometryTemplate.create StandardMesh zero_fus_m1
+GeometryTemplate.file zero_fus_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_landinggear_back_m1
+GeometryTemplate.file zero_landinggear_back_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_landinggear_left_m1
+GeometryTemplate.file zero_landinggear_left_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_landinggear_right_m1
+GeometryTemplate.file zero_landinggear_right_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_canopy_m1
+GeometryTemplate.file zero_canopy_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_flap_left_lo_m1
+GeometryTemplate.file zero_flap_left_lo_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_flap_left_up_m1
+GeometryTemplate.file zero_flap_left_up_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_flap_right_lo_m1
+GeometryTemplate.file zero_flap_right_lo_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_flap_right_up_m1
+GeometryTemplate.file zero_flap_right_up_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_tail_mid_m1
+GeometryTemplate.file zero_tail_mid_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_tailflap_left_m1
+GeometryTemplate.file zero_tailflap_left_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_tailflap_right_m1
+GeometryTemplate.file zero_tailflap_right_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_wheel_back_m1
+GeometryTemplate.file zero_wheel_back_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_wheel_left_m1
+GeometryTemplate.file zero_wheel_left_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_wheel_right_m1
+GeometryTemplate.file zero_wheel_right_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_prop_m1
+GeometryTemplate.file zero_prop_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh zero_propblur_m1
+GeometryTemplate.alphaLodDistance 750
+GeometryTemplate.file zero_propblur_m1
+
+GeometryTemplate.create StandardMesh 1P_Zero_M1
+GeometryTemplate.file 1P_Zero_m1
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh zero_fus_L1
+GeometryTemplate.file zero_fus_L1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Wreck_Zero_m1
+GeometryTemplate.file Wreck_Zero_m1
+GeometryTemplate.setLodDistance 0 0

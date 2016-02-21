@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject Bridge_Small_M1
+ObjectTemplate.aiTemplate Bridge_Small_M1
+ObjectTemplate.geometry Bridge_Small_M1
+ObjectTemplate.setHasCollisionPhysics 1

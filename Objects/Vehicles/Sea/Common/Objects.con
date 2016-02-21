@@ -1,0 +1,140 @@
+
+ObjectTemplate.create SonarObject SubmarineSonar
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.detectionRadius 400.0
+ObjectTemplate.scanForEnemySonars c_True
+ObjectTemplate.loadSoundScript Sounds/sonarsub.ssc
+
+ObjectTemplate.create SonarObject DestroyerSonar
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.detectionRadius 400.0
+ObjectTemplate.loadSoundScript Sounds/sonardest.ssc
+
+rem ***
+rem *** ClimbingNet_6m
+rem ***
+ObjectTemplate.create SimpleObject ClimbingNet_6m
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+ObjectTemplate.addToCollisionGroup c_CGProjectiles
+ObjectTemplate.geometry climbnet_6m_m1
+ObjectTemplate.saveInSeparateFile 1
+
+rem ***
+rem *** ClimbingNet_6m
+rem ***
+ObjectTemplate.create SimpleObject ClimbingNet_6mx11m
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+ObjectTemplate.addToCollisionGroup c_CGProjectiles
+ObjectTemplate.geometry climbnet_6mx11m_m1
+ObjectTemplate.saveInSeparateFile 1
+
+rem ***
+rem *** ClimbingNet_3m
+rem ***
+ObjectTemplate.create SimpleObject ClimbingNet_3m
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+ObjectTemplate.addToCollisionGroup c_CGProjectiles
+ObjectTemplate.geometry climbnet_3m_m1
+ObjectTemplate.saveInSeparateFile 1
+
+rem ***
+rem *** ClimbingNet_3m
+rem ***
+ObjectTemplate.create SimpleObject ClimbingNet_3mx4m
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+ObjectTemplate.addToCollisionGroup c_CGProjectiles
+ObjectTemplate.geometry climbnet_3mx4m_m1
+ObjectTemplate.saveInSeparateFile 1
+
+rem
+rem *** lodShipCockpit
+rem
+LodSelectorTemplate.create DistCompareSelector ShipCockpitLodSelector
+LodSelectorTemplate.addLodComparison 0.5
+LodSelectorTemplate.addLodDistance 200
+ObjectTemplate.create LodObject lodShipCockpit
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.lodselector ShipCockpitLodSelector
+ObjectTemplate.addTemplate ShipCockpitDummy
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate ShipCockpit
+ObjectTemplate.setPosition 0/0/0
+
+
+LodSelectorTemplate.create DistanceSelector ShipCockpitLodSelector2
+rem LodSelectorTemplate.addLodComparison 0.5
+LodSelectorTemplate.addLodDistance 3
+ObjectTemplate.create LodObject lodShipCockpit2
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.lodselector ShipCockpitLodSelector2
+ObjectTemplate.addTemplate ShipCockpit
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate ShipCockpitDummy
+ObjectTemplate.setPosition 0/0/0
+
+
+ObjectTemplate.create SimpleObject ShipCockpitDummy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.create SimpleObject ShipCockpit
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry 1p_shipgun_m1
+
+
+rem *** ShipLadder03 ***
+ObjectTemplate.create SimpleObject ShipLadder03
+ObjectTemplate.geometry Ship_lad_03_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+
+rem *** ShipLadder02 ***
+ObjectTemplate.create SimpleObject ShipLadder02
+ObjectTemplate.geometry Ship_lad_02_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+
+rem *** ShipLadder01 ***
+ObjectTemplate.create SimpleObject ShipLadder01
+ObjectTemplate.geometry Ship_lad_01_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+
+rem *** ShipLadder04 ***
+ObjectTemplate.create SimpleObject ShipLadder04
+ObjectTemplate.geometry Ship_lad_04_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+
+ObjectTemplate.create SimpleObject ShipStair01
+ObjectTemplate.geometry shokaku_sta_01_m1
+ObjectTemplate.hasCollisionPhysics 1
+
+ObjectTemplate.create Bundle ShipMedicBox
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry ship_medicbox_m1
+rem ObjectTemplate.aiTemplate mediclocker_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ShipMedicBoxRepairpoint
+ObjectTemplate.setPosition 0/0/0.5
+rem -------------------------------------
+
+ObjectTemplate.create SupplyDepot ShipMedicBoxRepairpoint
+ObjectTemplate.radius 2
+ObjectTemplate.team 0
+ObjectTemplate.workOnVehicles 0
+ObjectTemplate.workOnSoldiers 1
+ObjectTemplate.setHealth -1 4.0 0
+

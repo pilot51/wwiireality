@@ -1,0 +1,109 @@
+renderer.beginGlobalCluster Mustang
+GeometryTemplate.create StandardMesh Mustang_whe1_M1
+GeometryTemplate.file Mustang_whe1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_whe2_M1
+GeometryTemplate.file Mustang_whe2_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_hat6_M1
+GeometryTemplate.file Mustang_hat6_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_hat4_M1
+GeometryTemplate.file Mustang_hat4_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_hat5_M1
+GeometryTemplate.file Mustang_hat5_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_hat2_M1
+GeometryTemplate.file Mustang_hat2_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_hat3_M1
+GeometryTemplate.file Mustang_hat3_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_rud5_M1
+GeometryTemplate.file Mustang_rud5_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_hat1_M1
+GeometryTemplate.file Mustang_hat1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_rud2_M1
+GeometryTemplate.file Mustang_rud2_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_rud3_M1
+GeometryTemplate.file Mustang_rud3_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_rud4_M1
+GeometryTemplate.file Mustang_rud4_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_fus1_M1
+GeometryTemplate.file Mustang_fus1_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1P_Mustang_M1
+GeometryTemplate.file 1P_Mustang_M1
+
+GeometryTemplate.create StandardMesh Mustang_can1_M1
+GeometryTemplate.file Mustang_can1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_prp1
+GeometryTemplate.file Mustang_prp1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_prp2
+GeometryTemplate.file Mustang_prp1_M2
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh Mustang_gea1_M1
+GeometryTemplate.file Mustang_gea1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_gea2_M1
+GeometryTemplate.file Mustang_gea2_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_gea3_M1
+GeometryTemplate.file Mustang_gea3_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_flp1_M1
+GeometryTemplate.file Mustang_flp1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_flp2_M1
+GeometryTemplate.file Mustang_flp2_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_rud1_M1
+GeometryTemplate.file Mustang_rud1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_FrontGear_L_M1
+GeometryTemplate.file Mustang_FrontGear_L_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Mustang_FrontGear_R_M1
+GeometryTemplate.file Mustang_FrontGear_R_M1
+GeometryTemplate.setLodDistance 0 0
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh Mustang_fus1_L1
+GeometryTemplate.file Mustang_fus1_L1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Wreck_Mustang1_m1
+GeometryTemplate.file Wreck_Mustang1_m1
+GeometryTemplate.setLodDistance 0 0

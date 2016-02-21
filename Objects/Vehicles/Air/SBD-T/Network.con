@@ -1,0 +1,14 @@
+NetworkableInfo.createNewInfo SBD-TWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SBD-TEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SBD-TBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SBD-TTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+

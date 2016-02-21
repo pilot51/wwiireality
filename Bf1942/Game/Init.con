@@ -1,0 +1,11 @@
+Console.setAccess c_fullAccess
+
+run Init/Menu
+run globalSpawnGroups
+
+console.showFps 0
+
+physics.gravity -9.81
+
+game.setMinorVictory 0.40
+game.setMajorVictory 0.80

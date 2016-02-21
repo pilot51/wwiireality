@@ -1,0 +1,10 @@
+ObjectTemplate.create Bundle citymesh3_m1
+ObjectTemplate.geometry citymesh3_m1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate citymesh3
+ObjectTemplate.addTemplate citymesh3fence_M1
+
+ObjectTemplate.create SimpleObject citymesh3fence_M1
+ObjectTemplate.geometry citymesh3fence_M1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addToCollisionGroup c_CGProjectiles

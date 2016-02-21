@@ -1,0 +1,104 @@
+
+
+rem *** GatoEngine ***
+ObjectTemplate.create Engine GatoEngine
+ObjectTemplate.setNetworkableInfo GatoEngineInfo
+ObjectTemplate.loadSoundScript Sounds/GatoEngine.ssc
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 2
+ObjectTemplate.setDifferential 1
+ObjectTemplate.setNoPropellerEffectAtSpeed 120
+
+
+rem *** GatoRudder ***
+ObjectTemplate.create Wing GatoRudder
+ObjectTemplate.setNetworkableInfo GatoEngineInfo
+ObjectTemplate.setMinRotation 0/-20/0
+ObjectTemplate.setMaxRotation 0/20/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/9/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 1.5
+
+
+rem *** GatoHullWing ***
+ObjectTemplate.create Wing GatoHullWing
+ObjectTemplate.setNetworkableInfo GatoEngineInfo
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-9/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 1.5
+
+
+rem *** GatoRudderFrontL ***
+ObjectTemplate.create Wing GatoRudderFrontL
+ObjectTemplate.setNetworkableInfo GatoEngineInfo
+ObjectTemplate.geometry Gato_Depthrod01_m1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/9/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 0.025
+
+
+rem *** GatoRudderFrontR ***
+ObjectTemplate.create Wing GatoRudderFrontR
+ObjectTemplate.setNetworkableInfo GatoEngineInfo
+ObjectTemplate.geometry Gato_Depthrod02_m1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/9/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 0.025
+
+
+rem *** GatoRudderBackUD ***
+ObjectTemplate.create Wing GatoRudderBackUD
+ObjectTemplate.setNetworkableInfo GatoEngineInfo
+ObjectTemplate.geometry Gato_Stabilizer_m1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-9/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 0.08
+
+
+rem *** GatoFloater ***
+ObjectTemplate.create FloatingBundle GatoFloater
+ObjectTemplate.setNetworkableInfo GatoEngineInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/50/0
+ObjectTemplate.setMaxSpeed 0/2/0
+ObjectTemplate.setAcceleration 0/1/0
+ObjectTemplate.setInputToPitch c_PIPitch
+rem ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setHullHeight 3.3
+ObjectTemplate.setFloatMaxLift 1.6275
+ObjectTemplate.setFloatMinLift 0.8275
+

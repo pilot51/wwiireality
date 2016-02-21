@@ -1,0 +1,17 @@
+ObjectTemplate.create PlayerControlObject AA_Enterprise
+ObjectTemplate.setSoldierExitLocation 1/0/-1.5 0/0/0
+ObjectTemplate.networkableInfo AA_Allies_BodyInfo
+ObjectTemplate.geometry aa_Allies_base_M1
+ObjectTemplate.deathEffectName e_ExplGas
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.HasArmor 1
+ObjectTemplate.HitPoints 15
+ObjectTemplate.MaxHitPoints 15
+ObjectTemplate.Material 45
+
+ObjectTemplate.addTemplate AA_Allies_Base
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+

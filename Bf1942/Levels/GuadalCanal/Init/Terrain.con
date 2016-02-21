@@ -1,0 +1,40 @@
+rem 
+rem **** Initialize Terrain *****
+rem
+GeometryTemplate.create PatchTerrain terrainGeometry
+GeometryTemplate.file bf1942\levels\guadalcanal\Heightmap
+GeometryTemplate.materialMap bf1942\levels\guadalcanal\Materialmap
+GeometryTemplate.materialSize 1024
+GeometryTemplate.targetTriCount 4000
+GeometryTemplate.worldSize 4096
+GeometryTemplate.yScale 0.6
+GeometryTemplate.texBaseName bf1942\levels\guadalcanal\Textures\Tx
+GeometryTemplate.texOffsetX 4
+GeometryTemplate.texOffsetY 4
+GeometryTemplate.detailTexName bf1942\levels\guadalcanal\Textures\Detail
+GeometryTemplate.waterLevel 65
+GeometryTemplate.seaFloorLevel -50.0
+GeometryTemplate.lodDistance 1000
+
+GeometryTemplate.waveHeight 0.0
+
+Water.baseTex texture/Water
+Water.bumpTex texture/normalMap
+Water.bumpTile 0.4
+Water.specularBumpmapFactor 0.01
+Water.envIntensity 0.6
+
+ObjectTemplate.create SimpleObject terrainObject
+ObjectTemplate.geometry terrainGeometry
+objectTemplate.createNotInGrid 1
+
+Object.create terrainObject
+Object.setName track
+Object.absolutePosition 0/0/0
+Object.rotation 0/0/0
+
+Console.worldSize 4096
+
+Terrain.ShadowAmbient 100/90/95
+Terrain.ShadowBorderFadeTime 0.075
+Terrain.ShadowSamplingCullY 5

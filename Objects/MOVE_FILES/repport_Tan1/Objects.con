@@ -1,0 +1,17 @@
+ObjectTemplate.create Bundle repport_tan1_m1
+ObjectTemplate.geometry repport_tan1_m1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate repport_tan1_m1
+rem ----------------------------------------------
+ObjectTemplate.addTemplate repport_ladder04_m1
+ObjectTemplate.setPosition -4.98/2.7/-3
+ObjectTemplate.setRotation 57/0/0
+rem ----------------------------------------------
+
+ObjectTemplate.create SimpleObject repport_ladder04_m1
+ObjectTemplate.geometry repport_ladder04_m1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+
+

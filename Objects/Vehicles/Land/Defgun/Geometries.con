@@ -1,0 +1,30 @@
+renderer.beginGlobalCluster Defgun
+
+GeometryTemplate.create StandardMesh Defgun_bunker_m1
+GeometryTemplate.file Defgun_bunker_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Defgun_turret_m1
+GeometryTemplate.file Defgun_turret_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Defgun_door_m1
+GeometryTemplate.file Defgun_door_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Defgun_barrel_base_m1
+GeometryTemplate.file Defgun_barrel_base_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Defgun_barrel_end_m1
+GeometryTemplate.file Defgun_barrel_end_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh DefGun_thing_M1
+GeometryTemplate.file DefGun_thing_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Wreck_DefGun_m1
+GeometryTemplate.file Wreck_DefGun_m1
+
+renderer.endGlobalCluster

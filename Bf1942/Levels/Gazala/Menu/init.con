@@ -1,0 +1,33 @@
+Game.setLocalized 1
+
+rem ** Allied Briefing **
+game.setAlliedCampaign BRIEFING_ALLIED_CAMPAIGN_GAZALA
+game.setAlliedHints BRIEFING_ALLIED_HINTS_GAZALA
+game.setAlliedObjectives BRIEFING_ALLIED_OBJECTIVES_GAZALA
+game.setAlliedSkirmish BRIEFING_ALLIED_SKIRMISH_GAZALA
+
+rem ** Axis Briefing **
+game.setAxisCampaign BRIEFING_AXIS_CAMPAIGN_GAZALA
+game.setAxisHints BRIEFING_AXIS_HINTS_GAZALA
+game.setAxisObjectives BRIEFING_AXIS_OBJECTIVES_GAZALA
+game.setAxisSkirmish BRIEFING_AXIS_SKIRMISH_GAZALA
+
+rem ** Allied Debriefing **
+game.setAlliedDebriefingMajorVictory DEBRIEFING_ALLIED_MAJOR_VICTORY_GAZALA
+game.setAlliedDebriefingMinorVictory DEBRIEFING_ALLIED_MINOR_VICTORY_GAZALA
+game.setAlliedDebriefingMajorDefeat DEBRIEFING_ALLIED_MAJOR_DEFEAT_GAZALA
+game.setAlliedDebriefingMinorDefeat DEBRIEFING_ALLIED_MINOR_DEFEAT_GAZALA
+
+rem ** Axis Debriefing **
+game.setAxisDebriefingMajorVictory DEBRIEFING_AXIS_MAJOR_VICTORY_GAZALA
+game.setAxisDebriefingMinorVictory DEBRIEFING_AXIS_MINOR_VICTORY_GAZALA
+game.setAxisDebriefingMajorDefeat DEBRIEFING_AXIS_MAJOR_DEFEAT_GAZALA
+game.setAxisDebriefingMinorDefeat DEBRIEFING_AXIS_MINOR_DEFEAT_GAZALA
+
+rem ** Multiplayer Briefing **
+game.setMultiplayerBriefingObjectives MULTIPLAYER_BRIEFING_GAZALA
+game.setMultiplayerBriefingMapType MULTIPLAYER_MAP_TYPE_HEADON_MAP
+
+game.setLoadPicture Load/Desert.tga
+game.setServerInfoIcon "serverInfo.dds"
+game.setMapId "WWIIReality"

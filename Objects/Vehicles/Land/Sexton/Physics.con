@@ -1,0 +1,126 @@
+
+
+rem *** SextonEngine ***
+ObjectTemplate.create Engine SextonEngine
+ObjectTemplate.setNetworkableInfo SextonEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/SextonEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Sexton_TrackL
+ObjectTemplate.setPosition -0.009/-0.848/0
+rem ObjectTemplate.setPosition -0.009/-0.799/0
+ObjectTemplate.addTemplate Sexton_TrackR
+ObjectTemplate.setPosition 0.01/-0.848/0
+rem ObjectTemplate.setPosition 0.01/-0.799/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -1/0/-1
+ObjectTemplate.setMaxRotation 1/0/1
+ObjectTemplate.setMaxSpeed 1/0/10
+ObjectTemplate.setAcceleration 1/0/10
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETTank
+ObjectTemplate.setTorque 3.5
+ObjectTemplate.setDifferential 3.5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.45
+ObjectTemplate.setGearChangeTime 0.05
+
+
+rem *** SextonWheelLBig ***
+ObjectTemplate.create Spring SextonWheelLBig
+ObjectTemplate.geometry Sexton_whe1LBig_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** SextonWheelRBig ***
+ObjectTemplate.create Spring SextonWheelRBig
+ObjectTemplate.geometry Sexton_whe1RBig_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+rem *** SextonWheelL3Dummy ***
+ObjectTemplate.create Spring SextonWheelL3Dummy
+ObjectTemplate.geometry Sexton_whe3L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** SextonWheelL3 ***
+ObjectTemplate.create Spring SextonWheelL3
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Sexton_whe3L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 19
+ObjectTemplate.setDamping 4
+
+
+rem *** SextonWheelL3DummySmoke ***
+ObjectTemplate.create Spring SextonWheelL3DummySmoke
+ObjectTemplate.geometry Sexton_whe3L_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** SextonWheelR3Dummy ***
+ObjectTemplate.create Spring SextonWheelR3Dummy
+ObjectTemplate.geometry Sexton_whe3R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0
+
+
+rem *** SextonWheelR3 ***
+ObjectTemplate.create Spring SextonWheelR3
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Sexton_whe3R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+ObjectTemplate.setStrength 19
+ObjectTemplate.setDamping 4
+
+
+rem *** SextonWheelR3DummySmoke ***
+ObjectTemplate.create Spring SextonWheelR3DummySmoke
+ObjectTemplate.geometry Sexton_whe3R_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineDummyGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustPanzL
+ObjectTemplate.addTemplate e_wdustPanz
+rem -------------------------------------
+ObjectTemplate.setStrength 0
+ObjectTemplate.setDamping 0

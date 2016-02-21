@@ -1,0 +1,259 @@
+rem *** Plugins ***
+
+aiTemplatePlugIn.create Armament YamatoArms
+
+aiTemplatePlugIn.create Unit YamatoUnit
+aiTemplatePlugIn.equipmentType 2
+aiTemplatePlugIn.setStrategicStrength 0 15
+aiTemplatePlugIn.setStrategicStrength 1 12
+
+aiTemplatePlugIn.create Mobile YamatoMobile
+aiTemplatePlugIn.vehicleNumber 2
+aiTemplatePlugIn.maxSpeed 15.0
+aiTemplatePlugIn.turnRadius 80.0
+aiTemplatePlugIn.coverSearchRadius 50.0
+aiTemplatePlugIn.avoidCollisionLookAhead 15.0
+
+aiTemplatePlugIn.create Physical YamatoPhysical
+aiTemplatePlugIn.setStrType HeavyArmour
+
+aiTemplatePlugIn.create ControlInfo YamatoControlInfo
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -100/-15/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 100/1/0
+
+rem *** AITemplate ***
+aiTemplate.create YamatoAI
+aiTemplate.addType ITMobile
+aiTemplate.addType ITNaval
+aiTemplate.addType ITUnit
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 90
+aiTemplate.allowedTimeDiff 7
+aiTemplate.basicTemp 120
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn YamatoUnit
+aiTemplate.addPlugIn YamatoPhysical
+aiTemplate.addPlugIn YamatoControlInfo
+aiTemplate.addPlugIn YamatoMobile
+aiTemplate.addPlugIn YamatoArms
+
+rem  *** Rear gun
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament YamatoRearArms
+
+aiTemplatePlugIn.create Unit YamatoRearUnit
+aiTemplatePlugIn.equipmentType 9
+aiTemplatePlugIn.setStrategicStrength 0 13
+aiTemplatePlugIn.setStrategicStrength 1 10
+aiTemplatePlugIn.setSelectKey PIMenuSelect2
+
+aiTemplatePlugIn.create ControlInfo YamatoRearCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -100/-15/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 100/1/0
+
+rem *** AITemplate ***
+aiTemplate.create YamatoRearAI
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 90
+aiTemplate.allowedTimeDiff 7
+aiTemplate.basicTemp 90
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn YamatoRearArms
+aiTemplate.addPlugIn YamatoRearUnit
+aiTemplate.addPlugIn YamatoRearCtrl
+
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+
+
+rem  *** Rear gun
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament YamatoAALeftArms
+aiTemplatePlugIn.setIsAntiAircraft 1
+
+aiTemplatePlugIn.create Unit YamatoAALeftUnit
+aiTemplatePlugIn.equipmentType 4
+aiTemplatePlugIn.setStrategicStrength 0 0
+aiTemplatePlugIn.setStrategicStrength 1 3
+aiTemplatePlugIn.setSelectKey PIMenuSelect3
+
+aiTemplatePlugIn.create ControlInfo YamatoAALeftCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+
+rem *** AITemplate ***
+aiTemplate.create YamatoAALeftAI
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 90
+aiTemplate.allowedTimeDiff 7
+aiTemplate.basicTemp 12
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn YamatoAALeftArms
+aiTemplate.addPlugIn YamatoAALeftUnit
+aiTemplate.addPlugIn YamatoAALeftCtrl
+
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+
+rem  *** Rear gun
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament YamatoAARightArms
+aiTemplatePlugIn.setIsAntiAircraft 1
+
+aiTemplatePlugIn.create Unit YamatoAARightUnit
+aiTemplatePlugIn.equipmentType 4
+aiTemplatePlugIn.setStrategicStrength 0 0
+aiTemplatePlugIn.setStrategicStrength 1 3
+aiTemplatePlugIn.setSelectKey PIMenuSelect4
+
+aiTemplatePlugIn.create ControlInfo YamatoAARightCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+
+rem *** AITemplate ***
+aiTemplate.create YamatoAARightAI
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 90
+aiTemplate.allowedTimeDiff 7
+aiTemplate.basicTemp 12
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn YamatoAARightArms
+aiTemplate.addPlugIn YamatoAARightUnit
+aiTemplate.addPlugIn YamatoAARightCtrl
+
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+
+
+
+
+

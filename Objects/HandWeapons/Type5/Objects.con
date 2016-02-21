@@ -1,0 +1,107 @@
+ObjectTemplate.create HandFireArms Type5
+ObjectTemplate.itemIndex 3
+ObjectTemplate.networkableInfo HandFireArmsInfo
+ObjectTemplate.projectileTemplate M1GarandProjectile
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 10
+ObjectTemplate.numOfMag 3
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 5
+ObjectTemplate.roundOfFire 3.2
+rem ObjectTemplate.roundOfFire 4
+objectTemplate.aiTemplate Type5AI
+ObjectTemplate.zoomFov 0.6
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.fireOnce 1
+ObjectTemplate.altFireOnce 1
+ObjectTemplate.soldierZoomFov 0.8 
+ObjectTemplate.soldierZoomPosition -0.04/-0.03/0
+ObjectTemplate.soldierCameraPosition -0.02/-0.03/0.01
+ObjectTemplate.addRootSpeed 1
+ObjectTemplate.ammoType 1
+
+ObjectTemplate.GUIIndex 3
+ObjectTemplate.setHudAmmoType ATAmmoBar
+ObjectTemplate.setAmmoBar "Ingame/Magbar_Rifle_empty_32x64.tga"
+ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Rifle_full_32x64.tga"
+ObjectTemplate.setAmmoBarSize 20
+ObjectTemplate.setAmmoBarPosX 6
+ObjectTemplate.setAmmoBarPosY -17
+ObjectTemplate.setAmmoBarTextPosX 5
+ObjectTemplate.setAmmoBarTextPosY 10
+ObjectTemplate.setCrossHairType CHTCrossHair
+
+Rem *** Deviation Begin *****
+
+ObjectTemplate.velocity 853
+ObjectTemplate.setRecoilForceUp CRD_UNIFORM/1.2/1.2/0
+ObjectTemplate.setRecoilForceLeftRight CRD_UNIFORM/-0.1/-0.3/0
+ObjectTemplate.setHasRecoilForce 1
+ObjectTemplate.setGoBackOnRecoil 1
+
+ObjectTemplate.setFireDev 1.8 0.3 0.08
+rem ObjectTemplate.setFireDev 1.8 0.25 0.03
+ObjectTemplate.setDevMod  1 0.7 0.5
+rem ObjectTemplate.setDevMod  1 0.7 0.5
+ObjectTemplate.setMinDev 0.25
+ObjectTemplate.setTurnDev 0.3 0.2 0.2 0.1
+rem ObjectTemplate.setTurnDev 0 0 0 0
+ObjectTemplate.setSpeedDev 1.3 0.4 0.4 0.2
+rem ObjectTemplate.setSpeedDev 1.2 0.3 0.3 0.1
+
+
+ObjectTemplate.setMiscDev 1.8 1.8 0.1
+
+Rem *** Deviation  End *****
+
+ObjectTemplate.fireInCameraDof 1
+ObjectTemplate.loadSoundScript Sounds/Type5.ssc
+
+ObjectTemplate.createSkeleton animations/Type5.ske
+ObjectTemplate.useSkeletonPartAsMain Base
+
+rem *** LodObject must be located as first child to work on handweapons.
+ObjectTemplate.addTemplate Type5Lod
+
+ObjectTemplate.addTemplate e_MuzzGun
+ObjectTemplate.setPosition 0/0.05/0.84
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_shellM1Garand
+ObjectTemplate.setPosition 0/0.1/0.41
+ObjectTemplate.setRotation 0/0/0
+
+
+ObjectTemplate.create SimpleObject Type5Simple
+ObjectTemplate.geometry Type5Simple
+
+ObjectTemplate.create SimpleObject Type5Magasin
+ObjectTemplate.geometry Type5Magasin
+
+ObjectTemplate.create SimpleObject Type5Reload
+ObjectTemplate.geometry Type5Reload
+
+ObjectTemplate.create SimpleObject Type5Plupp
+ObjectTemplate.geometry Type5Plupp
+
+ObjectTemplate.create SimpleObject Type5trigger
+ObjectTemplate.geometry Type5trigger
+
+ObjectTemplate.create AnimatedBundle Type5Complex
+ObjectTemplate.createSkeleton animations/Type5.ske
+ObjectTemplate.geometry Type5
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.addTemplate Type5trigger
+ObjectTemplate.bindToSkeletonPart trigger
+ObjectTemplate.addTemplate Type5Reload
+ObjectTemplate.bindToSkeletonPart reload
+ObjectTemplate.addTemplate Type5Plupp
+ObjectTemplate.bindToSkeletonPart plupp
+ObjectTemplate.addTemplate Type5Magasin
+ObjectTemplate.bindToSkeletonPart mag
+
+ObjectTemplate.create LodObject Type5Lod
+ObjectTemplate.lodselector HandWeaponLodSelector
+ObjectTemplate.addTemplate Type5Complex
+ObjectTemplate.addTemplate Type5Simple
+

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/PriestTurret.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/PriestTurret.ssc
+	
+#templateLevel LOW
+
+	#include Low/PriestTurret.ssc

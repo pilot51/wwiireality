@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Sextongunbase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Sextongunbase.ssc
+	
+#templateLevel LOW
+
+	#include Low/Sextongunbase.ssc

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Type38_Torpedo_Right.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Type38_Torpedo_Right.ssc
+	
+#templateLevel LOW
+
+	#include Low/Type38_Torpedo_Right.ssc

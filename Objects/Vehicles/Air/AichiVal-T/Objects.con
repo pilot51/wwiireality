@@ -1,0 +1,311 @@
+
+
+rem *** Aichival-T ***
+ObjectTemplate.create PlayerControlObject Aichival-T
+ObjectTemplate.setNetworkableInfo Aichival-T_body_info
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.drag 0.065
+ObjectTemplate.mass 3000
+ObjectTemplate.inertiaModifier 1.02/0.855/0.922
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.hasArmor 1
+ObjectTemplate.angleMod 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 130
+ObjectTemplate.maxhitpoints 130
+ObjectTemplate.material 60
+ObjectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.hpLostWhileDamageFromWater 10
+ObjectTemplate.addArmorEffect 65 em_AichiValDamage 0/0.102/2.11
+ObjectTemplate.addArmorEffect 65 em_PlaneDamage 0/-0.303/2.21
+ObjectTemplate.addArmorEffect 20 e_AichivalFire 0/1/2.11
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_Aichival 0/0/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/0/0
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.timetoliveafterdeath 600
+ObjectTemplate.timeToStartFadeAfterDeath 570
+ObjectTemplate.aiTemplate Aichival-T
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAichival-T
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -2.8/0.203/-3.9 0/0/0
+ObjectTemplate.GUIIndex 110
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_aichival.tga"
+ObjectTemplate.setVehicleIconPos 64/104
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_torpedo.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCAir
+ObjectTemplate.setVehicleType  VTDiveBomber
+ObjectTemplate.setToolTipType  TTDiveBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+
+rem *** lodAichival-T ***
+ObjectTemplate.create LodObject lodAichival-T
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Aichival-TComplex
+ObjectTemplate.addTemplate Aichival-TSimple
+ObjectTemplate.addTemplate Aichival-TWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector Aichival-TLodSelector
+
+
+rem *** Aichival-TComplex ***
+ObjectTemplate.create Bundle Aichival-TComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodAichival-TCockpit
+ObjectTemplate.addTemplate Aichival-TCamera
+ObjectTemplate.setPosition 0.011/0.963/-0.5
+ObjectTemplate.addTemplate Aichival-TEntry
+ObjectTemplate.setPosition 0/0/-1.169
+ObjectTemplate.addTemplate Aichival-TSeat
+ObjectTemplate.setPosition 0/0.45/0.15
+ObjectTemplate.addTemplate Aichival-TFlaps1
+ObjectTemplate.setPosition 1.778/-0.301/-1.173
+ObjectTemplate.setRotation -2.999/-2.899/7
+ObjectTemplate.addTemplate Aichival-TFlaps2
+ObjectTemplate.setPosition -1.777/-0.301/-1.173
+ObjectTemplate.setRotation 3/-2.899/-6.999
+ObjectTemplate.addTemplate Aichival-TBodyWing
+ObjectTemplate.setPosition 0/0/-0.279
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate Aichival-TRudderFR
+ObjectTemplate.setPosition 5.159/0.092/-0.694
+ObjectTemplate.setRotation -13.999/0/6.2
+ObjectTemplate.addTemplate Aichival-TRudderFL
+ObjectTemplate.setPosition -5.158/0.092/-0.694
+ObjectTemplate.setRotation 14/0/-6.199
+ObjectTemplate.addTemplate Aichival-TRudderRL
+ObjectTemplate.setPosition 0.788/0.207/-6.454
+ObjectTemplate.addTemplate Aichival-TRudderRR
+ObjectTemplate.setPosition -0.787/0.207/-6.454
+ObjectTemplate.addTemplate Aichival-TRudderRC
+ObjectTemplate.setPosition 0/1.061/-6.032
+ObjectTemplate.setRotation 0/0/-89.999
+ObjectTemplate.addTemplate Aichival-TWheelBack
+ObjectTemplate.setPosition 0/-0.229/-5.969
+ObjectTemplate.addTemplate Aichival-TWheel1
+ObjectTemplate.setPosition 1.553/-1.83/1.102
+ObjectTemplate.addTemplate Aichival-TWheel2
+ObjectTemplate.setPosition -1.552/-1.83/1.102
+ObjectTemplate.addTemplate Aichival-TEngine
+ObjectTemplate.setPosition 0/0.212/2.789
+ObjectTemplate.addTemplate Aichival-THatch2
+ObjectTemplate.setPosition 0/0.751/-0.952
+ObjectTemplate.addTemplate Aichival-TGuns
+ObjectTemplate.addTemplate Aichival-TBombRack
+ObjectTemplate.setPosition 0/-0.95/0
+ObjectTemplate.addTemplate Aichival-TRearGunControl
+ObjectTemplate.setPosition 0/0.191/-1.169
+ObjectTemplate.setRotation -179.999/0/0
+rem -------------------------------------
+
+
+rem *** lodAichival-TCockpit ***
+ObjectTemplate.create LodObject lodAichival-TCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate Aichival-TCockpitExternal
+ObjectTemplate.addTemplate Aichival-TCockpitInternal
+ObjectTemplate.setPosition 0/-1.599/-1.139
+rem -------------------------------------
+ObjectTemplate.lodSelector Aichival-TCockpitSelector
+
+
+rem *** Aichival-TCockpitExternal ***
+ObjectTemplate.create Bundle Aichival-TCockpitExternal
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry rh_aichi_fus_M1
+rem -------------------------------------
+ObjectTemplate.addTemplate Aichival-THatch1
+ObjectTemplate.setPosition 0/0.756/0.247
+rem -------------------------------------
+
+
+rem *** Aichival-THatch1 ***
+ObjectTemplate.create RotationalBundle Aichival-THatch1
+ObjectTemplate.geometry rh_aichi_cockwifr_M1
+ObjectTemplate.setMinRotation -20/0/0
+ObjectTemplate.setMaxRotation 20/0/0
+ObjectTemplate.setMaxSpeed 20/90/90
+ObjectTemplate.setAcceleration 10/-10/10
+
+
+rem *** Aichival-TCockpitInternal ***
+ObjectTemplate.create SimpleObject Aichival-TCockpitInternal
+ObjectTemplate.geometry 1p_Aichi_Val_m1
+
+
+rem *** Aichival-TCockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector Aichival-TCockpitSelector
+LodSelectorTemplate.addLodDistance 20
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** Aichival-TCamera ***
+ObjectTemplate.create Camera Aichival-TCamera
+ObjectTemplate.setMinRotation -45/-40/0
+ObjectTemplate.setMaxRotation 45/14/0
+ObjectTemplate.setMaxSpeed 90/-90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.toggleMouseLook 1
+ObjectTemplate.OutsideHudOffset 0.004/0/3.5
+
+
+rem *** Aichival-TEntry ***
+ObjectTemplate.create EntryPoint Aichival-TEntry
+ObjectTemplate.setEntryRadius 6
+
+
+rem *** Aichival-TSeat ***
+ObjectTemplate.create SeatObject Aichival-TSeat
+ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
+
+
+rem *** Aichival-TWheelBack ***
+ObjectTemplate.create RotationalBundle Aichival-TWheelBack
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Aichival-TWheelBackSpring
+ObjectTemplate.setPosition 0/-0.26/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -20/0/0
+ObjectTemplate.setMaxRotation 20/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration -110/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** lodAichival-TPropeller ***
+ObjectTemplate.create LodObject lodAichival-TPropeller
+rem -------------------------------------
+ObjectTemplate.addTemplate Aichival-TPropellerStatic
+ObjectTemplate.addTemplate Aichival-TPropellerBlurred
+rem -------------------------------------
+ObjectTemplate.lodSelector Aichival-TPropSelector
+
+
+rem *** Aichival-TPropellerStatic ***
+ObjectTemplate.create SimpleObject Aichival-TPropellerStatic
+ObjectTemplate.geometry rh_aichi_prop_M1
+
+
+rem *** Aichival-TPropellerBlurred ***
+ObjectTemplate.create SimpleObject Aichival-TPropellerBlurred
+ObjectTemplate.geometry rh_aichi_blrprop_M1
+LodSelectorTemplate.create CompareSelector Aichival-TPropSelector
+LodSelectorTemplate.addLodComparison 0.07
+
+
+rem *** Aichival-THatch2 ***
+ObjectTemplate.create RotationalBundle Aichival-THatch2
+ObjectTemplate.geometry rh_aichi_cockwiba_M1
+ObjectTemplate.setMinRotation -20/0/0
+ObjectTemplate.setMaxRotation 20/0/0
+ObjectTemplate.setMaxSpeed 20/90/90
+ObjectTemplate.setAcceleration 10/-10/10
+
+
+rem *** Aichival-TRearGunControl ***
+ObjectTemplate.create PlayerControlObject Aichival-TRearGunControl
+ObjectTemplate.setNetworkableInfo Aichival-T_body_info
+ObjectTemplate.aiTemplate Aichival-TMGAI
+rem -------------------------------------
+ObjectTemplate.addTemplate Aichival-TRearBrowningBase
+ObjectTemplate.setPosition 0/0.6/0.4
+ObjectTemplate.addTemplate Aichival-TEntry
+ObjectTemplate.setPosition 0/-0.191/0
+ObjectTemplate.addTemplate Aichival-TRearSeat
+ObjectTemplate.setPosition 0/0.35/-0.199
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -3/0.05/1 0/0/0
+ObjectTemplate.GUIIndex 114
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_aichival.tga"
+ObjectTemplate.setVehicleIconPos 60/100
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTDiveBomber
+ObjectTemplate.setToolTipType  TTDiveBomber
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_plane_16x16.tga"
+
+rem *** Aichival-TRearBrowningBase ***
+ObjectTemplate.create RotationalBundle Aichival-TRearBrowningBase
+ObjectTemplate.setNetworkableInfo Aichival-T_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate Aichival-TBrowningRotation
+rem -------------------------------------
+ObjectTemplate.setMinRotation -40/0/0
+ObjectTemplate.setMaxRotation 40/0/0
+ObjectTemplate.setMaxSpeed 90/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+
+rem *** Aichival-TBrowningRotation ***
+ObjectTemplate.create RotationalBundle Aichival-TBrowningRotation
+ObjectTemplate.setNetworkableInfo Aichival-T_body_info
+rem -------------------------------------
+ObjectTemplate.addTemplate Aichival-TRearCamera
+ObjectTemplate.setPosition 0/0.267/0
+ObjectTemplate.addTemplate MG42_Air
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-34/0
+ObjectTemplate.setMaxRotation 0/-1/0
+ObjectTemplate.setMaxSpeed 0/90/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** Aichival-TRearCamera ***
+ObjectTemplate.create Camera Aichival-TRearCamera
+ObjectTemplate.setMinRotation -180/-60/0
+ObjectTemplate.setMaxRotation 180/20/0
+ObjectTemplate.setMaxSpeed 200/200/0
+ObjectTemplate.setAcceleration 1000/1000/0
+
+
+rem *** Aichival-TRearSeat ***
+ObjectTemplate.create SeatObject Aichival-TRearSeat
+ObjectTemplate.seatFlags c_SeatShowHalfBodySoldier
+
+
+rem *** Aichival-TSimple ***
+ObjectTemplate.create SimpleObject Aichival-TSimple
+ObjectTemplate.geometry rh_aichi_fus_L1
+
+
+rem *** Aichival-TWreck ***
+ObjectTemplate.create SimpleObject Aichival-TWreck
+ObjectTemplate.geometry Wreck_aichi_m1
+
+
+rem *** Aichival-TLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 Aichival-TLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 5000

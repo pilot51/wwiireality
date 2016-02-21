@@ -1,0 +1,93 @@
+
+
+rem *** B17BombHolder ***
+ObjectTemplate.create FireArms B17BombRack
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.aiTemplate B17Bombs
+ObjectTemplate.projectileTemplate HeavyBomberBomb
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.visibleDummyProjectileTemplate DummyBigBomb
+ObjectTemplate.magSize 16
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 15
+ObjectTemplate.roundOfFire 4
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.addFireArmsPosition -0.5/0.7/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0.5/0.7/0 0/0/0
+ObjectTemplate.AmmoType 9
+
+
+rem *** B17_GunT_GunBarrel ***
+ObjectTemplate.create FireArms B17_MG1_FB
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/B17GunTGunBarrel.ssc
+ObjectTemplate.aiTemplate B17MachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzB17
+rem -------------------------------------
+ObjectTemplate.projectileTemplate B17_GunT_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 3400
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 930
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.addFireArmsPosition 0.2/0.02/0.75 0/0/0
+ObjectTemplate.addFireArmsPosition -0.2/0.02/0.75 0/0/0
+ObjectTemplate.AmmoType 10
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+
+
+rem *** B17_GunT_Projectile ***
+ObjectTemplate.create Projectile B17_GunT_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/Projectile.ssc
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/600/0/0
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.material 224
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1
+
+
+rem *** B17_GunB_GunBarrel ***
+ObjectTemplate.create FireArms B17_MG2_FB
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.loadSoundScript Sounds/B17GunTGunBarrel.ssc
+ObjectTemplate.aiTemplate B17MachineGun
+rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzB17 
+rem -------------------------------------
+ObjectTemplate.projectileTemplate B17_GunB_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.magSize 3400
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 930
+ObjectTemplate.roundOfFire 10
+ObjectTemplate.addFireArmsPosition 0.3/0/0.95 0/0/0
+ObjectTemplate.addFireArmsPosition -0.3/0/0.95 0/0/0
+ObjectTemplate.AmmoType 10
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+
+rem *** B17_GunB_Projectile ***
+ObjectTemplate.create Projectile B17_GunB_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.loadSoundScript ../../../Common/Sounds/Projectile.ssc
+rem ObjectTemplate.geometry tracklight_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.timeToLive CRD_NONE/600/0/0
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.material 224
+ObjectTemplate.material2 -1
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.hasCollisionEffect 1

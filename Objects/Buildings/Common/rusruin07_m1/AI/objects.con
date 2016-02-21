@@ -1,0 +1,17 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Cover rusruin07Cover
+aiTemplatePlugIn.coverValue 50.0
+
+aiTemplatePlugIn.create Physical rusruin07Physical
+
+rem *** AITemplate ***
+aiTemplate.create rusruin07
+aiTemplate.addType ITCover
+aiTemplate.addType ITStructure
+aiTemplate.addType ITNoTemperature
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 5
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn rusruin07Cover
+aiTemplate.addPlugIn rusruin07Physical

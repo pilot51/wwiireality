@@ -1,0 +1,11 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Physical BigBridgePhysical
+
+rem *** AITemplate ***
+aiTemplate.create Bridge_Big_M1
+aiTemplate.addType ITScaleRender
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 1
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn BigBridgePhysical

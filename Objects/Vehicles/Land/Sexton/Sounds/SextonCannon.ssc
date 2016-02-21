@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SextonCannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/SextonCannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/SextonCannon.ssc

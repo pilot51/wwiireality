@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/HoHaTrack.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/HoHaTrack.ssc
+	
+#templateLevel LOW
+
+	#include Low/HoHaTrack.ssc

@@ -1,0 +1,3 @@
+GeometryTemplate.create StandardMesh r_rocket_m1
+GeometryTemplate.file r_rocket_m1
+GeometryTemplate.setLodDistance 0 0

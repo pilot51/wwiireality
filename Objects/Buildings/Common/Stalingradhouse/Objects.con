@@ -1,0 +1,5 @@
+ObjectTemplate.create SimpleObject Stalingrad1_m1
+ObjectTemplate.geometry Stalingrad1_m1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.Stalingradhouse
+ObjectTemplate.aiTemplate Stalingradhouse

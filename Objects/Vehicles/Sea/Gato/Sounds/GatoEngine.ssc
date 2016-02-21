@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/GatoEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/GatoEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/GatoEngine.ssc

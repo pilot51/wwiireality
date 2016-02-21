@@ -1,0 +1,51 @@
+
+
+rem *** Fletcher_HullWing ***
+ObjectTemplate.create Wing Fletcher_HullWing
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/-10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** Fletcher_rudder ***
+ObjectTemplate.create Wing Fletcher_rudder
+ObjectTemplate.setNetworkableInfo FletcherRudderInfo
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** Fletcher_Engine ***
+ObjectTemplate.create Engine Fletcher_Engine
+ObjectTemplate.setNetworkableInfo FletcherEngineInfo
+ObjectTemplate.loadSoundScript Sounds/FletcherEngine.ssc
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 2
+ObjectTemplate.setDifferential 2
+ObjectTemplate.setNoPropellerEffectAtSpeed 120
+
+
+rem *** Fletcher_Floater ***
+ObjectTemplate.create FloatingBundle Fletcher_Floater
+ObjectTemplate.setHullHeight 20
+ObjectTemplate.setFloatMaxLift 2
+ObjectTemplate.setFloatMinLift 2
+

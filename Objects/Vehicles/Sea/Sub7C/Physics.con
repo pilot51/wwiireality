@@ -1,0 +1,115 @@
+
+
+rem *** Sub7C_Engine ***
+ObjectTemplate.create Engine Sub7C_Engine
+ObjectTemplate.setNetworkableInfo Sub7cEngineInfo
+ObjectTemplate.loadSoundScript Sounds/sub7cEngine.ssc
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 2
+ObjectTemplate.setDifferential 1
+ObjectTemplate.setNoPropellerEffectAtSpeed 120
+
+
+rem *** Sub7C_Rudder1 ***
+ObjectTemplate.create Wing Sub7C_Rudder1
+ObjectTemplate.setNetworkableInfo Sub7cEngineInfo
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 1.5
+
+
+rem *** Sub7C_HullWing ***
+ObjectTemplate.create Wing Sub7C_HullWing
+ObjectTemplate.setNetworkableInfo Sub7cEngineInfo
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/-10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 1.5
+
+
+rem *** Sub7C_RudderFrontL ***
+ObjectTemplate.create Wing Sub7C_RudderFrontL
+ObjectTemplate.setNetworkableInfo Sub7cEngineInfo
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/9/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 0.025
+
+
+rem *** Sub7C_RudderFrontR ***
+ObjectTemplate.create Wing Sub7C_RudderFrontR
+ObjectTemplate.setNetworkableInfo Sub7cEngineInfo
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/9/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 0.025
+
+
+rem *** Sub7C_RudderBackUDLeft ***
+ObjectTemplate.create Wing Sub7C_RudderBackUDLeft
+ObjectTemplate.setNetworkableInfo Sub7cEngineInfo
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-9/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 0.025
+
+
+rem *** Sub7C_RudderBackUDRight ***
+ObjectTemplate.create Wing Sub7C_RudderBackUDRight
+ObjectTemplate.setNetworkableInfo Sub7cEngineInfo
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-9/0
+ObjectTemplate.setInputToPitch c_PIPitch
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 0.025
+
+
+rem *** Sub7C_Floater ***
+ObjectTemplate.create FloatingBundle Sub7C_Floater
+ObjectTemplate.setNetworkableInfo Sub7cEngineInfo
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/50/0
+ObjectTemplate.setMaxSpeed 0/2/0
+ObjectTemplate.setAcceleration 0/1/0
+ObjectTemplate.setInputToPitch c_PIPitch
+rem ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setHullHeight 4.3
+ObjectTemplate.setFloatMaxLift 1.6275
+ObjectTemplate.setFloatMinLift 0.8275
+

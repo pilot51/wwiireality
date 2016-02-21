@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Type38_Oerlikon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Type38_Oerlikon.ssc
+	
+#templateLevel LOW
+
+	#include Low/Type38_Oerlikon.ssc

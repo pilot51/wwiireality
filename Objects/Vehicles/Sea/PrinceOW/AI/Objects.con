@@ -1,0 +1,258 @@
+rem *** Plugins ***
+
+aiTemplatePlugIn.create Armament PrinceOWArms
+
+aiTemplatePlugIn.create Unit PrinceOWUnit
+aiTemplatePlugIn.equipmentType 2
+aiTemplatePlugIn.setStrategicStrength 0 15
+aiTemplatePlugIn.setStrategicStrength 1 12
+
+aiTemplatePlugIn.create Mobile PrinceOWMobile
+aiTemplatePlugIn.vehicleNumber 2
+aiTemplatePlugIn.maxSpeed 20.0
+aiTemplatePlugIn.turnRadius 75.0
+aiTemplatePlugIn.coverSearchRadius 50.0
+aiTemplatePlugIn.avoidCollisionLookAhead 15.0
+
+aiTemplatePlugIn.create Physical PrinceOWPhysical
+aiTemplatePlugIn.setStrType HeavyArmour
+
+aiTemplatePlugIn.create ControlInfo PrinceOWControlInfo
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+aiTemplatePlugIn.pitchSensitivity          -0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -110/-10/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 110/0/0
+
+rem *** AITemplate ***
+aiTemplate.create PrinceOWAI
+aiTemplate.addType ITMobile
+aiTemplate.addType ITNaval
+aiTemplate.addType ITUnit
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 90
+aiTemplate.allowedTimeDiff 7
+aiTemplate.basicTemp 120
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn PrinceOWUnit
+aiTemplate.addPlugIn PrinceOWPhysical
+aiTemplate.addPlugIn PrinceOWControlInfo
+aiTemplate.addPlugIn PrinceOWMobile
+aiTemplate.addPlugIn PrinceOWArms
+
+rem  *** Rear gun
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament PrinceOWRearArms
+
+aiTemplatePlugIn.create Unit PrinceOWRearUnit
+aiTemplatePlugIn.equipmentType 9
+aiTemplatePlugIn.setStrategicStrength 0 13
+aiTemplatePlugIn.setStrategicStrength 1 10
+aiTemplatePlugIn.setSelectKey PIMenuSelect2
+
+aiTemplatePlugIn.create ControlInfo PrinceOWRearCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity          -0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -100/-10/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 100/0/0
+
+rem *** AITemplate ***
+aiTemplate.create PrinceOWRearAI
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 90
+aiTemplate.allowedTimeDiff 7
+aiTemplate.basicTemp 90
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn PrinceOWRearArms
+aiTemplate.addPlugIn PrinceOWRearUnit
+aiTemplate.addPlugIn PrinceOWRearCtrl
+
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+
+rem  *** Rear gun
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament PrinceOWAARightArms
+aiTemplatePlugIn.setIsAntiAircraft 1
+
+aiTemplatePlugIn.create Unit PrinceOWAARightUnit
+aiTemplatePlugIn.equipmentType 4
+aiTemplatePlugIn.setStrategicStrength 0 0
+aiTemplatePlugIn.setStrategicStrength 1 3
+aiTemplatePlugIn.setSelectKey PIMenuSelect3
+
+aiTemplatePlugIn.create ControlInfo PrinceOWAARightCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -180/-65/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 0/-9/0
+
+rem *** AITemplate ***
+aiTemplate.create PrinceOWAARightAI
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 90
+aiTemplate.allowedTimeDiff 7
+aiTemplate.basicTemp 12
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn PrinceOWAARightArms
+aiTemplate.addPlugIn PrinceOWAARightUnit
+aiTemplate.addPlugIn PrinceOWAARightCtrl
+
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+
+rem  *** Rear gun
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament PrinceOWAALeftArms
+aiTemplatePlugIn.setIsAntiAircraft 1
+
+aiTemplatePlugIn.create Unit PrinceOWAALeftUnit
+aiTemplatePlugIn.equipmentType 4
+aiTemplatePlugIn.setStrategicStrength 0 0
+aiTemplatePlugIn.setStrategicStrength 1 3
+aiTemplatePlugIn.setSelectKey PIMenuSelect4
+
+aiTemplatePlugIn.create ControlInfo PrinceOWAALeftCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -180/-65/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 0/-9/0
+
+rem *** AITemplate ***
+aiTemplate.create PrinceOWAALeftAI
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 90
+aiTemplate.allowedTimeDiff 7
+aiTemplate.basicTemp 12
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn PrinceOWAALeftArms
+aiTemplate.addPlugIn PrinceOWAALeftUnit
+aiTemplate.addPlugIn PrinceOWAALeftCtrl
+
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+

@@ -1,0 +1,277 @@
+
+
+rem *** BlackMedal ***
+ObjectTemplate.create PlayerControlObject BlackMedal
+ObjectTemplate.NameTagOffset -0.3/-0.2/0
+ObjectTemplate.setNetworkableInfo BlackMedalBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.damageFromWater 1
+ObjectTemplate.drag 1.5
+ObjectTemplate.mass 1100
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 1
+ObjectTemplate.exitTimer 0.75
+ObjectTemplate.hitpoints 50
+ObjectTemplate.maxhitpoints 50
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 6
+ObjectTemplate.hpLostWhileCriticalDamage 2
+ObjectTemplate.explosionForceMod 20
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+ObjectTemplate.addArmorEffect 30 e_WillyDamage 0/1.7/0
+ObjectTemplate.addArmorEffect 6 e_WillyFire 0/0.5/0.8
+ObjectTemplate.addArmorEffect 0 e_scrapmetal_Willy 0/0/0
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion  0/0/0
+ObjectTemplate.timetoliveafterdeath 600
+ObjectTemplate.timeToStartFadeAfterDeath 570
+ObjectTemplate.aiTemplate BlackMedal
+rem -------------------------------------
+ObjectTemplate.addTemplate lodBlackMedal
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation -1.5/0/-0.8 0/0/0
+ObjectTemplate.GUIIndex 26
+ObjectTemplate.setVehicleIcon "Vehicle/IconBlk_Medal.tga"
+ObjectTemplate.setVehicleIconPos 67/62
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+rem *** lodBlackMedal ***
+ObjectTemplate.create LodObject lodBlackMedal
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate BlackMedalComplex
+ObjectTemplate.addTemplate BlackMedalSimple
+ObjectTemplate.addTemplate BlackMedalWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector BlackMedalLodSelector
+
+
+rem *** BlackMedalComplex ***
+ObjectTemplate.create Bundle BlackMedalComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodBlackMedalCockpit
+ObjectTemplate.addTemplate BlackMedalCamera
+rem ObjectTemplate.setPosition -0.229/0.60/-0.899
+ObjectTemplate.setPosition -0.229/0.65/-0.899
+ObjectTemplate.addTemplate BlackMedalSeat
+ObjectTemplate.setPosition -0.278/0.4/-0.568
+ObjectTemplate.addTemplate BlackMedalEntry
+ObjectTemplate.setPosition 0/0/1
+ObjectTemplate.addTemplate BlackMedalEntry
+ObjectTemplate.setPosition 0/0/-1
+ObjectTemplate.addTemplate BlackMedalPassengerPCO
+ObjectTemplate.setPosition 0.273/0.4/-0.576
+ObjectTemplate.addTemplate BlackMedalEngine
+ObjectTemplate.setPosition 0/0.35/-0.25
+ObjectTemplate.addTemplate BlackMedalSteeringDummy
+ObjectTemplate.setPosition -0.248/0.15/0.52
+ObjectTemplate.setRotation -1.645/29.312/-0.433
+rem ObjectTemplate.setRotation 0/29.312/0
+ObjectTemplate.addTemplate BlackMedalHorn
+rem -------------------------------------
+
+
+rem *** lodBlackMedalCockpit ***
+ObjectTemplate.create LodObject lodBlackMedalCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate BlackMedalCockpitExternal
+ObjectTemplate.addTemplate BlackMedalCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector BlackMedalCockpitSelector1
+
+
+rem *** BlackMedalCockpitExternal ***
+ObjectTemplate.create SimpleObject BlackMedalCockpitExternal
+ObjectTemplate.hasDynamicShadow 1
+ObjectTemplate.geometry BlackMedal_Hull_M1
+
+
+rem *** BlackMedalCockpitInternal ***
+ObjectTemplate.create Bundle BlackMedalCockpitInternal
+ObjectTemplate.geometry BlackMedal_Cockpit_M1
+
+
+rem *** BlackMedalCockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector BlackMedalCockpitSelector1
+rem LodSelectorTemplate.create DistanceSelector BlackMedalCockpitSelector
+LodSelectorTemplate.addLodDistance 3.05
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** BlackMedalCamera ***
+ObjectTemplate.create Camera BlackMedalCamera
+ObjectTemplate.setMinRotation -110/-40/0
+ObjectTemplate.setMaxRotation 110/10/0
+ObjectTemplate.setPivotPosition 0/0.25/0.3
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/5000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** BlackMedalSeat ***
+ObjectTemplate.create SeatObject BlackMedalSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+
+
+rem *** BlackMedalEntry ***
+ObjectTemplate.create EntryPoint BlackMedalEntry
+ObjectTemplate.setEntryRadius 2.3
+
+
+rem *** BlackMedalPassengerPCO ***
+ObjectTemplate.create PlayerControlObject BlackMedalPassengerPCO
+ObjectTemplate.setNetworkableInfo BlackMedalBodyInfo
+ObjectTemplate.aiTemplate BlackMedalPassenger
+rem -------------------------------------
+
+ObjectTemplate.addTemplate BlackMedalEntry
+ObjectTemplate.setPosition -0.273/-0.4/1.576
+ObjectTemplate.addTemplate BlackMedalEntry
+ObjectTemplate.setPosition -0.273/-0.4/-0.424
+ObjectTemplate.addTemplate BlackMedalCamera
+rem ObjectTemplate.setPosition -0.004/0.205/-0.350
+ObjectTemplate.setPosition -0.004/0.255/-0.350
+ObjectTemplate.addTemplate BlackMedalPassengerSeat
+ObjectTemplate.setPosition 0/0.48/0.04
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.5/0/-0.8 0/0/0
+rem ObjectTemplate.hasRestrictedExit 1
+rem ObjectTemplate.altSoldierExitPosition 5.5/0/0
+ObjectTemplate.GUIIndex 53
+ObjectTemplate.setVehicleIcon "Vehicle/IconBlk_Medal.tga"
+ObjectTemplate.setVehicleIconPos 53/68
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** BlackMedalPassengerSeat ***
+ObjectTemplate.create SeatObject BlackMedalPassengerSeat
+ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatAnimationUpperBody Ub_PassengerInWilly
+ObjectTemplate.seatAnimationLowerBody Lb_PassengerInHanomag
+rem ObjectTemplate.seatAnimationLowerBody Lb_PassengerInWilly
+
+
+rem *** BlackMedalFrontWheelR ***
+ObjectTemplate.create RotationalBundle BlackMedalFrontWheelR
+ObjectTemplate.setNetworkableInfo BlackMedalSteeringInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate BlackMedalFrontSpringR
+ObjectTemplate.setPosition 0/-0.599/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration 200/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** BlackMedalFrontWheelL ***
+ObjectTemplate.create RotationalBundle BlackMedalFrontWheelL
+ObjectTemplate.setNetworkableInfo BlackMedalSteeringInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate BlackMedalFrontSpringL
+ObjectTemplate.setPosition 0/-0.599/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -30/0/0
+ObjectTemplate.setMaxRotation 30/0/0
+ObjectTemplate.setMaxSpeed 200/0/0
+ObjectTemplate.setAcceleration 200/0/0
+ObjectTemplate.setInputToYaw c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** BlackMedalSteeringDummy ***
+ObjectTemplate.create AnimatedBundle BlackMedalSteeringDummy
+rem -------------------------------------
+ObjectTemplate.addTemplate BlackMedalSteering
+rem -------------------------------------
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.24/-0.1/-0.82 -80/60/50
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.26/-0.1/-0.82 -80/-60/50
+
+
+rem *** BlackMedalSteering ***
+ObjectTemplate.create RotationalBundle BlackMedalSteering
+ObjectTemplate.setNetworkableInfo BlackMedalSteeringInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate lodBlackMedalSteering
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-60
+ObjectTemplate.setMaxRotation 0/0/60
+ObjectTemplate.setMaxSpeed 0/0/180
+ObjectTemplate.setAcceleration 0/0/-180
+ObjectTemplate.setInputToRoll c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+
+
+rem *** lodBlackMedalSteering ***
+ObjectTemplate.create LodObject lodBlackMedalSteering
+rem -------------------------------------
+ObjectTemplate.addTemplate BlackMedalHighRSteering
+ObjectTemplate.addTemplate BlackMedalLowSteering
+rem -------------------------------------
+ObjectTemplate.lodSelector BlackMedalSteeringSelector
+
+
+rem *** BlackMedalHighRSteering ***
+ObjectTemplate.create SimpleObject BlackMedalHighRSteering
+ObjectTemplate.geometry 1P_BlackMedal_Str_M1
+
+
+rem *** BlackMedalLowSteering ***
+ObjectTemplate.create SimpleObject BlackMedalLowSteering
+ObjectTemplate.geometry BlackMedal_Steering_M1
+
+
+LodSelectorTemplate.create DistanceSelector BlackMedalSteeringSelector
+LodSelectorTemplate.addLodDistance 10
+
+
+rem *** BlackMedalSimple ***
+ObjectTemplate.create SimpleObject BlackMedalSimple
+ObjectTemplate.geometry BlackMedal_Hull_L1
+
+
+rem *** BlackMedalWreck ***
+ObjectTemplate.create SimpleObject BlackMedalWreck
+ObjectTemplate.geometry Wreck_BlackMedal_m1
+
+
+rem *** BlackMedalLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 BlackMedalLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 5000

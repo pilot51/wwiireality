@@ -1,0 +1,50 @@
+GeometryTemplate.create StandardMesh climbnet_6m_m1
+GeometryTemplate.file climbnet_6m_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh climbnet_6mx11m_m1
+GeometryTemplate.file climbnet_6mx11m_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh climbnet_3m_m1
+GeometryTemplate.file climbnet_3m_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh climbnet_3mx4m_m1
+GeometryTemplate.file climbnet_3mx4m_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh depth_charge_m1
+GeometryTemplate.file depth_charge_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh spawnbutton_m1
+GeometryTemplate.file spawnbutton_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1p_shipgun_m1
+GeometryTemplate.file 1p_shipgun_m1
+
+GeometryTemplate.create StandardMesh Ship_lad_01_m1
+GeometryTemplate.file Shokaku_lad_01_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Ship_lad_02_m1
+GeometryTemplate.file Shokaku_lad_02_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Ship_lad_03_m1
+GeometryTemplate.file Shokaku_lad_03_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Ship_lad_04_m1
+GeometryTemplate.file Shokaku_lad_04_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh shokaku_sta_01_m1
+GeometryTemplate.file shokaku_sta_01_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh ship_medicbox_m1
+GeometryTemplate.file mediclocker_m1
+GeometryTemplate.setLodDistance 0 0

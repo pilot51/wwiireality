@@ -1,0 +1,113 @@
+newPatch
+
+
+#################
+### Main back ###
+#################
+
+load @ROOT/Sound/@RTD/VEAKGVRUN.wav
+loop
+minDistance 40
+volume .4
+priority 7
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1.1
+	param 0.45
+	param 0.25
+	param 2
+        param 1.9
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 150
+	param 300
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect
+
+
+#################
+### Main back ###
+#################
+
+load @ROOT/Sound/@RTD/subprop1.wav
+loop
+minDistance 10
+volume .4
+priority 7
+*** Engine start ***
+beginEffect
+	controlDestination Volume
+	controlSource Time
+	envelope Ramp
+	param 0.2
+	param 1.1
+	param 0
+	param 1
+endEffect
+
+*** Engine Pitch ***
+beginEffect
+	controlDestination Pitch
+	controlSource Default
+	envelope Ramp
+	param 0
+	param 1.1
+	param 0.65
+	param 0.25
+	param 2
+        param 2
+endEffect
+
+*** Distance Volume ***
+beginEffect
+	controlDestination Volume
+	controlSource Distance
+	envelope Ramp
+	param 20
+	param 40
+	param 1
+	param -1	
+endEffect
+
+*** Engine stop ***
+beginEffect
+	controlDestination Volume
+	controlSource TimeRelease
+	envelope Ramp
+	param 0
+	param 0.4
+	param 1
+	param -1	
+endEffect

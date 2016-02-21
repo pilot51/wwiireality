@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject Ruin_Suburbhouse_3_M1
+ObjectTemplate.geometry Ruin_Suburbhouse_3_M1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate ruin_suburbhouse_3

@@ -1,0 +1,6 @@
+NetworkableInfo.createNewInfo AA_Allies_BodyInfo
+NetworkableInfo.setIsControlledBy 0
+NetworkableInfo.setHasOrientation 1
+NetworkableInfo.setPredictionMode PMLinear
+
+

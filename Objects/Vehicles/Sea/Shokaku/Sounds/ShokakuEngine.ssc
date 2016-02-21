@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/ShokakuEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/ShokakuEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/ShokakuEngine.ssc

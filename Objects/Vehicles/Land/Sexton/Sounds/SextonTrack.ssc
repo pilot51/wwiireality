@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/SextonTrack.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/SextonTrack.ssc
+	
+#templateLevel LOW
+
+	#include Low/SextonTrack.ssc

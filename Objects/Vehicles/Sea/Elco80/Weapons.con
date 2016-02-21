@@ -1,0 +1,249 @@
+rem *******************************
+rem ***     Elco80_Torpedos     ***
+rem *******************************
+
+rem *** Elco80_Torpedos ***
+ObjectTemplate.create FireArms Elco80_Torpedos
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.setAsynchronyFire 1
+ObjectTemplate.projectileTemplate Elco80Torpedo
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.visibleDummyProjectileTemplate Elco80_Dummy_Torpedo
+ObjectTemplate.magSize 2
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 12
+ObjectTemplate.AddRootSpeed 0
+ObjectTemplate.autoReload 1
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 3.5
+ObjectTemplate.fireOnce 1
+ObjectTemplate.setInputFire c_PIFire
+ObjectTemplate.AmmoType 15
+
+ObjectTemplate.addFirearmsPosition -2.999/2.935/0.4 0/0/0
+ObjectTemplate.addFirearmsPosition 3/2.935/0.4 0/0/0
+
+ObjectTemplate.loadSoundScript Sounds/PT_Torpedo_Left.ssc
+
+rem *** Elco80_Dummy_Torpedo ***
+ObjectTemplate.create SimpleObject Elco80_Dummy_Torpedo
+ObjectTemplate.geometry Torpedo_Sml_m1
+
+rem *******************************
+rem ***      Elco80Torpedo      ***
+rem *******************************
+
+rem *** Elco80Torpedo ***
+ObjectTemplate.create Projectile Elco80Torpedo
+ObjectTemplate.geometry Torpedo_Sml_M1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.timeToLive CRD_NONE/788/0/0
+ObjectTemplate.endEffectTemplate WaterExplosionTorpedo
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.setHasPointPhysics 0
+ObjectTemplate.DetonateOnWaterCollision 0
+ObjectTemplate.drag 0.04
+ObjectTemplate.mass 1179
+ObjectTemplate.material 250
+ObjectTemplate.radius 30
+rem -------------------------------------------------
+ObjectTemplate.addTemplate e_WaterTorpedo 
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Shallow_Torpedo_Floater
+ObjectTemplate.setPosition 0/3/-2
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Shallow_Torpedo_Floater
+ObjectTemplate.setPosition 0/3/2
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Shallow_Torpedo_Engine
+ObjectTemplate.setPosition 0/0/-3
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Torpedo_Wing
+ObjectTemplate.setPosition 0/0/-3
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Torpedo_Wing
+ObjectTemplate.setPosition 0/0/-3
+ObjectTemplate.setRotation 0/0/-90
+
+rem *** Shallow_Torpedo_Engine ***
+ObjectTemplate.create Engine Shallow_Torpedo_Engine
+ObjectTemplate.setPosition 0/0/90
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/15000
+ObjectTemplate.setMaxSpeed 0/0/17500
+ObjectTemplate.setAcceleration 0/0/25000
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setEngineType c_ETTorpedo
+ObjectTemplate.setTorque 12.5
+ObjectTemplate.setNoPropellerEffectAtSpeed 18
+ObjectTemplate.setDifferential 5
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.loadSoundScript Sounds/TorpedEngine.ssc
+
+rem *** Shallow_Torpedo_Floater ***
+ObjectTemplate.create FloatingBundle Shallow_Torpedo_Floater
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.setHullHeight 6.3
+ObjectTemplate.setFloatMaxLift 7.9
+ObjectTemplate.setFloatMinLift 7.9
+ObjectTemplate.setDragModifier 8000.0
+ObjectTemplate.setMinRotation 0/0.5/0
+ObjectTemplate.setMaxRotation 0/0.5/0
+ObjectTemplate.setMaxSpeed 0/0.1/0
+ObjectTemplate.setAcceleration 0/-0.1/0
+ObjectTemplate.setInputToPitch 1
+ObjectTemplate.setAutomaticReset 1
+
+rem *** Shallow_Torpedo_Wing ***
+ObjectTemplate.create Wing Shallow_Torpedo_Wing
+ObjectTemplate.setWingLift 0.4
+
+
+rem *******************************
+rem *** Elco80_SideGunner Parts ***
+rem *******************************
+
+rem *** Elco80_SideGunner ***
+ObjectTemplate.create FireArms Elco80_SideGunner
+ObjectTemplate.setNetworkableInfo Vehicle_Browning_Info
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.aiTemplate Browning 
+ObjectTemplate.projectileTemplate Browning_Projectile
+ObjectTemplate.setTracerTemplate Tracer_Projectile CRD_NONE/2/0/0
+ObjectTemplate.magSize 100
+ObjectTemplate.numOfMag 30
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 0.1
+ObjectTemplate.recoilSpeed 50.0
+ObjectTemplate.roundOfFire 9
+ObjectTemplate.autoReload 1
+ObjectTemplate.addDevFire 0
+ObjectTemplate.addFireArmsPosition -0.089/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 0.09/0/0 0/0/0
+ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
+ObjectTemplate.AmmoType 14
+ObjectTemplate.velocity 860
+ObjectTemplate.setFireDev 0.7 0.3 0.048
+ObjectTemplate.setMinDev 0.5
+
+ObjectTemplate.fireInCameraDof 1
+objectTemplate.heatAddWhenFire 0.06
+objectTemplate.coolDownPerSec 0.4
+objectTemplate.timeDelayOnOverHeat 2
+
+ObjectTemplate.addTemplate Attach_R_Hand
+ObjectTemplate.setPosition 0.22/-0.019/-0.399
+ObjectTemplate.setRotation 83.382/-0.34/142.417
+ObjectTemplate.addTemplate Attach_L_Hand
+ObjectTemplate.setPosition -0.209/0.01/-0.399
+ObjectTemplate.setRotation 86.37/-3.458/169.818
+
+ObjectTemplate.addTemplate Elco80_SideGunner_Gun
+ObjectTemplate.addTemplate e_MuzzHeavy
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition -0.099/0.01/1.3
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate e_MuzzHeavy
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0.1/0.01/1.3
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate e_Shell1250mm
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition -0.089/0.12/0.16
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate e_Shell1250mm
+ObjectTemplate.startoneffects 1
+ObjectTemplate.setPosition 0.09/0.12/0.16
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.loadSoundScript Sounds/Elco80_Oerlikon.ssc
+
+rem *** Elco80_SideGunner_Gun ***
+ObjectTemplate.create SimpleObject Elco80_SideGunner_Gun
+ObjectTemplate.geometry Elco80_SideGunner_Gun_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+rem **********************************
+rem *** FloatingMineLauncher Parts ***
+rem **********************************
+
+rem *** Elco80FloatingMineLauncher ***
+ObjectTemplate.create FireArms Elco80FloatingMineLauncher
+ObjectTemplate.setNetworkableInfo PlaneFireArmInfo
+ObjectTemplate.projectileTemplate Elco80FloatingMine
+ObjectTemplate.projectilePosition 0/0/0
+ObjectTemplate.visibleDummyProjectileTemplate Elco80FloatingMineLauncherDummy
+ObjectTemplate.magSize 4
+ObjectTemplate.numOfMag 1
+ObjectTemplate.velocity 0
+ObjectTemplate.reloadtime 10
+ObjectTemplate.roundOfFire 0.75
+ObjectTemplate.autoReload 1
+rem ObjectTemplate.altfireOnce 1
+ObjectTemplate.setInputFire c_PIAltFire
+ObjectTemplate.AmmoType 15
+
+ObjectTemplate.loadSoundScript Sounds\bomb.ssc
+
+rem *** Elco80FloatingMineLauncherDummy ***
+ObjectTemplate.create SimpleObject Elco80FloatingMineLauncherDummy
+ObjectTemplate.geometry FloatingMine_m1
+
+rem *** Elco80FloatingMine ***
+ObjectTemplate.create Projectile Elco80FloatingMine
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.networkableInfo ProjectileInfo
+ObjectTemplate.geometry FloatingMine_m1
+ObjectTemplate.timeToLive CRD_NONE/86400/0/0
+ObjectTemplate.endEffectTemplate e_WaterExplosion
+rem -------------------------------------------------
+ObjectTemplate.addTemplate FloatingMine_Floater
+ObjectTemplate.setPosition 0/0.150/-1
+ObjectTemplate.addTemplate FloatingMine_Floater
+ObjectTemplate.setPosition 0/0.150/1
+rem -------------------------------------------------
+ObjectTemplate.sethasCollisionPhysics 1
+ObjectTemplate.sethaspointphysics 0
+ObjectTemplate.sethasMobilePhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.gravityModifier 1
+ObjectTemplate.hasCollisionEffect 1
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.invisibleAtEndEffect 1
+ObjectTemplate.DetonateOnWaterCollision 0
+ObjectTemplate.stopAtEndEffect 1
+ObjectTemplate.dieAfterColl 1
+ObjectTemplate.invisible 0
+ObjectTemplate.material 232
+ObjectTemplate.material2 232
+ObjectTemplate.damageType 1
+ObjectTemplate.radius 15
+ObjectTemplate.drag 50
+ObjectTemplate.mass 10000
+ObjectTemplate.ForceOnExplosion 30
+rem ObjectTemplate.explodeNearEnemyDistance 3
+rem ObjectTemplate.addtoprojectilelist 1
+rem ObjectTemplate.projectiletype 1
+
+rem *** FloatingMine_Floater ***
+ObjectTemplate.create FloatingBundle FloatingMine_Floater
+ObjectTemplate.setHullHeight 1
+ObjectTemplate.setFloatMaxLift 3
+ObjectTemplate.setFloatMinLift 3
+ObjectTemplate.setSinkingSpeedMod 5
+
+

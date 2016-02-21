@@ -1,0 +1,59 @@
+
+GeometryTemplate.create StandardMesh Type38_Hull_M1
+GeometryTemplate.file Type38_Hull_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Type38_Hull_L1
+GeometryTemplate.file Type38_Hull_L1
+
+GeometryTemplate.create StandardMesh 1p_Type38_hull_m1
+GeometryTemplate.file 1P_Type38_Hull_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Oerlikon_Base_M1
+GeometryTemplate.file Oerlikon_Base_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Oerlikon_Shield_M1
+GeometryTemplate.file Oerlikon_Shield_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Oerlikon_Gun_M1
+GeometryTemplate.file Oerlikon_Gun_M1
+GeometryTemplate.setLodDistance 0 0
+
+
+beginrem
+GeometryTemplate.create StandardMesh Bofor_Base_M1
+GeometryTemplate.file Bofor_Base_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Bofor_Canon_M1
+GeometryTemplate.file Bofor_Canon_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Bofor_Gun_M1
+GeometryTemplate.file Bofor_Gun_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Bofor_Horizontal_M1
+GeometryTemplate.file Bofor_Horizontal_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Bofor_Seat_M1
+GeometryTemplate.file Bofor_Seat_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Bofor_Vertical_M1
+GeometryTemplate.file Bofor_Vertical_M1
+GeometryTemplate.setLodDistance 0 0
+endrem
+
+GeometryTemplate.create StandardMesh Type38_Lever_M1
+GeometryTemplate.file Type38_Lever_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1P_Type38_Lever_M1
+GeometryTemplate.file 1P_Type38_Lever_M1
+GeometryTemplate.cullFactor 2
+

@@ -1,0 +1,12 @@
+NetworkableInfo.createNewInfo GatoWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo GatoEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo GatoBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo GatoTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+

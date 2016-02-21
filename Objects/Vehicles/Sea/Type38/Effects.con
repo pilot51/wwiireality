@@ -1,0 +1,25 @@
+rem *** e_Type38Wreck ***
+ObjectTemplate.create EffectBundle e_Type38Wreck
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_Type38SpawnRaft
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+rem -------------------------------------
+
+
+rem *** Em_Type38SpawnRaft ***
+ObjectTemplate.create Emitter Em_Type38SpawnRaft
+ObjectTemplate.template Type38Raft
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.intensity CRD_NONE/1/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/0/0/0
+ObjectTemplate.movetowatersurface 0
+ObjectTemplate.IsSpawnEffect 1

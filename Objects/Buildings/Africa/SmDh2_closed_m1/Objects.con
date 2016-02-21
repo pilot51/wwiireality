@@ -1,0 +1,8 @@
+ObjectTemplate.create Bundle SmDh2_closed_m1
+ObjectTemplate.geometry SmDh2_closed_m1
+ObjectTemplate.addTemplate SmDh2_closed_bugfix_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject SmDh2_closed_bugfix_m1
+ObjectTemplate.geometry SmDh2_closed_bugfix_m1
+ObjectTemplate.setHasCollisionPhysics 1

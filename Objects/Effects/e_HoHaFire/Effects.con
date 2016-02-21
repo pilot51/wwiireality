@@ -1,0 +1,49 @@
+
+
+rem *** e_HoHaFire ***
+ObjectTemplate.create EffectBundle e_HoHaFire
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.loadSoundScript ../Common/Sounds/fire.ssc
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_HoHaFire
+ObjectTemplate.setPosition 0.6/0.6/0
+ObjectTemplate.setRotation 5/0/0
+ObjectTemplate.addTemplate Em_HoHaFire
+ObjectTemplate.setPosition -0.7/0.6/0
+ObjectTemplate.setRotation -5/0/0
+rem -------------------------------------
+
+
+rem *** Em_HoHaFire ***
+ObjectTemplate.create Emitter Em_HoHaFire
+ObjectTemplate.template Fx_HoHaFire
+ObjectTemplate.looping 1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 900
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_UNIFORM/20/40/0
+ObjectTemplate.relativePositionInUp CRD_NONE/-0.7/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/-1/0.05/0
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/10/0/0
+ObjectTemplate.startRotation CRD_NONE/1/0/0
+
+rem *** Fx_HoHaFire ***
+ObjectTemplate.create SpriteParticle Fx_HoHaFire
+ObjectTemplate.timeToLive CRD_UNIFORM/0.8/0.8/0
+ObjectTemplate.size CRD_UNIFORM/0.4/0.5/0
+ObjectTemplate.gravityModifier CRD_UNIFORM/-0.2/0/0
+ObjectTemplate.sizeOverTime 0/1|100/1.79995
+ObjectTemplate.texture e_FireEngine256
+ObjectTemplate.initRotation CRD_NONE/0/180/0
+ObjectTemplate.destBlendMode BMOne
+ObjectTemplate.rotationSpeed CRD_UNIFORM/10/0/0
+ObjectTemplate.XYSizeRatioOverTime 0/1|100/1
+ObjectTemplate.colorRGBAOverTime 0/0/0/0/0|3/255/255/255/255|85/255/255/255/191|100/255/255/255/0
+ObjectTemplate.numAnimationFrames 16
+ObjectTemplate.initAnimationFrame CRD_NONE/1/0/0
+ObjectTemplate.animationSpeed CRD_NONE/95/100/0
+ObjectTemplate.animationSpeedOverTime 0/1|100/0.200049
+
+

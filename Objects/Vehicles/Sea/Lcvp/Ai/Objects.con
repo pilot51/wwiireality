@@ -1,0 +1,274 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Unit LcvpUnit
+aiTemplatePlugIn.equipmentType 7
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 0
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+aiTemplatePlugIn.create Mobile LcvpMobile
+aiTemplatePlugIn.vehicleNumber 3
+aiTemplatePlugIn.maxSpeed 14.5
+aiTemplatePlugIn.turnRadius 30.0
+aiTemplatePlugIn.coverSearchRadius 50.0
+aiTemplatePlugIn.lodHeight -1.5
+
+aiTemplatePlugIn.create Physical LcvpPhysical
+aiTemplatePlugIn.setStrType HeavyArmour
+
+aiTemplatePlugIn.create ControlInfo LcvpControlInfo
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+
+rem *** AITemplate ***
+aiTemplate.create LcvpAI
+aiTemplate.addType ITMobile
+aiTemplate.addType ITNaval
+aiTemplate.addType ITTransportation
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 10
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn LcvpUnit
+aiTemplate.addPlugIn LcvpPhysical
+aiTemplate.addPlugIn LcvpControlInfo
+aiTemplate.addPlugIn LcvpMobile
+
+
+rem  *** The turret mounted MG
+
+rem ******************************************************************
+rem ******************************************************************
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament LcvpMgArms
+aiTemplatePlugIn.setIsAntiAircraft 1
+
+aiTemplatePlugIn.create Unit LcvpMgUnit
+aiTemplatePlugIn.equipmentType 11
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 1
+aiTemplatePlugIn.setSelectKey PIMenuSelect2
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+aiTemplatePlugIn.create ControlInfo LcvpMgCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -60/-40/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 60/10/0
+
+
+rem *** AITemplate ***
+aiTemplate.create LcvpMG
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITNaval
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 6
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn LcvpMgArms
+aiTemplate.addPlugIn LcvpMgUnit
+aiTemplate.addPlugIn LcvpMgCtrl
+
+rem ******************************************************************
+rem ******************************************************************
+
+
+
+rem  *** The turret mounted MG
+
+rem ******************************************************************
+rem ******************************************************************
+
+rem *** Plugins ***
+
+aiTemplatePlugIn.create Unit LcvpPassanger3Unit
+aiTemplatePlugIn.equipmentType 10
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 0
+aiTemplatePlugIn.setSelectKey PIMenuSelect3
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+aiTemplatePlugIn.create ControlInfo LcvpPassangerCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+
+rem *** AITemplate ***
+aiTemplate.create LcvpPassanger3
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITNaval
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 4
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn LcvpPassanger3Unit
+aiTemplate.addPlugIn LcvpPassangerCtrl
+
+rem ******************************************************************
+rem ******************************************************************
+
+rem ******************************************************************
+rem ******************************************************************
+
+rem *** Plugins ***
+
+aiTemplatePlugIn.create Unit LcvpPassanger4Unit
+aiTemplatePlugIn.equipmentType 10
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 0
+aiTemplatePlugIn.setSelectKey PIMenuSelect4
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+
+rem *** AITemplate ***
+aiTemplate.create LcvpPassanger4
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITNaval
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 4
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn LcvpPassanger4Unit
+aiTemplate.addPlugIn LcvpPassangerCtrl
+
+rem ******************************************************************
+rem ******************************************************************
+
+rem ******************************************************************
+rem ******************************************************************
+
+rem *** Plugins ***
+
+aiTemplatePlugIn.create Unit LcvpPassanger5Unit
+aiTemplatePlugIn.equipmentType 10
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 0
+aiTemplatePlugIn.setSelectKey PIMenuSelect5
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+rem *** AITemplate ***
+aiTemplate.create LcvpPassanger5
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITNaval
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 4
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn LcvpPassanger5Unit
+aiTemplate.addPlugIn LcvpPassangerCtrl
+
+rem ******************************************************************
+rem ******************************************************************
+
+rem ******************************************************************
+rem ******************************************************************
+
+rem *** Plugins ***
+
+aiTemplatePlugIn.create Unit LcvpPassanger6Unit
+aiTemplatePlugIn.equipmentType 10
+aiTemplatePlugIn.setStrategicStrength 0 1
+aiTemplatePlugIn.setStrategicStrength 1 0
+aiTemplatePlugIn.setSelectKey PIMenuSelect6
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+rem *** AITemplate ***
+aiTemplate.create LcvpPassanger6
+aiTemplate.addType ITUnit
+aiTemplate.addType ITBiological
+aiTemplate.addType ITNaval
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 2
+aiTemplate.basicTemp 4
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn LcvpPassanger6Unit
+aiTemplate.addPlugIn LcvpPassangerCtrl
+
+rem ******************************************************************
+rem ******************************************************************
+

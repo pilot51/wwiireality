@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject citymesh4_closed_M1
+ObjectTemplate.geometry citymesh4_closed_M1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.aiTemplate citymesh4_closed

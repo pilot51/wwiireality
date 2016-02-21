@@ -1,0 +1,54 @@
+
+
+rem *** e_MuzzSexton ***
+ObjectTemplate.create EffectBundle e_MuzzSexton
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_MuzzPriest_Flare
+ObjectTemplate.addTemplate Em_MuzzPriest_Glint
+ObjectTemplate.setPosition 0.02/-0.024/-1.144
+ObjectTemplate.addTemplate Em_MuzzPriest_Smoke
+ObjectTemplate.setPosition -0.494/0/0
+ObjectTemplate.setRotation 15/0/0.02
+ObjectTemplate.addTemplate Em_MuzzPriest_Smoke
+ObjectTemplate.setPosition 0.5/0/0
+ObjectTemplate.setRotation 15/0/0.02
+ObjectTemplate.addTemplate Em_MuzzPanz_Shock1
+ObjectTemplate.addTemplate Em_MuzzPriest_WSmoke
+ObjectTemplate.addTemplate em_MuzzSexton
+ObjectTemplate.setPosition 0/0/-1.151
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate em_MuzzSexton
+ObjectTemplate.setPosition 0/0/-1.001
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate em_MuzzSexton
+ObjectTemplate.setPosition 0/0/-1.151
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate em_MuzzSexton
+ObjectTemplate.setPosition 0/0/-1.001
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+rem -------------------------------------
+
+
+rem *** em_MuzzSexton ***
+ObjectTemplate.create Emitter em_MuzzSexton
+ObjectTemplate.template fx_MuzzSexton
+ObjectTemplate.lodDistance 500
+ObjectTemplate.timeToLive CRD_NONE/0.2/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/0/0/0
+ObjectTemplate.startRotation CRD_UNIFORM/0/180/1
+ObjectTemplate.noPhysics 1
+ObjectTemplate.addChild 1
+ObjectTemplate.showInThirdPerson 1
+
+
+rem *** fx_MuzzSexton ***
+ObjectTemplate.create Particle fx_MuzzSexton
+ObjectTemplate.geometry muzzSG44_m1
+ObjectTemplate.timeToLive CRD_NONE/0.3/0/0
+ObjectTemplate.gravityModifier CRD_NONE/0/0/0
+

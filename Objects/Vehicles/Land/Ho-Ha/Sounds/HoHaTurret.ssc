@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/HoHaTurret.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/HoHaTurret.ssc
+	
+#templateLevel LOW
+
+	#include Low/HoHaTurret.ssc

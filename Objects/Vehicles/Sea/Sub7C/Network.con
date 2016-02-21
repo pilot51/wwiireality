@@ -1,0 +1,12 @@
+NetworkableInfo.createNewInfo Sub7cWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sub7cEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sub7cBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo Sub7CTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+

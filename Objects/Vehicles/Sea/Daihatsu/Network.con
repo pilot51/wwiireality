@@ -1,0 +1,16 @@
+NetworkableInfo.createNewInfo DaihatsuWingInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo DaihatsuEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo DaihatsuBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo DaihatsuTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo DaihatsuPassengerInfo
+NetworkableInfo.setPredictionMode PMLinear
+NetworkableInfo.setBasePriority 0
+

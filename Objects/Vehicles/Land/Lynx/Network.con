@@ -1,0 +1,16 @@
+NetworkableInfo.createNewInfo LynxEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo LynxSteeringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo LynxBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo LynxSpringInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo LynxTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+

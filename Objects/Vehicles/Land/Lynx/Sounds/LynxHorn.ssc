@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/LynxHorn.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/LynxHorn.ssc
+	
+#templateLevel LOW
+
+	#include Low/LynxHorn.ssc

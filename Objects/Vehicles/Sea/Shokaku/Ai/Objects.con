@@ -1,0 +1,192 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Unit ShokakuUnit
+aiTemplatePlugIn.equipmentType 12
+aiTemplatePlugIn.setStrategicStrength 0 3
+aiTemplatePlugIn.setStrategicStrength 1 9
+
+aiTemplatePlugIn.create Mobile ShokakuMobile
+aiTemplatePlugIn.vehicleNumber 2
+aiTemplatePlugIn.maxSpeed 0.0
+aiTemplatePlugIn.turnRadius 100.0
+aiTemplatePlugIn.coverSearchRadius 50.0
+
+aiTemplatePlugIn.create Physical ShokakuPhysical
+aiTemplatePlugIn.setStrType HeavyArmour
+
+aiTemplatePlugIn.create ControlInfo ShokakuControlInfo
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+
+rem *** AITemplate ***
+aiTemplate.create Shokaku
+aiTemplate.addType ITMobile
+aiTemplate.addType ITNaval
+aiTemplate.degeneration 180
+aiTemplate.allowedTimeDiff 3
+aiTemplate.basicTemp 100
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn ShokakuUnit
+aiTemplate.addPlugIn ShokakuPhysical
+aiTemplate.addPlugIn ShokakuControlInfo
+aiTemplate.addPlugIn ShokakuMobile
+
+rem -------- AA general ----------
+
+aiTemplatePlugIn.create Armament ShokakuAAArmament
+aiTemplatePlugIn.setIsAntiAircraft 1
+
+aiTemplatePlugIn.create Physical ShokakuAAPhysical
+aiTemplatePlugIn.setStrType LightArmour
+
+aiTemplatePlugIn.create ControlInfo ShokakuAACtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 1.0
+aiTemplatePlugIn.rollScale                  1.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -180/-80/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 180/2/0
+
+
+rem -------- AA 2 -----------
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Unit ShokakuAAUnit2
+aiTemplatePlugIn.equipmentType 9
+aiTemplatePlugIn.setStrategicStrength 0 0
+aiTemplatePlugIn.setStrategicStrength 1 2
+aiTemplatePlugIn.setHasExposedSoldier 1
+aiTemplatePlugIn.setSelectKey PIMenuSelect2
+
+rem *** AITemplate ***
+aiTemplate.create ShokakuAA2
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITFixed
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 3
+aiTemplate.basicTemp 9
+aiTemplate.secondary 1
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn ShokakuAAUnit2
+rem aiTemplate.addPlugIn ShokakuAAPhysical
+aiTemplate.addPlugIn ShokakuAAArmament
+aiTemplate.addPlugIn ShokakuAACtrl
+
+rem -------- AA 3 -----------
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Unit ShokakuAAUnit3
+aiTemplatePlugIn.equipmentType 9
+aiTemplatePlugIn.setStrategicStrength 0 0
+aiTemplatePlugIn.setStrategicStrength 1 2
+aiTemplatePlugIn.setHasExposedSoldier 1
+aiTemplatePlugIn.setSelectKey PIMenuSelect3
+
+rem *** AITemplate ***
+aiTemplate.create ShokakuAA3
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITFixed
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 3
+aiTemplate.basicTemp 9
+aiTemplate.secondary 1
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn ShokakuAAUnit3
+rem aiTemplate.addPlugIn ShokakuAAPhysical
+aiTemplate.addPlugIn ShokakuAAArmament
+aiTemplate.addPlugIn ShokakuAACtrl
+
+rem -------- AA 4 -----------
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Unit ShokakuAAUnit4
+aiTemplatePlugIn.equipmentType 9
+aiTemplatePlugIn.setStrategicStrength 0 0
+aiTemplatePlugIn.setStrategicStrength 1 2
+aiTemplatePlugIn.setHasExposedSoldier 1
+aiTemplatePlugIn.setSelectKey PIMenuSelect4
+
+rem *** AITemplate ***
+aiTemplate.create ShokakuAA4
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITFixed
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 3
+aiTemplate.basicTemp 9
+aiTemplate.secondary 1
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn ShokakuAAUnit4
+rem aiTemplate.addPlugIn ShokakuAAPhysical
+aiTemplate.addPlugIn ShokakuAAArmament
+aiTemplate.addPlugIn ShokakuAACtrl
+
+rem -------- AA 5 -----------
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Unit ShokakuAAUnit5
+aiTemplatePlugIn.equipmentType 9
+aiTemplatePlugIn.setStrategicStrength 0 0
+aiTemplatePlugIn.setStrategicStrength 1 2
+aiTemplatePlugIn.setHasExposedSoldier 1
+aiTemplatePlugIn.setSelectKey PIMenuSelect5
+
+rem *** AITemplate ***
+aiTemplate.create ShokakuAA5
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITFixed
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 3
+aiTemplate.basicTemp 9
+aiTemplate.secondary 1
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn ShokakuAAUnit5
+rem aiTemplate.addPlugIn ShokakuAAPhysical
+aiTemplate.addPlugIn ShokakuAAArmament
+aiTemplate.addPlugIn ShokakuAACtrl

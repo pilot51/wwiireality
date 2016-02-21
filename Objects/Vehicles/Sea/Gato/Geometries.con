@@ -1,0 +1,27 @@
+renderer.beginGlobalCluster Gato
+
+GeometryTemplate.create StandardMesh Gato_Hull_m1
+GeometryTemplate.file Gato_Hull_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Gato_Stabilizer_m1
+GeometryTemplate.file Gato_Stabilizer_m1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Gato_Depthrod01_m1
+GeometryTemplate.file Gato_Depthrod01_m1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Gato_Depthrod02_m1
+GeometryTemplate.file Gato_Depthrod02_m1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Gato_Radar_m1
+GeometryTemplate.file Gato_Radar_m1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.setLodDistance 0 0
+
+renderer.endGlobalCluster

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/m10Projectile.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/m10Projectile.ssc
+	
+#templateLevel LOW
+
+	#include Low/m10Projectile.ssc

@@ -1,0 +1,17 @@
+NetworkableInfo.createNewInfo FletcherBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo FletcherCannonInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo FletcherTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo FletcherRudderInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo FletcherEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+rem *** end of file ***

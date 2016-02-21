@@ -1,0 +1,110 @@
+renderer.beginGlobalCluster B17
+
+GeometryTemplate.create StandardMesh B17_Tur_Top_M1
+GeometryTemplate.file B17_Tur_Top_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1P_B17_Turret_m1
+GeometryTemplate.file 1P_B17_Turret_m1
+
+GeometryTemplate.create StandardMesh B17_GunT_M1
+GeometryTemplate.file B17_GunT_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1P_B17_Turret_Gun_m1
+GeometryTemplate.file 1P_B17_Turret_Gun_m1
+
+GeometryTemplate.create StandardMesh B17_Tur_Dwn_M1
+GeometryTemplate.file B17_Tur_Dwn_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1p_B17_BellyTurret_m1
+GeometryTemplate.file 1p_B17_BellyTurret_m1
+
+GeometryTemplate.create StandardMesh B17_GunB_M1
+GeometryTemplate.file B17_GunB_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1p_B17_Bellygun_m1
+GeometryTemplate.file 1p_B17_Bellygun_m1
+
+GeometryTemplate.create StandardMesh B17_fus_M1
+GeometryTemplate.file B17_fus_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1P_B17_Int_M1
+GeometryTemplate.file 1P_B17_Int_M1
+
+GeometryTemplate.create StandardMesh B17_prp1
+GeometryTemplate.file B17_prp_M1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh B17_prp2
+GeometryTemplate.file B17_prp1_M2
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh B17_gea1_Fro_M1
+GeometryTemplate.file B17_gea1_Fro_M1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh B17_gea2_Fro_M1
+GeometryTemplate.file B17_gea2_Fro_M1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh B17_gea3_Bac_M1
+GeometryTemplate.file B17_gea3_Bac_M1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh B17_BayL_M1
+GeometryTemplate.file B17_BayL_M1
+geometryTemplate.cullFactor 0.02
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh B17_BayR_M1
+GeometryTemplate.file B17_BayR_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh B17_Rud1_Fro_M1
+GeometryTemplate.file B17_Rud1_Fro_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh B17_Rud2_Fro_M1
+GeometryTemplate.file B17_Rud2_Fro_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh B17_Rud3_Bac_M1
+GeometryTemplate.file B17_Rud3_Bac_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh B17_Rud4_Bac_M1
+GeometryTemplate.file B17_Rud4_Bac_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh B17_Rud5_Bac_M1
+GeometryTemplate.file B17_Rud5_Bac_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh B17_Whe_Fro_M1
+GeometryTemplate.file B17_Whe_Fro_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh B17_Whe_Bac_M1
+GeometryTemplate.file B17_Whe_Bac_M1
+GeometryTemplate.setLodDistance 0 0
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh B17_fus_L1
+GeometryTemplate.file B17_fus_L1
+ObjectTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_B17_1_M1
+GeometryTemplate.file Wreck_B17_1_M1

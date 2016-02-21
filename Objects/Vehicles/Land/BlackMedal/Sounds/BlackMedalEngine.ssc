@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/BlackMedalEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/BlackMedalEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/BlackMedalEngine.ssc

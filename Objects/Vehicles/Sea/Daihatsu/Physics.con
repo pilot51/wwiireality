@@ -1,0 +1,50 @@
+
+
+rem *** DaihatsuEngine ***
+ObjectTemplate.create Engine DaihatsuEngine
+ObjectTemplate.setNetworkableInfo DaihatsuEngineInfo
+ObjectTemplate.loadSoundScript Sounds/dai_Engine_Water.ssc
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 5
+ObjectTemplate.setDifferential 2.2
+ObjectTemplate.setNoPropellerEffectAtSpeed 120
+
+
+rem *** DaihatsuRudderStern ***
+ObjectTemplate.create Wing DaihatsuRudderStern
+ObjectTemplate.setMinRotation 0/-9/0
+ObjectTemplate.setMaxRotation 0/9/0
+ObjectTemplate.setMaxSpeed 0/18/0
+ObjectTemplate.setAcceleration 0/-36/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** DaihatsuRudderAft ***
+ObjectTemplate.create Wing DaihatsuRudderAft
+ObjectTemplate.setMinRotation 0/-9/0
+ObjectTemplate.setMaxRotation 0/9/0
+ObjectTemplate.setMaxSpeed 0/18/0
+ObjectTemplate.setAcceleration 0/36/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** DaihatsuFloater ***
+ObjectTemplate.create FloatingBundle DaihatsuFloater
+ObjectTemplate.setHullHeight 1.5
+ObjectTemplate.setFloatMaxLift 6
+ObjectTemplate.setFloatMinLift 6
+ObjectTemplate.setSinkingSpeedMod 5

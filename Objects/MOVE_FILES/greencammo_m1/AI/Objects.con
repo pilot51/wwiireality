@@ -1,0 +1,16 @@
+aiTemplatePlugIn.create Cover greencammoCover
+aiTemplatePlugIn.coverValue 20.0
+
+aiTemplatePlugIn.create Physical greencammoPhysical
+
+rem *** AITemplate ***
+aiTemplate.create greencammo
+aiTemplate.addType ITStructure
+aiTemplate.addType ITScaleRender
+aiTemplate.addType ITNoTemperature
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 1
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn greencammoCover
+aiTemplate.addPlugIn greencammoPhysical

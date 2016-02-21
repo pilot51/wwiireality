@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/LynxEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/LynxEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/LynxEngine.ssc

@@ -1,0 +1,17 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Cover shed_europeCover
+aiTemplatePlugIn.coverValue 15.0
+
+aiTemplatePlugIn.create Physical shed_europePhysical
+
+rem *** AITemplate ***
+aiTemplate.create shed_europe
+aiTemplate.addType ITCover
+aiTemplate.addType ITStructure
+aiTemplate.addType ITNoTemperature
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 1
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn shed_europeCover
+aiTemplate.addPlugIn shed_europePhysical

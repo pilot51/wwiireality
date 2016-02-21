@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/PriestCannon.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/PriestCannon.ssc
+	
+#templateLevel LOW
+
+	#include Low/PriestCannon.ssc

@@ -1,0 +1,4 @@
+GeometryTemplate.create StandardMesh RH_Aichi_Fus_L1
+GeometryTemplate.file RH_Aichi_Fus_L1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0

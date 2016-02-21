@@ -1,0 +1,33 @@
+Game.setLocalized 1
+
+rem ** Allied Briefing **
+game.setAlliedCampaign BRIEFING_ALLIED_CAMPAIGN_BOCAGE
+game.setAlliedHints BRIEFING_ALLIED_HINTS_BOCAGE
+game.setAlliedObjectives BRIEFING_ALLIED_OBJECTIVES_BOCAGE
+game.setAlliedSkirmish BRIEFING_ALLIED_SKIRMISH_BOCAGE
+
+rem ** Axis Briefing **
+game.setAxisCampaign BRIEFING_AXIS_CAMPAIGN_BOCAGE
+game.setAxisHints BRIEFING_AXIS_HINTS_BOCAGE
+game.setAxisObjectives BRIEFING_AXIS_OBJECTIVES_BOCAGE
+game.setAxisSkirmish BRIEFING_AXIS_SKIRMISH_BOCAGE
+
+rem ** Allied Debriefing **
+game.setAlliedDebriefingMajorVictory DEBRIEFING_ALLIED_MAJOR_VICTORY_BOCAGE
+game.setAlliedDebriefingMinorVictory DEBRIEFING_ALLIED_MINOR_VICTORY_BOCAGE
+game.setAlliedDebriefingMajorDefeat DEBRIEFING_ALLIED_MAJOR_DEFEAT_BOCAGE
+game.setAlliedDebriefingMinorDefeat DEBRIEFING_ALLIED_MINOR_DEFEAT_BOCAGE
+
+rem ** Axis Debriefing **
+game.setAxisDebriefingMajorVictory DEBRIEFING_AXIS_MAJOR_VICTORY_BOCAGE
+game.setAxisDebriefingMinorVictory DEBRIEFING_AXIS_MINOR_VICTORY_BOCAGE
+game.setAxisDebriefingMajorDefeat DEBRIEFING_AXIS_MAJOR_DEFEAT_BOCAGE
+game.setAxisDebriefingMinorDefeat DEBRIEFING_AXIS_MINOR_DEFEAT_BOCAGE
+
+rem ** Multiplayer Briefing **
+game.setMultiplayerBriefingObjectives MULTIPLAYER_BRIEFING_BOCAGE
+game.setMultiplayerBriefingMapType MULTIPLAYER_MAP_TYPE_HEADON_MAP
+
+game.setLoadPicture Load/Western2.tga
+game.setServerInfoIcon "serverInfo.dds"
+game.setMapId "WWIIReality"

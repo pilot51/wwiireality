@@ -1,0 +1,50 @@
+
+
+rem *** ShokakuEngine ***
+ObjectTemplate.create Engine ShokakuEngine
+ObjectTemplate.setNetworkableInfo ShokakuEngineInfo
+ObjectTemplate.loadSoundScript Sounds/ShokakuEngine.ssc
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 1.5
+ObjectTemplate.setDifferential 1.5
+ObjectTemplate.setNoPropellerEffectAtSpeed 120
+
+
+rem *** ShokakuRudder ***
+ObjectTemplate.create Wing ShokakuRudder
+ObjectTemplate.setMinRotation 0/-250/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** ShokakuHullWing ***
+ObjectTemplate.create Wing ShokakuHullWing
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/-10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** ShokakuFloater ***
+ObjectTemplate.create FloatingBundle ShokakuFloater
+ObjectTemplate.setHullHeight 15
+ObjectTemplate.setFloatMaxLift 5
+ObjectTemplate.setFloatMinLift 5
+

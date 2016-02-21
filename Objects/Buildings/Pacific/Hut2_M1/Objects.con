@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject Hut2_M1
+ObjectTemplate.aiTemplate Hut2_M1
+ObjectTemplate.geometry Hut2_M1
+ObjectTemplate.setHasCollisionPhysics 1

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/Priestgunbase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/Priestgunbase.ssc
+	
+#templateLevel LOW
+
+	#include Low/Priestgunbase.ssc

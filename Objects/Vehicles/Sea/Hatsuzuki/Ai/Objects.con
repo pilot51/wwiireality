@@ -1,0 +1,198 @@
+rem *** Plugins ***
+
+aiTemplatePlugIn.create Armament HatsuzukiArms
+
+aiTemplatePlugIn.create Unit HatsuzukiUnit
+aiTemplatePlugIn.equipmentType 2
+aiTemplatePlugIn.setStrategicStrength 0 8
+aiTemplatePlugIn.setStrategicStrength 1 6
+
+aiTemplatePlugIn.create Mobile HatsuzukiMobile
+aiTemplatePlugIn.vehicleNumber 2
+aiTemplatePlugIn.maxSpeed 15.0
+aiTemplatePlugIn.turnRadius 50.0
+aiTemplatePlugIn.coverSearchRadius 50.0
+aiTemplatePlugIn.avoidCollisionLookAhead 15.0
+
+aiTemplatePlugIn.create Physical HatsuzukiPhysical
+aiTemplatePlugIn.setStrType HeavyArmour
+
+aiTemplatePlugIn.create ControlInfo HatsuzukiControlInfo
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -110/-60/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 110/10/0
+
+
+rem *** AITemplate ***
+aiTemplate.create HatsuzukiAI
+aiTemplate.addType ITMobile
+aiTemplate.addType ITNaval
+aiTemplate.addType ITUnit
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 50
+aiTemplate.allowedTimeDiff 4
+aiTemplate.basicTemp 50
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn HatsuzukiUnit
+aiTemplate.addPlugIn HatsuzukiPhysical
+aiTemplate.addPlugIn HatsuzukiControlInfo
+aiTemplate.addPlugIn HatsuzukiMobile
+aiTemplate.addPlugIn HatsuzukiArms
+
+
+
+
+rem  *** Rear gun
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament HatsuzukiRearGunArms
+
+aiTemplatePlugIn.create Unit HatsuzukiRearGunUnit
+aiTemplatePlugIn.equipmentType 9
+aiTemplatePlugIn.setStrategicStrength 0 7
+aiTemplatePlugIn.setStrategicStrength 1 5
+aiTemplatePlugIn.setSelectKey PIMenuSelect2
+
+aiTemplatePlugIn.create ControlInfo HatsuzukiRearGunCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -110/-60/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 110/10/0
+
+rem *** AITemplate ***
+aiTemplate.create HatsuzukiRearGunAI
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.addType ITObstructedView
+aiTemplate.degeneration 50
+aiTemplate.allowedTimeDiff 4
+aiTemplate.basicTemp 30
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn HatsuzukiRearGunArms
+aiTemplate.addPlugIn HatsuzukiRearGunUnit
+aiTemplate.addPlugIn HatsuzukiRearGunCtrl
+
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+
+rem  *** The  Deck MG
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+rem *** Plugins ***
+aiTemplatePlugIn.create Armament HatsuzukiMgArms
+aiTemplatePlugIn.setIsAntiAircraft 1
+
+aiTemplatePlugIn.create Unit HatsuzukiMgUnit
+aiTemplatePlugIn.equipmentType 9
+aiTemplatePlugIn.setStrategicStrength 0 2
+aiTemplatePlugIn.setStrategicStrength 1 2
+aiTemplatePlugIn.setSelectKey PIMenuSelect4
+aiTemplatePlugIn.setHasExposedSoldier 1
+
+aiTemplatePlugIn.create ControlInfo HatsuzukiMgCtrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.throttleSensitivity       -1.0
+rem aiTemplatePlugIn.pitchSensitivity           0.021817
+rem aiTemplatePlugIn.rollSensitivity           -0.021817
+aiTemplatePlugIn.pitchSensitivity           0.21817
+aiTemplatePlugIn.rollSensitivity           -0.21817
+aiTemplatePlugIn.yawSensitivity            -2.5
+rem aiTemplatePlugIn.lookVerticalSensitivity    0.021817
+rem aiTemplatePlugIn.lookHorizontalSensitivity -0.021817
+aiTemplatePlugIn.lookVerticalSensitivity    0.21817
+aiTemplatePlugIn.lookHorizontalSensitivity -0.21817
+aiTemplatePlugIn.throttleLookAhead          1.0
+aiTemplatePlugIn.pitchLookAhead             1.0
+aiTemplatePlugIn.rollLookAhead              1.0
+aiTemplatePlugIn.yawLookAhead               1.0
+aiTemplatePlugIn.lookVerticalLookAhead      1.0
+aiTemplatePlugIn.lookHorizontalLookAhead    1.0
+aiTemplatePlugIn.throttleScale              1.0
+rem *** Angle in radians ***
+aiTemplatePlugIn.pitchScale                 5.0
+aiTemplatePlugIn.rollScale                  5.0
+aiTemplatePlugIn.yawScale                   0.0020
+aiTemplatePlugIn.lookVerticalScale          1.0
+aiTemplatePlugIn.lookHorizontalScale        1.0
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg -80/-45/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 80/45/0
+
+rem *** AITemplate ***
+aiTemplate.create HatsuzukiMG
+aiTemplate.addType ITUnit
+aiTemplate.addType ITNaval
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 1
+aiTemplate.basicTemp 2
+aiTemplate.commonKnowledge 0
+aiTemplate.secondary 1
+aiTemplate.addPlugIn HatsuzukiMgArms
+aiTemplate.addPlugIn HatsuzukiMgUnit
+aiTemplate.addPlugIn HatsuzukiMgCtrl
+
+rem ******************************************************************************************
+rem ******************************************************************************************
+
+
+

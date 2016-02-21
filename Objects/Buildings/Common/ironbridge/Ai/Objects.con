@@ -1,0 +1,19 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Physical IronBridgePhysical
+
+rem *** AITemplate ***
+aiTemplate.create Ironbrdg1_m1
+aiTemplate.addType ITScaleRender
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 1
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn IronBridgePhysical
+
+aiTemplate.create Ironbrdg2_m1
+aiTemplate.addType ITScaleRender
+aiTemplate.degeneration 1
+aiTemplate.allowedTimeDiff -1
+aiTemplate.basicTemp 1
+aiTemplate.commonKnowledge 1
+aiTemplate.addPlugIn IronBridgePhysical

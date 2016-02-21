@@ -1,0 +1,132 @@
+renderer.beginGlobalCluster Corsair
+
+GeometryTemplate.create StandardMesh Corsair_Hull_M1
+GeometryTemplate.file Corsair_Hull_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Hull_L1
+GeometryTemplate.file Corsair_Hull_L1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Bwing_left_m1
+GeometryTemplate.file Corsair_Bwing_left_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Bwing_right_m1
+GeometryTemplate.file Corsair_Bwing_right_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Bwing_Top_m1
+GeometryTemplate.file Corsair_Bwing_Top_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Lwheel_m1
+GeometryTemplate.file Corsair_Lwheel_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Rwheel_m1
+GeometryTemplate.file Corsair_Rwheel_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Bwheel_m1
+GeometryTemplate.file Corsair_Bwheel_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Bwheel_Holder_m1
+GeometryTemplate.file Corsair_Bwheel_Holder_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Lwheel_Holder_m1
+GeometryTemplate.file Corsair_Lwheel_Holder_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Rwheel_Holder_m1
+GeometryTemplate.file Corsair_Rwheel_Holder_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Bwheel_RDoor_m1
+GeometryTemplate.file Corsair_Bwheel_RDoor_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Bwheel_LDoor_m1
+GeometryTemplate.file Corsair_Bwheel_LDoor_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_prp1
+GeometryTemplate.file Corsair_prop_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_prp2
+GeometryTemplate.file Corsair_propblur_m1
+GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh Corsair_Lwing_Out_m1
+GeometryTemplate.file Corsair_Lwing_Out_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Rwing_Out_m1
+GeometryTemplate.file Corsair_Rwing_Out_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Lwing_In_m1
+GeometryTemplate.file Corsair_Lwing_In_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Rwing_In_m1
+GeometryTemplate.file Corsair_Rwing_In_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Flap_Left_Middle_M1
+GeometryTemplate.file Corsair_Flap_Left_Middle_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Flap_Left_Outer_M1
+GeometryTemplate.file Corsair_Flap_Left_Outer_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Flap_Right_Inner_M1
+GeometryTemplate.file Corsair_Flap_Right_Inner_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Flap_Right_Middle_M1
+GeometryTemplate.file Corsair_Flap_Right_Middle_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Flap_Right_Outer_M1
+GeometryTemplate.file Corsair_Flap_Right_Outer_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Flap_Tail_Left_M1
+GeometryTemplate.file Corsair_Flap_Tail_Left_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Flap_Tail_Right_M1
+GeometryTemplate.file Corsair_Flap_Tail_Right_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_cock_M1
+GeometryTemplate.file Corsair_cock_M1
+GeometryTemplate.setLodDistance 0 0
+
+beginrem
+
+GeometryTemplate.create StandardMesh Corsair_Door1_M1
+GeometryTemplate.file Corsair_Door1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Corsair_Door2_M1
+GeometryTemplate.file Corsair_Door2_M1
+GeometryTemplate.setLodDistance 0 0
+
+endrem
+
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh 1P_Corsair
+GeometryTemplate.file 1P_Corsair
+
+GeometryTemplate.create StandardMesh Wreck_Corsair1_m1
+GeometryTemplate.file Wreck_Corsair1_m1
+GeometryTemplate.setLodDistance 0 0

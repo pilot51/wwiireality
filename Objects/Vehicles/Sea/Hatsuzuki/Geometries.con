@@ -1,0 +1,30 @@
+GeometryTemplate.create StandardMesh Hatsuzuki_M1
+GeometryTemplate.file Hatsuzuki_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Hatsuzuki_L1
+GeometryTemplate.file Hatsuzuki_L1
+
+renderer.beginGlobalCluster Hatsuzuki
+
+GeometryTemplate.create StandardMesh Hatsuzuki_cannon_pipe_M1
+GeometryTemplate.file Hatsuzuki_cannon_pipe_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Hatsuzuki_cannon_M1
+GeometryTemplate.file Hatsuzuki_cannon_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Hatsuzuki_propeller_M1
+GeometryTemplate.file Hatsuzuki_propeller_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Hatsuzuki_Radar_m1
+GeometryTemplate.file Hatsuzuki_Radar_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Hatsuzuki_rudder_M1
+GeometryTemplate.file Hatsuzuki_rudder_M1
+GeometryTemplate.setLodDistance 0 0
+
+renderer.endGlobalCluster

@@ -1,0 +1,17 @@
+NetworkableInfo.createNewInfo HatsuzukiBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo HatsuzukiCannonInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo HatsuzukiTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo HatsuzukiRudderInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo HatsuzukiEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+
+rem *** end of file ***

@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/powEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/powEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/powEngine.ssc

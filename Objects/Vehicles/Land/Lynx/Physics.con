@@ -1,0 +1,97 @@
+
+
+rem *** LynxEngine ***
+ObjectTemplate.create Engine LynxEngine
+ObjectTemplate.setNetworkableInfo LynxEngineInfo
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript Sounds/LynxEngine.ssc
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate LynxFrontWheelR
+ObjectTemplate.setPosition 0.912/0.422/1.35
+ObjectTemplate.addTemplate LynxFrontWheelL
+ObjectTemplate.setPosition -0.912/0.422/1.35
+ObjectTemplate.addTemplate LynxBackSpringR
+ObjectTemplate.setPosition 0.912/-0.15/-0.959
+ObjectTemplate.addTemplate LynxBackSpringL
+ObjectTemplate.setPosition -0.912/-0.15/-0.959
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/0/-5000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/55000
+ObjectTemplate.setAcceleration 0/0/55000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETCar
+ObjectTemplate.setTorque 8
+ObjectTemplate.setDifferential 3.5
+ObjectTemplate.setNumberOfGears 5
+ObjectTemplate.setGearUp 0.95
+ObjectTemplate.setGearDown 0.4
+§§0
+
+
+rem *** LynxFrontSpringR ***
+ObjectTemplate.create Spring LynxFrontSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Lynx_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+
+rem *** LynxFrontSpringL ***
+ObjectTemplate.create Spring LynxFrontSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Lynx_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+
+rem *** LynxBackSpringR ***
+ObjectTemplate.create Spring LynxBackSpringR
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Lynx_WheelR_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5
+
+
+rem *** LynxBackSpringL ***
+ObjectTemplate.create Spring LynxBackSpringL
+ObjectTemplate.setNetworkableInfo SpringInfo
+ObjectTemplate.geometry Lynx_WheelL_M1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.Grip c_PGFEngineGrip
+rem -------------------------------------
+ObjectTemplate.addTemplate e_wdustWheelFL
+ObjectTemplate.addTemplate e_wdustWheelF
+rem -------------------------------------
+ObjectTemplate.setStrength 25
+ObjectTemplate.setDamping 5

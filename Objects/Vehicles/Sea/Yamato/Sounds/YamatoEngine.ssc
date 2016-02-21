@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/YamatoEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/YamatoEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/YamatoEngine.ssc

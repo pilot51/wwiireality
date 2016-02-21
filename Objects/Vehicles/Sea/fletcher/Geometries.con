@@ -1,0 +1,27 @@
+
+GeometryTemplate.create StandardMesh Fletch_canon_m1
+GeometryTemplate.file Fletch_canon_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Fletch_hull_M1
+GeometryTemplate.file Fletch_hull_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Fletch_hull_L1
+GeometryTemplate.file Fletch_hull_L1
+
+GeometryTemplate.create StandardMesh Fletch_canonbar_m1
+GeometryTemplate.file Fletch_canonbar_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh fletch_radar_m1
+GeometryTemplate.file fletch_radar_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Fletch_prop_m1
+GeometryTemplate.file Fletch_prop_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Fletch_Torp_M1
+GeometryTemplate.file Fletch_Torp_M1
+GeometryTemplate.setLodDistance 0 0

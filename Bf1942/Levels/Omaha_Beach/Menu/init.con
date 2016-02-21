@@ -1,0 +1,33 @@
+Game.setLocalized 1
+
+rem ** Allied Briefing **
+game.setAlliedCampaign BRIEFING_ALLIED_CAMPAIGN_OMAHA_BEACH
+game.setAlliedHints BRIEFING_ALLIED_HINTS_OMAHA_BEACH
+game.setAlliedObjectives BRIEFING_ALLIED_OBJECTIVES_OMAHA_BEACH
+game.setAlliedSkirmish BRIEFING_ALLIED_SKIRMISH_OMAHA_BEACH
+
+rem ** Axis Briefing **
+game.setAxisCampaign BRIEFING_AXIS_CAMPAIGN_OMAHA_BEACH
+game.setAxisHints BRIEFING_AXIS_HINTS_OMAHA_BEACH
+game.setAxisObjectives BRIEFING_AXIS_OBJECTIVES_OMAHA_BEACH
+game.setAxisSkirmish BRIEFING_AXIS_SKIRMISH_OMAHA_BEACH
+
+rem ** Allied Debriefing **
+game.setAlliedDebriefingMajorVictory DEBRIEFING_ALLIED_MAJOR_VICTORY_OMAHA_BEACH
+game.setAlliedDebriefingMinorVictory DEBRIEFING_ALLIED_MINOR_VICTORY_OMAHA_BEACH
+game.setAlliedDebriefingMajorDefeat DEBRIEFING_ALLIED_MAJOR_DEFEAT_OMAHA_BEACH
+game.setAlliedDebriefingMinorDefeat DEBRIEFING_ALLIED_MINOR_DEFEAT_OMAHA_BEACH
+
+rem ** Axis Debriefing **
+game.setAxisDebriefingMajorVictory DEBRIEFING_AXIS_MAJOR_VICTORY_OMAHA_BEACH
+game.setAxisDebriefingMinorVictory DEBRIEFING_AXIS_MINOR_VICTORY_OMAHA_BEACH
+game.setAxisDebriefingMajorDefeat DEBRIEFING_AXIS_MAJOR_DEFEAT_OMAHA_BEACH
+game.setAxisDebriefingMinorDefeat DEBRIEFING_AXIS_MINOR_DEFEAT_OMAHA_BEACH
+
+rem ** Multiplayer Briefing **
+game.setMultiplayerBriefingObjectives MULTIPLAYER_BRIEFING_OMAHA_BEACH
+game.setMultiplayerBriefingMapType MULTIPLAYER_MAP_TYPE_ASSAULT_MAP
+
+game.setLoadPicture Load/Western.tga
+game.setServerInfoIcon "serverInfo.dds"
+game.setMapId "WWIIReality"

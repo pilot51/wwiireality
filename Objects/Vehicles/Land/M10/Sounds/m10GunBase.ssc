@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/m10GunBase.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/m10GunBase.ssc
+	
+#templateLevel LOW
+
+	#include Low/m10GunBase.ssc

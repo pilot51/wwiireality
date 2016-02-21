@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/sub7cEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/sub7cEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/sub7cEngine.ssc

@@ -1,0 +1,438 @@
+
+
+rem *** Lcvp ***
+ObjectTemplate.create PlayerControlObject Lcvp
+ObjectTemplate.setNetworkableInfo LcvpBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 0.488
+ObjectTemplate.mass 8000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 150
+ObjectTemplate.maxhitpoints 150
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 50
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 20
+ObjectTemplate.hpLostWhileUpSideDown 10
+ObjectTemplate.addArmorEffect 80 em_LcvpDamage 0/0/0
+ObjectTemplate.timetoliveafterdeath 600
+ObjectTemplate.timeToStartFadeAfterDeath 570
+ObjectTemplate.aiTemplate LcvpAI
+rem -------------------------------------
+ObjectTemplate.addTemplate lodLcvp
+ObjectTemplate.addTemplate Lcvp_Floater
+ObjectTemplate.setPosition 1.7/3.1/-4.499
+ObjectTemplate.addTemplate Lcvp_Floater
+ObjectTemplate.setPosition -1.699/3.1/-4.499
+ObjectTemplate.addTemplate Lcvp_Floater
+ObjectTemplate.setPosition 1.7/3.1/4.5
+ObjectTemplate.addTemplate Lcvp_Floater2
+ObjectTemplate.setPosition -1.699/3.1/4.5
+ObjectTemplate.addTemplate LcvpPassangerPCO3
+ObjectTemplate.setPosition 0.65/2.9/-1
+ObjectTemplate.addTemplate LcvpPassangerPCO4
+ObjectTemplate.setPosition 0.65/2.9/0.8
+ObjectTemplate.addTemplate LcvpPassangerPCO5
+ObjectTemplate.setPosition -0.65/2.9/-1
+ObjectTemplate.addTemplate LcvpPassangerPCO6
+ObjectTemplate.setPosition -0.65/2.9/0.8
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.setSoldierExitLocation 0/1.95/3.5 0/0/0
+ObjectTemplate.GUIIndex 42
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lcvp.tga"
+ObjectTemplate.setVehicleIconPos 17/46
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType TTLcvp
+ObjectTemplate.exitTimer -0.5
+ObjectTemplate.exitSpeedMod 0
+
+
+rem *** lodLcvp ***
+ObjectTemplate.create LodObject lodLcvp
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate LcvpComplex
+ObjectTemplate.addTemplate LcvpSimple
+rem -------------------------------------
+ObjectTemplate.lodSelector LcvpLodSelector
+
+
+rem *** LcvpComplex ***
+ObjectTemplate.create Bundle LcvpComplex
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodLcvpCockpit
+ObjectTemplate.addTemplate LcvpPassengerSeat
+ObjectTemplate.setPosition -0.618/3.16/-3.899
+ObjectTemplate.addTemplate LcvpDriverHandDummy
+ObjectTemplate.setPosition -0.618/3.16/-3.899
+ObjectTemplate.addTemplate Lcvp_Ramp
+ObjectTemplate.setPosition 0/1.6/4.3
+ObjectTemplate.setRotation 0/-87.499/0
+ObjectTemplate.addTemplate Lcvp_Door
+ObjectTemplate.setPosition -0.865/2.65/-3.249
+ObjectTemplate.setRotation 0.02/3/0.02
+ObjectTemplate.addTemplate Lcvp_GunnerPCO
+ObjectTemplate.setPosition 0/2.3/0
+ObjectTemplate.addTemplate Lcvp_Engine
+ObjectTemplate.setPosition 0/-1.25/-3.5
+ObjectTemplate.addTemplate Lcvp_Entry
+ObjectTemplate.setPosition 0/2/0
+ObjectTemplate.addTemplate Lcvp_Entry
+ObjectTemplate.setPosition 0/2/-2.999
+ObjectTemplate.addTemplate Lcvp_Camera
+ObjectTemplate.setPosition -0.549/3.5/-3.899
+ObjectTemplate.addTemplate Lcvp_Rudder_Stern
+ObjectTemplate.setPosition 0/-0.5/4.5
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Lcvp_Rudder_Aft
+ObjectTemplate.setPosition 0/-1.25/-4.5
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate LcvpRudder
+ObjectTemplate.setPosition -0.004/1.015/-5.744
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate LcvpPropeller
+ObjectTemplate.setPosition -0.003/0.915/-3.664
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate e_WaterFront
+ObjectTemplate.setPosition 0/0/4
+ObjectTemplate.addTemplate e_waterbacksmall
+ObjectTemplate.setPosition 0/0/-3.999
+rem -------------------------------------
+
+ObjectTemplate.create AnimatedBundle LcvpDriverHandDummy
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.3/0/0.2 0/0/0
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.3/0/0.2 0/0/0
+
+rem *** lodLcvpCockpit ***
+ObjectTemplate.create LodObject lodLcvpCockpit
+rem -------------------------------------
+ObjectTemplate.addTemplate LcvpCockpitExternal
+ObjectTemplate.addTemplate LcvpCockpitInternal
+rem -------------------------------------
+ObjectTemplate.lodSelector LcvpcockpitSelector
+
+
+rem *** LcvpCockpitExternal ***
+ObjectTemplate.create SimpleObject LcvpCockpitExternal
+ObjectTemplate.geometry Lcvp_Hull_M1
+
+
+rem *** LcvpCockpitInternal ***
+ObjectTemplate.create SimpleObject LcvpCockpitInternal
+ObjectTemplate.geometry 1p_lcvp_hull_m1
+
+
+rem *** LcvpcockpitSelector ***
+LodSelectorTemplate.create DistCompareSelector LcvpcockpitSelector
+LodSelectorTemplate.addLodDistance 35
+LodSelectorTemplate.addLodComparison 0.5
+
+
+rem *** LcvpPassengerSeat ***
+ObjectTemplate.create SeatObject LcvpPassengerSeat
+ObjectTemplate.seatFlags c_SeatIsOutside
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+
+
+rem *** Lcvp_Ramp ***
+ObjectTemplate.create RotationalBundle Lcvp_Ramp
+ObjectTemplate.setNetworkableInfo LcvpWingInfo
+ObjectTemplate.loadSoundScript Sounds/Lcvp_Ramp.ssc
+ObjectTemplate.geometry Lcvp_ramp_M1
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setMaxSpeed 0/45/0
+ObjectTemplate.setAcceleration 0/30/0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.setInputToPitch c_PIPitch
+
+
+rem *** Lcvp_Door ***
+ObjectTemplate.create Bundle Lcvp_Door
+ObjectTemplate.geometry Lcvp_door_M1
+
+
+rem *** Lcvp_GunnerPCO ***
+ObjectTemplate.create PlayerControlObject Lcvp_GunnerPCO
+ObjectTemplate.setNetworkableInfo LcvpBodyInfo
+ObjectTemplate.aiTemplate LcvpMG
+rem -------------------------------------
+ObjectTemplate.addTemplate Lcvp_BrowningBase
+ObjectTemplate.setPosition 0.7/0/-3.8
+ObjectTemplate.addTemplate Lcvp_Entry2
+ObjectTemplate.setPosition 0/0/-1.099
+ObjectTemplate.addTemplate LcvpPassengerSeat
+ObjectTemplate.setPosition 0.7/0.9/-3.8
+rem -------------------------------------
+ObjectTemplate.setPcoId 1
+ObjectTemplate.setSoldierExitLocation 0/-0.35/3.5 0/0/0
+ObjectTemplate.GUIIndex 103
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lcvp.tga"
+ObjectTemplate.setVehicleIconPos 30/45
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
+ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType TTLcvp
+
+
+rem *** Lcvp_BrowningBase ***
+ObjectTemplate.create RotationalBundle Lcvp_BrowningBase
+ObjectTemplate.setNetworkableInfo LcvpTurretInfo
+ObjectTemplate.setAttachToListener 1
+rem -------------------------------------
+ObjectTemplate.addTemplate LcvpBrowningRotation
+ObjectTemplate.setPosition 0/0.96/0.53
+ObjectTemplate.addTemplate LcvpBrowningMount
+ObjectTemplate.setPosition 0/0.86/0.13
+ObjectTemplate.setRotation 180/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation -60/0/0
+ObjectTemplate.setMaxRotation 60/0/0
+ObjectTemplate.setMaxSpeed 90/0/0
+ObjectTemplate.setAcceleration 5000/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+
+ObjectTemplate.create SimpleObject LcvpBrowningMount
+ObjectTemplate.geometry sherman_Mgun_con_m1
+
+ObjectTemplate.create SimpleObject LcvpBrowningHolder
+ObjectTemplate.geometry Sherman_MGun_mount_M1
+
+
+rem *** DaihatsBrowningBase ***
+ObjectTemplate.create RotationalBundle LcvpBrowningRotation
+ObjectTemplate.setNetworkableInfo LcvpTurretInfo
+ObjectTemplate.setAttachToListener 1
+rem ObjectTemplate.geometry Sherman_MGun_mount_M1
+ObjectTemplate.loadSoundScript Sounds/SBDBrowningRotation.ssc
+rem -------------------------------------
+ObjectTemplate.addTemplate Lcvp_Camera_For_PCO1
+ObjectTemplate.setPosition 0/0.6/-0.3
+ObjectTemplate.addTemplate Browning
+ObjectTemplate.setPosition 0/0.1/0.7
+ObjectTemplate.addTemplate LcvpBrowningHolder
+ObjectTemplate.setRotation 180/0/0
+rem -------------------------------------
+ObjectTemplate.setMinRotation 0/-40/0
+ObjectTemplate.setMaxRotation 0/10/0
+ObjectTemplate.setMaxSpeed 0/90/0
+ObjectTemplate.setAcceleration 0/5000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** Lcvp_Camera_For_PCO1 ***
+ObjectTemplate.create Camera Lcvp_Camera_For_PCO1
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** Lcvp_Entry2 ***
+ObjectTemplate.create EntryPoint Lcvp_Entry2
+ObjectTemplate.setEntryRadius 1
+
+
+rem *** Lcvp_Entry ***
+ObjectTemplate.create EntryPoint Lcvp_Entry
+ObjectTemplate.setEntryRadius 6
+
+
+rem *** Lcvp_Camera ***
+ObjectTemplate.create Camera Lcvp_Camera
+ObjectTemplate.setMinRotation -170/-30/0
+ObjectTemplate.setMaxRotation 170/0/0
+ObjectTemplate.setMaxSpeed 200/200/0
+ObjectTemplate.setAcceleration 100000/100000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** LcvpSimple ***
+ObjectTemplate.create SimpleObject LcvpRudder
+ObjectTemplate.geometry Lcvp_rod_M1
+
+
+rem *** LcvpSimple ***
+ObjectTemplate.create SimpleObject LcvpPropeller
+ObjectTemplate.geometry Lcvp_prop_M1
+
+
+rem *** LcvpSimple ***
+ObjectTemplate.create SimpleObject LcvpSimple
+ObjectTemplate.geometry Lcvp_Hull_m1
+
+
+rem *** LcvpLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 LcvpLodSelector
+LodSelectorTemplate.addLodDistance 5000
+
+
+rem ************************************************************************
+rem ************************************************************************
+rem ************************************************************************
+
+ObjectTemplate.create AnimatedBundle LcvpHandDummy
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.48/0.32/0 0/180/-20
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.3/-0.06/0 0/0/-90
+
+ObjectTemplate.create AnimatedBundle LcvpHandDummy2
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.3/-0.06/0 0/180/90
+ObjectTemplate.addSkeletonIK Bip01_L_Hand -0.43/0.32/0 0/0/150
+
+
+rem
+rem *** Passanger ***
+rem
+ObjectTemplate.create PlayerControlObject LcvpPassangerPCO3
+ObjectTemplate.aiTemplate LcvpPassanger3
+ObjectTemplate.setSoldierExitLocation -0.65/0.95/4.5 0/0/0
+ObjectTemplate.setNetworkableInfo LcvpPassengerInfo
+ObjectTemplate.GUIIndex 102
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lcvp.tga"
+rem ObjectTemplate.setVehicleIconPos 17/46
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory Sea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType TTLcvp
+rem -------------------------------------
+ObjectTemplate.addTemplate LcvpPassangerEntry
+ObjectTemplate.setPosition 0/0.0/1
+ObjectTemplate.addTemplate LcvpPassangerCamera
+ObjectTemplate.setPosition 0/0.7/0
+ObjectTemplate.addTemplate LcvpPassengerSeat
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate LcvpHandDummy
+ObjectTemplate.setPosition 0/0/0
+rem ObjectTemplate.addTemplate usSoldier
+rem -------------------------------------
+
+rem
+rem *** Passanger ***
+rem
+ObjectTemplate.create PlayerControlObject LcvpPassangerPCO4
+ObjectTemplate.aiTemplate LcvpPassanger4
+ObjectTemplate.setSoldierExitLocation -0.65/0.95/2.7 0/0/0
+ObjectTemplate.setNetworkableInfo LcvpPassengerInfo
+ObjectTemplate.GUIIndex 102
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lcvp.tga"
+rem ObjectTemplate.setVehicleIconPos 17/46
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory Sea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType TTLcvp
+rem -------------------------------------
+ObjectTemplate.addTemplate LcvpPassangerEntry
+ObjectTemplate.setPosition 0/0.0/1
+ObjectTemplate.addTemplate LcvpPassangerCamera
+ObjectTemplate.setPosition 0/0.7/0
+ObjectTemplate.addTemplate LcvpPassengerSeat
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate LcvpHandDummy
+ObjectTemplate.setPosition 0/0/0
+rem ObjectTemplate.addTemplate usSoldier
+rem -------------------------------------
+
+rem
+rem *** Passanger ***
+rem
+ObjectTemplate.create PlayerControlObject LcvpPassangerPCO5
+ObjectTemplate.aiTemplate LcvpPassanger5
+ObjectTemplate.setSoldierExitLocation 0.65/0.95/4.5 0/0/0
+ObjectTemplate.setNetworkableInfo LcvpPassengerInfo
+ObjectTemplate.GUIIndex 102
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lcvp.tga"
+rem ObjectTemplate.setVehicleIconPos 17/46
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory Sea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType TTLcvp
+rem -------------------------------------
+ObjectTemplate.addTemplate LcvpPassangerEntry
+ObjectTemplate.setPosition 0/0.0/1
+ObjectTemplate.addTemplate LcvpPassangerCamera
+ObjectTemplate.setPosition 0/0.7/0
+ObjectTemplate.addTemplate LcvpPassengerSeat
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate LcvpHandDummy2
+ObjectTemplate.setPosition 0/0/0
+rem ObjectTemplate.addTemplate usSoldier
+rem -------------------------------------
+
+rem
+rem *** Passanger ***
+rem
+ObjectTemplate.create PlayerControlObject LcvpPassangerPCO6
+ObjectTemplate.aiTemplate LcvpPassanger6
+ObjectTemplate.setSoldierExitLocation 0.65/0.95/2.7 0/0/0
+ObjectTemplate.setNetworkableInfo LcvpPassengerInfo
+ObjectTemplate.GUIIndex 102
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_lcvp.tga"
+rem ObjectTemplate.setVehicleIconPos 17/46
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory Sea
+ObjectTemplate.setVehicleType VTLcvp
+ObjectTemplate.setToolTipType TTLcvp
+rem -------------------------------------
+ObjectTemplate.addTemplate LcvpPassangerEntry
+ObjectTemplate.setPosition 0/0.0/1
+ObjectTemplate.addTemplate LcvpPassangerCamera
+ObjectTemplate.setPosition 0/0.7/0
+ObjectTemplate.addTemplate LcvpPassengerSeat
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.addTemplate LcvpHandDummy2
+ObjectTemplate.setPosition 0/0/0
+rem ObjectTemplate.addTemplate usSoldier
+rem -------------------------------------
+
+
+rem
+rem *** LcvpPassengerSeat ***
+rem
+ObjectTemplate.create EntryPoint LcvpPassangerEntry
+ObjectTemplate.setEntryRadius 3
+
+rem
+rem *** LcvpPassengerSeat ***
+rem
+ObjectTemplate.create SeatObject LcvpPassengerSeat
+ObjectTemplate.seatFlags c_SeatShowStandingSoldier
+ObjectTemplate.seatFlags c_SeatIsOutside
+rem ObjectTemplate.addTemplate usSoldier
+
+rem
+rem *** LcvpPassangerCamera ***
+rem
+ObjectTemplate.create Camera LcvpPassangerCamera
+ObjectTemplate.setMinRotation -90/-80/0
+ObjectTemplate.setMaxRotation 90/80/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 90/90/0
+ObjectTemplate.setAcceleration 5000/9000/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setInputToRoll c_PINone
+ObjectTemplate.setHasTarget 0
+
+rem ************************************************************************
+rem ************************************************************************

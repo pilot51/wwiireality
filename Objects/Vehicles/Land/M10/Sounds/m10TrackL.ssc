@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/m10TrackL.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/m10TrackL.ssc
+	
+#templateLevel LOW
+
+	#include Low/m10TrackL.ssc

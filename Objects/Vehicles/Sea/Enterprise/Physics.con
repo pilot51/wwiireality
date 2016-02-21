@@ -1,0 +1,50 @@
+
+
+rem *** Enterprise_Engine ***
+ObjectTemplate.create Engine Enterprise_Engine
+ObjectTemplate.geometry Daihatsu_m1
+ObjectTemplate.setNetworkableInfo EnterpriseEngineInfo
+ObjectTemplate.setMinRotation 0/0/-4000
+ObjectTemplate.setMaxRotation 0/0/5000
+ObjectTemplate.setMaxSpeed 0/0/5000
+ObjectTemplate.setAcceleration 0/0/5000
+ObjectTemplate.setInputToRoll c_PIThrottle
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setEngineType c_ETShip
+ObjectTemplate.setTorque 1.5
+ObjectTemplate.setDifferential 1.5
+ObjectTemplate.setNoPropellerEffectAtSpeed 120
+
+
+rem *** Enterprise_Rudder1 ***
+ObjectTemplate.create Wing Enterprise_Rudder1
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** Enterprise_HullWing ***
+ObjectTemplate.create Wing Enterprise_HullWing
+ObjectTemplate.setMinRotation 0/-25/0
+ObjectTemplate.setMaxRotation 0/25/0
+ObjectTemplate.setMaxSpeed 0/15/0
+ObjectTemplate.setAcceleration 0/-10/0
+ObjectTemplate.setInputToPitch c_PIYaw
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setPositionOffset 0/0/0
+ObjectTemplate.setWingLift 0
+ObjectTemplate.setFlapLift 2
+
+
+rem *** Enterprise_Floater ***
+ObjectTemplate.create FloatingBundle Enterprise_Floater
+ObjectTemplate.setHullHeight 17
+ObjectTemplate.setFloatMaxLift 7
+ObjectTemplate.setFloatMinLift 7
+

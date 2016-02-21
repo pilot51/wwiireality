@@ -1,0 +1,11 @@
+NetworkableInfo.createNewInfo SextonTurretInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SextonGunInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SextonEngineInfo
+NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo SextonBodyInfo
+NetworkableInfo.setPredictionMode PMLinear

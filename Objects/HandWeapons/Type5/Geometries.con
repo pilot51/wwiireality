@@ -1,0 +1,42 @@
+GeometryTemplate.create StandardMesh Type5
+GeometryTemplate.file Type5_base_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 30
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Type5Magasin
+GeometryTemplate.file Type5_mag_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 10
+GeometryTemplate.setLodDistance 3 20
+GeometryTemplate.setLodDistance 4 50
+GeometryTemplate.setLodDistance 5 100
+
+GeometryTemplate.create StandardMesh Type5Reload
+GeometryTemplate.file Type5_reload_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 30
+
+GeometryTemplate.create StandardMesh Type5trigger
+GeometryTemplate.file Type5_trigger_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 30
+
+GeometryTemplate.create StandardMesh Type5Plupp
+GeometryTemplate.file Type5_Plupp_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 3
+GeometryTemplate.setLodDistance 2 30
+
+GeometryTemplate.create StandardMesh Type5Simple
+GeometryTemplate.file Shad_K98_m1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 300

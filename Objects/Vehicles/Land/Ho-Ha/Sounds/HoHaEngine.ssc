@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include High/HoHaEngine.ssc
+	
+#templateLevel MEDIUM
+
+	#include Mid/HoHaEngine.ssc
+	
+#templateLevel LOW
+
+	#include Low/HoHaEngine.ssc
