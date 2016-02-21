@@ -1,0 +1,4 @@
+ObjectTemplate.create SimpleObject CoastBridge_m1
+ObjectTemplate.aiTemplate CoastBridge_m1
+ObjectTemplate.geometry CoastBridge_m1
+ObjectTemplate.setHasCollisionPhysics 1

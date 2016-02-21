@@ -5,4 +5,28 @@ GeometryTemplate.create StandardMesh SubVII_Hull_M1
 GeometryTemplate.file SubVII_Hull_M1
 GeometryTemplate.setLodDistance 0 0
 
+GeometryTemplate.create StandardMesh SubVII_Prop_M1
+GeometryTemplate.file SubVII_Prop_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh SubVII_Rudder_Back_Side_M1
+GeometryTemplate.file SubVII_Rudder_Back_Side_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh SubVII_Rudder_Back_UDLeft_M1
+GeometryTemplate.file SubVII_Rudder_Back_UDLeft_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh SubVII_Rudder_Back_UDRight_M1
+GeometryTemplate.file SubVII_Rudder_Back_UDRight_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh SubVII_Rudder_FrontL_M1
+GeometryTemplate.file SubVII_Rudder_FrontL_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh SubVII_Rudder_FrontR_M1
+GeometryTemplate.file SubVII_Rudder_FrontR_M1
+GeometryTemplate.setLodDistance 0 0
+
 renderer.endGlobalCluster

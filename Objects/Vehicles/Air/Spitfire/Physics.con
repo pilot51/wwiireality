@@ -2,7 +2,7 @@
 
 rem *** SpitfireAirbreakLeft ***
 ObjectTemplate.create Wing SpitfireAirbreakLeft
-ObjectTemplate.setNetworkableInfo Spitfire_wing_info
+ObjectTemplate.setNetworkableInfo Spitfire_flap_info
 ObjectTemplate.geometry spitfire_airbreak_left_m1
 ObjectTemplate.setMinRotation 0/-30/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -17,7 +17,7 @@ ObjectTemplate.setWingToRegulatorRatio 1
 
 rem *** SpitfireAirbreakRight ***
 ObjectTemplate.create Wing SpitfireAirbreakRight
-ObjectTemplate.setNetworkableInfo Spitfire_wing_info
+ObjectTemplate.setNetworkableInfo Spitfire_flap_info
 ObjectTemplate.geometry spitfire_airbreak_right_m1
 ObjectTemplate.setMinRotation 0/-30/0
 ObjectTemplate.setMaxRotation 0/0/0

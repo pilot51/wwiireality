@@ -25,3 +25,7 @@ GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.create StandardMesh Fletch_Torp_M1
 GeometryTemplate.file Fletch_Torp_M1
 GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Fletch_Rudder_M1
+GeometryTemplate.file Fletch_Rudder_M1
+GeometryTemplate.setLodDistance 0 0

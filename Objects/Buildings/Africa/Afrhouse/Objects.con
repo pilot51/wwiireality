@@ -4,7 +4,7 @@ objectTemplate.aiTemplate Afrhouse_m1
 ObjectTemplate.addTemplate lodAfrhouse
 
 LodSelectorTemplate.create DistanceSelector AfrhouseSelector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodAfrhouse
 ObjectTemplate.lodselector AfrhouseSelector
 ObjectTemplate.addTemplate AfrhouseInterior

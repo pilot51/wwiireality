@@ -93,7 +93,7 @@ rem *** GatoFloater ***
 ObjectTemplate.create FloatingBundle GatoFloater
 ObjectTemplate.setNetworkableInfo GatoEngineInfo
 ObjectTemplate.setMinRotation 0/0/0
-ObjectTemplate.setMaxRotation 0/50/0
+ObjectTemplate.setMaxRotation 0/80/0
 ObjectTemplate.setMaxSpeed 0/2/0
 ObjectTemplate.setAcceleration 0/1/0
 ObjectTemplate.setInputToPitch c_PIPitch
@@ -101,4 +101,3 @@ rem ObjectTemplate.setAutomaticReset 1
 ObjectTemplate.setHullHeight 3.3
 ObjectTemplate.setFloatMaxLift 1.6275
 ObjectTemplate.setFloatMinLift 0.8275
-

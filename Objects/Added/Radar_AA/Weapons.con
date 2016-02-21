@@ -1,0 +1,21 @@
+ObjectTemplate.create FireArms Radar_AA_Allies_GunBarrel
+ObjectTemplate.setNetworkableInfo TankFireArmInfo
+ObjectTemplate.geometry Radar_AA_Allies_pipe_m1
+ObjectTemplate.projectileTemplate AA_Allies_Projectile
+ObjectTemplate.projectilePosition 0/0/3
+ObjectTemplate.aiTemplate AA_BaseMainGun
+ObjectTemplate.magSize -1
+ObjectTemplate.numOfMag 999
+ObjectTemplate.magType 0
+ObjectTemplate.reloadtime 2
+ObjectTemplate.roundOfFire 2
+ObjectTemplate.velocity 881
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 3
+
+
+ObjectTemplate.loadSoundScript ../../../../../Objects/Vehicles/Land/AA_Base/Sounds/AA_Allies_GunBarrel.ssc
+
+ObjectTemplate.addTemplate e_MuzzAAgunB
+ObjectTemplate.setPosition 0/-0.03/2.3
+ObjectTemplate.setRotation 0/0/0

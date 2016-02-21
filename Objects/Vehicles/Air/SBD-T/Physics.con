@@ -9,7 +9,7 @@ ObjectTemplate.setFlapLift 0
 
 
 ObjectTemplate.create Wing SBD-TAirbreak
-ObjectTemplate.setNetworkableInfo SBDWingInfo
+ObjectTemplate.setNetworkableInfo SBDFlapInfo
 ObjectTemplate.geometry SBD-6_flap_mid_m1
 ObjectTemplate.setMinRotation 0/-30/0
 ObjectTemplate.setMaxRotation 0/0/0
@@ -24,7 +24,7 @@ ObjectTemplate.setWingToRegulatorRatio 1
 
 ObjectTemplate.create Wing SBD-TFlapR
 ObjectTemplate.geometry SBD-6_flap_right_M1
-ObjectTemplate.networkableInfo SBDWingInfo
+ObjectTemplate.networkableInfo SBDFlapInfo
 ObjectTemplate.setMinRotation 0/-30/0
 ObjectTemplate.setMaxRotation 0/0/0
 ObjectTemplate.setMaxSpeed 0/30/0
@@ -38,7 +38,7 @@ objectTemplate.setWingToRegulatorRatio 1
 
 ObjectTemplate.create Wing SBD-TFlapL
 ObjectTemplate.geometry SBD-6_flap_left_M1
-ObjectTemplate.networkableInfo SBDWingInfo
+ObjectTemplate.networkableInfo SBDFlapInfo
 ObjectTemplate.setMinRotation 0/-30/0
 ObjectTemplate.setMaxRotation 0/0/0
 ObjectTemplate.setPivotPosition 0/0/0

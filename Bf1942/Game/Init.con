@@ -5,7 +5,7 @@ run globalSpawnGroups
 
 console.showFps 0
 
-physics.gravity -9.81
+physics.gravity -14.73
 
 game.setMinorVictory 0.40
 game.setMajorVictory 0.80

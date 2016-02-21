@@ -1,0 +1,411 @@
+
+
+rem *****************************************
+rem ****        ALLIES BASE            *****
+rem ****************************************
+
+
+
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_frenchfarm1
+ObjectTemplate.setSpawnId 1
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_frenchfarm2
+ObjectTemplate.setSpawnId 2
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_frenchfarm3
+ObjectTemplate.setSpawnId 3
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_frenchfarm4
+ObjectTemplate.setSpawnId 4
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_frenchfarm5
+ObjectTemplate.setSpawnId 5
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_frenchfarm6
+ObjectTemplate.setSpawnId 6
+ObjectTemplate.setGroup 2
+
+
+rem *****************************************
+rem ****       OpenSpawnPoint_alliedside_ironbrdgbunker        *****
+rem ****************************************
+
+
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_in_cityhouse_ironbridge
+ObjectTemplate.setSpawnId 7
+ObjectTemplate.setGroup 3
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_ironbrdg_bunker
+ObjectTemplate.setSpawnId 8
+ObjectTemplate.setGroup 3
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_ironbrdg_new1 
+ObjectTemplate.setSpawnId 9
+ObjectTemplate.setGroup 3
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_ironbrdg_new2 
+ObjectTemplate.setSpawnId 10
+ObjectTemplate.setGroup 3
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_ironbrdg_new3 
+ObjectTemplate.setSpawnId 11
+ObjectTemplate.setGroup 3
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_ironbrdg_new4 
+ObjectTemplate.setSpawnId 12
+ObjectTemplate.setGroup 3
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_ironbrdg_new5 
+ObjectTemplate.setSpawnId 13
+ObjectTemplate.setGroup 3
+
+
+
+
+
+rem *****************************************
+rem ****       OpenSpawnPoint_alliedside_niceblock      *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_niceblock_stair
+ObjectTemplate.setSpawnId 14
+ObjectTemplate.setGroup 6
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_niceblock_boutic
+ObjectTemplate.setSpawnId 15
+ObjectTemplate.setGroup 6
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_niceblock_new1 
+ObjectTemplate.setSpawnId 16
+ObjectTemplate.setGroup 6
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_niceblock_new2 
+ObjectTemplate.setSpawnId 17
+ObjectTemplate.setGroup 6
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_niceblock_new3 
+ObjectTemplate.setSpawnId 18
+ObjectTemplate.setGroup 6
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_niceblock_new4 
+ObjectTemplate.setSpawnId 19
+ObjectTemplate.setGroup 6
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_niceblock_new5 
+ObjectTemplate.setSpawnId 20
+ObjectTemplate.setGroup 6
+
+rem *****************************************
+rem ****       OpenSpawnPoint_alliedside_church      *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_church
+ObjectTemplate.setSpawnId 21
+ObjectTemplate.setGroup 7
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_church_house
+ObjectTemplate.setSpawnId 22
+ObjectTemplate.setGroup 7
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_church_new1
+ObjectTemplate.setSpawnId 23
+ObjectTemplate.setGroup 7
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_church_new2 
+ObjectTemplate.setSpawnId 24
+ObjectTemplate.setGroup 7
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_church_new3 
+ObjectTemplate.setSpawnId 25
+ObjectTemplate.setGroup 7
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_church_new4 
+ObjectTemplate.setSpawnId 26
+ObjectTemplate.setGroup 7
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_church_new5 
+ObjectTemplate.setSpawnId 27
+ObjectTemplate.setGroup 7
+
+
+
+
+rem *********************************************
+
+
+
+
+
+rem *****************************************
+rem ****       OpenSpawnPoint_axisside_ironbrdgbunker        *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_bunker1_ironbrdg_left
+ObjectTemplate.setSpawnId 28
+ObjectTemplate.setGroup 8
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_bunker1_ironbrdg_right
+ObjectTemplate.setSpawnId 29
+ObjectTemplate.setGroup 8
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_greyhouse
+ObjectTemplate.setSpawnId 30
+ObjectTemplate.setGroup 8
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_yellowhouse
+ObjectTemplate.setSpawnId 31
+ObjectTemplate.setGroup 8
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_redhouse
+ObjectTemplate.setSpawnId 32
+ObjectTemplate.setGroup 8
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint axisSpawnPoint_1
+ObjectTemplate.setSpawnId 33
+ObjectTemplate.setGroup 8
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint axisSpawnPoint_2
+ObjectTemplate.setSpawnId 34
+ObjectTemplate.setGroup 8
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint axisSpawnPoint_3
+ObjectTemplate.setSpawnId 35
+ObjectTemplate.setGroup 8
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint axisSpawnPoint_4
+ObjectTemplate.setSpawnId 36
+ObjectTemplate.setGroup 8
+
+rem *****************************************
+rem ****       PARASHUTE_SPWAWNPOINT       *****
+rem ****************************************
+
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint ParashutSpawnPoint_1
+ObjectTemplate.setSpawnId 37
+ObjectTemplate.setGroup 10
+ObjectTemplate.setSpawnAsParaTroper 1
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint ParashutSpawnPoint_2
+ObjectTemplate.setSpawnId 38
+ObjectTemplate.setGroup 10
+ObjectTemplate.setSpawnAsParaTroper 1
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint ParashutSpawnPoint_3
+ObjectTemplate.setSpawnId 39
+ObjectTemplate.setGroup 10
+ObjectTemplate.setSpawnAsParaTroper 1
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint ParashutSpawnPoint_4
+ObjectTemplate.setSpawnId 40
+ObjectTemplate.setGroup 10
+ObjectTemplate.setSpawnAsParaTroper 1
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint ParashutSpawnPoint_5
+ObjectTemplate.setSpawnId 41
+ObjectTemplate.setGroup 10
+ObjectTemplate.setSpawnAsParaTroper 1
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint ParashutSpawnPoint_6
+ObjectTemplate.setSpawnId 42
+ObjectTemplate.setGroup 10
+ObjectTemplate.setSpawnAsParaTroper 1
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint ParashutSpawnPoint_7
+ObjectTemplate.setSpawnId 43
+ObjectTemplate.setGroup 10
+ObjectTemplate.setSpawnAsParaTroper 1
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint ParashutSpawnPoint_8
+ObjectTemplate.setSpawnId 44
+ObjectTemplate.setGroup 10
+ObjectTemplate.setSpawnAsParaTroper 1
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint ParashutSpawnPoint_9
+ObjectTemplate.setSpawnId 45
+ObjectTemplate.setGroup 10
+ObjectTemplate.setSpawnAsParaTroper 1
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint ParashutSpawnPoint_10
+ObjectTemplate.setSpawnId 46
+ObjectTemplate.setGroup 10
+ObjectTemplate.setSpawnAsParaTroper 1
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint ParashutSpawnPoint_11
+ObjectTemplate.setSpawnId 47
+ObjectTemplate.setGroup 10
+ObjectTemplate.setSpawnAsParaTroper 1
+rem
+rem ***  ***
+rem
+ObjectTemplate.create SpawnPoint ParashutSpawnPoint_12
+ObjectTemplate.setSpawnId 48
+ObjectTemplate.setGroup 10
+ObjectTemplate.setSpawnAsParaTroper 1
+
+rem *** stnbrdg_1 ***
+ObjectTemplate.create SpawnPoint stnbrdg_1
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 49
+ObjectTemplate.setGroup 12
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 0
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** stnbrdg_2 ***
+ObjectTemplate.create SpawnPoint stnbrdg_2
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 50
+ObjectTemplate.setGroup 12
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 0
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** stnbrdg_3 ***
+ObjectTemplate.create SpawnPoint stnbrdg_3
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 51
+ObjectTemplate.setGroup 12
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 0
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** stnbrdg_4 ***
+ObjectTemplate.create SpawnPoint stnbrdg_4
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 52
+ObjectTemplate.setGroup 12
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 0
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** stnbrdg_5 ***
+ObjectTemplate.create SpawnPoint stnbrdg_5
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 53
+ObjectTemplate.setGroup 12
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 0
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** stnbrdg_6 ***
+ObjectTemplate.create SpawnPoint stnbrdg_6
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 54
+ObjectTemplate.setGroup 12
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 0
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** stnbrdg_7 ***
+ObjectTemplate.create SpawnPoint stnbrdg_7
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 55
+ObjectTemplate.setGroup 12
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 0
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem EndOfFile

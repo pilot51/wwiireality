@@ -1,0 +1,330 @@
+rem *****************************************
+rem ****          AXIS_BASE            *****
+rem ****************************************
+
+Object.create AxisSpawnPoint_supplydep
+Object.absolutePosition 601.94/48.8176/711.441
+Object.rotation 91.728/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_hospital 
+Object.absolutePosition 687.392/54.0085/648.328
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_barrack
+Object.absolutePosition 604.181/49.5337/688.295
+Object.rotation 91.728/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_landrep1
+Object.absolutePosition 679.395/49.5573/738.599
+Object.rotation -93.2401/0/0.0197906
+
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_hangar1
+Object.absolutePosition 508.055/37.9227/605.779
+Object.rotation -0.57608/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_bunker
+Object.absolutePosition 786.15/69.4496/696.272
+Object.rotation 55.584/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_new1
+Object.absolutePosition 507.571/35.4609/636.019
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_new2
+Object.absolutePosition 512.411/35.4609/636.019
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+rem *****************************************
+rem ****       ALLIES_BASE       *****
+rem ****************************************
+
+Object.create alliesSpawnPoint_hospital
+Object.absolutePosition 1457.08/43.8277/1658.21
+Object.rotation -89.496/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_barrack
+Object.absolutePosition 1496.81/43.6982/1605.11
+Object.rotation -89.496/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_supplydepot
+Object.absolutePosition 1418.18/43.0488/1547.96
+Object.rotation 89.28/0/0.0342712
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_hangar1
+Object.absolutePosition 1531.5/47.8701/1670.34
+Object.rotation 139.824/0/0.0559692
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_landrep1
+Object.absolutePosition 1541.73/43.719/1558.62
+Object.rotation -179.929/0/0.0791321
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_new1
+Object.absolutePosition 1607.1/45.7709/1640.83
+Object.rotation -151.668/0/0.0342712
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_new2
+Object.absolutePosition 1605.5/45.7709/1643.34
+Object.rotation -151.668/0/0.0342712
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_new3
+Object.absolutePosition 1607.79/45.7709/1642.11
+Object.rotation -151.668/0/0.0342712
+
+rem *****************************************
+rem ****          ALLIES_village      *****
+rem ****************************************
+
+
+
+
+Object.create alliesSpawnPoint_village_afrohouse2
+Object.absolutePosition 1709.18/78.0088/606.791
+Object.rotation -89.136/0/0.0766296
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_village_landrep1
+Object.absolutePosition 1621.31/74.3962/613.946
+Object.rotation -1.15182/0/0.0906677
+
+rem
+rem ***  ***
+rem
+rem Object.create alliesSpawnPoint_village_afrohouse_cliff
+rem Object.absolutePosition 1831.45/78.0353/680.121
+rem Object.rotation -30.168/0/0.0969238
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_village_1
+Object.absolutePosition 1717.64/78.0427/575.129
+Object.rotation -164.97/0/1.52588e-005
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_village_2
+Object.absolutePosition 1629.47/73.8658/596.18
+Object.rotation 64.746/0/1.52588e-005
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_village_3
+Object.absolutePosition 1629.24/73.8658/593.882
+Object.rotation 64.746/0/1.52588e-005
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_village_4
+Object.absolutePosition 1717.01/78.0427/572.75
+Object.rotation -164.97/0/1.52588e-005
+rem  
+rem ***  ***
+rem
+rem *****************************************
+rem ****          AXIS_village           *****
+rem ****************************************
+
+
+Object.create AxisSpawnPoint_village_landrep1
+Object.absolutePosition 1279.18/74.4222/305.911
+Object.rotation 90.576/0/0.104691
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_village_afrohouse2
+Object.absolutePosition 1270.82/73.7168/259.528
+Object.rotation -0.214905/0/0.115356
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_village_afrohouse1
+Object.absolutePosition 1256.48/73.6682/289.051
+Object.rotation -177.696/0/0.111923
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_village_1
+Object.absolutePosition 1268.81/73.702/257.505
+Object.rotation -47.916/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_village_2
+Object.absolutePosition 1271.62/73.702/258.053
+Object.rotation -47.916/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_village_3
+Object.absolutePosition 1271.19/73.702/256.536
+Object.rotation -47.916/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_village_4
+Object.absolutePosition 1268.77/73.702/255.291
+Object.rotation -47.916/0/1.52588e-005
+rem
+rem ***  ***
+rem
+rem *****************************************
+rem ****       0PEN_BASE_ROAD        *****
+rem ****************************************
+
+Object.create OpenSpawnPoint_road_smdh
+Object.absolutePosition 1412.06/66.9861/840.105
+Object.rotation -66.312/0/0.102798
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_road_smdh
+Object.absolutePosition 1396.24/66.9861/822.219
+Object.rotation -24.192/0/0.0969238
+
+Object.create OpenSpawnPoint_road_1
+Object.absolutePosition 1404.94/70.4742/820.566
+Object.rotation 89.1359/0/0.0197906
+
+Object.create OpenSpawnPoint_road_2
+Object.absolutePosition 1419.46/67.0604/865.758
+Object.rotation -136.224/0/1.52588e-005
+
+Object.create OpenSpawnPoint_road_3
+Object.absolutePosition 1418.48/67.0604/866.701
+Object.rotation -136.224/0/1.52588e-005
+
+Object.create OpenSpawnPoint_road_4
+Object.absolutePosition 1417.08/67.0604/865.24
+Object.rotation -136.224/0/1.52588e-005
+
+Object.create OpenSpawnPoint_road_5
+Object.absolutePosition 1403.46/70.4742/820.015
+Object.rotation 89.1359/0/0.0197906
+
+beginrem
+rem *****************************************
+rem ****       0PEN_BASE_AIRFIELD       *****
+rem ****************************************
+
+Object.create OpenSpawnPoint_airf_afrohouse
+Object.absolutePosition 430.765/44.6809/1873.59
+Object.rotation -92.988/0/0.108368
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_air_airrep
+Object.absolutePosition 419.172/45.4343/1831.66
+Object.rotation -179.1/0/0.113647
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_air_1
+Object.absolutePosition 431.467/44.7218/1872.94
+Object.rotation -141.768/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_air_2
+Object.absolutePosition 418.185/45.4756/1833.91
+Object.rotation -141.768/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_air_3
+Object.absolutePosition 416.042/45.4756/1835.59
+Object.rotation -141.768/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_air_4
+Object.absolutePosition 414.762/45.4756/1833.97
+Object.rotation -141.768/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_air_5
+Object.absolutePosition 432.42/44.7218/1874.15
+Object.rotation -141.768/0/1.52588e-005
+rem
+rem ***  ***
+rem
+endrem
+
+
+rem *****************************************
+rem ****       0PEN_BASE_crossing       *****
+rem ****************************************
+Object.create OpenSpawnPoint_crossing1
+Object.absolutePosition 1561.82/80.6248/286.778
+Object.rotation -58.608/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_crossing2
+Object.absolutePosition 1587.42/80.8617/292.98
+Object.rotation -58.608/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_crossing3
+Object.absolutePosition 1584.48/80.8617/292.185
+Object.rotation -58.608/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_crossing4
+Object.absolutePosition 1565.18/80.8617/288.487
+Object.rotation -58.608/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_crossing5
+Object.absolutePosition 1564.47/81.1807/319.406
+Object.rotation 64.746/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_crossing6
+Object.absolutePosition 1567.01/81.1807/318.757
+Object.rotation 64.746/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_crossing7
+Object.absolutePosition 1565.18/81.1807/317.894
+Object.rotation 64.746/0/1.52588e-005
+rem
+rem ***  ***
+rem
+

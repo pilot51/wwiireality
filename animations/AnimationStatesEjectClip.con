@@ -1,0 +1,40 @@
+rem ***************************
+rem *** Eject clip
+rem ***************************
+AnimationStateMachine.createState Ub_StandEjectClip
+AnimationStateMachine.setFlag c_AsmIsCrouching
+AnimationStateMachine.addTransitionItem 
+
+AnimationStateMachine.createState Ub_LieEjectClip
+AnimationStateMachine.addTransitionItem 
+
+rem ***************************
+rem *** Weapon is ejecting clip
+rem ***************************
+AnimationStateMachine.createState Ub_StandEjectClipThompson
+AnimationStateMachine.addAnimation Animations/WeaponHandling/1p/Thompson/1PEjectClipThompson.baf 1.0 c_AsmPlayOnce
+AnimationStateMachine.setOtherState c_AsmWeaponState WeaponEjectClipThompson
+AnimationStateMachine.addTransitionWhenDone _POSE_
+AnimationStateMachine.setMorphFactor 10000.0
+AnimationStateMachine.setFlag c_AsmIsCrouching
+
+rem *** For now - just copy this state to M1Garand
+AnimationStateMachine.copyState2 M1Garand Thompson
+
+AnimationStateMachine.createState Ub_LieEjectClipThompson
+AnimationStateMachine.addAnimation Animations/WeaponHandling/1p/Thompson/1PLieEjectClipThompson.baf 1.0 c_AsmPlayOnce
+AnimationStateMachine.setOtherState c_AsmWeaponState WeaponEjectClipThompson
+AnimationStateMachine.addTransitionWhenDone _POSE_
+AnimationStateMachine.setMorphFactor 10000.0
+
+rem *** For now - just copy this state to M1Garand
+AnimationStateMachine.copyState2 M1Garand Thompson
+
+rem ***************************
+rem *** Weapon is ejecting clip
+rem ***************************
+AnimationStateMachine.createState WeaponEjectClipThompson
+AnimationStateMachine.addAnimation Animations/Weapons/Thompson/ThompsonEjectClip.baf 1.0 c_AsmPlayOnce
+AnimationStateMachine.setMorphFactor 10000.0
+
+AnimationStateMachine.copyState2 M1Garand Thompson

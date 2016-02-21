@@ -13,15 +13,15 @@ ObjectTemplate.reloadtime 1.6
 ObjectTemplate.roundOfFire 0.37
 ObjectTemplate.fireOnce 1
 objectTemplate.aiTemplate K98AI
-ObjectTemplate.zoomFov 0.4
+ObjectTemplate.zoomFov 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.altFireOnce 1
-ObjectTemplate.soldierZoomFov 0.6 
-ObjectTemplate.soldierZoomPosition -0.07/0/0
+ObjectTemplate.soldierZoomFov 1
+ObjectTemplate.soldierZoomPosition -0.088/0.022/-0.3
 ObjectTemplate.soldierCameraPosition -0.02/-0.03/0.01
 ObjectTemplate.addRootSpeed 1
 ObjectTemplate.AmmoType 1
-ObjectTemplate.timeToNotAllowChange 0.25
+ObjectTemplate.timeToNotAllowChange 2.7
 
 objectTemplate.GUIIndex 11
 ObjectTemplate.setHudAmmoType ATAmmoBar
@@ -32,7 +32,7 @@ ObjectTemplate.setAmomBarPosX 6
 ObjectTemplate.setAmomBarPosY -17
 ObjectTemplate.setAmomBarTextPosX 5
 ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 Rem *** Deviation Begin *****
 
 ObjectTemplate.velocity 760
@@ -56,6 +56,7 @@ ObjectTemplate.loadSoundScript Sounds/k98.ssc
 ObjectTemplate.createSkeleton animations/K98.ske
 ObjectTemplate.useSkeletonPartAsMain K98
 ObjectTemplate.addTemplate K98Lod
+ObjectTemplate.setRotation 0.7/0/0
 
 ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setInputId -1
@@ -75,7 +76,7 @@ rem ----------------------------------------------------------
 ObjectTemplate.create HandFireArms K98Sniper
 ObjectTemplate.networkableInfo HandFireArmsInfo
 ObjectTemplate.itemIndex 3
-ObjectTemplate.zoomFov 0.1
+ObjectTemplate.zoomFov 0.25
 ObjectTemplate.unZoomBetweenFireTime 3.0
 ObjectTemplate.useScope 1
 ObjectTemplate.projectileTemplate k98Projectile
@@ -103,12 +104,12 @@ ObjectTemplate.setCrossHairType CHTNone
 
 objectTemplate.aiTemplate SniperK98AI
 rem ObjectTemplate.positionalSpeedInDof CRD_NONE/800/0/0
-ObjectTemplate.soldierZoomFov 0.6 
-ObjectTemplate.soldierZoomPosition -0.1/0/0
+ObjectTemplate.soldierZoomFov 1
+ObjectTemplate.soldierZoomPosition -0.01/0/0
 ObjectTemplate.soldierCameraPosition -0.02/-0.04/0.1
 ObjectTemplate.addRootSpeed 1
 ObjectTemplate.AmmoType 1
-ObjectTemplate.timeToNotAllowChange 0.25
+ObjectTemplate.timeToNotAllowChange 2.7
 
 Rem *** Deviation Begin *****
 
@@ -124,6 +125,7 @@ ObjectTemplate.loadSoundScript Sounds/k98.ssc
 ObjectTemplate.createSkeleton animations/K98.ske
 ObjectTemplate.useSkeletonPartAsMain K98
 ObjectTemplate.addTemplate K98SniperLod
+ObjectTemplate.setRotation 0.7/0/0
 
 ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setInputId -1

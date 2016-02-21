@@ -1,0 +1,39 @@
+if v_arg1 == host
+rem ----- Host 
+rem ---------------------------------------------------------------------------- 
+
+rem ---------------------------------------------------------------------------- 
+Object.create Canadian_Base
+Object.absolutePosition 979.942/34.9532/632.465
+rem
+rem ***  ***
+rem
+Object.create South_River
+Object.absolutePosition 1232.66/35.7376/1059.46
+rem
+rem ***  ***
+rem
+Object.create Pegasus_Bridge_CP
+Object.absolutePosition 969.703/35.1749/1255.0
+rem
+rem ***  ***
+rem
+Object.create Church
+Object.absolutePosition 892.164/38.1422/1401.43
+rem
+rem ***  ***`
+rem
+Object.create Park
+Object.absolutePosition 1067.85/34.4062/1421.37
+rem
+rem ***  ***`
+rem
+Object.create German_Headquarters
+Object.absolutePosition 978.91/36.31/1480.41
+
+rem **************************************************************
+
+rem *** EndOfFile ***
+rem ----------------------------------------------------------------------------
+
+endif

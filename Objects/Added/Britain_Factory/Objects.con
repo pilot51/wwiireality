@@ -1,0 +1,144 @@
+rem *** Factory ***
+
+
+ObjectTemplate.create PlayerControlObject Britain_Factory
+ObjectTemplate.setNetworkableInfo FactoryBodyInfo
+rem -------------------------------------
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.explosionRadius 20
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.drag 2
+ObjectTemplate.dragOffset 0/0/0
+ObjectTemplate.mass 4500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 1000
+ObjectTemplate.maxhitpoints 1000
+ObjectTemplate.aiTemplate AlliedFactory
+ObjectTemplate.timeToLiveAfterDeath 10
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 50
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileCriticalDamage 2
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+rem -------------------------------------
+ObjectTemplate.addArmorEffect 750 e_DefGunDamage -1.499/15.1/5
+ObjectTemplate.addArmorEffect 500 e_DefGunDamage -1.499/15.1/5
+ObjectTemplate.addArmorEffect 500 e_DefGunDamage -10.099/15.1/5
+ObjectTemplate.addArmorEffect 250 e_DefGunDamage -1.499/15.1/5
+ObjectTemplate.addArmorEffect 250 e_DefGunDamage -10.099/15.1/5
+ObjectTemplate.addArmorEffect 250 e_DefGunDamage 8.5/15.1/5
+ObjectTemplate.addArmorEffect 50 e_DefGunDamage -1.499/15.1/5
+ObjectTemplate.addArmorEffect 50 e_DefGunDamage -10.099/15.1/5
+ObjectTemplate.addArmorEffect 50 e_DefGunDamage 8.5/15.1/5
+ObjectTemplate.addArmorEffect 50 e_PanzFire -18.498/3.3/-9.998
+ObjectTemplate.addArmorEffect 0 e_BritainFactory_SmokeStacks 12.5/14.5/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/-1/0
+ObjectTemplate.damageFromWater 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodfactory
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.GUIIndex 30
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_wespe.tga"
+ObjectTemplate.setSoldierExitLocation 6/12/-7 180/0/0
+ObjectTemplate.setVehicleIconPos 40/60
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTArtillery
+ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_Factory_32x32.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodFactory ***
+ObjectTemplate.create LodObject lodFactory
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate FactoryComplex
+ObjectTemplate.addTemplate FactorySimple
+ObjectTemplate.addTemplate FactoryWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector FactoryLodSelector
+
+rem ----factorycomplex----
+ObjectTemplate.create Bundle factorycomplex
+ObjectTemplate.geometry Britain_factory_m1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addTemplate e_ExFumeFact
+ObjectTemplate.setPosition 16/34/3.8
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate e_ExFumeFact
+ObjectTemplate.setPosition 16.2/28/-3.2
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 13.022/2.5/12.3
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 11.307/8.2/11
+ObjectTemplate.setRotation -90/0/0
+
+ObjectTemplate.addTemplate Allies_Factory_Spawn
+ObjectTemplate.setPosition 30/0/5
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate Allies_Factory_Spawn
+ObjectTemplate.setPosition -30/0/-2
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Allies_Factory_Spawn
+ObjectTemplate.setPosition 3.4/0/-30
+ObjectTemplate.setRotation 180/0/0
+
+ObjectTemplate.addTemplate Siren 
+
+objectTemplate.loadSoundScript Sounds/Factory.ssc
+
+
+ObjectTemplate.create SimpleObject Ladder_5m_m1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+ObjectTemplate.addToCollisionGroup c_CGProjectiles
+ObjectTemplate.geometry ladder_5m_m1
+
+
+rem *** factorySimple ***
+ObjectTemplate.create SimpleObject factorySimple
+ObjectTemplate.geometry Britain_Factory_L1
+ObjectTemplate.hasDynamicShadow 1
+
+
+rem *** factoryWreck ***
+ObjectTemplate.create SimpleObject factoryWreck
+ObjectTemplate.geometry Britain_Factory_Wreck_m1
+
+rem *** FactoryLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 FactoryLodSelector
+LodSelectorTemplate.hasDestroyedLod 1
+LodSelectorTemplate.addLodDistance 300
+
+
+ObjectTemplate.create Bundle Britain_Factory_wreck_smoke_M1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry Britain_Factory_wreck_smoke_M1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.sinkInToLandAfterDeathSpeed 0.1
+ObjectTemplate.mass 4000
+
+ObjectTemplate.create Bundle Britain_Factory_wreck_smoke2_M1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry Britain_Factory_wreck_smoke2_M1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.destroyed 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.sinkInToLandAfterDeathSpeed 0.1
+ObjectTemplate.mass 5500

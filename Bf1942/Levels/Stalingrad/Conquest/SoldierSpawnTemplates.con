@@ -1,0 +1,192 @@
+rem *****************************************
+rem ****          AXIS_BASE            *****
+rem ****************************************
+
+rem 
+rem setup spawnpoints templates
+rem 
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_1
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_2
+ObjectTemplate.setSpawnId 1
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_3
+ObjectTemplate.setSpawnId 2
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_4
+ObjectTemplate.setSpawnId 3
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_5
+ObjectTemplate.setSpawnId 4
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_6
+ObjectTemplate.setSpawnId 5
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_7
+ObjectTemplate.setSpawnId 6
+ObjectTemplate.setGroup 1
+
+
+
+
+rem *****************************************
+rem ****       RUSSIAN_BASE       *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint RussianSpawnPoint_harbour_1
+ObjectTemplate.setSpawnId 7
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint RussianSpawnPoint_harbour_2
+ObjectTemplate.setSpawnId 8
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint RussianSpawnPoint_harbour_3
+ObjectTemplate.setSpawnId 9
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint RussianSpawnPoint_harbour_4
+ObjectTemplate.setSpawnId 10
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint RussianSpawnPoint_harbour_5
+ObjectTemplate.setSpawnId 11
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint RussianSpawnPoint_harbour_6
+ObjectTemplate.setSpawnId 12
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint RussianSpawnPoint_harbour_7
+ObjectTemplate.setSpawnId 13
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint RussianSpawnPoint_harbour_8
+ObjectTemplate.setSpawnId 28
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint RussianSpawnPoint_harbour_9
+ObjectTemplate.setSpawnId 29
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint RussianSpawnPoint_harbour_10
+ObjectTemplate.setSpawnId 30
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint RussianSpawnPoint_harbour_11
+ObjectTemplate.setSpawnId 31
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint RussianSpawnPoint_harbour_12
+ObjectTemplate.setSpawnId 32
+ObjectTemplate.setGroup 2
+
+
+rem *****************************************
+rem ****          AXIS_CONTROLPOINT_CITY      *****
+rem ****************************************
+
+
+
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Axisside_1
+ObjectTemplate.setSpawnId 14
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Axisside_2
+ObjectTemplate.setSpawnId 15
+ObjectTemplate.setGroup 3
+
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Axisside_3
+ObjectTemplate.setSpawnId 16
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Axisside_4
+ObjectTemplate.setSpawnId 17
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Axisside_5
+ObjectTemplate.setSpawnId 18
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Axisside_6
+ObjectTemplate.setSpawnId 19
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Axisside_7
+ObjectTemplate.setSpawnId 20
+ObjectTemplate.setGroup 3
+
+
+rem *****************************************
+rem ****          RUSSIAN_CONTROLPOINT_CITY            *****
+rem ****************************************
+
+
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Russianside_1
+ObjectTemplate.setSpawnId 21
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Russianside_2
+ObjectTemplate.setSpawnId 22
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Russianside_3
+ObjectTemplate.setSpawnId 23
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Russianside_4
+ObjectTemplate.setSpawnId 24
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Russianside_5
+ObjectTemplate.setSpawnId 25
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Russianside_6
+ObjectTemplate.setSpawnId 26
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_Russianside_7
+ObjectTemplate.setSpawnId 27
+ObjectTemplate.setGroup 4
+
+rem *****************************************
+rem ****          CONTROLPOINT_stalingrad           *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_stalingrad_1
+ObjectTemplate.setSpawnId 33
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_stalingrad_2
+ObjectTemplate.setSpawnId 34
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_stalingrad_3
+ObjectTemplate.setSpawnId 35
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_stalingrad_4
+ObjectTemplate.setSpawnId 36
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_stalingrad_5
+ObjectTemplate.setSpawnId 37
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_stalingrad_6
+ObjectTemplate.setSpawnId 38
+ObjectTemplate.setGroup 5
+
+rem EndOfFile

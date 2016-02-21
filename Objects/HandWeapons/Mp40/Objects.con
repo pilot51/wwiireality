@@ -18,12 +18,12 @@ ObjectTemplate.setAmomBarPosX 4
 ObjectTemplate.setAmomBarPosY -11
 ObjectTemplate.setAmomBarTextPosX 8
 ObjectTemplate.setAmomBarTextPosY 4
-ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTNone
 objectTemplate.aiTemplate MP40AI
-ObjectTemplate.zoomFov 0.6
+ObjectTemplate.zoomFov 1
 ObjectTemplate.altFireOnce 1
-ObjectTemplate.soldierZoomFov 0.9 
-ObjectTemplate.soldierZoomPosition -0.02/-0.0/-0.08
+ObjectTemplate.soldierZoomFov 1
+ObjectTemplate.soldierZoomPosition -0.075/0.035/-0.2
 ObjectTemplate.soldierCameraPosition 0.01/-0.04/0.09
 ObjectTemplate.addRootSpeed 1
 ObjectTemplate.AmmoType 1
@@ -56,11 +56,12 @@ ObjectTemplate.loadSoundScript Sounds/mp40.ssc
 ObjectTemplate.createSkeleton animations/Mp40.ske
 ObjectTemplate.useSkeletonPartAsMain Mp40
 ObjectTemplate.addTemplate Mp40Lod
+ObjectTemplate.setRotation 4/3/0
 
 ObjectTemplate.addTemplate e_MuzzThomp
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.023/0.43
+ObjectTemplate.setPosition 0.04/0/0.43
 ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.addTemplate e_Shell9mm

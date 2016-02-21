@@ -184,7 +184,7 @@ ObjectTemplate.setVehicleIconPos 30/45
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTLcvp
 ObjectTemplate.setToolTipType TTLcvp
@@ -263,14 +263,31 @@ ObjectTemplate.setInputToYaw c_PIMouseLookX
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 
-rem *** LcvpSimple ***
-ObjectTemplate.create SimpleObject LcvpRudder
+rem *** LcvpRudder ***
+rem ObjectTemplate.create SimpleObject LcvpRudder
+rem ObjectTemplate.geometry Lcvp_rod_M1
+
+ObjectTemplate.create RotationalBundle LcvpRudder
+ObjectTemplate.setNetworkableInfo LcvpWingInfo
 ObjectTemplate.geometry Lcvp_rod_M1
+ObjectTemplate.setMinRotation -9/0/0
+ObjectTemplate.setMaxRotation 9/0/0
+ObjectTemplate.setMaxSpeed 18/0/0
+ObjectTemplate.setAcceleration -36/0/0
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setInputToYaw c_PIYaw
 
 
-rem *** LcvpSimple ***
-ObjectTemplate.create SimpleObject LcvpPropeller
+rem *** LcvpPropeller ***
+ObjectTemplate.create RotationalBundle LcvpPropeller
+ObjectTemplate.setNetworkableInfo LcvpEngineInfo
 ObjectTemplate.geometry Lcvp_prop_M1
+ObjectTemplate.setMaxSpeed 0/0/2000
+ObjectTemplate.setAcceleration 0/0/-2000
+ObjectTemplate.setInputToRoll c_PIThrottle
+
+rem ObjectTemplate.create SimpleObject LcvpPropeller
+rem ObjectTemplate.geometry Lcvp_prop_M1
 
 
 rem *** LcvpSimple ***

@@ -4,7 +4,7 @@ objectTemplate.aiTemplate subhouse_5_m1
 ObjectTemplate.addTemplate lodsubhouse_5
 
 LodSelectorTemplate.create DistanceSelector subhouse_5Selector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodsubhouse_5
 ObjectTemplate.lodselector subhouse_5Selector
 ObjectTemplate.addTemplate subhouse_5Interior

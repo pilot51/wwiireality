@@ -1,0 +1,9 @@
+rem *****************************************
+rem ****          the_AIR              *****
+rem ****************************************
+
+beginrem
+Object.create air1 
+Object.absolutePosition 831.223/150.26/780.642
+Object.rotation 0/0/1.52588e-005
+endrem

@@ -20,7 +20,8 @@ ObjectTemplate.relativePositionInUp CRD_NONE/0.001/0/0
 rem *** Fx_RichoStoneDecal ***
 ObjectTemplate.create Particle Fx_RichoStoneDecal
 ObjectTemplate.geometry Decal_Stone_m1
-ObjectTemplate.timeToLive CRD_UNIFORM/15/1/0
+rem ObjectTemplate.timeToLive CRD_UNIFORM/15/1/0
+ObjectTemplate.timeToLive CRD_UNIFORM/300/600/0
 ObjectTemplate.size CRD_UNIFORM/1/1/0
 ObjectTemplate.gravityModifier CRD_NONE/0/0/1
 ObjectTemplate.sizeModifier 1/1/1

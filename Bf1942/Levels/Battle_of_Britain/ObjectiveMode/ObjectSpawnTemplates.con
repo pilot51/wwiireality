@@ -1,0 +1,182 @@
+rem ----------------------------------------- 
+rem ---  HeavyBomberSpawner  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner HeavyBomberSpawner
+ObjectTemplate.setObjectTemplate 1 Ju88A
+ObjectTemplate.MinSpawnDelay 10
+ObjectTemplate.MaxSpawnDelay 10
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 40
+ObjectTemplate.Radius 40
+ObjectTemplate.DamageWhenLost 20
+ObjectTemplate.MaxNrOfObjectSpawned 2
+
+rem ----------------------------------------- 
+rem ---  Jeep  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner Jeep
+ObjectTemplate.setObjectTemplate 1 kubelwagen
+ObjectTemplate.setObjectTemplate 2 willy_britain
+ObjectTemplate.MinSpawnDelay 10
+ObjectTemplate.MaxSpawnDelay 10
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 20
+ObjectTemplate.Radius 20
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.MaxNrOfObjectSpawned 3
+
+rem ----------------------------------------- 
+rem ---  Fighter  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner Fighter
+ObjectTemplate.setObjectTemplate 1 bf109
+ObjectTemplate.setObjectTemplate 2 spitfire_britain
+ObjectTemplate.MinSpawnDelay 10
+ObjectTemplate.MaxSpawnDelay 15
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.Radius 20
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.MaxNrOfObjectSpawned 2
+
+rem ----------------------------------------- 
+rem ---  AxisAASpawner  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner AxisAASpawner
+ObjectTemplate.setObjectTemplate 1 flak38
+ObjectTemplate.setObjectTemplate 2 flak38
+ObjectTemplate.MinSpawnDelay 5
+ObjectTemplate.MaxSpawnDelay 10
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 40
+ObjectTemplate.DamageWhenLost 10
+
+rem ----------------------------------------- 
+rem ---  AlliesAASpawner  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner AlliesAASpawner
+ObjectTemplate.setObjectTemplate 1 aa_allies
+ObjectTemplate.setObjectTemplate 2 aa_allies
+ObjectTemplate.MinSpawnDelay 5
+ObjectTemplate.MaxSpawnDelay 10
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 40
+ObjectTemplate.DamageWhenLost 10
+
+rem ----------------------------------------- 
+rem ---  APC  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner APC
+ObjectTemplate.setObjectTemplate 1 hanomag
+ObjectTemplate.setObjectTemplate 2 m3a1_britain
+ObjectTemplate.MinSpawnDelay 15
+ObjectTemplate.MaxSpawnDelay 20
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 20
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.MaxNrOfObjectSpawned 1
+
+
+beginrem
+rem ----------------------------------------- 
+rem ---  FactorySpawner  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner Britain_FactorySpawner
+ObjectTemplate.setObjectTemplate 2 Britain_Factory
+ObjectTemplate.MinSpawnDelay 9999
+ObjectTemplate.MaxSpawnDelay 9999
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 40
+ObjectTemplate.DamageWhenLost 10
+
+rem ----------------------------------------- 
+rem ---  RadarTowerSpawner  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner RadarTowerSpawner
+ObjectTemplate.setObjectTemplate 1 radartower
+ObjectTemplate.setObjectTemplate 2 radartower
+ObjectTemplate.MinSpawnDelay 9999
+ObjectTemplate.MaxSpawnDelay 9999
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 0
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.teamOnVehicle 1
+
+rem ----------------------------------------- 
+rem ---  Felixstowe_RadarTower_Spawner  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner Felixstowe_RadarTower_Spawner
+ObjectTemplate.setObjectTemplate 1 Felixstowe_RadarTower
+ObjectTemplate.setObjectTemplate 2 Felixstowe_RadarTower
+ObjectTemplate.MinSpawnDelay 9999
+ObjectTemplate.MaxSpawnDelay 9999
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 0
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.teamOnVehicle 1
+
+rem ----------------------------------------- 
+rem ---  Clacton_RadarTower_Spawner ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner Clacton_RadarTower_Spawner
+ObjectTemplate.setObjectTemplate 1 Clacton_RadarTower
+ObjectTemplate.setObjectTemplate 2 Clacton_RadarTower
+ObjectTemplate.MinSpawnDelay 9999
+ObjectTemplate.MaxSpawnDelay 9999
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 0
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.teamOnVehicle 1
+
+rem ----------------------------------------- 
+rem ---  East_Harwick_RadarTower_Spawner  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner East_Harwick_RadarTower_Spawner
+ObjectTemplate.setObjectTemplate 1 East_Harwick_RadarTower
+ObjectTemplate.setObjectTemplate 2 East_Harwick_RadarTower
+ObjectTemplate.MinSpawnDelay 9999
+ObjectTemplate.MaxSpawnDelay 9999
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 0
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.teamOnVehicle 1
+
+rem ----------------------------------------- 
+rem ---  West_Harwick_RadarTower_Spawner  ---
+rem ----------------------------------------- 
+ObjectTemplate.create ObjectSpawner West_Harwick_RadarTower_Spawner
+ObjectTemplate.setObjectTemplate 1 West_Harwick_RadarTower
+ObjectTemplate.setObjectTemplate 2 West_Harwick_RadarTower
+ObjectTemplate.MinSpawnDelay 9999
+ObjectTemplate.MaxSpawnDelay 9999
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 45
+ObjectTemplate.Distance 0
+ObjectTemplate.DamageWhenLost 10
+ObjectTemplate.teamOnVehicle 1
+endrem
+
+rem ----------------------------------------- 
+rem ---  MachinegunSpawner  ---
+rem -----------------------------------------
+ObjectTemplate.create ObjectSpawner MachinegunSpawner
+ObjectTemplate.setObjectTemplate 2 Stationary_browning
+ObjectTemplate.setObjectTemplate 1 Stationary_mg42
+ObjectTemplate.SpawnDelay 60
+ObjectTemplate.SpawnDelayAtStart 0
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 20
+
+
+rem EndOfFile

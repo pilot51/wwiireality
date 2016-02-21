@@ -1,0 +1,36 @@
+rem *** Plugins ***
+aiTemplatePlugIn.create Unit AlliedFactory_Unit
+aiTemplatePlugIn.equipmentType 10
+aiTemplatePlugIn.setStrategicStrength 0 5
+aiTemplatePlugIn.setStrategicStrength 1 5
+aiTemplatePlugIn.setHasExposedSoldier 0
+aiTemplatePlugIn.setUseNoPathfindingToGetToObject 1
+
+aiTemplatePlugIn.create Armament AlliedFactory_Arms
+
+aiTemplatePlugIn.create Physical AlliedFactory_Physical
+aiTemplatePlugIn.setStrType HeavyArmour
+
+aiTemplatePlugIn.create ControlInfo AlliedFactory_Ctrl
+aiTemplatePlugIn.driveTurnControl           PIYaw
+aiTemplatePlugIn.driveThrottleControl       PIThrottle
+aiTemplatePlugIn.aimHorizontalControl       PIMouseLookX
+aiTemplatePlugIn.aimVerticalControl         PIMouseLookY
+aiTemplatePlugIn.lookHorizontalControl      PIMouseLookX
+aiTemplatePlugIn.lookVerticalControl        PIMouseLookY
+aiTemplatePlugIn.setCameraRelativeMinRotationDeg 0/0/0
+aiTemplatePlugIn.setCameraRelativeMaxRotationDeg 0/0/0
+
+rem *** AITemplate ***
+aiTemplate.create AlliedFactory
+aiTemplate.addType ITUnit
+aiTemplate.addType ITGround
+aiTemplate.addType ITFixed
+aiTemplate.degeneration 20
+aiTemplate.allowedTimeDiff 3
+aiTemplate.basicTemp 9
+aiTemplate.commonKnowledge 0
+aiTemplate.addPlugIn AlliedFactory_Unit
+aiTemplate.addPlugIn AlliedFactory_Physical
+aiTemplate.addPlugIn AlliedFactory_Ctrl
+aiTemplate.addPlugIn AlliedFactory_Arms

@@ -1,0 +1,336 @@
+
+
+
+
+rem *****************************************
+rem ****          AXIS BASE        *****
+rem ****************************************
+
+Object.create AxisSpawnPoint_1
+Object.absolutePosition 76.3651/93.027/129.964
+Object.rotation -30.168/0/0.0342712
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_2
+Object.absolutePosition 83.704/93.1726/159.459
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_3
+Object.absolutePosition 91.1404/92.9897/156.448
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_4
+Object.absolutePosition 69.2198/91.941/189.34
+Object.rotation 71.28/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_5
+Object.absolutePosition 82.439/91.9406/198.915
+Object.rotation 109.512/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_6
+Object.absolutePosition 90.1699/91.9406/202.176
+Object.rotation 109.512/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_7
+Object.absolutePosition 97.6137/91.9449/208.028
+Object.rotation 109.512/0/0.0197906
+
+
+rem *****************************************
+rem ****          ALLIES BASE       *****
+rem ****************************************
+
+
+
+
+Object.create alliesSpawnPoint_1
+Object.absolutePosition 895.964/93.4747/868.823
+Object.rotation 162.281/-0.393877/0.405914
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_2
+Object.absolutePosition 905.883/93.0283/913.563
+Object.rotation 162.281/-0.393877/0.405914
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_3
+Object.absolutePosition 931.9/93/858.225
+Object.rotation 162.281/-0.393877/0.405914
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_4
+Object.absolutePosition 935.768/93.1861/850.919
+Object.rotation 162.281/-0.393877/0.405914
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_5
+Object.absolutePosition 929.609/93/838.101
+Object.rotation -131.621/-0.55293/-0.118698
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_6
+Object.absolutePosition 924.27/93.0048/827.345
+Object.rotation -131.621/-0.55293/-0.118698
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_7
+Object.absolutePosition 918.808/92.9982/822.196
+Object.rotation -131.621/-0.55293/-0.118698
+rem  
+rem ***  ***
+rem
+
+
+
+
+rem *****************************************
+rem ****    open base South_Desert          *****
+rem ****************************************
+
+Object.create OpenSpawnPoint_south_desert_1
+Object.absolutePosition 660.163/76.7531/224.9
+Object.rotation -151.632/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_south_desert_2
+Object.absolutePosition 654.677/76.7531/220.74
+Object.rotation -64.152/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_south_desert_3
+Object.absolutePosition 652.744/76.7531/213.79
+Object.rotation -64.152/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_south_desert_4
+Object.absolutePosition 656.589/76.7531/237.25
+Object.rotation -64.152/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_south_desert_5
+Object.absolutePosition 646.137/76.7447/230.05
+Object.rotation -64.152/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_south_desert_6
+Object.absolutePosition 642.567/77.8867/206.36
+Object.rotation -64.152/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_south_desert_7
+Object.absolutePosition 659.493/77.0411/230.092
+Object.rotation -151.632/0/1.52588e-005
+rem
+rem ***  ***
+rem
+
+rem *****************************************
+rem ****    open base watersupply            *****
+rem ****************************************
+
+
+
+Object.create watersupply_1
+Object.absolutePosition 386.89/59.3231/440.783
+Object.rotation 36.288/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create watersupply_2
+Object.absolutePosition 378.483/59.0531/437.283
+Object.rotation 36.288/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create watersupply_3
+Object.absolutePosition 377.982/59.0531/443.483
+Object.rotation 36.288/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create watersupply_4
+Object.absolutePosition 364.625/59.0528/415.295
+Object.rotation 36.288/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create watersupply_5
+Object.absolutePosition 372.909/59.9252/412.98
+Object.rotation 36.288/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create watersupply_6
+Object.absolutePosition 378.892/59.0531/440.907
+Object.rotation 36.288/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create watersupply_7
+Object.absolutePosition 362.103/59.0532/438.102
+Object.rotation 36.288/0/1.52588e-005
+rem
+rem ***  ***
+rem
+rem *****************************************
+rem ****    open base north_Desert           *****
+rem ****************************************
+
+Object.create north_desert_1
+Object.absolutePosition 404.77/76.3754/786.484
+Object.rotation -40.176/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create north_desert_2
+Object.absolutePosition 407.797/75.4031/770.228
+Object.rotation 115.992/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create north_desert_3
+Object.absolutePosition 411.419/75.4031/768.86
+Object.rotation 115.992/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create north_desert_4
+Object.absolutePosition 410.435/75.4031/753.645
+Object.rotation 115.992/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create north_desert_5
+Object.absolutePosition 406.295/75.4531/754.154
+Object.rotation 115.992/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create north_desert_6
+Object.absolutePosition 409.102/76.3562/799.756
+Object.rotation 115.992/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create north_desert_7
+Object.absolutePosition 410.905/76.3562/799.838
+Object.rotation 115.992/0/1.52588e-005
+
+rem
+rem ***  ***
+rem
+rem *****************************************
+rem ****    open base East_Village          *****
+rem ****************************************
+
+Object.create East_village_1
+Object.absolutePosition 649.325/58.4461/548.985
+Object.rotation -109.224/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create East_village_2
+Object.absolutePosition 641.889/58.4461/562.511
+Object.rotation 174.96/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create East_village_3
+Object.absolutePosition 645.454/58.4461/559.432
+Object.rotation 174.96/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create East_village_4
+Object.absolutePosition 650.398/58.4461/555.671
+Object.rotation 174.96/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create East_village_5
+Object.absolutePosition 635.718/59.2491/573.124
+Object.rotation 174.96/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create East_village_6
+Object.absolutePosition 644.034/58.4461/552.659
+Object.rotation 174.96/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create East_village_7
+Object.absolutePosition 636.958/58.7521/555.939
+Object.rotation 174.96/0/1.52588e-005
+rem
+rem ***  ***
+rem
+rem *****************************************
+rem ****    open base City          *****
+rem ****************************************
+
+rem
+rem ***  ***
+rem
+Object.create city_1
+Object.absolutePosition 511.063/65.281/510.702
+Object.rotation -177.912/0/0.0656281
+rem
+rem ***  ***
+rem
+Object.create city_2
+Object.absolutePosition 529.476/62.1877/478.203
+Object.rotation -174.672/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create city_3
+Object.absolutePosition 529.289/62.1877/476.196
+Object.rotation -174.672/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create city_4
+Object.absolutePosition 529.65/62.1877/480.067
+Object.rotation -174.672/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create city_5
+Object.absolutePosition 486.644/62.2237/431.434
+Object.rotation 45.0001/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create city_6
+Object.absolutePosition 538.631/62.0603/428.077
+Object.rotation -94.608/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create city_7
+Object.absolutePosition 555.342/64.4136/425.33
+Object.rotation -86.5439/0/0.0442505

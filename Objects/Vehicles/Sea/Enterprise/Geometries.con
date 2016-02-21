@@ -20,4 +20,8 @@ GeometryTemplate.create StandardMesh Enterprise_hatch_m1
 GeometryTemplate.file enterprise_hatch_m1
 GeometryTemplate.setLodDistance 0 0
 
+GeometryTemplate.create StandardMesh Enterprise_Prop_M1
+GeometryTemplate.file Enterprise_Prop_M1
+GeometryTemplate.setLodDistance 0 0
+
 renderer.endGlobalCluster

@@ -1,0 +1,66 @@
+GeometryTemplate.create StandardMesh Spitfire_Britain_Fus_M1
+GeometryTemplate.file Spitfire_Britain_Fus_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh spitfire_Britain_airbreak_left_m1
+GeometryTemplate.file spitfire_Britain_airbreak_left_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh spitfire_Britain_airbreak_right_m1
+GeometryTemplate.file spitfire_Britain_airbreak_right_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh spitfire_Britain_gear_left_m1
+GeometryTemplate.file spitfire_Britain_gear_left_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh spitfire_Britain_gear_right_m1
+GeometryTemplate.file spitfire_Britain_gear_right_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Spitfire_Britain_Propeller_m1
+GeometryTemplate.file Spitfire_Britain_Propeller_m1
+
+rem GeometryTemplate.create StandardMesh Spitfire_Propeller_Blur_m1
+rem GeometryTemplate.file Spitfire_Propeller_m2
+rem GeometryTemplate.alphaLodDistance 750
+
+GeometryTemplate.create StandardMesh spitfire_Britain_rodder_m1
+GeometryTemplate.file spitfire_Britain_rodder_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh spitfire_Britain_tailflap_left_m1
+GeometryTemplate.file spitfire_Britain_tailflap_left_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh spitfire_Britain_tailflap_right_m1
+GeometryTemplate.file spitfire_Britain_tailflap_right_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh spitfire_Britain_wheel_left_m1
+GeometryTemplate.file spitfire_Britain_wheel_left_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh spitfire_Britain_wheel_right_m1
+GeometryTemplate.file spitfire_Britain_wheel_right_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh spitfire_Britain_wheel_tail_m1
+GeometryTemplate.file spitfire_Britain_wheel_tail_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh spitfire_Britain_wingflap_left_m1
+GeometryTemplate.file spitfire_Britain_wingflap_left_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh spitfire_Britain_wingflap_right_m1
+GeometryTemplate.file spitfire_Britain_wingflap_right_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1p_Spitfire_Britain_m1
+GeometryTemplate.file 1p_Spitfire_Britain_m1
+
+rem GeometryTemplate.create StandardMesh Wreck_Spitfire_1_m1
+rem GeometryTemplate.file Wreck_Spitfire_1_m1
+rem GeometryTemplate.setLodDistance 0 0

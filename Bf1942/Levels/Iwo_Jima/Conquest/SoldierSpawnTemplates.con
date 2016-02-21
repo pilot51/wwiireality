@@ -1,0 +1,190 @@
+rem 
+rem setup spawnpoints templates
+rem 
+
+rem *****************************************
+rem ****          AXIS TopBASE         *****
+rem ****************************************
+
+
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_bunker1
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_Explodedbunker1
+ObjectTemplate.setSpawnId 1
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_suribashi_3
+ObjectTemplate.setSpawnId 2
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_suribashi_4
+ObjectTemplate.setSpawnId 3
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_suribashi_5
+ObjectTemplate.setSpawnId 4
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_suribashi_6
+ObjectTemplate.setSpawnId 5
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_suribashi_7
+ObjectTemplate.setSpawnId 6
+ObjectTemplate.setGroup 1
+rem *****************************************
+rem ****          AXIS TopBASE2        *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_bunker2
+ObjectTemplate.setSpawnId 7
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_Explodedbunker2
+ObjectTemplate.setSpawnId 8
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_bunkernest_on_edge
+ObjectTemplate.setSpawnId 9
+ObjectTemplate.setGroup 4
+
+rem *****************************************
+rem ****          AXIS TopBASE3        *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_bunker3
+ObjectTemplate.setSpawnId 10
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_bunkernest
+ObjectTemplate.setSpawnId 11
+ObjectTemplate.setGroup 4
+
+rem *****************************************
+rem ****          AXIS BigBASE         *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_barack
+ObjectTemplate.setSpawnId 12
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_suplydepo
+ObjectTemplate.setSpawnId 13
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_bunker4
+ObjectTemplate.setSpawnId 14
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_o_bunker5
+ObjectTemplate.setSpawnId 15
+ObjectTemplate.setGroup 4
+
+rem *****************************************
+rem ****          AXIS BUNKERS         *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_midpoint_1
+ObjectTemplate.setSpawnId 16
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_midpoint_2
+ObjectTemplate.setSpawnId 17
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_midpoint_3
+ObjectTemplate.setSpawnId 18
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_midpoint_4
+ObjectTemplate.setSpawnId 19
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_midpoint_5
+ObjectTemplate.setSpawnId 20
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_midpoint_6
+ObjectTemplate.setSpawnId 21
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_midpoint_7
+ObjectTemplate.setSpawnId 22
+ObjectTemplate.setGroup 5
+
+rem *****************************************
+rem ****          OPEN sandBase           *****
+rem ****************************************
+
+
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_sand1
+ObjectTemplate.setSpawnId 23
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_sand2
+ObjectTemplate.setSpawnId 24
+ObjectTemplate.setGroup 6
+
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_sand3
+ObjectTemplate.setSpawnId  25
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_sand4
+ObjectTemplate.setSpawnId  26
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_sand5
+ObjectTemplate.setSpawnId  27
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_sand6
+ObjectTemplate.setSpawnId  29
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_sand7
+ObjectTemplate.setSpawnId  30
+ObjectTemplate.setGroup 6
+
+rem *****************************************
+rem ****        suribashi_bottom          *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint suribashi_bottom_1
+ObjectTemplate.setSpawnId  31
+ObjectTemplate.setGroup 12
+
+ObjectTemplate.create SpawnPoint suribashi_bottom_2
+ObjectTemplate.setSpawnId  32
+ObjectTemplate.setGroup 12
+
+ObjectTemplate.create SpawnPoint suribashi_bottom_3
+ObjectTemplate.setSpawnId  33
+ObjectTemplate.setGroup 12
+
+ObjectTemplate.create SpawnPoint suribashi_bottom_4
+ObjectTemplate.setSpawnId  34
+ObjectTemplate.setGroup 12
+
+ObjectTemplate.create SpawnPoint suribashi_bottom_5
+ObjectTemplate.setSpawnId  35
+ObjectTemplate.setGroup 12
+
+ObjectTemplate.create SpawnPoint suribashi_bottom_6
+ObjectTemplate.setSpawnId  36
+ObjectTemplate.setGroup 12
+
+ObjectTemplate.create SpawnPoint suribashi_bottom_7
+ObjectTemplate.setSpawnId  37
+ObjectTemplate.setGroup 12
+
+ObjectTemplate.create SpawnPoint suribashi_bottom_8
+ObjectTemplate.setSpawnId  38
+ObjectTemplate.setGroup 12
+
+
+rem EndOfFile

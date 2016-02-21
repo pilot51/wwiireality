@@ -1,6 +1,7 @@
 GeometryTemplate.create StandardMesh bunker1_M1
 GeometryTemplate.file bunker1_M1
-GeometryTemplate.textureFadeMaxDist 70
+GeometryTemplate.textureFadeMaxDist 4000
+rem GeometryTemplate.textureFadeMaxDist 70
 GeometryTemplate.setLodDistance 0 0
 GeometryTemplate.setLodDistance 1 15
 GeometryTemplate.setLodDistance 2 30

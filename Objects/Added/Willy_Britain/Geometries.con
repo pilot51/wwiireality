@@ -1,0 +1,37 @@
+renderer.beginGlobalCluster Willy_Britain
+GeometryTemplate.create StandardMesh Willy_Britain_Hull_M1
+GeometryTemplate.file Willy_Britain_Hul_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Willy_WheelR_M1
+GeometryTemplate.file Willy_WheR_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Willy_WheelL_M1
+GeometryTemplate.file Willy_WheL_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Willy_Steering_M1
+GeometryTemplate.file Willy_str_M1
+geometryTemplate.cullFactor 0.4
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1P_Willy_Britain_Hul_M1
+GeometryTemplate.file 1P_Willy_Britain_Hul_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1P_Willy_Britain_str_M1
+GeometryTemplate.file 1P_Willy_Britain_str_M1
+GeometryTemplate.cullFactor 2
+renderer.endGlobalCluster
+
+beginrem
+GeometryTemplate.create StandardMesh Willy_Hull_L1
+GeometryTemplate.file Willy_Hul_L1
+GeometryTemplate.hasDynamicShadow 1
+
+GeometryTemplate.create StandardMesh Wreck_Willy_M1
+GeometryTemplate.file Wreck_Willy_M1
+GeometryTemplate.setLodDistance 0 0
+endrem

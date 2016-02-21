@@ -1,0 +1,236 @@
+rem 
+rem setup spawnpoints templates
+rem 
+
+rem *****************************************
+rem ****          AXIS BASE         *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_1
+ObjectTemplate.setSpawnId 1
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_2
+ObjectTemplate.setSpawnId 2
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_3
+ObjectTemplate.setSpawnId 3
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_4
+ObjectTemplate.setSpawnId 4
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_5
+ObjectTemplate.setSpawnId 5
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_6
+ObjectTemplate.setSpawnId 6
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_7
+ObjectTemplate.setSpawnId 7
+ObjectTemplate.setGroup 1
+
+rem *****************************************
+rem ****        ALLIES Base         *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_1
+ObjectTemplate.setSpawnId 8
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_2
+ObjectTemplate.setSpawnId 9
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_3
+ObjectTemplate.setSpawnId 10
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_4
+ObjectTemplate.setSpawnId 11
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_5
+ObjectTemplate.setSpawnId 12
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_6
+ObjectTemplate.setSpawnId 13
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_7
+ObjectTemplate.setSpawnId 14
+ObjectTemplate.setGroup 2
+
+
+
+
+rem *****************************************
+rem ****    open base south desert           *****
+rem ****************************************
+
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_south_desert_1
+ObjectTemplate.setSpawnId 15
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_south_desert_2
+ObjectTemplate.setSpawnId 16
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_south_desert_3
+ObjectTemplate.setSpawnId 17
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_south_desert_4
+ObjectTemplate.setSpawnId 18
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_south_desert_5
+ObjectTemplate.setSpawnId 19
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_south_desert_6
+ObjectTemplate.setSpawnId 20
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_south_desert_7
+ObjectTemplate.setSpawnId 21
+ObjectTemplate.setGroup 3
+
+
+rem *****************************************
+rem ****    open base watersupply            *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint watersupply_1
+ObjectTemplate.setSpawnId 22
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint watersupply_2
+ObjectTemplate.setSpawnId 23
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint watersupply_3
+ObjectTemplate.setSpawnId 24
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint watersupply_4
+ObjectTemplate.setSpawnId 25
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint watersupply_5
+ObjectTemplate.setSpawnId 26
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint watersupply_6
+ObjectTemplate.setSpawnId 27
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint watersupply_7
+ObjectTemplate.setSpawnId 28
+ObjectTemplate.setGroup 4
+
+
+rem *****************************************
+rem ****    open base north desert           *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint north_desert_1
+ObjectTemplate.setSpawnId 29
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint north_desert_2
+ObjectTemplate.setSpawnId 30
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint north_desert_3
+ObjectTemplate.setSpawnId 31
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint north_desert_4
+ObjectTemplate.setSpawnId 32
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint north_desert_5
+ObjectTemplate.setSpawnId 33
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint north_desert_6
+ObjectTemplate.setSpawnId 34
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint north_desert_7
+ObjectTemplate.setSpawnId 35
+ObjectTemplate.setGroup 5
+
+rem *****************************************
+rem ****    open base East village           *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint East_village_1
+ObjectTemplate.setSpawnId 36
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint East_village_2
+ObjectTemplate.setSpawnId 37
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint East_village_3
+ObjectTemplate.setSpawnId 38
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint East_village_4
+ObjectTemplate.setSpawnId 39
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint East_village_5
+ObjectTemplate.setSpawnId 40
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint East_village_6
+ObjectTemplate.setSpawnId 41
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint East_village_7
+ObjectTemplate.setSpawnId 42
+ObjectTemplate.setGroup 6
+
+
+rem *****************************************
+rem ****    open base City          *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint city_1
+ObjectTemplate.setSpawnId 43
+ObjectTemplate.setGroup 7
+
+ObjectTemplate.create SpawnPoint city_2
+ObjectTemplate.setSpawnId 44
+ObjectTemplate.setGroup 7
+
+ObjectTemplate.create SpawnPoint city_3
+ObjectTemplate.setSpawnId 45
+ObjectTemplate.setGroup 7
+
+ObjectTemplate.create SpawnPoint city_4
+ObjectTemplate.setSpawnId 46
+ObjectTemplate.setGroup 7
+
+ObjectTemplate.create SpawnPoint city_5
+ObjectTemplate.setSpawnId 47
+ObjectTemplate.setGroup 7
+
+ObjectTemplate.create SpawnPoint city_6
+ObjectTemplate.setSpawnId 48
+ObjectTemplate.setGroup 7
+
+ObjectTemplate.create SpawnPoint city_7
+ObjectTemplate.setSpawnId 49
+ObjectTemplate.setGroup 7
+
+rem EndOfFile

@@ -1,0 +1,310 @@
+
+rem ****************************************
+rem ****        ALLIES BASE             *****
+rem ****************************************
+rem
+rem ***  ***
+Object.create ScoutCarSpawner
+Object.absolutePosition 929.677/51.4911/1754.34
+Object.rotation 163.724/0.528531/-1.52588e-005
+Object.setTeam 2
+rem
+rem ***  ***
+rem
+Object.create ScoutCarSpawner
+Object.absolutePosition 1058.92/50.7744/1682.32
+Object.rotation 92.6639/-0.0228524/0.411652
+Object.setTeam 2
+rem
+rem ***  ***
+rem
+Object.create ScoutCarSpawner
+Object.absolutePosition 1031.97/51.4166/1791.67
+Object.rotation -88.9779/-0.482193/-1.52588e-005
+Object.setTeam 2
+rem
+rem ***  ***
+rem
+Object.create ScoutCarSpawner
+Object.absolutePosition 1062.55/50.7595/1660.35
+Object.rotation 90.032/0.483404/1.52588e-005
+Object.setTeam 2
+rem
+rem ***  ***
+rem
+Object.create HeavyBomberSpawner
+Object.absolutePosition 892.706/52.9163/1728.58
+Object.rotation 88.17/-10.6722/-1.52588e-005
+Object.setTeam 2
+rem
+rem ***  ***
+rem
+Object.create FighterSpawner
+Object.absolutePosition 938.707/51.9616/1698.81
+Object.rotation 70.5252/-14.0368/0.837204
+Object.setTeam 2
+rem
+rem ***  ***
+rem
+Object.create FighterSpawner
+Object.absolutePosition 959.02/51.9767/1761.94
+Object.rotation 112.891/-13.7345/-1.52588e-005
+Object.setTeam 2
+
+rem *****************************************
+rem ****       OpenSpawnPoint_alliedside_church      *****
+rem ****************************************
+rem
+rem ***  ***
+rem
+Object.create lighttankspawner
+Object.absolutePosition 1137.55/35.2528/1431.07
+Object.rotation 174.96/-0.0953976/1.52588e-005
+Object.setOSId 10
+rem
+rem ***  ***
+rem
+Object.create lighttankspawner
+Object.absolutePosition 1098.94/35.1839/1439.64
+Object.rotation 99.3839/-0.116163/1.52588e-005
+Object.setOSId 10
+
+rem *****************************************
+rem ****       OpenSpawnPoint_alliedside_bridge     *****
+rem ****************************************
+rem
+rem ***  ***
+rem
+rem Object.create APCSpawner
+rem Object.absolutePosition 1223.88/35.6221/1269.37
+rem Object.rotation 97.4114/-0.105797/0.564423
+rem Object.setOSId 25
+rem
+rem ***  ***
+rem
+Object.create APCSpawner
+Object.absolutePosition 1233.22/35.7095/1256.85
+Object.rotation -1.2121/0.658454/-1.52588e-005
+Object.setOSId 25
+rem
+rem ***  ***
+rem
+Object.create MachinegunSpawner
+Object.absolutePosition 1209.84/42.1636/1223.98
+Object.rotation -167.94/0/0.0713348
+Object.setOSId 25
+
+rem **************************************
+rem ****        OpenSpawnPoint_axisside_ironbrdgbunker         *****
+rem *************************************
+rem
+rem ***  ***
+rem
+Object.create MachinegunSpawner
+Object.absolutePosition 1208.33/49.446/935.017
+Object.rotation -68.94/0/0.104691
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create AAGunSpawner
+Object.absolutePosition 1172.32/39.2494/939.568
+Object.rotation 0/0/1.52588e-005
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create heavytankspawner
+Object.absolutePosition 1252.15/35.8159/821.992
+Object.rotation 178.722/0.65478/1.52588e-005
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create lighttankspawner
+Object.absolutePosition 1276.02/35.504/822.485
+Object.rotation -179.708/0.00494498/1.52588e-005
+Object.setTeam 1
+
+
+
+
+rem
+rem ***  ***
+rem
+Object.create ArtillerySpawner
+Object.absolutePosition 1185.6/40.1351/790.815
+Object.rotation 0/-0.139361/1.52588e-005
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create APCSpawner
+Object.absolutePosition 1283.57/35.2931/769.802
+Object.rotation -87.5602/0.16144/-2.99055
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create heavytankspawner
+Object.absolutePosition 1111.66/35.8522/819.062
+Object.rotation 88.5879/0.00856324/-0.635208
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create ScoutCarSpawner 
+Object.absolutePosition 1121.08/35.2674/815.532
+Object.rotation -3.6019/0.926062/-1.52588e-005
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create ScoutCarSpawner 
+Object.absolutePosition 1257.3/35.2183/759.715
+Object.rotation 0/0.899772/-1.52588e-005
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create lighttankspawner
+Object.absolutePosition 1122.13/35.3307/780.386
+Object.rotation 0.0395647/0.484426/0.854553
+Object.setTeam 1
+
+
+
+
+beginrem
+Object.create lcvpSpawner
+Object.absolutePosition 1131.92/22.5459/1005.55
+Object.rotation 0/-0.000207178/0.0197906
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create lcvpSpawner
+Object.absolutePosition 1136.22/22.5381/1005.27
+Object.rotation -2.00534/0.0264879/-1.52588e-005
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create lcvpSpawner
+Object.absolutePosition 1127.26/22.5459/1006.19
+Object.rotation 0/-0.00020676/1.52588e-005
+Object.setTeam 1
+endrem
+rem
+rem ***  ***
+rem
+Object.create AAGunSpawner
+Object.absolutePosition 1136.82/43.6698/915.289
+Object.rotation 0/0/1.52588e-005
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create AAGunSpawner
+Object.absolutePosition 1069.89/36.2039/963.994
+Object.rotation 0/0/1.52588e-005
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create AAGunSpawner
+Object.absolutePosition 1253.97/53.9322/907.219
+Object.rotation 24.552/0/1.52588e-005
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create AAGunSpawner
+Object.absolutePosition 1269.29/34.5655/764.952
+Object.rotation 0/0/1.52588e-005
+Object.setTeam 1
+rem
+rem ***  ***
+rem
+Object.create lighttankspawner
+Object.absolutePosition 1176.5/39.9006/916.101
+Object.rotation 0/-0.104232/1.52588e-005
+Object.setTeam 1
+
+
+
+
+beginrem
+rem **************************************
+rem ****        OpenSpawnPoint_axisside_stnbrgbunker        *****
+rem *************************************
+
+Object.create lighttankspawner
+Object.absolutePosition 997.317/35.9245/935.9
+Object.rotation -178.38/0.32849/-1.52588e-005
+Object.setOSId 2
+rem
+rem ***  ***
+rem
+Object.create lighttankspawner
+Object.absolutePosition 990.726/35.6628/936.157
+Object.rotation -178.672/-0.436306/3.51921
+Object.setOSId 2
+rem **************************************
+rem ****        AXIS BASE            *****
+rem *************************************
+
+
+Object.create ScoutCarSpawner 
+Object.absolutePosition 1083.74/35.3297/624.151
+Object.rotation 0/0.899613/-1.52588e-005
+Object.setOSId 3
+rem
+rem ***  ***
+rem
+Object.create ScoutCarSpawner 
+Object.absolutePosition 1089.54/35.3246/624.151
+Object.rotation 0/0.899613/-1.52588e-005
+Object.setOSId 3
+rem
+rem ***  ***
+rem
+Object.create heavytankspawner
+Object.absolutePosition 1064.84/35.9609/644.855
+Object.rotation 0/-0.664529/-1.52588e-005
+Object.setOSId 3
+rem
+rem ***  ***
+rem
+Object.create heavytankspawner
+Object.absolutePosition 1064.84/35.9609/648.855
+Object.rotation 0/-0.664529/-1.52588e-005
+Object.setOSId 3
+rem
+rem ***  ***
+rem
+Object.create APCSpawner
+Object.absolutePosition 1115.08/35.1739/624.166
+Object.rotation 0.0989117/-0.623171/1.52588e-005
+Object.setOSId 3
+rem
+rem ***  ***
+rem
+Object.create lighttankspawner
+Object.absolutePosition 1109.55/35.5554/624.445
+Object.rotation 0/0.3745/-1.52588e-005
+Object.setOSId 3
+rem
+rem ***  ***
+rem
+Object.create ArtillerySpawner
+Object.absolutePosition 1063.48/35.4971/629.163
+Object.rotation 0/-0.14634/1.52588e-005
+Object.setOSId 3
+rem
+rem ***  ***
+rem
+
+
+
+endrem

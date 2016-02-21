@@ -12,7 +12,7 @@ rem ---------------------------------------
 objectTemplate.loadSoundScript Sounds/watermill.ssc
 
 LodSelectorTemplate.create DistanceSelector eu_watermillSelector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodeu_watermill
 ObjectTemplate.lodselector eu_watermillSelector
 ObjectTemplate.addTemplate eu_watermillInterior

@@ -1,0 +1,58 @@
+renderer.beginGlobalCluster M3A1_Caen
+GeometryTemplate.create AnimatedMesh m3a1TrackL
+GeometryTemplate.file M3A1_catpilar_M1
+GeometryTemplate.setSkin animations/m3a1_TrackL_M1.skn
+
+GeometryTemplate.create StandardMesh M3A1_Caen_Door1_M1
+GeometryTemplate.file M3A1_Caen_Door1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh M3A_Caen1_Door2_M1
+GeometryTemplate.file M3A1_Caen_Door2_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh M3A1_Browning_Console_M1
+GeometryTemplate.file M3A1_MGun_Console_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh M3A1_MGun_mount_M1
+GeometryTemplate.file Tank_MGun_Mount_M1
+geometryTemplate.cullFactor 0.05
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh M3A1_Caen_Wheel1_M1
+GeometryTemplate.file M3A1_Caen_Wheel1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh M3A1_Wheel2_M1
+GeometryTemplate.file M3A1_Wheel2_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh M3A1_Wheel3_M1
+GeometryTemplate.file M3A1_Wheel3_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh M3A1_Wheel4_M1
+GeometryTemplate.file M3A1_Wheel4_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh M3A1_Caen_Hull_M1
+GeometryTemplate.file M3A1_Caen_Hull_M1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh 1P_M3A1_Driver_M1
+GeometryTemplate.file 1P_M3A1_Driver_M1
+renderer.endGlobalCluster
+
+GeometryTemplate.create StandardMesh M3A1_Caen_Hull_L1
+GeometryTemplate.file M3A1_Caen_Hull_L1
+GeometryTemplate.hasDynamicShadow 1
+GeometryTemplate.setLodDistance 0 0
+
+beginrem
+GeometryTemplate.create StandardMesh Wreck_M3A1_m1
+GeometryTemplate.file Wreck_M3A1_m1
+GeometryTemplate.setLodDistance 0 0
+endrem

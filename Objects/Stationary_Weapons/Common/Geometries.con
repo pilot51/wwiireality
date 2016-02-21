@@ -1,4 +1,4 @@
-rem***** TRACER ******
+rem ***** TRACER ******
 GeometryTemplate.create StandardMesh TLight_m1
 GeometryTemplate.file TLight_m1
 GeometryTemplate.setLodDistance 0 0

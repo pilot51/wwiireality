@@ -1,0 +1,57 @@
+
+
+rem *** e_ScrapMetal_RadarTower ***
+ObjectTemplate.create EffectBundle e_ScrapMetal_RadarTower
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_ScrapMetal_RadarDish_wreck1
+ObjectTemplate.setPosition 3/0/0
+ObjectTemplate.addTemplate Em_ScrapMetal_RadarDish_wreck2
+ObjectTemplate.setPosition -3/0/0
+ObjectTemplate.addTemplate Em_ScrapMetal_RadarSupport_wreck
+ObjectTemplate.setPosition 0/-1/0
+ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+rem -------------------------------------
+
+rem *** Em_ScrapMetal_RadarDish_wreck1 ***
+ObjectTemplate.create Emitter Em_ScrapMetal_RadarDish_wreck1
+ObjectTemplate.template Wreck_RadarDish_wreck1_m1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/5/-5/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+
+
+rem *** Em_ScrapMetal_RadarDish_wreck1 ***
+ObjectTemplate.create Emitter Em_ScrapMetal_RadarDish_wreck2
+ObjectTemplate.template Wreck_RadarDish_wreck2_m1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/5/-5/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+
+rem *** Em_ScrapMetal_RadarDish_wreck1 ***
+ObjectTemplate.create Emitter Em_ScrapMetal_RadarSupport_wreck
+ObjectTemplate.template Wreck_RadarSupport_M1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0.1/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/5/-5/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0

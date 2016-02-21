@@ -1,0 +1,23 @@
+ObjectTemplate.create Bundle Pegasus_Bridge_M1
+ObjectTemplate.geometry Pegasus_Bridge_M1
+ObjectTemplate.setHasCollisionPhysics 1
+rem ----------------------------------------
+ObjectTemplate.addTemplate Pegasus_Ladder
+ObjectTemplate.setPosition -5.497/5.60/-24.798
+ObjectTemplate.setRotation -89.999/0/0
+
+ObjectTemplate.addTemplate Pegasus_Ladder
+ObjectTemplate.setPosition 5.597/5.60/-24.798
+ObjectTemplate.setRotation 90/0/0
+
+rem *** Pegasus_Ladder ***
+ObjectTemplate.create SimpleObject Pegasus_Ladder
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.setHasResponsePhysics 1
+ObjectTemplate.addToCollisionGroup c_CGLadders
+ObjectTemplate.geometry Pegasus_Ladder_M1
+
+
+
+
+

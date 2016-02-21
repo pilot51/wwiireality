@@ -1,0 +1,245 @@
+rem *****************************************
+rem ****          AXIS TopBASE         *****
+rem ****************************************
+
+Object.create AxisSpawnPoint_bunker1
+Object.absolutePosition 684.452/93.3769/1421.86
+Object.rotation 127.296/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_Explodedbunker1
+Object.absolutePosition 663.563/93.3107/1396.1
+Object.rotation 84.24/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_suribashi_3
+Object.absolutePosition 672.629/93.016/1433.26
+Object.rotation 92.268/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_suribashi_4
+Object.absolutePosition 640.261/92.518/1412.67
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_suribashi_5
+Object.absolutePosition 660.504/93.0164/1436.82
+Object.rotation 92.268/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_suribashi_6
+Object.absolutePosition 663.726/92.8298/1403.2
+Object.rotation 92.268/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_suribashi_7
+Object.absolutePosition 666.89/92.9946/1402.45
+Object.rotation 92.268/0/0.0197906
+rem
+rem ***  ***
+rem
+
+rem *****************************************
+rem ****          AXIS TopBASE2        *****
+rem ****************************************
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_bunker2
+Object.absolutePosition 1055.37/106.078/804.243
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_Explodedbunker2
+Object.absolutePosition 1123.93/106.042/817.79
+Object.rotation -9.35995/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_bunkernest_on_edge
+Object.absolutePosition 970.302/104.211/839.098
+Object.rotation -42.12/0/0.062561
+
+rem *****************************************
+rem ****          AXIS TopBASE3        *****
+rem ****************************************
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_bunker3
+Object.absolutePosition 1226.36/110.002/923.861
+Object.rotation -84.24/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_bunkernest
+Object.absolutePosition 1244.04/110.423/892.856
+Object.rotation -47.736/0/0.0395813
+
+rem *****************************************
+rem ****          AXIS BigBASE         *****
+rem ****************************************
+
+
+Object.create AxisSpawnPoint_barack
+Object.absolutePosition 1135.8/78.616/961.721
+Object.rotation -178.776/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_suplydepo
+Object.absolutePosition 1122.42/78.5841/918.385
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_bunker4
+Object.absolutePosition 951.706/78.0772/993.213
+Object.rotation -95.472/0/0.0484619
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_o_bunker5
+Object.absolutePosition 894.458/75.2518/919.341
+Object.rotation -86.112/0/0.0279846
+rem
+rem ***  ***
+rem
+
+rem *****************************************
+rem ****          AXIS BUNKERS         *****
+rem ****************************************
+
+Object.create AxisSpawnPoint_midpoint_1
+Object.absolutePosition 872.169/80.6322/1118.85
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_midpoint_2
+Object.absolutePosition 883.404/80.9818/1125.39
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_midpoint_3
+Object.absolutePosition 883/81.0854/1126.77
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_midpoint_4
+Object.absolutePosition 886.037/80.7711/1117.29
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_midpoint_5
+Object.absolutePosition 872.169/80.6322/1120.21
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_midpoint_6
+Object.absolutePosition 872.169/80.6322/1117.84
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_midpoint_7
+Object.absolutePosition 872.169/80.6322/1115.99
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+
+
+rem *****************************************
+rem ****       open BEACHbase          *****
+rem ****************************************
+
+Object.create OpenSpawnPoint_sand1
+Object.absolutePosition 795.879/51.1639/1118.77
+Object.rotation 71.676/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_sand2
+Object.absolutePosition 789.601/50.2861/1062.99
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_sand3
+Object.absolutePosition 789.353/50.2382/1069.54
+Object.rotation 65.34/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_sand4
+Object.absolutePosition 794.09/51.0352/1088.04
+Object.rotation 73.656/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_sand5
+Object.absolutePosition 797.677/51.9123/1100.74
+Object.rotation 71.676/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_sand6
+Object.absolutePosition 790.65/50.2355/1112.49
+Object.rotation 71.676/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_sand7
+Object.absolutePosition 801.314/53.2277/1094.63
+Object.rotation 71.676/0/1.52588e-00
+rem
+rem ***  ***
+rem
+
+rem *****************************************
+rem ****        suribashi_bottom          *****
+rem ****************************************
+
+Object.create suribashi_bottom_1
+Object.absolutePosition 774.049/64.9355/1248.77
+Object.rotation 111.276/0/0.0197906
+
+Object.create suribashi_bottom_2
+Object.absolutePosition 865.874/74.5863/1224.64
+Object.rotation 111.276/0/0.0197906
+
+Object.create suribashi_bottom_3
+Object.absolutePosition 854.499/74.8238/1207.25
+Object.rotation 111.276/0/0.0197906
+
+Object.create suribashi_bottom_4
+Object.absolutePosition 870.85/74.814/1219.01
+Object.rotation 111.276/0/0.0197906
+
+Object.create suribashi_bottom_5
+Object.absolutePosition 872.736/74.814/1218.27
+Object.rotation 111.276/0/0.0197906
+
+Object.create suribashi_bottom_6
+Object.absolutePosition 869.128/74.814/1219.68
+Object.rotation 111.276/0/0.0197906
+
+Object.create suribashi_bottom_7
+Object.absolutePosition 836.821/82.1315/1195.08
+Object.rotation 111.276/0/0.0197906
+
+Object.create suribashi_bottom_8
+Object.absolutePosition 773.266/64.9355/1246.76
+Object.rotation 111.276/0/0.0197906

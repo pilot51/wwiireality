@@ -4,7 +4,7 @@ objectTemplate.aiTemplate smlfrenchfarm_m1
 ObjectTemplate.addTemplate lodsmlfrenchfarm
 
 LodSelectorTemplate.create DistanceSelector smlfrenchfarmSelector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodsmlfrenchfarm
 ObjectTemplate.lodselector smlfrenchfarmSelector
 ObjectTemplate.addTemplate smlfrenchfarmInterior

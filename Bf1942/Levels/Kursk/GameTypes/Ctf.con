@@ -1,0 +1,39 @@
+run Ctf/SpawnpointManagerSettings
+
+run Ctf/SoldierSpawnTemplates
+run Ctf/SoldierSpawns
+
+run Ctf/ObjectSpawnTemplates
+run ctf/ControlPointTemplates
+
+if v_arg1 == host
+rem ----- Host 
+rem ---------------------------------------------------------------------------- 
+	run Ctf/ObjectSpawns
+	run ctf/ControlPoints
+
+	rem *** CREATE FLAG BASES ***
+	object.create sobase
+	Object.absolutePosition 568.058/76.6406/849.956
+	Object.Rotation 0/0/0
+
+	object.create gebase   
+	Object.absolutePosition 437.315/77.8547/238.39
+	Object.Rotation 0/0/0
+
+rem ----------------------------------------------------------------------------
+else
+
+rem ----- Join
+rem ----------------------------------------------------------------------------
+	rem *** CREATE FLAG BASES ***
+	object.create FlagPole
+	Object.absolutePosition 568.058/76.6406/849.956
+	Object.Rotation 0/0/0
+
+	object.create FlagPole 
+	Object.absolutePosition 437.315/77.8547/238.39
+	Object.Rotation 0/0/0
+rem ----------------------------------------------------------------------------
+endIf
+

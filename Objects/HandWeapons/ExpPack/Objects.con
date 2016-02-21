@@ -15,7 +15,7 @@ ObjectTemplate.autoReload 0
 ObjectTemplate.GUIIndex 14
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_demokit.tga"
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setHasMag 0
 ObjectTemplate.velocity 6
 ObjectTemplate.fireInCameraDof 1
@@ -87,4 +87,3 @@ ObjectTemplate.minDistAlpha 50
 ObjectTemplate.maxDistAlpha 100
 endrem
 ObjectTemplate.noFFSound 1
-

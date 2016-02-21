@@ -7,3 +7,6 @@ NetworkableInfo.setPredictionMode PMLinear
 NetworkableInfo.createNewInfo Spitfire_body_info
 NetworkableInfo.setPredictionMode PMLinear
 
+NetworkableInfo.createNewInfo Spitfire_flap_info
+NetworkableInfo.setPredictionMode PMUsePhysics
+NetworkableInfo.setForceNetworkableId 1

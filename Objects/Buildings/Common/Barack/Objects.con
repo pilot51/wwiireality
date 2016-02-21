@@ -4,7 +4,7 @@ ObjectTemplate.aiTemplate barack_m1
 ObjectTemplate.addTemplate lodbarack
 
 LodSelectorTemplate.create DistanceSelector barackSelector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodbarack
 ObjectTemplate.lodselector barackSelector
 ObjectTemplate.addTemplate barackInterior

@@ -1,0 +1,49 @@
+rem *** b17_Wreck1_m1 ***
+ObjectTemplate.create SimpleObject b17_Wreck1_m1
+ObjectTemplate.geometry b17_Wreck1_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+rem *** b17_Wreck2_m1 ***
+ObjectTemplate.create SimpleObject b17_Wreck2_m1
+ObjectTemplate.geometry b17_Wreck2_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+rem *** b17_Wreck3_m1 ***
+ObjectTemplate.create SimpleObject b17_Wreck3_m1
+ObjectTemplate.geometry b17_Wreck3_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+rem *** corsair_Wreck2_m1 ***
+ObjectTemplate.create SimpleObject corsair_Wreck2_m1
+ObjectTemplate.geometry corsair_Wreck2_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+rem *** junkers_Wreck1_m1 ***
+ObjectTemplate.create SimpleObject junkers_Wreck1_m1
+ObjectTemplate.geometry junkers_Wreck1_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+rem *** junkers_Wreck2_m1 ***
+ObjectTemplate.create SimpleObject junkers_Wreck2_m1
+ObjectTemplate.geometry junkers_Wreck2_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+rem *** junkers_Wreck3_m1 ***
+ObjectTemplate.create SimpleObject junkers_Wreck3_m1
+ObjectTemplate.geometry junkers_Wreck3_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+rem *** mustang_Wreck2_m1 ***
+ObjectTemplate.create SimpleObject mustang_Wreck2_m1
+ObjectTemplate.geometry mustang_Wreck2_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+rem *** spitfire_Wreck2_m1 ***
+ObjectTemplate.create SimpleObject spitfire_Wreck2_m1
+ObjectTemplate.geometry spitfire_Wreck2_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+rem *** spitfire_Wreck3_m1 ***
+ObjectTemplate.create SimpleObject spitfire_Wreck3_m1
+ObjectTemplate.geometry spitfire_Wreck3_m1
+ObjectTemplate.setHasCollisionPhysics 1

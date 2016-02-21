@@ -1,0 +1,122 @@
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create RotationalBundle Radar_AA_Allies_Carriage
+ObjectTemplate.networkableInfo AA_Allies_TurretInfo
+ObjectTemplate.geometry Radar_AA_Allies_carriage_m1
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 100/0/0
+ObjectTemplate.setAcceleration 1000/0/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+rem ---------------------------------------------------
+rem ObjectTemplate.addTemplate AA_AlliesSeat
+rem ObjectTemplate.setPosition 0.7/0.7/-0.2
+rem ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Radar_AA_Allies_Cannon
+ObjectTemplate.setPosition 0/0.987/-0.171
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Radar_AA_Allies_Roll
+ObjectTemplate.setPosition 0/0.529/0.187
+ObjectTemplate.setRotation 0/0/0
+beginrem
+ObjectTemplate.addTemplate Radar_AA_Allies_Crank
+ObjectTemplate.setPosition 0.48/0.76/0.113
+ObjectTemplate.setRotation 0/0/0
+endrem
+rem ---------------------------------------------------
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../../../../../Objects/Vehicles/Land/AA_Base/Sounds/AA_Allies_Carriage.ssc
+
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create RotationalBundle Radar_AA_Allies_Roll
+ObjectTemplate.networkableInfo AA_Allies_GunInfo
+ObjectTemplate.geometry Radar_AA_Allies_roll_m1
+ObjectTemplate.setPosition 0/0/15.5
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.setMinRotation 0/-90/0
+ObjectTemplate.setMaxRotation 0/90/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/200/0
+ObjectTemplate.setAcceleration 0/450/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToYaw c_PINone
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setInputToRoll c_PINone
+
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../../../../../Objects/Vehicles/Land/AA_Base/Sounds/AA_AlliesGunBase.ssc
+
+rem ***
+rem *** Radar_AA_Allies Cockpit
+rem ***
+ObjectTemplate.create LodObject lodRadar_AA_AllCockpit
+ObjectTemplate.addTemplate Radar_AA_AllCockpitExternal
+ObjectTemplate.addTemplate AA_AllCockpitInternal
+ObjectTemplate.lodselector aa_allcockpitSelector
+
+ObjectTemplate.create SimpleObject Radar_AA_AllCockpitExternal
+ObjectTemplate.geometry Radar_AA_Allies_cannon_m1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+
+
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create RotationalBundle Radar_AA_Allies_Cannon
+ObjectTemplate.networkableInfo AA_Allies_GunInfo
+ObjectTemplate.addTemplate lodRadar_AA_AllCockpit
+ObjectTemplate.setMinRotation 0/-80/0
+ObjectTemplate.setMaxRotation 0/2/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/100/0
+ObjectTemplate.setAcceleration 0/1000/0
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+ObjectTemplate.setAttachToListener 1
+ObjectTemplate.loadSoundScript ../../../../../Objects/Vehicles/Land/AA_Base/Sounds/AA_Allies_Cannon.ssc
+rem ----------------------------------------------------------
+ObjectTemplate.addTemplate AA_Allies_Camera
+ObjectTemplate.setPosition 0.736/0.318/0
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate Radar_AA_Allies_Pipe
+ObjectTemplate.setPosition 0/0.026/1.017
+ObjectTemplate.setRotation 0/0/0
+rem ----------------------------------------------------------
+
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create Bundle Radar_AA_Allies_Pipe
+rem ----------------------------------------------------------
+ObjectTemplate.addTemplate Radar_AA_Allies_GunBarrel
+rem ----------------------------------------------------------
+
+rem ***
+rem ***
+rem ***
+beginrem
+ObjectTemplate.create AnimatedBundle Radar_AA_Allies_Crank
+ObjectTemplate.addTemplate Radar_AA_Allies_RotatingCrank
+ObjectTemplate.addSkeletonIK Bip01_R_Hand 0.5/0.15/-0.05 -90/180/0
+ObjectTemplate.addSkeletonIK Bip01_L_Hand 0.2/-0.1/-0.05 -90/180/0
+endrem
+rem ***
+rem ***
+rem ***
+ObjectTemplate.create RotationalBundle Radar_AA_Allies_RotatingCrank
+ObjectTemplate.geometry Radar_AA_Allies_crank_m1
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setPivotPosition 0/0/0
+ObjectTemplate.setMaxSpeed 0/500/0
+ObjectTemplate.setAcceleration 0/10000/0
+ObjectTemplate.setContinousRotationSpeed 0/0/0
+ObjectTemplate.setInputToPitch 4
+
+

@@ -11,10 +11,10 @@ ObjectTemplate.reloadtime 3.8
 ObjectTemplate.roundOfFire 9
 objectTemplate.aiTemplate SG44AI
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.zoomFov 0.5
+ObjectTemplate.zoomFov 1
 ObjectTemplate.altFireOnce 1
-ObjectTemplate.soldierZoomFov 0.6 
-ObjectTemplate.soldierZoomPosition -0.04/-0.01/0
+ObjectTemplate.soldierZoomFov 1
+ObjectTemplate.soldierZoomPosition -0.082/0/-0.2
 ObjectTemplate.soldierCameraPosition -0.02/-0.04/0.03
 ObjectTemplate.addRootSpeed 1
 ObjectTemplate.ammoType 1
@@ -28,7 +28,7 @@ ObjectTemplate.setAmomBarPosX 3
 ObjectTemplate.setAmomBarPosY -11
 ObjectTemplate.setAmomBarTextPosX 8
 ObjectTemplate.setAmomBarTextPosY 4
-ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTNone
 
 Rem *** Deviation Begin *****
 
@@ -55,6 +55,7 @@ ObjectTemplate.useSkeletonPartAsMain Base
 
 rem *** LodObject must be located as first child to work on handweapons.
 ObjectTemplate.addTemplate Sg44Lod
+ObjectTemplate.setRotation 2.4/2.4/0
 
 ObjectTemplate.addTemplate e_MuzzSG44
 ObjectTemplate.setInputId -1

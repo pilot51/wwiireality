@@ -18,7 +18,7 @@ ObjectTemplate.GUIIndex 10
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_landmine_64x32.tga"
 ObjectTemplate.setHasMag 0
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.velocity 3
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.hideDuringFireTime 0.2
@@ -64,7 +64,7 @@ ObjectTemplate.radius 4
 ObjectTemplate.ForceOnExplosion 30
 ObjectTemplate.explodeNearEnemyDistance 3
 ObjectTemplate.hasOnTimeEffect 1
-ObjectTemplate.mass 130
+ObjectTemplate.mass 9.6
 ObjectTemplate.material 230
 ObjectTemplate.material2 232
 ObjectTemplate.damageType 4
@@ -79,6 +79,3 @@ endrem
 ObjectTemplate.noFFSound 1
 ObjectTemplate.addToProjectileList 1
 ObjectTemplate.projectileType 1
-
-
-

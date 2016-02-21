@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include BellyBarrelHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include BellyBarrelMedium.ssc
+	
+#templateLevel LOW
+
+	#include BellyBarrelLow.ssc

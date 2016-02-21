@@ -7,3 +7,6 @@ NetworkableInfo.setPredictionMode PMLinear
 NetworkableInfo.createNewInfo Corsair_body_info
 NetworkableInfo.setPredictionMode PMLinear
 
+NetworkableInfo.createNewInfo Corsair_flap_info
+NetworkableInfo.setPredictionMode PMUsePhysics
+NetworkableInfo.setForceNetworkableId 1

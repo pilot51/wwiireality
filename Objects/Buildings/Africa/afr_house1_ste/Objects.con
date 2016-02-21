@@ -6,7 +6,7 @@ ObjectTemplate.addTemplate lodafr_house1_ste
 
 
 LodSelectorTemplate.create DistanceSelector afr_house1_steSelector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodafr_house1_ste
 ObjectTemplate.lodselector afr_house1_steSelector
 ObjectTemplate.addTemplate afr_house1_steInterior

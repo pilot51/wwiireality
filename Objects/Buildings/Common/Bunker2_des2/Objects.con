@@ -4,7 +4,7 @@ ObjectTemplate.aiTemplate bunker2_des2_M1
 ObjectTemplate.addTemplate lodbunker2_des2
 
 LodSelectorTemplate.create DistanceSelector bunker2_des2Selector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodbunker2_des2
 ObjectTemplate.lodselector bunker2_des2Selector
 ObjectTemplate.addTemplate bunker2_des2Interior

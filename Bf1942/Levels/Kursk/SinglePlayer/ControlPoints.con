@@ -1,0 +1,42 @@
+
+rem *****************************************
+rem ****          AXIS BASE1           *****
+rem ****************************************
+
+Object.create AxisBase_1_Cpoint
+Object.absolutePosition 437.315/77.8547/238.39
+rem
+rem ***  ***
+rem
+rem *****************************************
+rem ****        ALLIES Base2           *****
+rem ****************************************
+
+Object.create AlliesBase_2_Cpoint
+Object.absolutePosition  568.058/76.6406/849.956
+rem
+rem ***  ***
+rem
+
+rem *****************************************
+rem ****    open Axis base3            *****
+rem ****************************************
+
+
+Object.create openbase_lumbermill_Cpoint
+Object.absolutePosition 639.658/83.3344/556.038
+rem
+rem ***  ***
+rem
+
+rem *****************************************
+rem ****    open Axis base4            *****
+rem ****************************************
+
+
+
+Object.create openbasecammo 
+Object.absolutePosition 508.833/84.8718/582.2
+
+
+rem *** EndOfFile ***

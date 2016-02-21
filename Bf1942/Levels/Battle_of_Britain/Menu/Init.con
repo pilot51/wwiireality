@@ -27,5 +27,5 @@ game.setObjectiveAxisDefeat DEBRIEFING_AXIS_MAJOR_DEFEAT_BRITAIN
 
 game.setLoadPicture ../../bf1942/levels/battle_of_britain/menu/texture/Load/Britain_Load.tga
 game.setServerInfoIcon "serverInfo.dds"
-game.setMapId "WWIIReality"
+game.setMapId "wwiireality"
 rem  This is a Conquest: Objective map. To win, the Germans must infiltrate British airspace and bomb their fighter production factory.  For the British to win, they must defend their factory until German tickets reach zero.

@@ -1,0 +1,163 @@
+rem *****************************************
+rem ****          AXIS BASE            *****
+rem ****************************************
+
+
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint1
+Object.absolutePosition 341.768/40.193/1244.42
+Object.rotation 90/0/0
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint2 
+Object.absolutePosition 494.732/40.2/1198.69
+Object.rotation 88.2/0/0
+
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint3 
+Object.absolutePosition 373.796/40.2/1315
+Object.rotation 88.2/0/0
+
+
+
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint4 
+Object.absolutePosition 431.004/40.2/1291.71
+
+
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint5 
+Object.absolutePosition 477.593/40.2/1286.35
+Object.rotation -157.68/0/0
+
+
+
+
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint6
+Object.absolutePosition 489.259/40.2/1254.46
+Object.rotation -157.68/0/0
+
+rem *****************************************
+rem ****          ALLIES BASE          *****
+rem ****************************************
+
+
+
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint1
+Object.absolutePosition 1725.79/60/772.582 
+Object.rotation 0/0/1.52588e-005
+
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint2
+Object.absolutePosition 1696.44/60/846.909
+Object.rotation 0/0/1.52588e-005
+
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint3
+Object.absolutePosition 1696.44/60/846.909
+Object.rotation 0/0/1.52588e-005
+
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint4
+Object.absolutePosition 1547.72/40.2/758.098
+Object.rotation 0/0/1.52588e-005
+
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint5
+Object.absolutePosition 1654.55/60/809.183
+
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint6
+Object.absolutePosition 1515.91/40.2/863.301
+
+rem *****************************************
+rem ****       open BASE          *****
+rem ****************************************
+
+
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint1
+Object.absolutePosition 890.887/86.4245/590.819
+
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint2
+Object.absolutePosition 896.057/86.4212/569.132
+
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint3
+Object.absolutePosition 916.723/86.4231/565.712
+
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint4
+Object.absolutePosition 857.98/60.0029/1739.98
+
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint5
+Object.absolutePosition 881.107/51.1661/1800.06
+
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint6
+Object.absolutePosition 873.779/51.599/1829.24
+Object.rotation 0/0/1.52588e-005
+
+
+rem *** Third  base ****
+
+
+
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint7
+Object.absolutePosition 1344.85/45.3961/1371.6
+
+
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint8
+Object.absolutePosition 1353.74/45.3961/1379.03
+
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint9
+Object.absolutePosition 1344.9/45.3961/1379.03
+Object.rotation 0/0/1.52588e-005

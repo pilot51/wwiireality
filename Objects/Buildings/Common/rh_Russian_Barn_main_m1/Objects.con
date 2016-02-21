@@ -4,7 +4,7 @@ objectTemplate.aiTemplate rh_Russian_Barn_main_m1
 ObjectTemplate.addTemplate lodrh_Russian_Barn_main
 
 LodSelectorTemplate.create DistanceSelector rh_Russian_Barn_mainSelector
-LodSelectorTemplate.addLodDistance 100
+rem LodSelectorTemplate.addLodDistance 100
 
 ObjectTemplate.create LodObject lodrh_Russian_Barn_main
 ObjectTemplate.lodselector rh_Russian_Barn_mainSelector

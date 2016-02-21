@@ -10,7 +10,7 @@ ObjectTemplate.numOfMag 5
 ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 4.8
 ObjectTemplate.roundOfFire 10
-ObjectTemplate.zoomFov 0.5
+ObjectTemplate.zoomFov 1
 ObjectTemplate.altFireOnce 1
 objectTemplate.aiTemplate ThompsonSMG
 objectTemplate.GUIIndex 2
@@ -22,9 +22,9 @@ ObjectTemplate.setAmomBarPosX 4
 ObjectTemplate.setAmomBarPosY -11
 ObjectTemplate.setAmomBarTextPosX 8
 ObjectTemplate.setAmomBarTextPosY 4
-ObjectTemplate.setCrossHairType CHTCrossHair
-ObjectTemplate.soldierZoomFov 0.6
-ObjectTemplate.soldierZoomPosition -0.05/-0.01/0.08
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.soldierZoomFov 1
+ObjectTemplate.soldierZoomPosition -0.072/0.044/-0.2
 ObjectTemplate.soldierCameraPosition -0.01/-0.04/0.09
 ObjectTemplate.addRootSpeed 1
 ObjectTemplate.AmmoType 1
@@ -58,11 +58,12 @@ ObjectTemplate.loadSoundScript Sounds/Thompson.ssc
 ObjectTemplate.createSkeleton animations/Thompson.ske
 ObjectTemplate.useSkeletonPartAsMain Thompson
 ObjectTemplate.addTemplate ThompsonLod
+ObjectTemplate.setRotation 0.31/1.6/0
 
 ObjectTemplate.addTemplate e_MuzzThomp
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition -0.004/0.08/0.38
+ObjectTemplate.setPosition 0.01/0.07/0.38
 ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.addTemplate e_Shell9mm

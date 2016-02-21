@@ -1,0 +1,36 @@
+TextureManager.mipmaps 0
+
+rem
+rem *** Create Lensflares
+rem
+
+rem
+rem *** Create Sky
+rem
+rem *** Sky ***
+
+GeometryTemplate.create StandardMesh SkyBox
+GeometryTemplate.file Sky_Kursk_m1
+Sky.initSky
+
+rem ** Clouds
+REM GeometryTemplate.create StandardMesh Cloud
+REM GeometryTemplate.file cloud
+
+Sky.addCloud
+Cloud.setName cloud_0
+Cloud.setSrcBlend BMSourceAlpha
+Cloud.setDstBlend BMInvSourceAlpha
+Cloud.setTexScale 8
+Cloud.setSpeed -0.03 0.015
+Cloud.setHeight 3500
+
+Sky.changeOfsCloudHeight 2500
+Sky.changeOfsCloudDist 333
+Sky.setCloudFog 0
+
+sky.changeOfsSkyHeight 0
+Sky.setRotAngle 180
+sky.sunLightDirectionVec 0.718/0.8/-0.696
+
+TextureManager.mipmaps 1

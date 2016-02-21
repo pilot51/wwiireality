@@ -72,7 +72,7 @@ geometryTemplate.cullFactor 0.02
 GeometryTemplate.setLodDistance 0 0
 
 GeometryTemplate.create StandardMesh rh_aichi_blrprop_M1
-GeometryTemplate.file zero_propblur_m1
+GeometryTemplate.file rh_aichi_propblur_m1
 GeometryTemplate.alphaLodDistance 750
 
 GeometryTemplate.create StandardMesh rh_aichi_fus_L1

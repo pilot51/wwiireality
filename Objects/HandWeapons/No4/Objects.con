@@ -16,7 +16,7 @@ ObjectTemplate.reloadtime 1.6
 ObjectTemplate.roundOfFire 0.37
 ObjectTemplate.fireOnce 1
 objectTemplate.aiTemplate No4AI
-ObjectTemplate.zoomFov 0.4
+ObjectTemplate.zoomFov 1
 ObjectTemplate.altFireOnce 1
 ObjectTemplate.GUIIndex 6
 ObjectTemplate.setHudAmmoType ATAmmoBar
@@ -27,14 +27,14 @@ ObjectTemplate.setAmomBarPosX 6
 ObjectTemplate.setAmomBarPosY -17
 ObjectTemplate.setAmomBarTextPosX 5
 ObjectTemplate.setAmomBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 
-ObjectTemplate.soldierZoomFov 0.6 
-ObjectTemplate.soldierZoomPosition -0.07/0/0
+ObjectTemplate.soldierZoomFov 1
+ObjectTemplate.soldierZoomPosition -0.083/0.03/-0.2
 ObjectTemplate.soldierCameraPosition -0.02/-0.03/0.01
 ObjectTemplate.addRootSpeed 1
 ObjectTemplate.AmmoType 1
-ObjectTemplate.timeToNotAllowChange 0.25
+ObjectTemplate.timeToNotAllowChange 2.7
 
 Rem *** Deviation Begin *****
 
@@ -58,6 +58,7 @@ ObjectTemplate.loadSoundScript Sounds/no4.ssc
 ObjectTemplate.createSkeleton animations/No4.ske
 ObjectTemplate.useSkeletonPartAsMain No4
 ObjectTemplate.addTemplate No4Lod
+ObjectTemplate.setRotation 0.4/0.75/0
 
 ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setInputId -1
@@ -79,7 +80,7 @@ rem ----------------------------------------------------------
 ObjectTemplate.create HandFireArms No4Sniper
 ObjectTemplate.networkableInfo HandFireArmsInfo
 ObjectTemplate.itemIndex 3
-ObjectTemplate.zoomFov 0.1
+ObjectTemplate.zoomFov 0.286
 ObjectTemplate.unZoomBetweenFireTime 3.0
 ObjectTemplate.useScope 1
 ObjectTemplate.projectileTemplate no4Projectile
@@ -134,7 +135,7 @@ ObjectTemplate.soldierZoomPosition 0.1/0/0
 ObjectTemplate.soldierCameraPosition -0.03/-0.04/0.1
 ObjectTemplate.addRootSpeed 1
 ObjectTemplate.AmmoType 1
-ObjectTemplate.timeToNotAllowChange 0.25
+ObjectTemplate.timeToNotAllowChange 2.7
 Rem *** Deviation Begin *****
 
 ObjectTemplate.velocity 744
@@ -149,6 +150,7 @@ ObjectTemplate.loadSoundScript Sounds/no4.ssc
 ObjectTemplate.createSkeleton animations/No4.ske
 ObjectTemplate.useSkeletonPartAsMain No4
 ObjectTemplate.addTemplate No4SniperLod
+ObjectTemplate.setRotation 0.4/0.75/0
 
 ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setInputId -1

@@ -43,6 +43,7 @@ ObjectTemplate.hasResponsePhysics 1
 rem ObjectTemplate.Grip 20
 ObjectTemplate.setAnimationState 0 Lb_Stand
 ObjectTemplate.setAnimationState 1 Ub_StandAim
+rem ObjectTemplate.setAnimationState 1 Ub_Stand
 ObjectTemplate.setTurnLeftRightAngle 20.0 14.0
 ObjectTemplate.setPointUpDownAngle 38.0  38.0
 ObjectTemplate.setLiePointUpDownAngle 0.0 -6.0

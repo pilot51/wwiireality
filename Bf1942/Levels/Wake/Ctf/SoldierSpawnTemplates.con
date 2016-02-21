@@ -1,0 +1,70 @@
+
+rem *****************************************
+rem ****       BASE       *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_1
+ObjectTemplate.setSpawnId 3
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_2
+ObjectTemplate.setSpawnId 4
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_3
+ObjectTemplate.setSpawnId 5
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_4
+ObjectTemplate.setSpawnId 6
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_5
+ObjectTemplate.setSpawnId 7
+ObjectTemplate.setGroup 2
+
+
+rem *****************************************
+rem ****          axis_southbase      *****
+rem ****************************************
+
+
+
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_southbase_1
+ObjectTemplate.setSpawnId 8
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_southbase_2
+ObjectTemplate.setSpawnId 9
+ObjectTemplate.setGroup 3
+
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_southbase_3
+ObjectTemplate.setSpawnId 10
+ObjectTemplate.setGroup 3
+
+
+
+rem *****************************************
+rem ****          ALLIES_north_base            *****
+rem ****************************************
+
+
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_northbase_1
+ObjectTemplate.setSpawnId 11
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_northbase_2
+ObjectTemplate.setSpawnId 12
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_northbase_3
+ObjectTemplate.setSpawnId 13
+ObjectTemplate.setGroup 4
+
+
+
+
+rem EndOfFile

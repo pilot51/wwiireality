@@ -33,4 +33,3 @@ ObjectTemplate.setAutomaticReset 1
 rem *** Torpedo_Wing ***
 ObjectTemplate.create Wing Torpedo_Wing
 ObjectTemplate.setWingLift 0.2
-

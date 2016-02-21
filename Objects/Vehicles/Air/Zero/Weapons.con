@@ -23,6 +23,19 @@ ObjectTemplate.addFireArmsPosition 0.3/0.5/1.7 0/0/0
 ObjectTemplate.addFireArmsPosition -0.3/0.5/1.7 0/0/0
 ObjectTemplate.AmmoType 8
 
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 1.99/-0.3/0
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition -1.99/-0.3/0
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 4.6/-0.2/0
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition -4.6/-0.2/0
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 0.6/0.1/1
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition -0.6/0.1/1
+
 
 rem *** ZeroProjectile ***
 ObjectTemplate.create Projectile ZeroProjectile
@@ -32,6 +45,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.material 213
 ObjectTemplate.material2 -1
@@ -51,7 +65,8 @@ ObjectTemplate.visibleDummyProjectileTemplate DummyBigBomb
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 0
-ObjectTemplate.roundOfFire 0.2
+ObjectTemplate.roundOfFire 0.067
+ObjectTemplate.Reloadtime 30
 ObjectTemplate.setInputFire c_PIAltFire
 ObjectTemplate.addFireArmsPosition 0/-0.75/0 0/0/0
 ObjectTemplate.aiTemplate ZeroBombs

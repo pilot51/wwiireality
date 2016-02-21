@@ -29,7 +29,7 @@ rem ** Objects
 
 ObjectTemplate.create Projectile BinocularsProjectile
 ObjectTemplate.networkableInfo SpyProjectileInfo
-ObjectTemplate.timeToLive CRD_NONE/120/0/0
+ObjectTemplate.timeToLive CRD_NONE/600/0/0
 ObjectTemplate.hasCollisionPhysics 0
 ObjectTemplate.gravityModifier 0.0
 ObjectTemplate.hasCollisionEffect 0
@@ -37,7 +37,7 @@ ObjectTemplate.damageType 3
 
 ObjectTemplate.create Projectile BinocularsProjectile2
 rem ObjectTemplate.networkableInfo SpyProjectileInfo
-ObjectTemplate.timeToLive CRD_NONE/120/0/0
+ObjectTemplate.timeToLive CRD_NONE/600/0/0
 ObjectTemplate.hasCollisionPhysics 0
 ObjectTemplate.gravityModifier 0.0
 ObjectTemplate.hasCollisionEffect 0

@@ -42,6 +42,18 @@ GeometryTemplate.create StandardMesh PrinceOW_aag1_M1
 GeometryTemplate.file PrinceOW_aag1_M1
 GeometryTemplate.setLodDistance 0 0
 
+GeometryTemplate.create StandardMesh PrinceOW_Axl1_M1
+GeometryTemplate.file PrinceOW_Axl1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh PrinceOW_Axl1_Bld1_M1
+GeometryTemplate.file PrinceOW_Axl1_Bld1_M1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh PrinceOW_Rud1_M1
+GeometryTemplate.file PrinceOW_Rud1_M1
+GeometryTemplate.setLodDistance 0 0
+
 renderer.endGlobalCluster
 
 beginrem

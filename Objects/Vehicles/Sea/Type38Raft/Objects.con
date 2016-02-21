@@ -211,10 +211,17 @@ ObjectTemplate.addTemplate Attach_R_Hand
 ObjectTemplate.setPosition -0.119/0.06/0.59
 ObjectTemplate.setRotation -175.853/2.507/-175.588
 ObjectTemplate.addTemplate Type38RaftPropeller
-ObjectTemplate.setPosition 0/-0.697/-0.033
+ObjectTemplate.setPosition 0/-0.62/-0.033
 ObjectTemplate.setRotation 0/0/0
 
 rem *** Type38RaftPropeller ***
-ObjectTemplate.create SimpleObject Type38RaftPropeller
+ObjectTemplate.create RotationalBundle Type38RaftPropeller
+ObjectTemplate.setNetworkableInfo Type38RaftEngineInfo
 ObjectTemplate.geometry Type38Raft_prop_M1
+ObjectTemplate.setMaxSpeed 0/0/2000
+ObjectTemplate.setAcceleration 0/0/-2000
+ObjectTemplate.setInputToRoll c_PIThrottle
+
+rem ObjectTemplate.create SimpleObject Type38RaftPropeller
+rem ObjectTemplate.geometry Type38Raft_prop_M1
 

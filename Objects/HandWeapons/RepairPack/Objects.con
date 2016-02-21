@@ -9,7 +9,7 @@ ObjectTemplate.magSize 3000
 ObjectTemplate.GUIIndex 4
 ObjectTemplate.setHudAmmoType ATIconAndReloadBar
 ObjectTemplate.setAmmoIcon "Ammo/Icon_repairkit_64x32.tga"
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setHasMag 0
 ObjectTemplate.aitemplate RepairPackAI
 ObjectTemplate.soldierCameraPosition 0/-0.09/0.3

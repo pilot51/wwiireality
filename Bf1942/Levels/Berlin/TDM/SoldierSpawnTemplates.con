@@ -1,0 +1,137 @@
+rem 
+rem setup spawnpoints templates
+rem 
+
+rem *****************************************
+rem ****          AXIS BASE1           *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_1_1
+ObjectTemplate.setSpawnId 19
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_1_2
+ObjectTemplate.setSpawnId 1
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_1_3
+ObjectTemplate.setSpawnId 2
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_1_4
+ObjectTemplate.setSpawnId 3
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_1_5
+ObjectTemplate.setSpawnId 4
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_1_6
+ObjectTemplate.setSpawnId 4
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_1_7
+ObjectTemplate.setSpawnId 4
+ObjectTemplate.setGroup 1
+
+rem *****************************************
+rem ****        ALLIES Base2           *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_2_1 
+ObjectTemplate.setSpawnId 5
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_2_2
+ObjectTemplate.setSpawnId 6
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_2_3
+ObjectTemplate.setSpawnId 7
+ObjectTemplate.setGroup 2
+
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_2_4 
+ObjectTemplate.setSpawnId 8
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_2_5
+ObjectTemplate.setSpawnId 8
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_2_6 
+ObjectTemplate.setSpawnId 8
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_2_7
+ObjectTemplate.setSpawnId 8
+ObjectTemplate.setGroup 2
+
+
+
+rem *****************************************
+rem **** open BASE_leftside_3          *****
+rem ****************************************
+
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_3_1
+ObjectTemplate.setSpawnId 20
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_3_2
+ObjectTemplate.setSpawnId 10
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_3_3
+ObjectTemplate.setSpawnId 30
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_3_4
+ObjectTemplate.setSpawnId 30
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_3_5
+ObjectTemplate.setSpawnId 30
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_3_6
+ObjectTemplate.setSpawnId 30
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_3_7
+ObjectTemplate.setSpawnId 30
+ObjectTemplate.setGroup 3
+
+rem *****************************************
+rem *open BASE_close_rightside_4        ****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_4_1
+ObjectTemplate.setSpawnId 11
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_4_2
+ObjectTemplate.setSpawnId 12
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_4_3
+ObjectTemplate.setSpawnId 13
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_4_4
+ObjectTemplate.setSpawnId 13
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_4_5
+ObjectTemplate.setSpawnId 13
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_4_6
+ObjectTemplate.setSpawnId 13
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_4_7
+ObjectTemplate.setSpawnId 13
+ObjectTemplate.setGroup 4
+
+rem EndOfFile

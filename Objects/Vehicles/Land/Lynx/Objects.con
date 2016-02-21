@@ -22,7 +22,7 @@ ObjectTemplate.hitpoints 60
 ObjectTemplate.maxhitpoints 60
 ObjectTemplate.material 45
 ObjectTemplate.criticalDamage 8
-ObjectTemplate.hpLostWhileCriticalDamage 2
+ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.explosionForceMod 20
 ObjectTemplate.hpLostWhileUpSideDown 5
 ObjectTemplate.hpLostWhileDamageFromWater 5

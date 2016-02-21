@@ -34,6 +34,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.material 224
 ObjectTemplate.material2 -1
@@ -64,6 +65,10 @@ ObjectTemplate.addFireArmsPosition 0.25/0.9/1.8 0/0/0
 ObjectTemplate.addFireArmsPosition -0.25/0.9/1.8 0/0/0
 ObjectTemplate.AmmoType 10
 
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 0.7/0.3/1.5
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition -0.7/0.3/1.5
 
 
 rem *** SBD-TProjectile ***
@@ -75,6 +80,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.material 213
 ObjectTemplate.material2 -1
@@ -93,8 +99,8 @@ ObjectTemplate.projectilePosition 0/-0.6/0
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 0
-ObjectTemplate.reloadtime 10
-ObjectTemplate.roundOfFire 0.1
+ObjectTemplate.reloadtime 30
+ObjectTemplate.roundOfFire 0.067
 ObjectTemplate.autoReload 1
 ObjectTemplate.setInputFire c_PIAltFire
 ObjectTemplate.AmmoType 9

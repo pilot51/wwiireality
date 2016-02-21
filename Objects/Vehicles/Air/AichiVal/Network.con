@@ -7,3 +7,6 @@ NetworkableInfo.setPredictionMode PMLinear
 NetworkableInfo.createNewInfo AichiVal_body_info
 NetworkableInfo.setPredictionMode PMLinear
 
+NetworkableInfo.createNewInfo AichiVal_flap_info
+NetworkableInfo.setPredictionMode PMUsePhysics
+NetworkableInfo.setForceNetworkableId 1

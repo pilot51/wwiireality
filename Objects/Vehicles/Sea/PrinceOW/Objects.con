@@ -18,14 +18,14 @@ ObjectTemplate.criticalDamage 100
 ObjectTemplate.hpLostWhileCriticalDamage 5
 ObjectTemplate.explosionForceMod 5
 ObjectTemplate.dontClearTeamOnExit 1
-ObjectTemplate.addArmorEffect 500 em_ExFumePOW 0/34/3
-ObjectTemplate.addArmorEffect 500 em_ExFumePOW 0/34/-22
-ObjectTemplate.addArmorEffect 300 em_ExFumePOW 0/34/3
-ObjectTemplate.addArmorEffect 300 em_ExFumePOW 0/34/-22
+ObjectTemplate.addArmorEffect 500 em_ExFumePOW 0/32/4
+ObjectTemplate.addArmorEffect 500 em_ExFumePOW 0/32/-22
+ObjectTemplate.addArmorEffect 300 em_ExFumePOW 0/32/4
+ObjectTemplate.addArmorEffect 300 em_ExFumePOW 0/32/-22
 ObjectTemplate.addArmorEffect 300 em_PoWDamage 0/0/10
 ObjectTemplate.addArmorEffect 300 em_PoWDamage 0/0/50
 ObjectTemplate.addArmorEffect 300 em_PoWDamage 0/0/-30
-ObjectTemplate.addArmorEffect 250 em_ExFumePOW 0/34/-22
+ObjectTemplate.addArmorEffect 250 em_ExFumePOW 0/32/-22
 ObjectTemplate.addArmorEffect 250 em_PoWDamage 0/0/10
 ObjectTemplate.addArmorEffect 250 em_PoWDamage 0/0/50
 ObjectTemplate.addArmorEffect 250 em_PoWDamage 0/0/-30
@@ -100,7 +100,7 @@ ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_cannon.tga"
 ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
@@ -182,6 +182,20 @@ ObjectTemplate.addTemplate e_waterBackBig
 ObjectTemplate.setPosition 0/5.5/-94.999
 ObjectTemplate.addTemplate Ammobox
 ObjectTemplate.setPosition -3.5/13.98/-1.058
+ObjectTemplate.addTemplate PrinceOW_AxleProp
+ObjectTemplate.setPosition -8/0/-80
+ObjectTemplate.setRotation 0/-5/-14
+ObjectTemplate.addTemplate PrinceOW_AxleProp
+ObjectTemplate.setPosition -4.5/-0.9/-88
+ObjectTemplate.setRotation 0/-5/-14
+ObjectTemplate.addTemplate PrinceOW_AxleProp
+ObjectTemplate.setPosition 4.5/-0.9/-88
+ObjectTemplate.setRotation 0/-5/14
+ObjectTemplate.addTemplate PrinceOW_AxleProp
+ObjectTemplate.setPosition 8/0/-80
+ObjectTemplate.setRotation 0/-5/14
+ObjectTemplate.addTemplate PrinceOW_Rud
+ObjectTemplate.setPosition 0/-3.66/-97.35
 rem -------------------------------------
 
 
@@ -366,7 +380,7 @@ ObjectTemplate.setVehicleIconPos 33/48
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTBattleship
 ObjectTemplate.setToolTipType TTBattleship
@@ -458,11 +472,11 @@ ObjectTemplate.create RotationalBundle PrinceOW_AAGunPipesBase
 ObjectTemplate.setNetworkableInfo PrinceOWCannonInfo
 ObjectTemplate.loadSoundScript ../Common/Sounds/aapitch.ssc
 rem -------------------------------------
-ObjectTemplate.addTemplate PrinceOW_AAGunPipe
-ObjectTemplate.setRotation 0/0/0.028
+rem ObjectTemplate.addTemplate PrinceOW_AAGunPipe
+rem ObjectTemplate.setRotation 0/0/0.028
 
 ObjectTemplate.addTemplate AA_POW_GunBarrel2
-ObjectTemplate.setPosition 0/0.05/5.3
+ObjectTemplate.setPosition 0/0.05/0
 beginrem
 ObjectTemplate.addTemplate AA_POW_GunBarrel
 ObjectTemplate.setPosition 1.08/0.05/5.3
@@ -478,8 +492,8 @@ ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 
 rem *** PrinceOW_AAGunPipe ***
-ObjectTemplate.create RotationalBundle PrinceOW_AAGunPipe
-ObjectTemplate.geometry PrinceOW_aag1_bar1_M1
+rem ObjectTemplate.create RotationalBundle PrinceOW_AAGunPipe
+rem ObjectTemplate.geometry PrinceOW_aag1_bar1_M1
 
 
 rem *** PrinceOW_AAGunBackwardTower_For_PCO2 ***
@@ -512,10 +526,10 @@ ObjectTemplate.create RotationalBundle PrinceOW_AAGunPipesBase_For_PCO2
 ObjectTemplate.setNetworkableInfo PrinceOWCannonInfo
 ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
-ObjectTemplate.addTemplate PrinceOW_AAGunPipe
-ObjectTemplate.setRotation 0/0/0.028
+rem ObjectTemplate.addTemplate PrinceOW_AAGunPipe
+rem ObjectTemplate.setRotation 0/0/0.028
 ObjectTemplate.addTemplate AA_POW_GunBarrel2
-ObjectTemplate.setPosition 0/0.05/5.3
+ObjectTemplate.setPosition 0/0.05/0
 ObjectTemplate.addTemplate PrinceOW_Camera_For_PCO2
 ObjectTemplate.addTemplate lodShipCockpit
 ObjectTemplate.setPosition 0.538/-0.019/0.098
@@ -609,10 +623,10 @@ rem *** PrinceOW_AAGunPipesBase_For_PCO3 ***
 ObjectTemplate.create RotationalBundle PrinceOW_AAGunPipesBase_For_PCO3
 ObjectTemplate.setNetworkableInfo PrinceOWCannonInfo
 rem -------------------------------------
-ObjectTemplate.addTemplate PrinceOW_AAGunPipe
-ObjectTemplate.setRotation 0/0/0.028
+rem ObjectTemplate.addTemplate PrinceOW_AAGunPipe
+rem ObjectTemplate.setRotation 0/0/0.028
 ObjectTemplate.addTemplate AA_POW_GunBarrel2
-ObjectTemplate.setPosition 0/0.05/5.3
+ObjectTemplate.setPosition 0/0.05/0
 ObjectTemplate.addTemplate PrinceOW_Camera_For_PCO3
 ObjectTemplate.addTemplate lodShipCockpit
 ObjectTemplate.setPosition 0.538/-0.019/0.098
@@ -641,6 +655,36 @@ rem *** AnimatedUsFlag ***
 ObjectTemplate.create AnimatedBundle AnimatedUsFlag
 ObjectTemplate.geometry flagus_m1
 
+rem *** PrinceOW_AxleProp ***
+ObjectTemplate.create Bundle PrinceOW_AxleProp
+ObjectTemplate.addTemplate PrinceOW_Propeller
+ObjectTemplate.addTemplate PrinceOW_Axle
+ObjectTemplate.setPosition 0/0/0.3
+ObjectTemplate.setRotation 0/0/13
+
+rem *** PrinceOW_Axle ***
+ObjectTemplate.create SimpleObject PrinceOW_Axle
+ObjectTemplate.geometry PrinceOW_Axl1_M1
+
+rem *** PrinceOW_Propeller ***
+ObjectTemplate.create RotationalBundle PrinceOW_Propeller
+ObjectTemplate.setNetworkableInfo PrinceOWEngineInfo
+ObjectTemplate.geometry PrinceOW_Axl1_Bld1_M1
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+
+rem *** PrinceOW_Rud ***
+ObjectTemplate.create RotationalBundle PrinceOW_Rud
+ObjectTemplate.setNetworkableInfo PrinceOWWingInfo
+ObjectTemplate.geometry PrinceOW_Rud1_M1
+ObjectTemplate.setMinRotation -25/0/0
+ObjectTemplate.setMaxRotation 25/0/0
+ObjectTemplate.setMaxSpeed 15/0/0
+ObjectTemplate.setAcceleration -10/0/0
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setInputToYaw c_PIYaw
+
 
 rem *** PrinceOWSimple ***
 ObjectTemplate.create SimpleObject PrinceOWSimple
@@ -650,3 +694,162 @@ ObjectTemplate.geometry PrinceOW_Hul1_L1
 rem *** PrinceOWLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 PrinceOWLodSelector
 LodSelectorTemplate.addLodDistance 5000
+
+
+
+rem *** PrinceOW2DriverSoldierSpawn ***
+ObjectTemplate.create SpawnPoint PrinceOW2DriverSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 46
+rem ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** PrinceOW2SoldierSpawn ***
+ObjectTemplate.create SpawnPoint PrinceOW2SoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 47
+rem ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** PrinceOW2 ***
+ObjectTemplate.create PlayerControlObject PrinceOW2
+ObjectTemplate.setNetworkableInfo PrinceOWBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 3.25
+ObjectTemplate.mass 39000000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 500
+ObjectTemplate.maxhitpoints 500
+ObjectTemplate.material 55
+ObjectTemplate.criticalDamage 100
+ObjectTemplate.hpLostWhileCriticalDamage 5
+ObjectTemplate.explosionForceMod 5
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.addArmorEffect 500 em_ExFumePOW 0/32/4
+ObjectTemplate.addArmorEffect 500 em_ExFumePOW 0/32/-22
+ObjectTemplate.addArmorEffect 300 em_ExFumePOW 0/32/4
+ObjectTemplate.addArmorEffect 300 em_ExFumePOW 0/32/-22
+ObjectTemplate.addArmorEffect 300 em_PoWDamage 0/0/10
+ObjectTemplate.addArmorEffect 300 em_PoWDamage 0/0/50
+ObjectTemplate.addArmorEffect 300 em_PoWDamage 0/0/-30
+ObjectTemplate.addArmorEffect 250 em_ExFumePOW 0/32/-22
+ObjectTemplate.addArmorEffect 250 em_PoWDamage 0/0/10
+ObjectTemplate.addArmorEffect 250 em_PoWDamage 0/0/50
+ObjectTemplate.addArmorEffect 250 em_PoWDamage 0/0/-30
+ObjectTemplate.addArmorEffect 150 em_PoWDamage 0/0/10
+ObjectTemplate.addArmorEffect 150 em_PoWDamage 0/0/50
+ObjectTemplate.addArmorEffect 150 em_PoWDamage 0/0/-30
+ObjectTemplate.addArmorEffect 150 e_waterBoatSink 0/5/0
+ObjectTemplate.addArmorEffect 100 em_PoWDamage 0/0/10
+ObjectTemplate.addArmorEffect 100 em_PoWDamage 0/0/50
+ObjectTemplate.addArmorEffect 100 em_PoWDamage 0/0/-30
+ObjectTemplate.addArmorEffect 100 e_waterBoatSink 0/5/0
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 19/6/-5
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 17/5/-45
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 14/5/-85
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 13/5/25
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 18/5/45
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 16/5/65
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 14/5/85
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/5/115
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/10/35
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/10/-25
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/10/-5
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/3/-90
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -19/6/-5
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -17/5/-35
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -14/5/-85
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -13/5/25
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -18/5/45
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -16/5/65
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -14/5/85
+ObjectTemplate.timetoliveafterdeath 600
+ObjectTemplate.timeToStartFadeAfterDeath 570
+ObjectTemplate.aiTemplate PrinceOWAI
+rem -------------------------------------
+ObjectTemplate.addTemplate lodPrinceOW
+ObjectTemplate.addTemplate PrinceOW_Floater
+ObjectTemplate.setPosition 0/14/110
+ObjectTemplate.addTemplate PrinceOW_Floater
+ObjectTemplate.setPosition -12.999/14/55
+ObjectTemplate.addTemplate PrinceOW_Floater
+ObjectTemplate.setPosition 13/14/55
+ObjectTemplate.addTemplate PrinceOW_Floater
+ObjectTemplate.setPosition -15.999/14/0
+ObjectTemplate.addTemplate PrinceOW_Floater
+ObjectTemplate.setPosition 16/14/0
+ObjectTemplate.addTemplate PrinceOW_Floater
+ObjectTemplate.setPosition -12.999/14/-54.999
+ObjectTemplate.addTemplate PrinceOW_Floater
+ObjectTemplate.setPosition 13/14/-54.999
+ObjectTemplate.addTemplate PrinceOW_Floater
+ObjectTemplate.setPosition 0/14/-109.999
+ObjectTemplate.addTemplate PrinceOW2DriverSoldierSpawn
+ObjectTemplate.setPosition 0/15/34
+ObjectTemplate.addTemplate PrinceOW2SoldierSpawn
+ObjectTemplate.setPosition 14.2/15/-43.299
+ObjectTemplate.addTemplate PrinceOW2SoldierSpawn
+ObjectTemplate.setPosition -14.199/15/-43.299
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.artPos 1
+ObjectTemplate.DirBarXScale 110
+ObjectTemplate.DirBarYScaleAbove 10
+ObjectTemplate.DirBarYScaleBelow 0
+ObjectTemplate.DirBarYScaleMin -90
+ObjectTemplate.DirBarYScaleMax -80
+ObjectTemplate.setSoldierExitLocation 0/14.2/35.3 180/0/0
+ObjectTemplate.GUIIndex 43
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_princeow.tga"
+ObjectTemplate.setVehicleIconPos 80/78
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTBattleship
+ObjectTemplate.setToolTipType TTBattleship
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_battleship_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+
+
+
+
+beginrem
+rem ************** Delete this padding as room is needed for editing within winRFA **************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *****************************************************************************************
+rem ************** Delete this padding as room is needed for editing within winRFA **************
+endrem

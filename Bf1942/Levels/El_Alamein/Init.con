@@ -2,7 +2,7 @@ rem
 rem **** Initialize level specific rendering settings. 
 rem
 ShaderManager.setTextureParam envmap bf1942\levels\El_Alamein\Textures\ENVMAP_G_.rcm
-renderer.vertexFogEnable 1 
+renderer.vertexFogEnable 1
 renderer.fogColorVec 0.83/0.73/0.58
 renderer.globalLodPercent 1
 renderer.globalAmbientColor .16/.15/.17

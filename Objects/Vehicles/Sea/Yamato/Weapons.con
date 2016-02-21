@@ -7,6 +7,8 @@ ObjectTemplate.aiTemplate YamatoGunAI
 ObjectTemplate.loadSoundScript ../Common/Sounds/fire.ssc
 rem -------------------------------------
 rem ObjectTemplate.visibleBarrelTemplate e_MuzzDefGun
+ObjectTemplate.visibleBarrelTemplate e_MuzzBigGun
+beginrem
 ObjectTemplate.addTemplate e_MuzzDefGun
 ObjectTemplate.setPosition 1.7/0/7.0 0/0/0
 ObjectTemplate.setRotation -180/0/0
@@ -16,20 +18,28 @@ ObjectTemplate.setRotation -180/0/0
 ObjectTemplate.addTemplate e_MuzzDefGun
 ObjectTemplate.setPosition -1.7/0/7.0 0/0/0
 ObjectTemplate.setRotation -180/0/0
+endrem
 rem -------------------------------------
 ObjectTemplate.projectileTemplate YamatoMediumProjectile
-ObjectTemplate.projectilePosition 0/0/-5
+rem ObjectTemplate.projectilePosition 0/0/-5
 ObjectTemplate.magSize 495
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 920
 ObjectTemplate.reloadtime 45
-ObjectTemplate.roundOfFire 0.1
+rem ObjectTemplate.roundOfFire 0.1
+ObjectTemplate.roundOfFire 0.3
+ObjectTemplate.SetAsynchronyFire 1
 ObjectTemplate.fireingForce 2
 ObjectTemplate.recoilSpeed 6
 ObjectTemplate.recoilSize 10
+beginrem
 ObjectTemplate.addFireArmsPosition 1.7/0/7.0 0/0/0
 ObjectTemplate.addFireArmsPosition 0/0/7.0 0/0/0
 ObjectTemplate.addFireArmsPosition -1.7/0/7.0 0/0/0
+endrem
+ObjectTemplate.addFireArmsPosition 1.6/0/6.4 0/0/0
+ObjectTemplate.addFireArmsPosition 0/0/6.4 0/0/0
+ObjectTemplate.addFireArmsPosition -1.6/0/6.4 0/0/0
 
 
 rem *** YamatoMediumProjectile ***
@@ -40,6 +50,7 @@ ObjectTemplate.geometry Projectile_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 ObjectTemplate.damageType 1
 ObjectTemplate.material 252
@@ -64,9 +75,12 @@ ObjectTemplate.create FireArms YamatoFatCannon
 ObjectTemplate.aiTemplate YamatoGunAI
 ObjectTemplate.loadSoundScript ../Common/Sounds/fire.ssc
 ObjectTemplate.geometry Yamato_Fat_Cannon_m1
+ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 
 rem ObjectTemplate.visibleBarrelTemplate e_MuzzDefGun
+ObjectTemplate.visibleBarrelTemplate e_MuzzBigGun
+beginrem
 ObjectTemplate.addTemplate e_MuzzDefGun
 ObjectTemplate.setPosition -3/0/14.5
 ObjectTemplate.setRotation -180/0/0
@@ -78,15 +92,18 @@ ObjectTemplate.setRotation -180/0/0
 ObjectTemplate.addTemplate e_MuzzDefGun
 ObjectTemplate.setPosition 3/0/14.5
 ObjectTemplate.setRotation -180/0/0
+endrem
 
 rem -------------------------------------
 ObjectTemplate.projectileTemplate YamatoFatProjectile
-ObjectTemplate.projectilePosition 0/0/-14
+rem ObjectTemplate.projectilePosition 0/0/-14
 ObjectTemplate.magSize 300
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 805
 ObjectTemplate.reloadtime 45
-ObjectTemplate.roundOfFire 0.029
+rem ObjectTemplate.roundOfFire 0.029
+ObjectTemplate.roundOfFire 0.086
+ObjectTemplate.SetAsynchronyFire 1
 ObjectTemplate.fireingForce 10
 ObjectTemplate.recoilSpeed 7
 ObjectTemplate.recoilSize 15
@@ -104,6 +121,7 @@ ObjectTemplate.geometry Projectile_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 ObjectTemplate.damageType 1
 ObjectTemplate.material 254
@@ -133,22 +151,31 @@ ObjectTemplate.aiTemplate YamatoAAGunAI
 ObjectTemplate.loadSoundScript ../Common/Sounds/aafire.ssc
 ObjectTemplate.geometry Yamato_Small_Cannon_1_m1
 rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzBigAAGun
+beginrem
 ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition -1.899/0.35/0
 ObjectTemplate.setRotation -89.999/-9.999/0
 ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition -1.899/0.35/-0.549
 ObjectTemplate.setRotation -89.999/-9.999/0
+endrem
 rem -------------------------------------
 ObjectTemplate.projectileTemplate YamatoProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.magSize 600
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 720
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 10
 ObjectTemplate.reloadtime 6
-ObjectTemplate.roundOfFire 0.18
-ObjectTemplate.addFireArmsPosition -1.899/0.35/-0.549 -89.999/-9.999/0
-ObjectTemplate.addFireArmsPosition -1.899/0.35/0 -89.999/-9.999/0
+rem ObjectTemplate.roundOfFire 0.18
+ObjectTemplate.roundOfFire 0.36
+ObjectTemplate.SetAsynchronyFire 1
+rem ObjectTemplate.addFireArmsPosition -1.899/0.35/-0.549 -89.999/-9.999/0
+rem ObjectTemplate.addFireArmsPosition -1.899/0.35/0 -89.999/-9.999/0
+ObjectTemplate.addFireArmsPosition -0.27/0/1.9 0/0/0
+ObjectTemplate.addFireArmsPosition 0.27/0/1.9 0/0/0
 
 
 rem *** YamatoProjectile ***
@@ -159,6 +186,7 @@ ObjectTemplate.geometry tracklight_M1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.timeToLive CRD_UNIFORM/0.8/1.4/0
 ObjectTemplate.endEffectTemplate e_FlakBig
 ObjectTemplate.gravityModifier 1
@@ -190,20 +218,28 @@ ObjectTemplate.aiTemplate YamatoAAGunAI
 ObjectTemplate.loadSoundScript ../Common/Sounds/aafire.ssc
 ObjectTemplate.geometry Yamato_Small_Cannon_2_m1
 rem -------------------------------------
-rem ObjectTemplate.visibleBarrelTemplate e_MuzzAAgunB
+ObjectTemplate.visibleBarrelTemplate e_MuzzBigAAGun
+beginrem
 ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition -4.649/0.9/0.4
 ObjectTemplate.setRotation -89.999/-9.999/0
 ObjectTemplate.addTemplate e_MuzzAAgunB
 ObjectTemplate.setPosition -4.649/0.9/-0.4
 ObjectTemplate.setRotation -89.999/-9.999/0
+endrem
 rem -------------------------------------
 ObjectTemplate.projectileTemplate YamatoProjectile
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.magSize 600
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 720
+ObjectTemplate.recoilSpeed 10
+ObjectTemplate.recoilSize 10
 ObjectTemplate.reloadtime 6
-ObjectTemplate.roundOfFire 0.18
-ObjectTemplate.addFireArmsPosition -4.65/0.9/0.4 -90/-10/0
-ObjectTemplate.addFireArmsPosition -4.65/0.9/-0.4 -90/-10/0
+rem ObjectTemplate.roundOfFire 0.18
+ObjectTemplate.roundOfFire 0.36
+ObjectTemplate.SetAsynchronyFire 1
+rem ObjectTemplate.addFireArmsPosition -4.65/0.9/0.4 -90/-10/0
+rem ObjectTemplate.addFireArmsPosition -4.65/0.9/-0.4 -90/-10/0
+ObjectTemplate.addFireArmsPosition 0.4/0/4.65 0/0/0
+ObjectTemplate.addFireArmsPosition -0.4/0/4.65 0/0/0

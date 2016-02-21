@@ -30,4 +30,4 @@ game.setMultiplayerBriefingMapType MULTIPLAYER_MAP_TYPE_ASSAULT_MAP
 
 game.setLoadPicture Load/Western.tga
 game.setServerInfoIcon "serverInfo.dds"
-game.setMapId "WWIIReality"
+game.setMapId "wwiireality"

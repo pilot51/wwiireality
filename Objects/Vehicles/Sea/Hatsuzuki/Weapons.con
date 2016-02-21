@@ -4,24 +4,31 @@ rem *** HatsuzukiGun ***
 ObjectTemplate.create FireArms HatsuzukiGun
 ObjectTemplate.loadSoundScript ../Common/Sounds/fire.ssc
 ObjectTemplate.geometry Hatsuzuki_cannon_pipe_M1
+ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.aiTemplate HatsuzukiGunAI
 rem -------------------------------------
-rem ObjectTemplate.visibleBarrelTemplate e_MuzzDefGun
-rem beginrem
+ObjectTemplate.visibleBarrelTemplate e_MuzzDefGun
+beginrem
 ObjectTemplate.addTemplate e_MuzzDefGun
 ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.setRotation -180/0/0
-rem endrem
+endrem
 rem -------------------------------------
 ObjectTemplate.projectileTemplate HatsuzukiProjectile
-ObjectTemplate.projectilePosition 0/0/1
+rem ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.magSize 200
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 1000
-ObjectTemplate.roundOfFire 0.3
+rem ObjectTemplate.roundOfFire 0.3
+ObjectTemplate.roundOfFire 0.6
+ObjectTemplate.SetAsynchronyFire 1
+ObjectTemplate.RecoilSize 10
+ObjectTemplate.RecoilSpeed 10
 rem ObjectTemplate.fireingForce 2
-ObjectTemplate.addFireArmsPosition 0.329/0/3 0/0/0
-ObjectTemplate.addFireArmsPosition -0.329/0/3 0/0/0
+rem ObjectTemplate.addFireArmsPosition 0.329/0/3 0/0/0
+rem ObjectTemplate.addFireArmsPosition -0.329/0/3 0/0/0
+ObjectTemplate.addFireArmsPosition 0.329/0/3.8 0/0/0
+ObjectTemplate.addFireArmsPosition -0.329/0/3.8 0/0/0
 ObjectTemplate.setMinDev 1
 
 
@@ -34,6 +41,7 @@ ObjectTemplate.geometry Projectile_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 ObjectTemplate.damageType 1
 ObjectTemplate.material 252

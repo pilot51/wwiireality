@@ -1,0 +1,132 @@
+
+rem ****************************************
+rem ****        AXIS_BASE             *****
+rem ****************************************
+
+Object.create MachinegunSpawner
+Object.absolutePosition 650.357/39.1439/353.981
+Object.rotation -137.826/0/0.0740356
+Object.setOSId 1
+Object.setTeam  1
+
+Object.create lighttankspawner
+Object.absolutePosition 662.89/38.6019/412.708
+Object.rotation -178.839/1.03148/0.455872
+Object.setOSId 1
+Object.setTeam  1
+
+Object.create lighttankspawner
+Object.absolutePosition 646.802/38.7813/410.003
+Object.rotation -179.916/-0.858574/-0.257187
+Object.setOSId 1
+Object.setTeam  1
+
+rem Object.create APCSpawner
+rem Object.absolutePosition 655.2/38.2959/414.604
+rem Object.rotation 179.028/1.06864/0.916229
+rem Object.setOSId 1
+rem Object.setTeam  1
+
+Object.create ScoutCarSpawner
+Object.absolutePosition 667.978/38.431/402.844
+Object.rotation -91.872/0.0307761/0.12355
+Object.setOSId 1
+Object.setTeam  1
+
+rem **************************************
+rem ****        RUSSIAN_BASE            *****
+rem *************************************
+
+Object.create MachinegunSpawner
+Object.absolutePosition 504.772/42.2/199.882
+Object.rotation 0/0/1.52588e-005
+Object.setOSId 2
+Object.setTeam  2
+
+Object.create MachinegunSpawner
+Object.absolutePosition 575.945/37.8/198.39
+Object.rotation -23.8679/0/0.0559692
+Object.setOSId 2
+Object.setTeam  2
+
+Object.create MachinegunSpawner
+Object.absolutePosition 526.53/30.8/179.637
+Object.rotation -23.8679/0/0.0559692
+Object.setOSId 2
+Object.setTeam  2
+
+rem Object.create ArtillerySpawner
+rem Object.absolutePosition 555.826/27.0914/159.022
+rem Object.rotation -89.4935/0.00404639/1.52588e-005
+rem Object.setOSId 2
+rem Object.setTeam  2
+
+Object.create lighttankspawner
+Object.absolutePosition 528.573/27.0689/156.131
+Object.rotation -91.7236/-0.679326/0.326874
+Object.setOSId 2
+Object.setTeam  2
+
+Object.create lighttankspawner
+Object.absolutePosition 528.535/27.0996/160.171
+Object.rotation -86.9723/-0.00352472/0.671448
+Object.setOSId 2
+Object.setTeam  2
+
+Object.create ScoutCarSpawner
+Object.absolutePosition 555.826/27.0914/159.022
+Object.rotation -89.4935/0.00404639/1.52588e-005
+Object.setOSId 2
+Object.setTeam  2
+
+rem **************************************
+rem ****        AXIS_CONTROLPOINT_CITY       *****
+rem *************************************
+
+Object.create MachinegunSpawner
+Object.absolutePosition 581.68/39.334/351.803
+Object.rotation -150.462/0/0.0442505
+Object.setOSId 3
+
+
+
+rem **************************************
+rem ****        RUSSIAN_CONTROLPOINT_CITY        *****
+rem *************************************
+
+
+
+Object.create MachinegunSpawner
+Object.absolutePosition 488.305/42.35/256.485
+Object.rotation -23.8679/0/0.0559692
+Object.setOSId 4
+
+rem *****************************************
+rem ****          CONTROLPOINT_stalingrad           *****
+rem ****************************************
+
+
+Object.create MachinegunSpawner
+Object.absolutePosition 546.471/39.7/326.889
+Object.rotation 148.068/0/0.100876
+Object.setOSId 5
+
+Object.create MachinegunSpawner
+Object.absolutePosition 525.792/39.7/334.599
+Object.rotation 0/0/1.52588e-005
+Object.setOSId 5
+
+Object.create MachinegunSpawner
+Object.absolutePosition 528.948/39.7/321.571
+Object.rotation -179.028/0/0.0559692
+Object.setOSId 5
+
+Object.create MachinegunSpawner
+Object.absolutePosition 522.312/39.7/331.191
+Object.rotation -89.532/0/0.0989227
+Object.setOSId 5
+
+Object.create MachinegunSpawner
+Object.absolutePosition 545.558/39.7/330.919
+Object.rotation 38.772/0/0.0969238
+Object.setOSId 5

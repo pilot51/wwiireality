@@ -30,7 +30,6 @@ ObjectTemplate.setDifferential 3.5
 ObjectTemplate.setNumberOfGears 5
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.4
-§§0
 
 
 rem *** LynxFrontSpringR ***

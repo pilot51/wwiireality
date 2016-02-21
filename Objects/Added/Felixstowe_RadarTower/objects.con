@@ -1,0 +1,76 @@
+ObjectTemplate.create PlayerControlObject Felixstowe_RadarTower
+ObjectTemplate.setSoldierExitLocation 0.01/-2.898/-6.598 180/0/0
+ObjectTemplate.networkableInfo RadarTower_BodyInfo
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.explosionRadius 8
+ObjectTemplate.explosionDamage 5
+objectTemplate.criticalDamage 20
+ObjectTemplate.hpLostWhileCriticalDamage 2
+ObjectTemplate.mass 4500
+ObjectTemplate.HasArmor 1
+ObjectTemplate.HitPoints 600
+ObjectTemplate.MaxHitPoints 600
+ObjectTemplate.Material 45
+ObjectTemplate.timetoliveafterdeath 5
+rem -------------------------------------
+ObjectTemplate.addTemplate lodRadarTower
+rem -------------------------------------
+ObjectTemplate.addArmorEffect 400 e_KatyushaDamage -3.699/4.7/-4.498
+ObjectTemplate.addArmorEffect 200 e_KatyushaDamage -3.699/4.7/-4.498
+ObjectTemplate.addArmorEffect 200 e_KatyushaDamage 0/9.4/-4.298
+ObjectTemplate.addArmorEffect 20 e_KatyushaFire -3.599/5.15/-4.398
+ObjectTemplate.addArmorEffect 0 e_ExplGas 0/-1/0
+ObjectTemplate.addArmorEffect 0 e_scrapmetal 0/-1/5
+ObjectTemplate.addArmorEffect 0 e_ScrapMetal_RadarTower 0/8/0
+ObjectTemplate.addArmorEffect 0 e_ScrapAABase -4.599/0.1/3
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/-1/0
+ObjectTemplate.damageFromWater 1
+rem -------------------------------------
+Objecttemplate.GUIIndex 79
+ObjectTemplate.setVehicleIcon "Vehicle/Radar_Icon.tga"
+ObjectTemplate.setVehicleIconPos 75/80
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType AAGun
+ObjectTemplate.setToolTipType  TTAAGun
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_Radar_32x32.tga"
+ObjectTemplate.aiTemplate RadarTower
+ObjectTemplate.hasRestrictedExit 1
+rem -------------------------------------
+ObjectTemplate.addTemplate RadarTower_E_AISpawn
+
+ObjectTemplate.addTemplate RadarTower_E_SoldierSpawn
+ObjectTemplate.setPosition 0/0/-18.598
+ObjectTemplate.addTemplate RadarTower_E_SoldierSpawn
+ObjectTemplate.setPosition -4.789/0/-17.198
+ObjectTemplate.addTemplate RadarTower_E_SoldierSpawn
+ObjectTemplate.setPosition 4.789/0/-17.198
+ObjectTemplate.addTemplate RadarTower_E_SoldierSpawn
+ObjectTemplate.setPosition -9.189/0/-12.898
+ObjectTemplate.addTemplate RadarTower_E_SoldierSpawn
+ObjectTemplate.setPosition 9.189/0/-12.898
+
+rem ObjectTemplate.addTemplate Allies_EastAirfield_Spawn
+rem ObjectTemplate.setPosition 119.85/1.99/-386.26
+rem Spawn Position - RadarTower position
+rem Position calculations 1610.69 - 1740.54/105 - 103.01/1663.61- 1277.35
+rem Then multiply the x and y offsets by -1 because of the 180 rotation
+
+ObjectTemplate.addTemplate RadarTowerSonar
+ObjectTemplate.setPosition 0/9/-4.25
+ObjectTemplate.sonarPos 1
+
+rem *** RadarTower_E_SoldierSpawn ***
+ObjectTemplate.create SpawnPoint RadarTower_E_SoldierSpawn
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 76
+
+ObjectTemplate.create SpawnPoint RadarTower_E_AISpawn
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 66
+ObjectTemplate.setAIEnterOnSpawn 1

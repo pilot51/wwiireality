@@ -22,6 +22,12 @@ ObjectTemplate.addFireArmsPosition 2.6/0.21/1.8 -1.6/0/0
 ObjectTemplate.addFireArmsPosition -2.6/0.21/1.8 1.6/0/0
 ObjectTemplate.AmmoType 10
 
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 2.6/0.1/0
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition -2.6/0.1/0
+
+
 rem *** SpitfireProjectile ***
 ObjectTemplate.create Projectile SpitfireProjectile
 ObjectTemplate.createNotInGrid 1
@@ -31,6 +37,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.material 213
 ObjectTemplate.material2 -1
@@ -48,7 +55,8 @@ ObjectTemplate.visibleDummyProjectileTemplate DummyBigBomb
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 0
-ObjectTemplate.roundOfFire 0.2
+ObjectTemplate.roundOfFire 0.067
+ObjectTemplate.Reloadtime 30
 ObjectTemplate.setInputFire c_PIAltFire
 ObjectTemplate.addFireArmsPosition 0/-0.28/-0.5 0/0/0
 ObjectTemplate.AmmoType 9

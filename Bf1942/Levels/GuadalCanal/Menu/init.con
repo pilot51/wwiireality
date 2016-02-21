@@ -30,4 +30,4 @@ game.setMultiplayerBriefingMapType MULTIPLAYER_MAP_TYPE_HEADON_MAP
 
 game.setLoadPicture Load/Pacific.tga
 game.setServerInfoIcon "serverInfo.dds"
-game.setMapId "WWIIReality"
+game.setMapId "wwiireality"

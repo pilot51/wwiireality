@@ -9,7 +9,7 @@ ObjectTemplate.magSize 1800
 ObjectTemplate.GUIIndex 9
 ObjectTemplate.setHudAmmoType ATIconAndHeatBar
 ObjectTemplate.setAmmoIcon "Ammo/Icon_medkit_64x32.tga"
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setHasMag 0
 ObjectTemplate.aitemplate MedPackAI
 ObjectTemplate.soldierCameraPosition 0/-0.05/0.3

@@ -4,7 +4,7 @@ ObjectTemplate.aiTemplate pacificfarm2_m1
 ObjectTemplate.addTemplate lodpacificfarm2
 
 LodSelectorTemplate.create DistanceSelector pacificfarm2Selector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodpacificfarm2
 ObjectTemplate.lodselector pacificfarm2Selector
 ObjectTemplate.addTemplate pacificfarm2Interior

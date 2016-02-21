@@ -99,7 +99,7 @@ ObjectTemplate.setFlapLift 2
 
 rem *** BF109Flaps3 ***
 ObjectTemplate.create Wing BF109Flaps3
-ObjectTemplate.setNetworkableInfo BF109Info
+ObjectTemplate.setNetworkableInfo BF109FlapInfo
 ObjectTemplate.loadSoundScript ../Common/Sounds/HullRight.ssc
 ObjectTemplate.geometry BF109_Flap_right_inner_M1
 ObjectTemplate.setMinRotation 0/-30/0
@@ -115,7 +115,7 @@ ObjectTemplate.setWingToRegulatorRatio 1
 
 rem *** BF109Flaps1 ***
 ObjectTemplate.create Wing BF109Flaps1
-ObjectTemplate.setNetworkableInfo BF109Info
+ObjectTemplate.setNetworkableInfo BF109FlapInfo
 ObjectTemplate.loadSoundScript ../Common/Sounds/HullLeft.ssc
 ObjectTemplate.geometry BF109_Flap_left_inner_M1
 ObjectTemplate.setMinRotation 0/-30/0

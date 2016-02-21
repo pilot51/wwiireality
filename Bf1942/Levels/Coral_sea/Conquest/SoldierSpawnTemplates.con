@@ -1,0 +1,10 @@
+rem *****************************************
+rem ****          the_AIR              *****
+rem ****************************************
+beginrem
+ObjectTemplate.create SpawnPoint air1
+ObjectTemplate.setSpawnId 1
+ObjectTemplate.setGroup 1
+ObjectTemplate.setSpawnAsParaTroper 1
+
+endrem

@@ -34,6 +34,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.damageType 1
 ObjectTemplate.material 237

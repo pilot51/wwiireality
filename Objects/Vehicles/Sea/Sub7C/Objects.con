@@ -65,9 +65,11 @@ ObjectTemplate.setSoldierExitLocation 0/6/15.5 0/0/0
 ObjectTemplate.GUIIndex 87
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_subVIIC.tga"
 ObjectTemplate.setVehicleIconPos 52/87
-ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_torpedo.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_torpedo.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTSubmarine
@@ -76,7 +78,7 @@ ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_submarine_32x32.tga"
 ObjectTemplate.setMinimapIconSize 32
 
 rem *** <oxygenUsagerate> <oxygenFillrate> <oxygenDamageRate> <periscopeMinDepth> <periscopeMaxDepth> <maxDepth> <maxDepthDamageRate>
-ObjectTemplate.submarineData 0.009 0.03 1.0 10 12.5 40 5
+ObjectTemplate.submarineData 0.009 0.03 1.0 10 12.5 250 5
 ObjectTemplate.setSubmarineHudDepthModifier 2.2
 ObjectTemplate.setSubmarineHudDirModifier 0.00314150
 
@@ -134,12 +136,26 @@ ObjectTemplate.addTemplate Sub7C_RudderBackUDLeft
 ObjectTemplate.setPosition -1.099/-1.499/-24.999
 ObjectTemplate.addTemplate Sub7C_RudderBackUDRight
 ObjectTemplate.setPosition 1.1/-1.499/-24.999
-ObjectTemplate.addTemplate TorpedTubBundle7C
-ObjectTemplate.setPosition 0/0/35
-rem ObjectTemplate.addTemplate TorpedTub
-rem ObjectTemplate.setPosition 1/-0.499/33.5
-rem ObjectTemplate.addTemplate TorpedTub
-rem ObjectTemplate.setPosition -1/-0.499/33.5
+ObjectTemplate.addTemplate TorpedTub1VIIC
+ObjectTemplate.setPosition 0/0/36
+ObjectTemplate.addTemplate TorpedTub2VIIC
+ObjectTemplate.setPosition 0/0/-35
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Sub7C_AA
+ObjectTemplate.addTemplate Sub7C_Propeller
+ObjectTemplate.setPosition -1.25/-1.58/-28
+ObjectTemplate.addTemplate Sub7C_Propeller
+ObjectTemplate.setPosition 1.25/-1.58/-28
+ObjectTemplate.addTemplate Sub7C_rud
+ObjectTemplate.setPosition 0/-0.3/-30.8
+ObjectTemplate.addTemplate Sub7C_rudFL
+ObjectTemplate.setPosition -0.6/-2.07/25.8
+ObjectTemplate.addTemplate Sub7C_rudFR
+ObjectTemplate.setPosition 0.6/-1.89/25.8
+ObjectTemplate.addTemplate Sub7C_rudBL
+ObjectTemplate.setPosition -0.1/-1.56/-29.31
+ObjectTemplate.addTemplate Sub7C_rudBR
+ObjectTemplate.setPosition 0.1/-1.56/-29.31
 rem -------------------------------------
 
 
@@ -185,6 +201,70 @@ ObjectTemplate.setInputToYaw c_PIMouseLookX
 ObjectTemplate.setInputToPitch c_PIMouseLookY
 
 
+rem *** Sub7C_propeller ***
+ObjectTemplate.create RotationalBundle Sub7C_propeller
+ObjectTemplate.setNetworkableInfo Sub7cEngineInfo
+ObjectTemplate.geometry SubVII_Prop_M1
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+
+rem *** Sub7C_rud ***
+ObjectTemplate.create RotationalBundle Sub7C_rud
+ObjectTemplate.setNetworkableInfo Sub7cWingInfo
+ObjectTemplate.geometry SubVII_Rudder_Back_Side_M1
+ObjectTemplate.setMinRotation -25/0/0
+ObjectTemplate.setMaxRotation 25/0/0
+ObjectTemplate.setMaxSpeed 15/0/0
+ObjectTemplate.setAcceleration -10/0/0
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setInputToYaw c_PIYaw
+
+rem *** Sub7C_rudFL ***
+ObjectTemplate.create RotationalBundle Sub7C_rudFL
+ObjectTemplate.setNetworkableInfo Sub7cWingInfo
+ObjectTemplate.geometry SubVII_Rudder_FrontL_M1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/9/0
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setInputToPitch c_PIPitch
+
+rem *** Sub7C_rudFR ***
+ObjectTemplate.create RotationalBundle Sub7C_rudFR
+ObjectTemplate.setNetworkableInfo Sub7cWingInfo
+ObjectTemplate.geometry SubVII_Rudder_FrontR_M1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/9/0
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setInputToPitch c_PIPitch
+
+rem *** Sub7C_rudBL ***
+ObjectTemplate.create RotationalBundle Sub7C_rudBL
+ObjectTemplate.setNetworkableInfo Sub7cWingInfo
+ObjectTemplate.geometry SubVII_Rudder_Back_UDLeft_M1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-9/0
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setInputToPitch c_PIPitch
+
+rem *** Sub7C_rudBR ***
+ObjectTemplate.create RotationalBundle Sub7C_rudBR
+ObjectTemplate.setNetworkableInfo Sub7cWingInfo
+ObjectTemplate.geometry SubVII_Rudder_Back_UDRight_M1
+ObjectTemplate.setMinRotation 0/-15/0
+ObjectTemplate.setMaxRotation 0/15/0
+ObjectTemplate.setMaxSpeed 0/12/0
+ObjectTemplate.setAcceleration 0/-9/0
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setInputToPitch c_PIPitch
+
+
 rem *** Sub7CSimple ***
 ObjectTemplate.create SimpleObject Sub7CSimple
 ObjectTemplate.geometry SubVII_Hull_M1
@@ -193,3 +273,126 @@ ObjectTemplate.geometry SubVII_Hull_M1
 rem *** Sub7CLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 Sub7CLodSelector
 LodSelectorTemplate.addLodDistance 5000
+
+
+
+rem *** Sub7C2DriverSoldierSpawn ***
+ObjectTemplate.create SpawnPoint Sub7C2DriverSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 58
+rem ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** Sub7C_AA ***
+ObjectTemplate.create PlayerControlObject Sub7C_AA
+ObjectTemplate.setNetworkableInfo Sub7cBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate Carrier_AA_Base
+ObjectTemplate.setPosition 0/2.05/9
+ObjectTemplate.subPos 1
+ObjectTemplate.setSoldierExitLocation 1/2.3/7 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_subVIIC.tga"
+ObjectTemplate.setVehicleIconPos 70/90
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTSubmarine
+ObjectTemplate.setToolTipType  TTSubmarine
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_submarine_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+rem *** <oxygenUsagerate> <oxygenFillrate> <oxygenDamageRate> <periscopeMinDepth> <periscopeMaxDepth> <maxDepth> <maxDepthDamageRate>
+ObjectTemplate.submarineData 0 0 0 0 2.5 90 0
+ObjectTemplate.setSubmarineHudDepthModifier -1.41
+
+
+
+rem *** Sub7C2 ***
+ObjectTemplate.create PlayerControlObject Sub7C2
+ObjectTemplate.setNetworkableInfo Sub7cBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 0.5
+ObjectTemplate.mass 769000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 57
+ObjectTemplate.criticalDamage 100
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 50
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.speedMod 0.05
+ObjectTemplate.addArmorEffect 135 em_Sub7cDamage 0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.timetoliveafterdeath 600
+ObjectTemplate.timeToStartFadeAfterDeath 570
+rem -------------------------------------
+ObjectTemplate.addTemplate lodSub7C
+ObjectTemplate.addTemplate Sub7C_Floater
+ObjectTemplate.setPosition 0/2/32
+ObjectTemplate.addTemplate Sub7C_Floater
+ObjectTemplate.setPosition -2.499/2/16
+ObjectTemplate.addTemplate Sub7C_Floater
+ObjectTemplate.setPosition 2.5/2/16
+ObjectTemplate.addTemplate Sub7C_Floater
+ObjectTemplate.setPosition -3.499/2/0
+ObjectTemplate.addTemplate Sub7C_Floater
+ObjectTemplate.setPosition 3.5/2/0
+ObjectTemplate.addTemplate Sub7C_Floater
+ObjectTemplate.setPosition -2.499/2/-15.999
+ObjectTemplate.addTemplate Sub7C_Floater
+ObjectTemplate.setPosition 2.5/2/-15.999
+ObjectTemplate.addTemplate Sub7C_Floater
+ObjectTemplate.setPosition 0/2/-31.999
+ObjectTemplate.addTemplate e_WaterFrontBigSub
+ObjectTemplate.setPosition 0/1/32
+ObjectTemplate.addTemplate e_Water06DiveSub7
+ObjectTemplate.setPosition 0/3/20
+ObjectTemplate.addTemplate e_Water510Dive
+ObjectTemplate.setPosition 0/1/8
+ObjectTemplate.addTemplate e_Water10BDive
+ObjectTemplate.setPosition 0/0/33
+ObjectTemplate.addTemplate e_Water10BDiveBack
+ObjectTemplate.setPosition 0/0/-29.999
+ObjectTemplate.addTemplate e_waterBoatSvallSub
+ObjectTemplate.setPosition 0/0/33
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate e_waterBoatSvallSub
+ObjectTemplate.setPosition 0/0/-30
+ObjectTemplate.setRotation 270/0/0
+ObjectTemplate.addTemplate Sub7C2DriverSoldierSpawn
+ObjectTemplate.setPosition 0/2.22/-4.7
+rem -------------------------------------
+ObjectTemplate.subPos 1
+ObjectTemplate.setSoldierExitLocation 0/6/15.5 0/0/0
+ObjectTemplate.GUIIndex 87
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_subVIIC.tga"
+ObjectTemplate.setVehicleIconPos 52/87
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_torpedo.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_torpedo.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTSubmarine
+ObjectTemplate.setToolTipType TTSubmarine
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_submarine_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+rem *** <oxygenUsagerate> <oxygenFillrate> <oxygenDamageRate> <periscopeMinDepth> <periscopeMaxDepth> <maxDepth> <maxDepthDamageRate>
+ObjectTemplate.submarineData 0.009 0.03 1.0 10 12.5 250 5
+ObjectTemplate.setSubmarineHudDepthModifier 2.2
+ObjectTemplate.setSubmarineHudDirModifier 0.00314150
+ObjectTemplate.disableSpawnPointsOnEnter 1

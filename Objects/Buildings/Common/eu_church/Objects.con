@@ -10,7 +10,7 @@ ObjectTemplate.setHasCollisionPhysics 1
 ObjectTemplate.addToCollisionGroup c_CGProjectiles
 
 LodSelectorTemplate.create DistanceSelector eu_churchSelector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodeu_church
 ObjectTemplate.lodselector eu_churchSelector
 ObjectTemplate.addTemplate eu_churchInterior

@@ -64,7 +64,7 @@ MaterialManager.defGroup 64
 MaterialManager.damageMod 0.1
 MaterialManager.setEffectTemplate e_RichoCascadesPlane
 
-*** BOAT WOOD ARMOR ***
+rem *** BOAT WOOD ARMOR ***
 
 MaterialManager.attGroup 256
 MaterialManager.defGroup 65

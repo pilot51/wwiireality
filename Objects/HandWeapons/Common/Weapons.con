@@ -20,6 +20,7 @@ ObjectTemplate.geometry bullet_m1
 ObjectTemplate.timeToLive CRD_NONE/1/0/0
 Rem ObjectTemplate.endEffectTemplate e_RichoSand
 ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.hasStartEffect 0
 ObjectTemplate.hasCollisionEffect 1
@@ -27,7 +28,7 @@ ObjectTemplate.hasOnTimeEffect 0
 ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.dieAfterColl 1
 ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.invisible 1
+ObjectTemplate.invisible 0
 ObjectTemplate.material 216
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc
 
@@ -36,6 +37,7 @@ ObjectTemplate.geometry bullet_m1
 ObjectTemplate.timeToLive CRD_NONE/1/0/0
 Rem  ObjectTemplate.endEffectTemplate e_RichoSand
 ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.hasStartEffect 0
 ObjectTemplate.hasCollisionEffect 1
@@ -43,7 +45,7 @@ ObjectTemplate.hasOnTimeEffect 0
 ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.dieAfterColl 1
 ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.invisible 1
+ObjectTemplate.invisible 0
 ObjectTemplate.material 216
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc
 
@@ -52,6 +54,7 @@ ObjectTemplate.geometry bullet_m1
 ObjectTemplate.timeToLive CRD_NONE/1/0/0
 Rem  ObjectTemplate.endEffectTemplate e_RichoSand
 ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.hasStartEffect 0
 ObjectTemplate.hasCollisionEffect 1
@@ -59,16 +62,19 @@ ObjectTemplate.hasOnTimeEffect 0
 ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.dieAfterColl 1
 ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.invisible 1
+ObjectTemplate.invisible 0
 ObjectTemplate.material 216
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc
 
 ObjectTemplate.create Projectile BazookaProjectile
-ObjectTemplate.geometry projectile_m1
+rem ObjectTemplate.geometry projectile_m1
+ObjectTemplate.addTemplate ATrocket_m1
+ObjectTemplate.setRotation 0/90/0
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 Rem  ObjectTemplate.endEffectTemplate e_ExplDirt
 ObjectTemplate.timeOnEndEffect 0.5
 ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.hasCollisionEffect 1
 ObjectTemplate.invisibleAtEndEffect 1
@@ -77,8 +83,8 @@ ObjectTemplate.material 226
 ObjectTemplate.material2 200
 ObjectTemplate.radius 4
 ObjectTemplate.ForceOnExplosion 1
-ObjectTemplate.addTemplate e_rocketFume
-ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
+rem ObjectTemplate.addTemplate e_rocketFume
+rem ObjectTemplate.loadSoundScript ..\..\common\Sounds\bazookaprojectile.ssc
 
 rem ***** Individual weapons ******
 
@@ -88,6 +94,7 @@ ObjectTemplate.geometry bullet_m1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 Rem ObjectTemplate.endEffectTemplate e_RichoSand
 ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.hasStartEffect 0
 ObjectTemplate.hasCollisionEffect 1
@@ -95,7 +102,7 @@ ObjectTemplate.hasOnTimeEffect 0
 ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.dieAfterColl 1
 ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.invisible 1
+ObjectTemplate.invisible 0
 ObjectTemplate.material 214
 ObjectTemplate.minDamage 0.5
 ObjectTemplate.distToStartLoseDamage 20
@@ -107,6 +114,7 @@ ObjectTemplate.geometry bullet_m1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 Rem ObjectTemplate.endEffectTemplate e_RichoSand
 ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.hasStartEffect 0
 ObjectTemplate.hasCollisionEffect 1
@@ -114,7 +122,7 @@ ObjectTemplate.hasOnTimeEffect 0
 ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.dieAfterColl 1
 ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.invisible 1
+ObjectTemplate.invisible 0
 ObjectTemplate.material 215
 ObjectTemplate.minDamage 0.5
 ObjectTemplate.distToStartLoseDamage 20
@@ -126,6 +134,7 @@ ObjectTemplate.geometry bullet_m1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 Rem ObjectTemplate.endEffectTemplate e_RichoSand
 ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.hasStartEffect 0
 ObjectTemplate.hasCollisionEffect 1
@@ -133,7 +142,7 @@ ObjectTemplate.hasOnTimeEffect 0
 ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.dieAfterColl 1
 ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.invisible 1
+ObjectTemplate.invisible 0
 ObjectTemplate.material 216
 ObjectTemplate.minDamage 0.5
 ObjectTemplate.distToStartLoseDamage 40
@@ -145,6 +154,7 @@ ObjectTemplate.geometry bullet_m1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 Rem ObjectTemplate.endEffectTemplate e_RichoSand
 ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.hasStartEffect 0
 ObjectTemplate.hasCollisionEffect 1
@@ -152,7 +162,7 @@ ObjectTemplate.hasOnTimeEffect 0
 ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.dieAfterColl 1
 ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.invisible 1
+ObjectTemplate.invisible 0
 ObjectTemplate.material 217
 ObjectTemplate.minDamage 0.5
 ObjectTemplate.distToStartLoseDamage 40
@@ -164,6 +174,7 @@ ObjectTemplate.geometry bullet_m1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 Rem ObjectTemplate.endEffectTemplate e_RichoSand
 ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.hasStartEffect 0
 ObjectTemplate.hasCollisionEffect 1
@@ -171,7 +182,7 @@ ObjectTemplate.hasOnTimeEffect 0
 ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.dieAfterColl 1
 ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.invisible 1
+ObjectTemplate.invisible 0
 ObjectTemplate.material 218
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc
 
@@ -180,6 +191,7 @@ ObjectTemplate.geometry bullet_m1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 Rem ObjectTemplate.endEffectTemplate e_RichoSand
 ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.hasStartEffect 0
 ObjectTemplate.hasCollisionEffect 1
@@ -187,7 +199,7 @@ ObjectTemplate.hasOnTimeEffect 0
 ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.dieAfterColl 1
 ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.invisible 1
+ObjectTemplate.invisible 0
 ObjectTemplate.material 219
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc
 
@@ -196,6 +208,7 @@ ObjectTemplate.geometry bullet_m1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 Rem ObjectTemplate.endEffectTemplate e_RichoSand
 ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.hasStartEffect 0
 ObjectTemplate.hasCollisionEffect 1
@@ -203,7 +216,7 @@ ObjectTemplate.hasOnTimeEffect 0
 ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.dieAfterColl 1
 ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.invisible 1
+ObjectTemplate.invisible 0
 ObjectTemplate.material 222
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc
 
@@ -212,6 +225,7 @@ ObjectTemplate.geometry bullet_m1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 Rem ObjectTemplate.endEffectTemplate e_RichoSand
 ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.hasStartEffect 0
 ObjectTemplate.hasCollisionEffect 1
@@ -219,7 +233,7 @@ ObjectTemplate.hasOnTimeEffect 0
 ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.dieAfterColl 1
 ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.invisible 1
+ObjectTemplate.invisible 0
 ObjectTemplate.material 223
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc
 
@@ -228,6 +242,7 @@ ObjectTemplate.geometry bullet_m1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 Rem ObjectTemplate.endEffectTemplate e_RichoSand
 ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.hasStartEffect 0
 ObjectTemplate.hasCollisionEffect 1
@@ -235,7 +250,7 @@ ObjectTemplate.hasOnTimeEffect 0
 ObjectTemplate.invisibleAtEndEffect 1
 ObjectTemplate.dieAfterColl 1
 ObjectTemplate.stopAtEndEffect 1
-ObjectTemplate.invisible 1
+ObjectTemplate.invisible 0
 ObjectTemplate.material 256
 ObjectTemplate.loadSoundScript ..\..\common\Sounds\projectile.ssc
 

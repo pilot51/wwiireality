@@ -4,7 +4,7 @@ objectTemplate.aiTemplate o_bunker_m1
 ObjectTemplate.addTemplate lodo_bunker
 
 LodSelectorTemplate.create DistanceSelector o_bunkerSelector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodo_bunker
 ObjectTemplate.lodselector o_bunkerSelector
 ObjectTemplate.addTemplate o_bunkerInterior

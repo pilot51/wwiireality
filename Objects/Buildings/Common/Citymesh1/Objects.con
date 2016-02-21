@@ -5,7 +5,7 @@ ObjectTemplate.addTemplate lodcitymesh1
 ObjectTemplate.addTemplate citymesh1fence_m1
 
 LodSelectorTemplate.create DistanceSelector citymesh1Selector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodcitymesh1
 ObjectTemplate.lodselector citymesh1Selector
 ObjectTemplate.addTemplate citymesh1Interior

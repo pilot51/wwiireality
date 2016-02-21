@@ -9,7 +9,7 @@ ObjectTemplate.projectileTemplate KatyushaRocket
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.visibleDummyProjectileTemplate KatyushaRocketDummy
 ObjectTemplate.magSize 12
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
 ObjectTemplate.velocity 355
 ObjectTemplate.autoReload 1
 ObjectTemplate.reloadtime 10

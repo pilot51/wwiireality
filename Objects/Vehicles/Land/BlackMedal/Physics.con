@@ -30,7 +30,6 @@ ObjectTemplate.setDifferential 7
 ObjectTemplate.setNumberOfGears 3
 ObjectTemplate.setGearUp 0.95
 ObjectTemplate.setGearDown 0.4
-§§0
 
 
 rem *** BlackMedalFrontSpringR ***

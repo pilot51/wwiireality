@@ -38,4 +38,3 @@ ObjectTemplate.initRotation CRD_NONE/90/0/1
 ObjectTemplate.destBlendMode BMOne
 ObjectTemplate.rotationSpeed CRD_UNIFORM/0/2/1
 ObjectTemplate.colorRGBAOverTime 0/255/255/255/255|100/255/255/255/0
-

@@ -95,17 +95,27 @@ ObjectTemplate.setRotation 0/0/-90
 ObjectTemplate.addTemplate DaihatsuRudderAft
 ObjectTemplate.setPosition 0/-1.1/-4.5
 ObjectTemplate.setRotation 0/0/-90
-ObjectTemplate.addTemplate DaihatsuRudderNoMove
+ObjectTemplate.addTemplate DaihatsuRudder
 ObjectTemplate.setPosition 0.01/-1.214/-6.114
 ObjectTemplate.addTemplate DaihatsuPropeller
-ObjectTemplate.setPosition 0/-1.1/-5.999
+ObjectTemplate.setPosition 0/-1.25/-6
 ObjectTemplate.addTemplate DaihatsuLanding1
 ObjectTemplate.setPosition 0/-0.08/6.446
 ObjectTemplate.addTemplate DaihatsuGunnerPCO
 rem -------------------------------------
 
-ObjectTemplate.create SimpleObject DaihatsuRudderNoMove
+rem ObjectTemplate.create SimpleObject DaihatsuRudderNoMove
+rem ObjectTemplate.geometry Daihatsu_rodder_m1
+
+ObjectTemplate.create RotationalBundle DaihatsuRudder
+ObjectTemplate.setNetworkableInfo DaihatsuWingInfo
 ObjectTemplate.geometry Daihatsu_rodder_m1
+ObjectTemplate.setMinRotation -9/0/0
+ObjectTemplate.setMaxRotation 9/0/0
+ObjectTemplate.setMaxSpeed 18/0/0
+ObjectTemplate.setAcceleration -36/0/0
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setInputToYaw c_PIYaw
 
 rem *** lodDaihatsuCockpit ***
 ObjectTemplate.create LodObject lodDaihatsuCockpit
@@ -154,8 +164,15 @@ ObjectTemplate.seatFlags c_SeatShowStandingSoldier
 
 
 rem *** DaihatsuPropeller ***
-ObjectTemplate.create SimpleObject DaihatsuPropeller
+ObjectTemplate.create RotationalBundle DaihatsuPropeller
+ObjectTemplate.setNetworkableInfo DaihatsuEngineInfo
 ObjectTemplate.geometry Daihatsu_propeller_m1
+ObjectTemplate.setMaxSpeed 0/0/2000
+ObjectTemplate.setAcceleration 0/0/-2000
+ObjectTemplate.setInputToRoll c_PIThrottle
+
+rem ObjectTemplate.create SimpleObject DaihatsuPropeller
+rem ObjectTemplate.geometry Daihatsu_propeller_m1
 
 
 rem *** DaihatsuLanding1 ***
@@ -205,7 +222,7 @@ ObjectTemplate.setVehicleIconPos 38/55
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarHeatBar
-ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTNone
 
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTLcvp

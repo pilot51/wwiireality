@@ -9,7 +9,7 @@ ObjectTemplate.setPosition 0/20.42/0.1
 rem -------------------------------------
 objectTemplate.loadSoundScript Sounds/windmill.ssc
 LodSelectorTemplate.create DistanceSelector euwindmillSelector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodeuwindmill
 ObjectTemplate.lodselector euwindmillSelector
 ObjectTemplate.addTemplate euwindmillInterior

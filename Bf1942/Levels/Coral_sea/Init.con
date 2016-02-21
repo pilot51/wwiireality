@@ -89,4 +89,4 @@ game.setBeforeSpawnCameraPosition 2 1118/43/1121
 Game.setLevelCheck 4100847255
 
 rem *** special object for this level. /TBM ***
-run objects/objects
+rem run objects/objects

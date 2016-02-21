@@ -1,0 +1,96 @@
+
+
+rem *****************************************
+rem ****       island       *****
+rem ****************************************
+
+Object.create alliesSpawnPoint_hospital
+Object.absolutePosition 2068.21/24.3187/2099.3
+Object.rotation -66.168/0/0.062561
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_airep1
+Object.absolutePosition 2088.64/24.3187/2184.13
+Object.rotation 119.988/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_pacifichouse
+Object.absolutePosition 2192.1/24.3211/2141.51
+Object.rotation -150.12/0/0.062561
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_hangar1
+Object.absolutePosition 2144.52/24.3187/2185.39
+Object.rotation 164.34/0/0.0442505
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_bunker2
+Object.absolutePosition 2163.31/32.995/1931.97
+Object.rotation -66.168/0/0.062561
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_new1 
+Object.absolutePosition 2056.16/24.3187/2182.75
+Object.rotation 98.208/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_new2
+Object.absolutePosition 2165.07/24.3207/2064.26
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_new3 
+Object.absolutePosition 2151.84/24.3187/2005.05
+Object.rotation 0/0/1.52588e-005
+
+rem *****************************************
+rem ****          island_radarbunker     *****
+rem ****************************************
+
+
+Object.create alliesSpawnPoint_Cpoint_radarb
+Object.absolutePosition 1836.63/29.4705/1937.63
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_Cpoint_pacifichouse
+Object.absolutePosition 1875.98/24.9507/1960.15
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_Cpoint_new1 
+Object.absolutePosition 1845.48/31.6782/1968.7
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_Cpoint_new2 
+Object.absolutePosition 1885.48/25.0645/1980.37
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_Cpoint_new3 
+Object.absolutePosition 1865.3/26.1868/1979.03
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_Cpoint_new4 
+Object.absolutePosition 1850.87/32.4784/1938.92
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_Cpoint_new5 
+Object.absolutePosition 1822.13/32.3479/1954.48
+Object.rotation -125.928/0/1.52588e-005

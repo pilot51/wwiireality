@@ -1,0 +1,147 @@
+rem *****************************************
+rem ****          US_Marine_Base        *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint US_Marine_Base1
+ObjectTemplate.setSpawnId 1
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint US_Marine_Base2
+ObjectTemplate.setSpawnId 2
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint US_Marine_Base3
+ObjectTemplate.setSpawnId 3
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint US_Marine_Base4
+ObjectTemplate.setSpawnId 4
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint US_Marine_Base5
+ObjectTemplate.setSpawnId 5
+ObjectTemplate.setGroup 1
+
+
+rem *****************************************
+rem ****          West_Harbor         *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint West_Harbor1
+ObjectTemplate.setSpawnId 11
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint West_Harbor2
+ObjectTemplate.setSpawnId 12
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint West_Harbor3
+ObjectTemplate.setSpawnId 13
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint West_Harbor4
+ObjectTemplate.setSpawnId 14
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint West_Harbor5
+ObjectTemplate.setSpawnId 15
+ObjectTemplate.setGroup 2
+
+
+rem *****************************************
+rem ****          Airfield        *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint Airfield1
+ObjectTemplate.setSpawnId 21
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint Airfield2
+ObjectTemplate.setSpawnId 22
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint Airfield3
+ObjectTemplate.setSpawnId 23
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint Airfield4
+ObjectTemplate.setSpawnId 24
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint Airfield5
+ObjectTemplate.setSpawnId 25
+ObjectTemplate.setGroup 3
+
+rem *****************************************
+rem ****          Point_Boyington        *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint Shallows1
+ObjectTemplate.setSpawnId 31
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint Shallows2
+ObjectTemplate.setSpawnId 32
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint Shallows3
+ObjectTemplate.setSpawnId 33
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint Shallows4
+ObjectTemplate.setSpawnId 34
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint Shallows5
+ObjectTemplate.setSpawnId 35
+ObjectTemplate.setGroup 5
+
+rem *****************************************
+rem ****          East_Harbor       *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint East_Harbor1
+ObjectTemplate.setSpawnId 41
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint East_Harbor2
+ObjectTemplate.setSpawnId 42
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint East_Harbor3
+ObjectTemplate.setSpawnId 43
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint East_Harbor4
+ObjectTemplate.setSpawnId 44
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint East_Harbor5
+ObjectTemplate.setSpawnId 45
+ObjectTemplate.setGroup 4
+
+rem *****************************************
+rem ****          Islands       *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint Islands1
+ObjectTemplate.setSpawnId 46
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint Islands2
+ObjectTemplate.setSpawnId 47
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint Islands3
+ObjectTemplate.setSpawnId 48
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint Islands4
+ObjectTemplate.setSpawnId 49
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint Islands5
+ObjectTemplate.setSpawnId 50
+ObjectTemplate.setGroup 6
+
+rem EndOfFile

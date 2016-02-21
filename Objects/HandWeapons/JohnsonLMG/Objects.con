@@ -11,12 +11,12 @@ ObjectTemplate.magType 0
 ObjectTemplate.reloadtime 5.4
 ObjectTemplate.roundOfFire 7.5
 objectTemplate.aiTemplate JohnsonLMGAI
-ObjectTemplate.zoomFov 0.5
-ObjectTemplate.soldierZoomFov 0.6 
-ObjectTemplate.soldierZoomPosition -0.04/0/0
+ObjectTemplate.zoomFov 1
+ObjectTemplate.soldierZoomFov 1
+ObjectTemplate.soldierZoomPosition -0.11/-0.03/-0.2
 ObjectTemplate.soldierCameraPosition -0.03/-0.02/-0.07
 ObjectTemplate.addRootSpeed 1
-ObjectTemplate.AmmoType	1
+ObjectTemplate.AmmoType 1
 
 ObjectTemplate.altFireOnce 1
 rem objectTemplate.UseScope 1
@@ -35,7 +35,7 @@ ObjectTemplate.setMinDev 0.75
 ObjectTemplate.setTurnDev 0 0 0 0
 ObjectTemplate.setSpeedDev 2.55 0.2 0.2 0.1
 ObjectTemplate.setMiscDev 2.5 2.5 0.1
-`
+
 Rem *** Deviation  End *****
 
 ObjectTemplate.fireInCameraDof 1
@@ -47,16 +47,17 @@ ObjectTemplate.setAmmoBarFill "Ingame/Magbar_Bar_full_32x64.tga"
 ObjectTemplate.setAmmoBarSize 48
 ObjectTemplate.setAmmoBarPosX 5
 ObjectTemplate.setAmmoBarPosY -11
-ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTNone
 
 ObjectTemplate.createSkeleton animations/JohnsonLMG.ske
 ObjectTemplate.useSkeletonPartAsMain Base
 ObjectTemplate.addTemplate JohnsonLMGLod
+ObjectTemplate.setRotation 3.8/3.8/0
 
 ObjectTemplate.addTemplate e_MuzzSG44
 ObjectTemplate.setInputId -1
 ObjectTemplate.startoneffects 0
-ObjectTemplate.setPosition 0/0.03/0.675
+ObjectTemplate.setPosition 0.04/-0.01/0.675
 ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.addTemplate e_shell792mm

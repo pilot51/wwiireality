@@ -22,6 +22,17 @@ ObjectTemplate.addFireArmsPosition -0.2/1/1.6 0/4/0
 ObjectTemplate.addFireArmsPosition 0/0.5/2.9 0/4/0
 ObjectTemplate.AmmoType 8
 
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 2.405/0/0
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition -2.405/0/0
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 0.4/0.5/1.2
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition -0.4/0.5/1.2
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 0/0/2
+
 
 rem *** BF109Projectile ***
 ObjectTemplate.create Projectile BF109Projectile
@@ -31,6 +42,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.material 213
 ObjectTemplate.material2 -1
@@ -48,8 +60,8 @@ ObjectTemplate.visibleDummyProjectileTemplate DummyBigBomb
 ObjectTemplate.magSize 1
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 0
-ObjectTemplate.roundOfFire 0.2
+ObjectTemplate.roundOfFire 0.067
+ObjectTemplate.Reloadtime 30
 ObjectTemplate.setInputFire c_PIAltFire
 ObjectTemplate.addFireArmsPosition 0/-0.24/0.5 0/0/0
 ObjectTemplate.AmmoType 7
-

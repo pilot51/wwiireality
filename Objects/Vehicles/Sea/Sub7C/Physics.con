@@ -104,7 +104,7 @@ rem *** Sub7C_Floater ***
 ObjectTemplate.create FloatingBundle Sub7C_Floater
 ObjectTemplate.setNetworkableInfo Sub7cEngineInfo
 ObjectTemplate.setMinRotation 0/0/0
-ObjectTemplate.setMaxRotation 0/50/0
+ObjectTemplate.setMaxRotation 0/220/0
 ObjectTemplate.setMaxSpeed 0/2/0
 ObjectTemplate.setAcceleration 0/1/0
 ObjectTemplate.setInputToPitch c_PIPitch

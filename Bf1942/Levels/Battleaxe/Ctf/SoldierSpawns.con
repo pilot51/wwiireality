@@ -1,0 +1,204 @@
+rem *****************************************
+rem ****          AXIS BASE            *****
+rem ****************************************
+
+Object.create AxisSpawnPoint_1
+Object.absolutePosition 1394.37/63.6002/1178.1
+Object.rotation 119.988/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_2
+Object.absolutePosition 1383.48/63.4659/1171.9
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_3
+Object.absolutePosition 1396.11/63.6419/1179.95
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_4
+Object.absolutePosition 1393.03/63.6199/1179.95
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_5
+Object.absolutePosition 1415.11/63.2354/1162.6
+Object.rotation 119.988/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_airfield_1
+Object.absolutePosition 1521.27/88.0588/1318.47
+Object.rotation 160.776/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_airfield_2
+Object.absolutePosition 1526.16/88.0557/1317.21
+Object.rotation 160.776/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_airfield_3
+Object.absolutePosition 1530.15/88.0392/1315.76
+Object.rotation 160.776/0/1.52588e-005
+rem
+rem ***  ***
+rem
+rem *****************************************
+rem ****          ALLIES BASE          *****
+rem ****************************************
+
+
+
+
+Object.create alliesSpawnPoint_1
+Object.absolutePosition 1317.27/63.4988/679.758
+Object.rotation -129.528/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_2
+Object.absolutePosition 1296.14/63.5428/680.596
+Object.rotation -129.528/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_3
+Object.absolutePosition 1297.17/63.5428/679.34
+Object.rotation -129.528/0/0.0279846
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_4
+Object.absolutePosition 1295.89/63.5428/678.276
+Object.rotation -129.528/0/0.0279846
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_5
+Object.absolutePosition 1316.4/63.4988/680.81
+Object.rotation -129.528/0/0.0279846
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_airfield_1
+Object.absolutePosition 1412.04/49.1846/720.261
+Object.rotation -129.528/0/0.0279846
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_airfield_2
+Object.absolutePosition 1411.54/49.1795/725.905
+Object.rotation -129.528/0/0.0279846
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_airfield_3
+Object.absolutePosition 1411.55/49.1798/723.168
+Object.rotation -129.528/0/0.0279846
+rem  
+rem ***  ***
+rem
+rem ****************************************
+rem ****   controlpoint_allies_right       *****
+rem ****************************************
+
+Object.create alliesSpawnPoint_right_1
+Object.absolutePosition 1458.41/36.2178/893.624
+Object.rotation -43.2/0/1.52588e-005
+
+Object.create alliesSpawnPoint_right_2
+Object.absolutePosition 1457.26/36.2106/895.808
+Object.rotation -43.2/0/1.52588e-005
+
+Object.create alliesSpawnPoint_right_3
+Object.absolutePosition 1456.11/36.2031/894.724
+Object.rotation -43.2/0/1.52588e-005
+
+rem **************************************
+rem **** controlpoint_allies_middle    *****
+rem *************************************
+
+Object.create alliesSpawnPoint_middle_1
+Object.absolutePosition 1397.57/36.2958/837.766
+Object.rotation -43.2/0/1.52588e-005
+
+Object.create alliesSpawnPoint_middle_2
+Object.absolutePosition 1396.43/36.2958/839.95
+Object.rotation -43.2/0/1.52588e-005
+
+Object.create alliesSpawnPoint_middle_3
+Object.absolutePosition 1395.27/36.2958/838.866
+Object.rotation -43.2/0/1.52588e-005
+
+rem *************************************
+rem **** controlpoint_allies_left  *****
+rem *************************************
+
+Object.create alliesSpawnPoint_left_1
+Object.absolutePosition 1333.19/36.0732/888.357
+Object.rotation -43.2/0/1.52588e-005
+
+Object.create alliesSpawnPoint_left_2
+Object.absolutePosition 1332.05/36.0732/890.54
+Object.rotation -43.2/0/1.52588e-005
+
+Object.create alliesSpawnPoint_left_3
+Object.absolutePosition 1330.89/36.0525/889.456
+Object.rotation -43.2/0/1.52588e-005
+
+
+
+rem ****************************************
+rem ****   controlpoint_axis_right       *****
+rem ****************************************
+
+Object.create AxisSpawnPoint_right_1
+Object.absolutePosition 1335.5/36.2448/1006.4
+Object.rotation 135/0/1.52588e-005
+
+Object.create AxisSpawnPoint_right_2
+Object.absolutePosition 1336.72/36.2219/1004.26
+Object.rotation 135/0/1.52588e-005
+
+Object.create AxisSpawnPoint_right_3
+Object.absolutePosition 1337.83/36.2219/1005.38
+Object.rotation 135/0/1.52588e-005
+
+rem **************************************
+rem **** controlpoint_axis_middle    *****
+rem *************************************
+
+Object.create AxisSpawnPoint_middle_1
+Object.absolutePosition 1386.4/36.2824/1055.23
+Object.rotation 135/0/1.52588e-005
+
+Object.create AxisSpawnPoint_middle_2
+Object.absolutePosition 1387.62/36.2824/1053.08
+Object.rotation 135/0/1.52588e-005
+
+Object.create AxisSpawnPoint_middle_3
+Object.absolutePosition 1388.73/36.2823/1054.2
+Object.rotation 135/0/1.52588e-005
+
+rem *************************************
+rem **** controlpoint_axis_left  *****
+rem *************************************
+
+Object.create AxisSpawnPoint_left_1
+Object.absolutePosition 1451.14/36.3894/1004.8
+Object.rotation 135/0/1.52588e-005
+
+Object.create AxisSpawnPoint_left_2
+Object.absolutePosition 1452.35/36.4354/1002.65
+Object.rotation 135/0/1.52588e-005
+
+Object.create AxisSpawnPoint_left_3
+Object.absolutePosition 1453.47/36.3677/1003.77
+Object.rotation 135/0/1.52588e-005

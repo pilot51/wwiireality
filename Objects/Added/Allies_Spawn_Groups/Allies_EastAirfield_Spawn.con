@@ -1,0 +1,26 @@
+rem ----------------------------------------- 
+rem ---  Allies_EastAirfield_Spawn Group  ---
+rem ----------------------------------------- 
+beginrem
+spawnPointManager.group 98
+spawnPointManager.groupTeam 2
+spawnPointManager.groupEnableToChangeTeam 0
+spawnPointManager.groupIcon test2.tga
+endrem
+
+rem *** Allies_Factory_Spawn ***
+ObjectTemplate.create Bundle Allies_EastAirfield_Spawn
+rem ----------------------------------------- 
+ObjectTemplate.addTemplate EastAirfield_SoldierSpawn
+ObjectTemplate.setPosition -5/0/5
+ObjectTemplate.setRotation 0/0/0
+
+
+rem *** FactorySoldierSpawn1 ***
+ObjectTemplate.create SpawnPoint EastAirfield_SoldierSpawn
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 98
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 0
+ObjectTemplate.setSpawnAsParaTroper 0
+

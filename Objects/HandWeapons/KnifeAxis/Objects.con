@@ -10,7 +10,7 @@ ObjectTemplate.fireOnce c_True
 ObjectTemplate.roundOfFire 2
 ObjectTemplate.GUIIndex 83
 ObjectTemplate.setHudAmmoType ATNone
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.fireInCameraDof 1
 ObjectTemplate.loadSoundScript Sounds/knife.ssc
 ObjectTemplate.soldierCameraPosition 0/-0.03/0.1

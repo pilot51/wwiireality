@@ -5,3 +5,5 @@ NetworkableInfo.createNewInfo HoHaPassengerInfo
 NetworkableInfo.setPredictionMode PMNone
 NetworkableInfo.setBasePriority 0
 
+NetworkableInfo.createNewInfo HoHaSteeringInfo
+NetworkableInfo.setPredictionMode PMLinear

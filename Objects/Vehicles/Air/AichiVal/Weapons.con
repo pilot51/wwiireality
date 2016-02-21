@@ -19,6 +19,11 @@ ObjectTemplate.addFireArmsPosition 0.1/0.5/2.7 0/0/0
 ObjectTemplate.addFireArmsPosition -0.1/0.5/2.7 0/0/0
 ObjectTemplate.AmmoType 8
 
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 0.6/0.3/1.9
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition -0.6/0.3/1.9
+
 
 rem *** AichiValProjectile ***
 ObjectTemplate.create Projectile AichiValProjectile
@@ -27,6 +32,7 @@ rem ObjectTemplate.geometry tracklight_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.material 213
 ObjectTemplate.material2 -1
@@ -42,9 +48,11 @@ ObjectTemplate.projectileTemplate DiveBomberBomb
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.visibleDummyProjectileTemplate DummyBigBomb
 ObjectTemplate.magSize 2
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
+ObjectTemplate.AutoReload 1
 ObjectTemplate.velocity 0
 ObjectTemplate.roundOfFire 1
+ObjectTemplate.Reloadtime 30
 ObjectTemplate.SetAsynchronyFire 1
 ObjectTemplate.setInputFire c_PIAltFire
 ObjectTemplate.addFireArmsPosition -3.1/-0.5/0.5 0/0/0

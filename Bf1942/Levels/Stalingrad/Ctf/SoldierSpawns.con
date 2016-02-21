@@ -1,0 +1,138 @@
+rem *****************************************
+rem ****          AXIS_BASE            *****
+rem ****************************************
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_storagebuild_1
+Object.absolutePosition 675.307/37.8/406.597
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_storagebuild_2
+Object.absolutePosition 701.238/39.4552/398.361
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_storagebuild_3
+Object.absolutePosition 709.273/39.4552/399.161
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_storagebuild_4
+Object.absolutePosition 715.953/39.4552/356.001
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_storagebuild_5
+Object.absolutePosition 695.353/39.4552/354.961
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_storagebuild_6
+Object.absolutePosition 677.113/39.4552/354.001
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_storagebuild_7
+Object.absolutePosition 675.442/37.93/404.152
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+rem *****************************************
+rem ****       RUSSIAN_BASE       *****
+rem ****************************************
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_storagebuild_1
+Object.absolutePosition 379.311/37.8/405.936
+Object.rotation 7.92001/0/0.0484619
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_storagebuild_2
+Object.absolutePosition 360.132/39.3377/399.783
+Object.rotation 141.372/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_storagebuild_3
+Object.absolutePosition 344.251/39.3377/399.709
+Object.rotation 141.372/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_storagebuild_4
+Object.absolutePosition 372.882/39.3377/356.691
+Object.rotation 4.75201/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_storagebuild_5
+Object.absolutePosition 367.445/39.3377/357.142
+Object.rotation 4.75201/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_storagebuild_6
+Object.absolutePosition 391.502/39.3377/399.559
+Object.rotation 148.896/0/0.0442505
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_storagebuild_7
+Object.absolutePosition 374.647/37.8/405.927
+Object.rotation 89.892/0/0.0395813
+rem
+rem ***  ***
+rem
+rem ********************************************
+rem ****          CONTROLPOINT_stalingrad   ****
+rem ********************************************
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_stalingrad_1
+Object.absolutePosition 528.354/38.1181/331.236
+Object.rotation -127.512/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_stalingrad_2
+Object.absolutePosition 538.235/38.4904/329.791
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_stalingrad_3
+Object.absolutePosition 541.993/38.5826/324.552
+Object.rotation -54.252/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_stalingrad_4
+Object.absolutePosition 536.457/38.6493/328.512
+Object.rotation -127.512/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_stalingrad_5
+Object.absolutePosition 533.623/38.4378/324.713
+Object.rotation -127.512/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_stalingrad_6
+Object.absolutePosition 528.922/38.53/324.069
+Object.rotation -127.512/0/0.0279846
+rem
+rem ***  ***
+rem

@@ -21,7 +21,7 @@ ObjectTemplate.hitpoints 130
 ObjectTemplate.maxHitpoints 130
 ObjectTemplate.material 60
 ObjectTemplate.criticalDamage 20
-ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.explosionForceMod 15
 ObjectTemplate.hpLostWhileUpSideDown 10
 ObjectTemplate.hpLostWhileDamageFromWater 10
@@ -47,7 +47,7 @@ ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
 ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_bomb.tga"
 ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCAir
 ObjectTemplate.setVehicleType  VTDiveBomber
 ObjectTemplate.setToolTipType  TTDiveBomber	
@@ -247,7 +247,7 @@ ObjectTemplate.setVehicleIconPos 60/100
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTDiveBomber
 ObjectTemplate.setToolTipType  TTDiveBomber

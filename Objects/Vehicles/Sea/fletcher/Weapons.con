@@ -3,20 +3,28 @@
 rem *** fletcher_GunBarrel ***
 ObjectTemplate.create FireArms fletcher_GunBarrel
 ObjectTemplate.loadSoundScript ../Common/Sounds/fire.ssc
+ObjectTemplate.geometry Fletch_canonbar_m1
+ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.aiTemplate FletcherGunAI
 rem -------------------------------------
+beginrem
 ObjectTemplate.addTemplate e_MuzzDefGun
-ObjectTemplate.setPosition 0/0/-3
+rem ObjectTemplate.setPosition 0/0/-3
 ObjectTemplate.setRotation -179.999/0/0
+endrem
+ObjectTemplate.visibleBarrelTemplate e_MuzzDefGun
 rem -------------------------------------
 ObjectTemplate.projectileTemplate FletcherProjectile
-ObjectTemplate.projectilePosition 0/0/1
+rem ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.magSize 575
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 762
 ObjectTemplate.roundOfFire 0.25
+ObjectTemplate.RecoilSize 10
+ObjectTemplate.RecoilSpeed 10
 rem ObjectTemplate.fireingForce 40
 ObjectTemplate.setMinDev 1
+ObjectTemplate.addFireArmsPosition 0/0/3.5 0/0/0
 
 
 rem *** FletcherProjectile ***
@@ -27,6 +35,7 @@ ObjectTemplate.geometry Projectile_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 ObjectTemplate.damageType 1
 ObjectTemplate.material 252

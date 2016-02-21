@@ -1,0 +1,41 @@
+rem *** e_BritainFactory_SmokeStacks ***
+ObjectTemplate.create EffectBundle e_BritainFactory_SmokeStacks
+ObjectTemplate.saveInSeparateFile 1
+rem -------------------------------------
+ObjectTemplate.addTemplate Em_BritainFactory_SmallSmokeStack
+ObjectTemplate.setPosition 4/5/-3
+ObjectTemplate.addTemplate Em_BritainFactory_LargeSmokeStack2
+ObjectTemplate.setPosition 4/7/3
+ObjectTemplate.addTemplate e_scrapmetal
+ObjectTemplate.addTemplate e_ExplGas
+ObjectTemplate.timeToLive CRD_NONE/1.8/0/0
+rem -------------------------------------
+
+
+rem *** Em_BritainFactory_SmallSmokeStack ***
+ObjectTemplate.create Emitter Em_BritainFactory_SmallSmokeStack
+ObjectTemplate.template Britain_Factory_wreck_smoke_M1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/0/0/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/15/17/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/-10/-12/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+
+rem *** Em_BritainFactory_LargeSmokeStack2 ***
+ObjectTemplate.create Emitter Em_BritainFactory_LargeSmokeStack2
+ObjectTemplate.template Britain_Factory_wreck_smoke2_M1
+ObjectTemplate.addEmitterSpeed 1
+ObjectTemplate.emitterSpeedScale 1
+ObjectTemplate.lodDistance 375
+ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
+ObjectTemplate.intensity CRD_NONE/10/0/0
+ObjectTemplate.relativePositionInDof CRD_NONE/0/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/10/12/0
+ObjectTemplate.positionalSpeedInUp CRD_NONE/10/12/0
+ObjectTemplate.positionalSpeedInRight CRD_NONE/0/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0

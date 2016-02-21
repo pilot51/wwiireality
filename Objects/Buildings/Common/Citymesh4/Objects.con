@@ -6,7 +6,7 @@ ObjectTemplate.addTemplate citymesh4_fix_m1
 ObjectTemplate.setposition -0.4/0/0
 
 LodSelectorTemplate.create DistanceSelector citymesh4Selector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodcitymesh4
 ObjectTemplate.lodselector citymesh4Selector
 ObjectTemplate.addTemplate citymesh4Interior

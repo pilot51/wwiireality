@@ -1,0 +1,11 @@
+#templateLevel HIGH
+
+	#include BellyGunMovementHigh.ssc
+	
+#templateLevel MEDIUM
+
+	#include BellyGunMovementMedium.ssc
+	
+#templateLevel LOW
+
+	#include BellyGunMovementLow.ssc

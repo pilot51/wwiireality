@@ -1,0 +1,45 @@
+
+rem *****************************************
+rem ****          AXIS BASE1           *****
+rem ****************************************
+
+Object.create AxisBase_1_Cpoint
+Object.absolutePosition 1824.64/38.618/1790.11
+rem
+rem ***  ***
+rem
+rem *****************************************
+rem ****        ALLIES Base2           *****
+rem ****************************************
+
+Object.create AlliesBase_2_Cpoint
+Object.absolutePosition 1799.46/38.7/1960.99
+rem
+rem ***  ***
+rem
+
+rem *****************************************
+rem ****    open Axis base3            *****
+rem ****************************************
+
+
+Object.create openbase_leftside_3_Cpoint
+Object.absolutePosition 1826.78/38.306/1854.39
+rem
+rem ***  ***
+rem
+
+
+rem *****************************************
+rem ****       open Axis base4         *****
+rem ****************************************
+
+Object.create openbase_rightside_4_Cpoint
+Object.absolutePosition 1697.61/38.306/1781.07
+rem
+rem ***  ***
+rem
+
+
+
+rem *** EndOfFile ***

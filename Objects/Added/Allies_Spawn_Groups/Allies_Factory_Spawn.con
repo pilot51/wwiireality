@@ -1,0 +1,26 @@
+rem ----------------------------------------- 
+rem ---  Allies_Factory_Spawn Group  ---
+rem ----------------------------------------- 
+beginrem
+spawnPointManager.group 99
+spawnPointManager.groupTeam 2
+spawnPointManager.groupEnableToChangeTeam 0
+spawnPointManager.groupIcon test2.tga
+endrem
+
+rem *** Allies_Factory_Spawn ***
+ObjectTemplate.create Bundle Allies_Factory_Spawn
+rem ----------------------------------------- 
+ObjectTemplate.addTemplate Factory_SoldierSpawn
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+
+rem *** FactorySoldierSpawn1 ***
+ObjectTemplate.create SpawnPoint Factory_SoldierSpawn
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 99
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 0
+ObjectTemplate.setSpawnAsParaTroper 0
+

@@ -4,7 +4,7 @@ objectTemplate.aiTemplate hospital_m1
 ObjectTemplate.addTemplate lodHospital
 
 LodSelectorTemplate.create DistanceSelector HospitalSelector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodHospital
 ObjectTemplate.lodselector HospitalSelector
 ObjectTemplate.addTemplate HospitalInterior

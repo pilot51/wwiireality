@@ -1,0 +1,7 @@
+NetworkableInfo.createNewInfo FactoryBodyInfo
+NetworkableInfo.setPredictionMode PMLinear
+rem NetworkableInfo.setBasePriority NIGhostAlways 
+
+
+
+

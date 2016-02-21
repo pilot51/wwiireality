@@ -1,2 +1,6 @@
 NetworkableInfo.createNewInfo BF109Info
 NetworkableInfo.setPredictionMode PMLinear
+
+NetworkableInfo.createNewInfo BF109FlapInfo
+NetworkableInfo.setPredictionMode PMUsePhysics
+NetworkableInfo.setForceNetworkableId 1

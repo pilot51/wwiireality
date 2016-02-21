@@ -2,8 +2,10 @@ ObjectTemplate.create HandFireArms GrenadeAllies
 ObjectTemplate.itemIndex 4
 ObjectTemplate.networkableInfo HandFireArmsInfo
 ObjectTemplate.hasDynamicShadow 1
+rem ObjectTemplate.VisibleDummyProjectileTemplate GrenadeAlliesLod
 ObjectTemplate.projectileTemplate GrenadeAlliesProjectile
 ObjectTemplate.projectilePosition 0/0/0
+rem ObjectTemplate.addFireArmsPosition 0/0/0 0/0/0
 ObjectTemplate.ForceOnExplosion 10
 ObjectTemplate.magSize 3
 ObjectTemplate.numOfMag 1
@@ -16,13 +18,13 @@ ObjectTemplate.hasArmor 1
 ObjectTemplate.material 70
 ObjectTemplate.hitpoints 10000
 ObjectTemplate.maxhitpoints 10000
-ObjectTemplate.AmmoType	2
+ObjectTemplate.AmmoType 2
 
 ObjectTemplate.autoReload 1
 ObjectTemplate.GUIIndex 13
 ObjectTemplate.setHudAmmoType ATIconAndStrengthBar
 ObjectTemplate.setAmmoIcon "Ammo/Icon_grenadeallies_64x32.tga"
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setHasMag 0
 
 ObjectTemplate.rotationalSpeed 8/0/0
@@ -38,10 +40,13 @@ ObjectTemplate.soldierCameraPosition 0/-0.03/0.2
 ObjectTemplate.cantSelectWhenNoAmmo 1
 ObjectTemplate.changeWeaponWhenNoAmmo 1
 
+ObjectTemplate.SetInputFire c_PIAltFire
+
 ObjectTemplate.velocityDependentOnHeat 1
 ObjectTemplate.heatAddWhenFire 0.03
 rem ObjectTemplate.coolDownPerSec 0.05
-ObjectTemplate.changeWeaponWhenNoAmmo 1
+rem ObjectTemplate.changeWeaponWhenNoAmmo 1
+
 
 ObjectTemplate.createSkeleton animations/GrenadeAllies.ske
 ObjectTemplate.useSkeletonPartAsMain Base

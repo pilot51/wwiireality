@@ -22,7 +22,7 @@ ObjectTemplate.Maxhitpoints 50
 ObjectTemplate.material 45
 ObjectTemplate.criticalDamage 6
 ObjectTemplate.explosionForceMod 15
-ObjectTemplate.hpLostWhileCriticalDamage 1
+ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.hpLostWhileUpSideDown 5
 ObjectTemplate.hpLostWhileDamageFromWater 5
 ObjectTemplate.addArmorEffect 30 e_KatyushaDamage 0/0.5/2.5
@@ -236,7 +236,7 @@ ObjectTemplate.setVehicleIconPos 35/55
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_rocket.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType  VTArtillery
 ObjectTemplate.setToolTipType  TTArtillery

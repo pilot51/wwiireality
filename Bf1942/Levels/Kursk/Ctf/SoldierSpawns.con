@@ -1,0 +1,121 @@
+
+rem *****************************************
+rem ****          AXIS BASE  1          *****
+rem ****************************************
+
+Object.create AxisSpawnPoint_1_1
+Object.absolutePosition 464.978/77.9123/233.386
+Object.rotation -67.3921/0/0.0342712
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_1_2
+Object.absolutePosition 406.791/78.1203/249.466
+Object.rotation 165.672/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_1_3
+Object.absolutePosition 406.281/78.1203/240.534
+Object.rotation 32.7599/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_1_4
+Object.absolutePosition 411.088/78.1203/239.954
+Object.rotation -6.55206/0/0.0442505
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_1_5
+Object.absolutePosition 410.837/78.1203/247.016
+Object.rotation -160.056/0/0.0395813
+
+
+
+rem *****************************************
+rem ****          ALLIES BASE  2        *****
+rem ****************************************
+
+
+
+
+Object.create alliesSpawnPoint_2_6
+Object.absolutePosition 578.755/77.036/847.167
+Object.rotation -2.80798/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_2_7
+Object.absolutePosition 541.351/77.3663/861.112
+Object.rotation  165.672/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_2_8
+Object.absolutePosition 545.272/77.3663/857.32
+Object.rotation -139.104/0/0.0342712
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_2_9
+Object.absolutePosition 540.63/77.3663/850.195
+Object.rotation 37.44/0/0.0197906
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_2_19
+Object.absolutePosition 546.109/77.3663/850.294
+Object.rotation -50.544/0/1.52588e-005
+rem  
+rem ***  ***
+rem
+
+
+
+
+
+rem *****************************************
+rem ****   open BASE_leftside_3        *****
+rem ****************************************
+
+Object.create OpenSpawnPoint_3_10
+Object.absolutePosition  689.73/93.8563/553.882
+Object.rotation  -90.4321/0/1.52588e-005  
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_3_11
+Object.absolutePosition 616.784/83.9844/546.661
+Object.rotation   -46.44/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_3_12
+Object.absolutePosition 609.548/83.9844/546.659
+Object.rotation 34.992/0/1.52588e-005
+rem
+rem ***  ***
+rem
+
+rem *****************************************
+rem ****   open BASE_cammo             *****
+rem ****************************************
+
+
+
+Object.create openbasecammo_4_13
+Object.absolutePosition 455.955/94.1859/591.233
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create openbasecammo_4_14
+Object.absolutePosition 489.283/84.7067/587.259
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create openbasecammo_4_15 
+Object.absolutePosition 486.759/85.0264/582.637
+Object.rotation 0/0/1.52588e-005

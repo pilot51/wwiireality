@@ -24,6 +24,20 @@ ObjectTemplate.addFireArmsPosition -2.4/-0.01/1.8 0/0/0
 ObjectTemplate.AmmoType 10
 
 
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 2.2/-0.2/0.6
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition -2.2/-0.2/0.6
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 2.0/-0.2/0.6
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition -2.0/-0.2/0.6
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 2.4/-0.2/0.6
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition -2.4/-0.2/0.6
+
+
 rem *** MustangProjectile ***
 ObjectTemplate.create Projectile MustangProjectile
 ObjectTemplate.createNotInGrid 1
@@ -32,6 +46,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.material 213
 ObjectTemplate.material2 -1
@@ -48,10 +63,11 @@ ObjectTemplate.projectileTemplate FighterBomb
 ObjectTemplate.projectilePosition 0/0/0
 ObjectTemplate.visibleDummyProjectileTemplate DummyBigBomb
 ObjectTemplate.magSize 2
-ObjectTemplate.numOfMag 1
+ObjectTemplate.numOfMag 2
 ObjectTemplate.AutoReload 1
 ObjectTemplate.velocity 0
 ObjectTemplate.roundOfFire 1
+ObjectTemplate.Reloadtime 30
 ObjectTemplate.SetAsynchronyFire 1
 ObjectTemplate.setInputFire c_PIAltFire
 ObjectTemplate.addFireArmsPosition -2.3/-0.35/0.65 0/0/0

@@ -10,12 +10,12 @@ ObjectTemplate.reloadtime 5
 ObjectTemplate.roundOfFire 3.2
 rem ObjectTemplate.roundOfFire 4
 objectTemplate.aiTemplate Type5AI
-ObjectTemplate.zoomFov 0.6
+ObjectTemplate.zoomFov 1
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.fireOnce 1
 ObjectTemplate.altFireOnce 1
-ObjectTemplate.soldierZoomFov 0.8 
-ObjectTemplate.soldierZoomPosition -0.04/-0.03/0
+ObjectTemplate.soldierZoomFov 1
+ObjectTemplate.soldierZoomPosition -0.099/-0.028/-0.2
 ObjectTemplate.soldierCameraPosition -0.02/-0.03/0.01
 ObjectTemplate.addRootSpeed 1
 ObjectTemplate.ammoType 1
@@ -29,7 +29,7 @@ ObjectTemplate.setAmmoBarPosX 6
 ObjectTemplate.setAmmoBarPosY -17
 ObjectTemplate.setAmmoBarTextPosX 5
 ObjectTemplate.setAmmoBarTextPosY 10
-ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTNone
 
 Rem *** Deviation Begin *****
 
@@ -62,9 +62,11 @@ ObjectTemplate.useSkeletonPartAsMain Base
 
 rem *** LodObject must be located as first child to work on handweapons.
 ObjectTemplate.addTemplate Type5Lod
+ObjectTemplate.setPosition -0.03/0.03/0
+ObjectTemplate.setRotation 4.25/2.2/0
 
 ObjectTemplate.addTemplate e_MuzzGun
-ObjectTemplate.setPosition 0/0.05/0.84
+ObjectTemplate.setPosition 0.03/0.05/0.84
 ObjectTemplate.setRotation 0/0/0
 
 ObjectTemplate.addTemplate e_shellM1Garand

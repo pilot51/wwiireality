@@ -1,0 +1,243 @@
+rem *****************************************
+rem ****          the_beach           *****
+rem ****************************************
+Object.create beach1 
+Object.absolutePosition 945.126/17.5028/985.138
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create beach2 
+Object.absolutePosition 850.727/17.8328/947.897
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create beach3
+Object.absolutePosition 850.727/17.8328/941.297
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create beach4
+Object.absolutePosition 904.286/17.0628/950.017
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create beach5
+Object.absolutePosition 907.006/17.8628/951.378
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create beach6
+Object.absolutePosition 946.966/17.5828/983.898
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create beach7
+Object.absolutePosition 1009.54/18.7344/992.375
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create beach8 
+Object.absolutePosition 1043.78/18.5044/974.815
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create beach9 
+Object.absolutePosition 963.339/17.9771/1000.55
+Object.rotation 0/0/1.52588e-005
+
+
+
+
+
+rem *****************************************
+rem ****          the_wall          *****
+rem ****************************************
+
+
+rem ***  ***
+rem
+Object.create wall1
+Object.absolutePosition 990.989/43.9185/1151.16
+Object.rotation -180/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create wall2
+Object.absolutePosition 955.19/45.4185/1146
+Object.rotation -180/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create wall3
+Object.absolutePosition 951.43/45.4185/1146
+Object.rotation -180/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create wall4 
+Object.absolutePosition 968.03/43.9785/1150.4
+Object.rotation -180/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create wall5
+Object.absolutePosition 953.43/45.4185/1146
+Object.rotation -180/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create wall6
+Object.absolutePosition 1010.95/45.4185/1151.16
+Object.rotation -180/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create wall7
+Object.absolutePosition 1013.11/45.4185/1151.16
+Object.rotation -180/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create wall8
+Object.absolutePosition 1015.31/45.4185/1151.16
+Object.rotation -180/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create wall9
+Object.absolutePosition 995.469/43.9185/1151.16
+Object.rotation -180/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create wall10
+Object.absolutePosition 982.189/43.9185/1151.16
+Object.rotation -180/0/1.52588e-005
+
+
+
+
+
+
+rem *****************************************
+rem ****       the_CITYENTRY           *****
+rem ****************************************
+beginrem
+
+Object.create City_entry_1
+Object.absolutePosition 1094.91/58.1949/1213.61
+Object.rotation -140.04/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create City_entry_2
+Object.absolutePosition 1090.53/58.1949/1217.28
+Object.rotation -140.04/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create City_entry_3
+Object.absolutePosition 1089.18/58.2249/1257.71
+Object.rotation -140.04/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create City_entry_4
+Object.absolutePosition 1086.11/58.2249/1260.28
+Object.rotation -140.04/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create City_entry_5
+Object.absolutePosition 1058.58/52.0405/1243.64
+Object.rotation -162.36/0/0.0442505
+rem
+rem ***  ***
+rem
+Object.create City_entry_6
+Object.absolutePosition 1056.26/52.0405/1244.38
+Object.rotation -162.36/0/0.0442505
+rem
+rem ***  ***
+rem
+Object.create City_entry_7
+Object.absolutePosition 1068.43/61.4896/1305.76
+Object.rotation -179.64/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create City_entry_8
+Object.absolutePosition 1057.25/61.4896/1296.79
+Object.rotation -179.64/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create City_entry_9
+Object.absolutePosition 1078.67/61.4896/1311.62
+Object.rotation -179.64/0/1.52588e-005
+
+endrem
+
+rem *****************************************
+rem ****       the_axisbase         *****
+rem ****************************************
+
+Object.create axisbase1
+Object.absolutePosition 983.394/63.7081/1288.73
+Object.rotation -177.84/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create axisbase2
+Object.absolutePosition 997.3/63.5481/1287.44
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create axisbase3
+Object.absolutePosition 999.78/63.5081/1287.44
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create axisbase4
+Object.absolutePosition 1017.7/63.7081/1287.44
+Object.rotation -177.84/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create axisbase5
+Object.absolutePosition 985.796/63.4772/1298.81
+Object.rotation 48.96/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create axisbase6
+Object.absolutePosition 1010.78/63.4379/1298.16
+Object.rotation -31.32/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create axisbase7
+Object.absolutePosition 993.287/61.8591/1335.04
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create axisbase8
+Object.absolutePosition 1006.49/61.9691/1335.04
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create axisbase9
+Object.absolutePosition 985.562/63.7081/1288.65
+Object.rotation -177.84/0/1.52588e-005

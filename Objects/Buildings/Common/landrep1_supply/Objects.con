@@ -16,7 +16,7 @@ rem -------------------------------------
 
 
 LodSelectorTemplate.create DistanceSelector landrep1_supplySelector
-LodSelectorTemplate.addLodDistance 80
+rem LodSelectorTemplate.addLodDistance 80
 
 ObjectTemplate.create LodObject lodlandrep1_supply
 ObjectTemplate.lodselector landrep1_supplySelector

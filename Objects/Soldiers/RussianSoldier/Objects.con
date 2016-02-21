@@ -88,5 +88,3 @@ ObjectTemplate.geometry Soldier/1PRussLeftHand
 
 ObjectTemplate.create SimpleObject 1PRussSoldierRightHand
 ObjectTemplate.geometry Soldier/1PRussRightHand
-
-	

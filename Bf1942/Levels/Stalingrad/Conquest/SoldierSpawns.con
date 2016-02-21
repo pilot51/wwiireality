@@ -1,0 +1,262 @@
+rem *****************************************
+rem ****          AXIS_BASE            *****
+rem ****************************************
+
+Object.create AxisSpawnPoint_storagebuild_1
+Object.absolutePosition 675.307/37.8/406.597
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_storagebuild_2
+Object.absolutePosition 701.238/39.4552/398.361
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_storagebuild_3
+Object.absolutePosition 709.273/39.4552/399.161
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_storagebuild_4
+Object.absolutePosition 715.953/39.4552/356.001
+Object.rotation 0/0/1.52588e-005
+
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_storagebuild_5
+Object.absolutePosition 695.353/39.4552/354.961
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_storagebuild_6
+Object.absolutePosition 677.113/39.4552/354.001
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_storagebuild_7
+Object.absolutePosition 675.442/37.93/404.152
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+rem *****************************************
+rem ****       RUSSIAN_BASE       *****
+rem ****************************************
+
+Object.create RussianSpawnPoint_harbour_1
+Object.absolutePosition 527.787/26.8887/172.947
+Object.rotation -87.984/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create RussianSpawnPoint_harbour_2
+Object.absolutePosition 577.271/26.8185/195.576
+Object.rotation -87.984/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create RussianSpawnPoint_harbour_3
+Object.absolutePosition 578.988/26.8198/181.317
+Object.rotation -87.984/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create RussianSpawnPoint_harbour_4
+Object.absolutePosition 562.377/26.9797/167.071
+Object.rotation -87.984/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create RussianSpawnPoint_harbour_5
+Object.absolutePosition 548.676/26.793/177.335
+Object.rotation -87.984/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create RussianSpawnPoint_harbour_6
+Object.absolutePosition 577.006/26.6457/167.521
+Object.rotation -87.984/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create RussianSpawnPoint_harbour_7
+Object.absolutePosition 527.158/27.2103/166.606
+Object.rotation -87.984/0/1.52588e-005
+rem
+rem ***  ***
+rem
+
+
+Object.create RussianSpawnPoint_harbour_8
+Object.absolutePosition 538.223/26.1208/161.06
+Object.rotation -159.228/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create RussianSpawnPoint_harbour_9
+Object.absolutePosition 502.294/37.8236/197.876
+Object.rotation 38.808/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create RussianSpawnPoint_harbour_10
+Object.absolutePosition 509.799/37.7918/198.77
+Object.rotation -159.228/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create RussianSpawnPoint_harbour_11
+Object.absolutePosition 536.278/26.2005/161.837
+Object.rotation -159.228/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create RussianSpawnPoint_harbour_12
+Object.absolutePosition 536.078/26.0277/158.408
+Object.rotation -159.228/0/0.0395813
+
+rem *****************************************
+rem ****          AXIS_CONTROLPOINT_CITY      *****
+rem ****************************************
+
+
+
+
+Object.create OpenSpawnPoint_Axisside_1
+Object.absolutePosition 540.149/48.772/386.181
+Object.rotation 176.904/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_Axisside_2
+Object.absolutePosition 530.511/38.242/387.222
+Object.rotation 176.904/0/0.0279846
+
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_Axisside_3
+Object.absolutePosition 535.392/38.242/387.486
+Object.rotation 176.904/0/0.0279846
+rem  
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_Axisside_4
+Object.absolutePosition 525.715/38.242/385.4
+Object.rotation 176.904/0/0.0279846
+rem  
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_Axisside_5
+Object.absolutePosition 534.749/41.908/385.889
+Object.rotation 176.904/0/0.0279846
+rem  
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_Axisside_6
+Object.absolutePosition 534.749/45.34/385.889
+Object.rotation 176.904/0/0.0279846
+rem  
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_Axisside_7
+Object.absolutePosition 536.307/48.772/385.973
+Object.rotation 176.904/0/0.0279846
+rem  
+rem ***  ***
+rem
+rem *****************************************
+rem ****          RUSSIAN_CONTROLPOINT_CITY           *****
+rem ****************************************
+
+
+Object.create OpenSpawnPoint_Russianside_1
+Object.absolutePosition 497.734/38.8948/269.695
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_Russianside_2
+Object.absolutePosition 528.151/38.268/277.088
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_Russianside_3
+Object.absolutePosition 523.471/38.268/275.008
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_Russianside_4
+Object.absolutePosition 522.951/41.778/271.264
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_Russianside_5
+Object.absolutePosition 522.951/45.418/271.264
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_Russianside_6
+Object.absolutePosition 522.951/48.772/271.264
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_Russianside_7
+Object.absolutePosition 518.895/48.772/276.984
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+
+rem *****************************************
+rem ****          CONTROLPOINT_stalingrad           *****
+rem ****************************************
+
+rem
+Object.create OpenSpawnPoint_stalingrad_1
+Object.absolutePosition 528.354/38.1181/331.236
+Object.rotation -127.512/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_stalingrad_2
+Object.absolutePosition 538.235/38.4904/329.791
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_stalingrad_3
+Object.absolutePosition 541.993/38.5826/324.552
+Object.rotation -54.252/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_stalingrad_4
+Object.absolutePosition 536.457/38.6493/328.512
+Object.rotation -127.512/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_stalingrad_5
+Object.absolutePosition 533.623/38.4378/324.713
+Object.rotation -127.512/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_stalingrad_6
+Object.absolutePosition 528.922/38.53/324.069
+Object.rotation -127.512/0/0.0279846
+rem
+rem ***  ***
+rem

@@ -13,10 +13,10 @@ ObjectTemplate.roundOfFire 1
 ObjectTemplate.fireOnce 1
 objectTemplate.aiTemplate PanzerschrekRPG
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.zoomFov 0.5
+ObjectTemplate.zoomFov 1
 ObjectTemplate.altFireOnce 1
-ObjectTemplate.soldierZoomFov 0.6 
-ObjectTemplate.soldierZoomPosition -0.05/-0.02/0
+ObjectTemplate.soldierZoomFov 0.7
+ObjectTemplate.soldierZoomPosition -0.072/0/-0.4
 ObjectTemplate.AmmoType 3
 
 ObjectTemplate.loadSoundScript Sounds/panzershrek.ssc
@@ -24,7 +24,7 @@ ObjectTemplate.loadSoundScript Sounds/panzershrek.ssc
 ObjectTemplate.GUIIndex 5
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_bazooka_64x32.tga"
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setHasMag 1
 
 Rem *** Deviation Begin *****
@@ -55,6 +55,7 @@ Rem *** Deviation  End *****
 ObjectTemplate.createSkeleton animations/Panzershreck.ske
 ObjectTemplate.useSkeletonPartAsMain Panzershreck
 ObjectTemplate.addTemplate PanzershreckLod
+ObjectTemplate.setRotation -3/1/0
 
 ObjectTemplate.addTemplate e_rocketFumeBack
 ObjectTemplate.setInputId -1

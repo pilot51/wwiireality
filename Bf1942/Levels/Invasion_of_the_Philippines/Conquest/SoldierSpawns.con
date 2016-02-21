@@ -1,0 +1,198 @@
+rem *****************************************
+rem ****          US_Marine_Base        *****
+rem ****************************************
+
+Object.create US_Marine_Base1
+Object.absolutePosition 525.756/74.8114/1239.78
+rem Object.absolutePosition 531.598/74.7653/1235.59
+Object.rotation 90/0/0
+rem
+rem ***  ***
+rem
+Object.create US_Marine_Base2 
+Object.absolutePosition 538.356/76.0453/1218.13
+rem Object.absolutePosition 547.474/76.0459/1220.08
+Object.rotation 66.5000/0/0
+rem
+rem ***  ***
+rem
+Object.create US_Marine_Base3
+Object.absolutePosition 568.948/77.4383/1229.18
+rem Object.absolutePosition 568.948/77.4383/1229.18
+Object.rotation 0/0/0
+rem
+rem ***  ***
+rem
+Object.create US_Marine_Base4
+Object.absolutePosition 544.907/77.3271/1258.39
+rem Object.absolutePosition 552.971/76.8142/1249.25
+Object.rotation 180.000/0/0
+rem
+rem ***  ***
+rem
+Object.create US_Marine_Base5
+Object.absolutePosition 539.756/77.3878/1248.84
+rem Object.absolutePosition 572.896/77.4996/1249.10
+Object.rotation -90/0/0
+
+rem *****************************************
+rem ****         West_Harbor          *****
+rem ****************************************
+
+Object.create West_Harbor1
+Object.absolutePosition 564.262/48.9164/768.60
+Object.rotation -25.2130/0/0.0396
+rem
+rem ***  ***
+rem
+Object.create West_Harbor2
+Object.absolutePosition 568.346/49.2764/777.644
+rem Object.absolutePosition 564.87/48.9164/782.063
+Object.rotation 90/0/0
+rem
+rem ***  ***
+rem
+Object.create West_Harbor3
+Object.absolutePosition 513.652/61.5789/747.285
+Object.rotation -90/0/0
+rem
+rem ***  ***
+rem
+Object.create West_Harbor4
+Object.absolutePosition 514.135/61.4337/752.201
+rem Object.absolutePosition 497.5984/61.8164/739.9257
+Object.rotation 180/0/0
+rem
+rem ***  ***
+rem
+Object.create West_Harbor5
+Object.absolutePosition 546.197/48.9137/786.060
+rem Object.absolutePosition 546.843/48.9137/783.667
+Object.rotation 90/0/0
+
+rem *****************************************
+rem ****          Airfield        *****
+rem ****************************************
+Object.create Airfield1
+Object.absolutePosition 1084.5593/55.7226/1133.1122
+Object.rotation 45.832/0/0.0343
+rem
+rem ***  ***
+rem
+Object.create Airfield2
+Object.absolutePosition 1108.6461/55.8227/1101.7582
+Object.rotation 298.7130/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create Airfield3
+Object.absolutePosition 1072.6971/56.0726/1114.7648
+Object.rotation -3.2000/0/0.0396
+rem
+rem ***  ***
+rem
+Object.create Airfield4
+Object.absolutePosition 1068.91/55.4237/1105.36
+Object.rotation 65.000/0/0.0396
+rem
+rem ***  ***
+rem
+Object.create Airfield5
+Object.absolutePosition 1097.63/55.4227/1093.78
+Object.rotation -25.000/0/0.0396
+
+
+rem *****************************************
+rem ****          Point_Boyington        *****
+rem ****************************************
+Object.create Shallows1
+Object.absolutePosition 1147.11/56.8128/1343.95
+Object.rotation 180/0/0
+rem
+rem ***  ***
+rem
+Object.create Shallows2
+Object.absolutePosition 1148.76/56.8128/1336.89
+Object.rotation -90/0/0
+rem
+rem ***  ***
+rem
+Object.create Shallows3
+Object.absolutePosition 1071.42/52.5648/1312.1
+Object.rotation -32/0/0
+rem
+rem ***  ***
+rem
+Object.create Shallows4
+Object.absolutePosition 1062.10/51.6325/1319.29
+Object.rotation 65/0/0
+rem
+rem ***  ***
+rem
+Object.create Shallows5
+Object.absolutePosition 1152.68/56.8712/1328.06
+Object.rotation -90/0/0
+
+rem *****************************************
+rem ****          East_Harbor       *****
+rem ****************************************
+
+Object.create East_Harbor1
+Object.absolutePosition 1551.38/60.776/1503.78
+Object.rotation -20.736/0/0.0
+rem
+rem ***  ***
+rem
+Object.create East_Harbor2
+Object.absolutePosition 1548.45/60.8148/1516.08
+Object.rotation 90/0/0
+rem
+rem ***  ***
+rem
+Object.create East_Harbor3
+Object.absolutePosition 1571.44/60.7054/1487.07
+Object.rotation -90/0/0
+rem
+rem ***  ***
+rem
+Object.create East_Harbor4
+Object.absolutePosition 1573.09/67.2662/1531.93
+Object.rotation 180/0/0
+rem
+rem ***  ***
+rem
+Object.create East_Harbor5
+Object.absolutePosition 1562.94/60.5492/1519.43
+Object.rotation 160/0/0
+
+rem *****************************************
+rem ****          Islands       *****
+rem ****************************************
+
+Object.create Islands1
+Object.absolutePosition 833.008/45.8328/1024.98
+Object.rotation -90/0/0
+rem
+rem ***  ***
+rem
+Object.create Islands2
+Object.absolutePosition 808.109/46.9457/1009.3
+Object.rotation -90/0/0
+rem
+rem ***  ***
+rem
+Object.create Islands3
+Object.absolutePosition 798.1/53.3481/971.775
+Object.rotation -90/0/0
+rem
+rem ***  ***
+rem
+Object.create Islands4
+Object.absolutePosition 848.162/46.1001/993.494
+Object.rotation -90/0/0
+rem
+rem ***  ***
+rem
+Object.create Islands5
+Object.absolutePosition 790.446/50.6032/980.956
+Object.rotation -90/0/0

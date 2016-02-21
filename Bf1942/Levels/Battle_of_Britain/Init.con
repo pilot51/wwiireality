@@ -10,7 +10,7 @@ renderer.fogColorVec 0.745/0.791/0.788
 renderer.animatedMeshDiffuseFactor 0.42/0.48/0.38
 renderer.animatedMeshAmbientColor 0.25/0.25/0.25
 textureManager.alternativePath Texture/Europe
-textureManager.alternativePath bf1942/Levels/Battle_of_Britain/Texture
+rem textureManager.alternativePath bf1942/Levels/Battle_of_Britain/Texture
 
 TreeRenderer.billboardlightscale 0.3
 
@@ -73,6 +73,6 @@ game.setBeforeSpawnCameraPosition 1 408.268/140.92/55.6081
 game.setBeforeSpawnCameraPosition 2 1257.41/115.311/1292.85
 
 rem *** special object for this level. /TBM ***
-run objects/objects
+rem run objects/objects
 
 game.setLevelCheck 3918044230

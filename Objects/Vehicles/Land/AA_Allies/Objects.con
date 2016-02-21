@@ -1,5 +1,5 @@
 ObjectTemplate.create PlayerControlObject AA_Allies
-ObjectTemplate.setSoldierExitLocation 1/0/-1.5 0/0/0
+ObjectTemplate.setSoldierExitLocation 1/0.2/-1.5 0/0/0
 ObjectTemplate.networkableInfo AA_Base_BodyInfo
 objectTemplate.cullRadiusScale 5
 rem ObjectTemplate.geometry aa_Allies_base_M1
@@ -22,7 +22,7 @@ ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_stationary_16x16.tga"
 ObjectTemplate.setHasCollisionPhysics 1
 ObjectTemplate.setHasResponsePhysics 1
 objectTemplate.criticalDamage 12
-ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.addArmorEffect 35 e_AA-GunDamage 0/0.3/0
 ObjectTemplate.addArmorEffect 0 e_ScrapAABase 0/1.2/0
 ObjectTemplate.addArmorEffect 0 e_ExplGas 0/1.2/0

@@ -1,0 +1,129 @@
+rem *****************************************
+rem ****          AXIS BASE1           *****
+rem ****************************************
+
+Object.create lighttankspawner 
+Object.absolutePosition 450.345/78.6349/249.093
+Object.rotation 0/0.103998/1.52588e-005
+Object.setTeam 1
+
+
+
+Object.create lighttankspawner 
+Object.absolutePosition 444.421/78.6286/248.701
+Object.rotation 1.27288/0.170019/-1.52588e-005
+Object.setTeam 1
+
+
+
+Object.create APCSpawner
+Object.absolutePosition 449.911/79.0704/234.584
+Object.rotation 0/1.17886/1.52588e-005
+Object.setTeam 1
+
+
+
+Object.create heavytankspawner
+Object.absolutePosition 388.567/78.7631/246.062
+Object.rotation 0/-0.664717/-1.52588e-005
+Object.setTeam 1
+
+Object.create ScoutCarSpawner
+Object.absolutePosition 409.739/78.1727/233.916
+Object.rotation -92.664/-0.0204939/-0.409744
+Object.setTeam 1
+
+
+Object.create FighterSpawner
+Object.absolutePosition 376.687/79.0611/203.812
+Object.rotation 91.616/-12.871/1.52588e-005
+Object.setTeam 1
+
+
+Object.create DiveBomberSpawner
+Object.absolutePosition 374.75/79.857/216.141
+Object.rotation 98.5421/-8.4672/0.602325
+Object.setOSId 1
+
+
+
+rem *****************************************
+rem ****        ALLIES Base2           *****
+rem ****************************************
+
+Object.create heavytankspawner
+Object.absolutePosition 594.427/78.4077/871.696
+Object.rotation 89.1573/0.0152983/-0.618668
+Object.setTeam 2
+
+
+Object.create lighttankspawner
+Object.absolutePosition 574.056/77.7991/849.572
+Object.rotation -177.84/-0.132352/-1.52588e-005
+Object.setTeam 2
+
+
+Object.create lighttankspawner
+Object.absolutePosition 563.023/77.8716/843.171
+Object.rotation 179.352/-0.0754579/1.52588e-005
+Object.setTeam 2
+
+
+Object.create ScoutCarSpawner
+Object.absolutePosition 562.049/77.4702/868.331
+Object.rotation 179.352/-0.441373/1.52588e-005
+Object.setTeam 2
+
+
+Object.create APCSpawner
+Object.absolutePosition 580.677/78.2001/872.065
+Object.rotation -89.6219/0.0103454/-1.16164
+Object.setTeam 2
+
+
+
+Object.create FighterSpawner
+Object.absolutePosition 495.081/78.1042/886.874
+Object.rotation 91.616/-12.871/1.52588e-005
+Object.setTeam 2
+
+
+Object.create DiveBomberSpawner
+Object.absolutePosition 490.64/79.15/899.592
+Object.rotation 90.3638/-10.3916/-1.58968
+Object.setOSId 2
+
+
+rem *****************************************
+rem ****        Openbase Base3           *****
+rem ****************************************
+
+Object.create AAGunSpawner
+Object.absolutePosition 684.391/93.4701/553.988
+Object.rotation -90.792/0/1.52588e-005
+Object.setOSId 3
+
+Object.create ArtillerySpawner 
+Object.absolutePosition 635.281/83.6894/552.097
+Object.rotation -91.119/0.0968891/0.690414
+Object.setOSId 3
+
+Object.create ArtillerySpawner
+Object.absolutePosition 634.986/83.7747/560.106
+Object.rotation -89.8568/0.1112/0.691544
+Object.setOSId 3
+
+rem *****************************************
+rem ****        Openbasecammo          *****
+rem ****************************************
+
+Object.create heavytankspawner
+Object.absolutePosition 496.456/85.524/583.978
+Object.rotation -171.783/0.66694/1.52588e-005
+Object.setTeam 2
+
+
+
+spawnPointManager.makeAverageGroupPositions
+
+rem EndOfFile

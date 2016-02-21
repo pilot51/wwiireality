@@ -1,0 +1,438 @@
+
+rem *****************************************
+rem ****          ALLIES BASE          *****
+rem ****************************************
+
+Object.create alliesSpawnPoint_frenchfarm1
+Object.absolutePosition 1045.49/50.07/1664.01
+Object.rotation -90.7921/0/0.062561
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_frenchfarm2
+Object.absolutePosition 1044.98/50.7811/1771.67
+Object.rotation -178.776/0/0.0593567
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_frenchfarm3
+Object.absolutePosition 907.359/50.797/1753.61
+Object.rotation 108.72/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_frenchfarm4
+Object.absolutePosition 955.732/50.7615/1691.21
+Object.rotation 2.51987/0/0.0197906
+
+
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_frenchfarm5
+Object.absolutePosition 911.481/50.8593/1754.28
+Object.rotation 90.72/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_frenchfarm6
+Object.absolutePosition 958.951/50.6901/1690.76
+Object.rotation 2.51987/0/0.0197906
+
+
+
+
+
+
+
+
+rem *****************************************
+rem ****       OpenSpawnPoint_alliedside_ironbrdgbunker        *****
+rem ****************************************
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_in_cityhouse_ironbridge
+Object.absolutePosition 1157.96/34.4257/1216.56
+Object.rotation 91.962/0/0.0839386
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_ironbrdg_bunker
+Object.absolutePosition 1210.57/40.8817/1227.62
+Object.rotation -140.742/0/0.102798
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_ironbrdg_new1 
+Object.absolutePosition 1202.85/40.6476/1224.06
+Object.rotation -135.036/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_ironbrdg_new2 
+Object.absolutePosition 1216.86/40.6453/1233.5
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_ironbrdg_new3 
+Object.absolutePosition 1218.5/40.6453/1225.07
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_ironbrdg_new4 
+Object.absolutePosition 1202.95/40.103/1233.54
+Object.rotation -90.288/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_ironbrdg_new5 
+Object.absolutePosition 1211.59/40.6457/1235.11
+Object.rotation -24.948/0/0.0395813
+
+
+
+
+rem *****************************************
+rem ****       OpenSpawnPoint_alliedside_niceblock        *****
+rem ****************************************
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_niceblock_stair
+Object.absolutePosition 1073.08/34.8823/1258.25
+Object.rotation 129.096/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_niceblock_boutic
+Object.absolutePosition 1113.21/34.703/1225.17
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_niceblock_new1 
+Object.absolutePosition 1152.16/34.357/1265.62
+Object.rotation -168.3/0/0.062561
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_niceblock_new2 
+Object.absolutePosition 1075/34.3547/1232.45
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_niceblock_new3 
+Object.absolutePosition 1075.7/34.3569/1285.26
+Object.rotation 96.228/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_niceblock_new4 
+Object.absolutePosition 1092.37/34.3547/1268.17
+Object.rotation 136.224/0/0.0342712
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_niceblock_new5 
+Object.absolutePosition 1103.63/34.4232/1231.73
+Object.rotation -46.332/0/0.0523529
+
+
+rem *****************************************
+rem ****       PARASHUTE_SPWAWNPOINT       *****
+rem ****************************************
+
+Object.create ParashutSpawnPoint_1 
+Object.absolutePosition 914.51/140/1436.26
+Object.rotation 137.808/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create ParashutSpawnPoint_2 
+Object.absolutePosition 962.773/170/1405.55
+Object.rotation 89.892/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create ParashutSpawnPoint_3 
+Object.absolutePosition 931.417/140/1469.75
+Object.rotation 89.892/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create ParashutSpawnPoint_4 
+Object.absolutePosition 909.154/160/1407.94
+Object.rotation 89.892/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create ParashutSpawnPoint_5 
+Object.absolutePosition 935.369/180/1414.4
+Object.rotation 89.892/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create ParashutSpawnPoint_6 
+Object.absolutePosition 938.932/150/1445.24
+Object.rotation 89.892/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create ParashutSpawnPoint_7 
+Object.absolutePosition 926.871/100/1377.79
+Object.rotation 89.892/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create ParashutSpawnPoint_8 
+Object.absolutePosition 898.663/100/1427.72
+Object.rotation 89.892/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create ParashutSpawnPoint_9 
+Object.absolutePosition 945.386/160/1371.31
+Object.rotation 89.892/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create ParashutSpawnPoint_10 
+Object.absolutePosition 956.847/150/1385.41
+Object.rotation 89.892/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create ParashutSpawnPoint_11 
+Object.absolutePosition 951.263/170/1429.53
+Object.rotation 89.892/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create ParashutSpawnPoint_12 
+Object.absolutePosition 948.024/150/1400.76
+Object.rotation 89.892/0/1.52588e-005
+
+rem *****************************************
+rem ****       OpenSpawnPoint_alliedside_church       *****
+rem ****************************************
+
+Object.create OpenSpawnPoint_church
+Object.absolutePosition 1084.84/34.6985/1422.28
+Object.rotation -89.856/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_church_house
+Object.absolutePosition 1133.96/34.3617/1437.67
+Object.rotation 129.096/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_church_new1
+Object.absolutePosition 1077.25/34.3594/1408.21
+Object.rotation 46.3679/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_church_new2 
+Object.absolutePosition 1106.51/34.5435/1455.68
+Object.rotation 155.268/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_church_new3 
+Object.absolutePosition 1132.29/34.3764/1459.14
+Object.rotation 155.268/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_church_new4 
+Object.absolutePosition 1144.88/34.3617/1440.87
+Object.rotation -129.492/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_church_new5 
+Object.absolutePosition 1138.69/34.3652/1405.66
+Object.rotation -129.492/0/0.0279846
+
+
+
+
+
+rem *********************************************
+
+
+
+
+rem *****************************************
+rem ****       OpenSpawnPoint_axisside_ironbrdgbunker        *****
+rem ****************************************
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_bunker1_ironbrdg_left
+Object.absolutePosition 1145.78/41.4043/942.55
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_bunker1_ironbrdg_right
+Object.absolutePosition 1212.01/48.1403/934.838
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_greyhouse
+Object.absolutePosition 1090.36/36.3859/949.98
+Object.rotation 0.233231/0/0.0791321
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_yellowhouse
+Object.absolutePosition 1092.75/34.88/797.643
+Object.rotation 99.216/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_redhouse
+Object.absolutePosition 1301.93/34.8776/739.612
+Object.rotation 0.233231/0/0.0791321
+rem
+rem ***  ***
+rem
+Object.create axisSpawnPoint_1
+Object.absolutePosition 1266.62/34.5679/825.013
+Object.rotation -164.88/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create axisSpawnPoint_2
+Object.absolutePosition 1091.38/34.8479/801.974
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create axisSpawnPoint_3
+Object.absolutePosition 1263.12/34.7405/757.016
+Object.rotation -50.4/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create axisSpawnPoint_4
+Object.absolutePosition 1301.02/34.9192/740.855
+Object.rotation -50.4/0/0.0279846
+
+rem *****************************************
+rem ****       OpenSpawnPoint_alliedside_stnbrdgbunker       *****
+rem ****************************************
+rem
+rem ***  ***
+rem
+Object.create stnbrdg_1 
+Object.absolutePosition 932.5/38.0956/1157.5
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create stnbrdg_2 
+Object.absolutePosition 972/37.8381/1164.5
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create stnbrdg_3 
+Object.absolutePosition 967.64/38.6173/1164.2
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create stnbrdg_4 
+Object.absolutePosition 970.64/38.0728/1166.2
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create stnbrdg_5 
+Object.absolutePosition 968.64/38.568/1166.2
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create stnbrdg_6 
+Object.absolutePosition 930.25/38.676/1156.5
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create stnbrdg_7 
+Object.absolutePosition 970.64/38.2242/1162.2
+Object.rotation 0/0/1.52588e-005
+
+
+beginrem
+
+
+
+rem *****************************************
+rem ****       OpenSpawnPoint_alliedside_gettoblock           *****
+rem ****************************************
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_gettoblock_stair
+Object.absolutePosition 1246.28/34.8262/1326.53
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_gettoblock_room
+Object.absolutePosition 1212.06/35.0171/1289.19
+Object.rotation 0/0/1.52588e-005
+
+
+
+rem *****************************************
+rem ****       OpenSpawnPoint_axisside_stnbrgbunker         *****
+rem ****************************************
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_bunker1_stnbridge
+Object.absolutePosition 967.872/40.8486/1007.56
+Object.rotation 0/0/1.52588e-005
+
+
+
+Object.create OpenSpawnPoint_stnbridge_bunker
+Object.absolutePosition 966.47/38.8449/1155.45
+Object.rotation -140.742/0/0.102798
+
+rem *****************************************
+rem ****          AXIS BASE            *****
+rem ****************************************
+
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_field1
+Object.absolutePosition 1070.51/34.5693/629.311
+Object.rotation 1.51168/0/0.062561
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_field2
+Object.absolutePosition 1100.66/34.5693/628.515
+Object.rotation 1.51168/0/0.062561
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_field3
+Object.absolutePosition 1091.98/34.5825/672.187
+Object.rotation 1.51168/0/0.062561
+
+endrem

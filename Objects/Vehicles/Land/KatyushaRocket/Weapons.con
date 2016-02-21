@@ -3,7 +3,7 @@ ObjectTemplate.geometry r_rocket_m1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.setHasPointPhysics 0
-ObjectTemplate.drag 1.0
+ObjectTemplate.drag 1
 ObjectTemplate.mass 41.5
 ObjectTemplate.startEffectTemplate e_KatyushaFume
 ObjectTemplate.hasCollisionEffect 1

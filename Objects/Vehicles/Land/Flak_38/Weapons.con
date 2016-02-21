@@ -22,16 +22,16 @@ ObjectTemplate.roundOfFire 3
 ObjectTemplate.recoilSpeed 10
 ObjectTemplate.recoilSize 3
 
-BeginRem
+rem BeginRem
 ObjectTemplate.addTemplate e_shellAAgun
 ObjectTemplate.setInputId 0
 ObjectTemplate.startoneffects 1
-ObjectTemplate.setPosition 0/0.02/-3.72
+ObjectTemplate.setPosition 0/0/-0.6
 ObjectTemplate.setRotation 0/0/0
-TimeToLiveAfterDeath 3
-FadeAtTimeToLiveAfterDeath 1
-TimeToStartFadeAfterDeath 2
-EndRem
+ObjectTemplate.TimeToLiveAfterDeath 3
+ObjectTemplate.FadeAtTimeToLiveAfterDeath 1
+ObjectTemplate.TimeToStartFadeAfterDeath 2
+rem EndRem
 
 rem *** Flak38_Projectile ***
 ObjectTemplate.create Projectile Flak38_Projectile
@@ -42,6 +42,7 @@ ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.timeToLive CRD_UNIFORM/0.8/1.2/0
 ObjectTemplate.endEffectTemplate e_FlakBig
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.damageType 4
 ObjectTemplate.material 228

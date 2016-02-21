@@ -1,0 +1,183 @@
+rem *****************************************
+rem ****          AXIS BASE            *****
+rem ****************************************
+
+
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_1
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 8
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_2 
+ObjectTemplate.setSpawnId 1
+ObjectTemplate.setGroup 8
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_3
+ObjectTemplate.setSpawnId 2
+ObjectTemplate.setGroup 8
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_4
+ObjectTemplate.setSpawnId 3
+ObjectTemplate.setGroup 8
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_5
+ObjectTemplate.setSpawnId 4
+ObjectTemplate.setGroup 8
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_airfield_1
+ObjectTemplate.setSpawnId 5
+ObjectTemplate.setGroup 9
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_airfield_2
+ObjectTemplate.setSpawnId 6
+ObjectTemplate.setGroup 9
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_airfield_3
+ObjectTemplate.setSpawnId 7
+ObjectTemplate.setGroup 9
+
+
+
+rem *****************************************
+rem ****        ALLIES BASE            *****
+rem ****************************************
+
+
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_1
+ObjectTemplate.setSpawnId 8
+ObjectTemplate.setGroup 7
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_2
+ObjectTemplate.setSpawnId 9
+ObjectTemplate.setGroup 7
+
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_3
+ObjectTemplate.setSpawnId 10
+ObjectTemplate.setGroup 7
+
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_4
+ObjectTemplate.setSpawnId 11
+ObjectTemplate.setGroup 7
+
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_5
+ObjectTemplate.setSpawnId 12
+ObjectTemplate.setGroup 7
+
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_airfield_1
+ObjectTemplate.setSpawnId 13
+ObjectTemplate.setGroup 10
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_airfield_2
+ObjectTemplate.setSpawnId 14
+ObjectTemplate.setGroup 10
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_airfield_3
+ObjectTemplate.setSpawnId 15
+ObjectTemplate.setGroup 10
+
+
+
+rem ****************************************
+rem ****   controlpoint_allies_right       *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_right_1
+ObjectTemplate.setSpawnId 16
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_right_2
+ObjectTemplate.setSpawnId 17
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_right_3
+ObjectTemplate.setSpawnId 18
+ObjectTemplate.setGroup 1
+
+rem **************************************
+rem **** controlpoint_allies_middle    *****
+rem *************************************
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_middle_1
+ObjectTemplate.setSpawnId 19
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_middle_2
+ObjectTemplate.setSpawnId 20
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_middle_3
+ObjectTemplate.setSpawnId 21
+ObjectTemplate.setGroup 2
+
+rem *************************************
+rem **** controlpoint_allies_left  *****
+rem *************************************
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_left_1
+ObjectTemplate.setSpawnId 22
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_left_2
+ObjectTemplate.setSpawnId 23
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_left_3
+ObjectTemplate.setSpawnId 24
+ObjectTemplate.setGroup 3
+
+
+
+rem ****************************************
+rem ****   controlpoint_axis_right       *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_right_1
+ObjectTemplate.setSpawnId 25
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_right_2
+ObjectTemplate.setSpawnId 26
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_right_3
+ObjectTemplate.setSpawnId 27
+ObjectTemplate.setGroup 4
+
+rem **************************************
+rem **** controlpoint_axis_middle    *****
+rem *************************************
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_middle_1
+ObjectTemplate.setSpawnId 28
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_middle_2
+ObjectTemplate.setSpawnId 29
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_middle_3
+ObjectTemplate.setSpawnId 30
+ObjectTemplate.setGroup 5
+
+rem *************************************
+rem **** controlpoint_axis_left  *****
+rem *************************************
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_left_1
+ObjectTemplate.setSpawnId 31
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_left_2
+ObjectTemplate.setSpawnId 32
+ObjectTemplate.setGroup 6
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_left_3
+ObjectTemplate.setSpawnId 33
+ObjectTemplate.setGroup 6
+
+rem EndOfFile

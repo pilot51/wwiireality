@@ -12,21 +12,21 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.drag 3
 ObjectTemplate.mass 2100000
 ObjectTemplate.hasArmor 1
-ObjectTemplate.hitpoints 300
-ObjectTemplate.maxhitpoints 300
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
 ObjectTemplate.material 55
 ObjectTemplate.criticalDamage 50
 ObjectTemplate.hpLostWhileCriticalDamage 5
 ObjectTemplate.explosionForceMod 10
 ObjectTemplate.dontClearTeamOnExit 1
-ObjectTemplate.addArmorEffect 200 em_ExFumePOW 0/17/-9
-ObjectTemplate.addArmorEffect 200 em_ExFumePOW 0/17/6
-ObjectTemplate.addArmorEffect 150 em_ExFumePOW 0/17/6
-ObjectTemplate.addArmorEffect 150 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 200 em_ExFumePOW 0/14/-7
+ObjectTemplate.addArmorEffect 200 em_ExFumePOW 0/14/7
+ObjectTemplate.addArmorEffect 150 em_ExFumePOW 0/14/7
+ObjectTemplate.addArmorEffect 150 em_ExFumePOW 0/14/-7
 ObjectTemplate.addArmorEffect 150 em_FletcherDamage 0/0/0
 ObjectTemplate.addArmorEffect 150 em_FletcherDamage 0/0/20
 ObjectTemplate.addArmorEffect 150 em_FletcherDamage 0/0/-30
-ObjectTemplate.addArmorEffect 100 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 100 em_ExFumePOW 0/14/-7
 ObjectTemplate.addArmorEffect 100 em_FletcherDamage 0/0/0
 ObjectTemplate.addArmorEffect 100 em_FletcherDamage 0/0/20
 ObjectTemplate.addArmorEffect 100 em_FletcherDamage 0/0/-30
@@ -85,7 +85,7 @@ ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_depthcharge.tga"
 ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTDestroyer
 ObjectTemplate.setToolTipType  TTDestroyer
@@ -184,7 +184,9 @@ ObjectTemplate.addTemplate Ammobox
 ObjectTemplate.setPosition -0.169/4.06/15.872
 ObjectTemplate.addTemplate AnimatedUsFlag
 ObjectTemplate.setPosition 0/29.2/12.9
-
+ObjectTemplate.addTemplate Fletcher_Rud
+ObjectTemplate.setPosition 0.1/0.2/-55
+ObjectTemplate.setRotation 180/0/0
 rem -------------------------------------
 
 
@@ -261,10 +263,30 @@ ObjectTemplate.setContinousRotationSpeed 30/0/0
 
 rem *** Fletcher_propeller ***
 ObjectTemplate.create RotationalBundle Fletcher_propeller
+ObjectTemplate.setNetworkableInfo FletcherEngineInfo
+ObjectTemplate.geometry Fletch_prop_m1
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/-1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+
+beginrem
+ObjectTemplate.create RotationalBundle Fletcher_propeller
 ObjectTemplate.geometry Fletch_prop_m1
 ObjectTemplate.setMinRotation 0/-20/0
 ObjectTemplate.setMaxRotation 0/5/0
 ObjectTemplate.setMaxSpeed 90/90/90
+endrem
+
+rem *** Fletcher_Rud ***
+ObjectTemplate.create RotationalBundle Fletcher_Rud
+ObjectTemplate.setNetworkableInfo FletcherRudderInfo
+ObjectTemplate.geometry Fletch_Rudder_M1
+ObjectTemplate.setMinRotation -25/0/0
+ObjectTemplate.setMaxRotation 25/0/0
+ObjectTemplate.setMaxSpeed 15/0/0
+ObjectTemplate.setAcceleration -10/0/0
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setInputToYaw c_PIYaw
 
 
 rem *** Fletcher_Back_Canons_PCO ***
@@ -289,7 +311,7 @@ ObjectTemplate.setVehicleIconPos 30/60
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTDestroyer
 ObjectTemplate.setToolTipType  TTDestroyer
@@ -326,11 +348,11 @@ rem *** Fletcher_cannon_barrel_Back ***
 ObjectTemplate.create RotationalBundle Fletcher_cannon_barrel_Back
 ObjectTemplate.setNetworkableInfo FletcherCannonInfo
 ObjectTemplate.loadSoundScript ../Common/Sounds/smalltower.ssc
-ObjectTemplate.geometry Fletch_canonbar_m1
-ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.geometry Fletch_canonbar_m1
+rem ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate Fletcher_GunBarrel
-ObjectTemplate.setPosition 0/0/8.7
+ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate Fletcher_Camera
 ObjectTemplate.setPosition -0.499/0.5/0.8
 ObjectTemplate.addTemplate lodShipCockpit
@@ -376,11 +398,11 @@ rem *** Fletcher_cannon_barrel ***
 ObjectTemplate.create RotationalBundle Fletcher_cannon_barrel
 ObjectTemplate.setNetworkableInfo FletcherCannonInfo
 ObjectTemplate.loadSoundScript ../Common/Sounds/smalltower.ssc
-ObjectTemplate.geometry Fletch_canonbar_m1
-ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.geometry Fletch_canonbar_m1
+rem ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate Fletcher_GunBarrel
-ObjectTemplate.setPosition 0/0/8.7
+ObjectTemplate.setPosition 0/0/0
 rem -------------------------------------
 ObjectTemplate.setMinRotation 0/-85/0
 ObjectTemplate.setMaxRotation 0/15/0
@@ -416,11 +438,11 @@ rem *** Fletcher_cannon_barrel_Front ***
 ObjectTemplate.create RotationalBundle Fletcher_cannon_barrel_Front
 ObjectTemplate.setNetworkableInfo FletcherCannonInfo
 ObjectTemplate.loadSoundScript ../Common/Sounds/smalltower.ssc
-ObjectTemplate.geometry Fletch_canonbar_m1
-ObjectTemplate.hasCollisionPhysics 1
+rem ObjectTemplate.geometry Fletch_canonbar_m1
+rem ObjectTemplate.hasCollisionPhysics 1
 rem -------------------------------------
 ObjectTemplate.addTemplate Fletcher_GunBarrel
-ObjectTemplate.setPosition 0/0/8.7
+ObjectTemplate.setPosition 0/0/0
 ObjectTemplate.addTemplate Fletcher_Camera
 ObjectTemplate.setPosition -0.499/0.5/0.8
 ObjectTemplate.addTemplate lodShipCockpit
@@ -458,7 +480,7 @@ ObjectTemplate.setVehicleIcon "Vehicle/Icon_fletcher.tga"
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
 ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
-ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTDestroyer
 ObjectTemplate.setToolTipType  TTDestroyer
@@ -695,7 +717,7 @@ rem ****************************************************************************
 
 
 
-rem *** Fletcher ***
+rem *** Fletcher2 ***
 ObjectTemplate.create PlayerControlObject Fletcher2
 ObjectTemplate.setNetworkableInfo FletcherBodyInfo
 ObjectTemplate.saveInSeparateFile 1
@@ -713,10 +735,10 @@ ObjectTemplate.criticalDamage 50
 ObjectTemplate.hpLostWhileCriticalDamage 5
 ObjectTemplate.explosionForceMod 10
 ObjectTemplate.dontClearTeamOnExit 1
-ObjectTemplate.addArmorEffect 200 em_ExFumePOW 0/17/-9
-ObjectTemplate.addArmorEffect 200 em_ExFumePOW 0/17/6
-ObjectTemplate.addArmorEffect 150 em_ExFumePOW 0/17/6
-ObjectTemplate.addArmorEffect 150 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 200 em_ExFumePOW 0/14/-7
+ObjectTemplate.addArmorEffect 200 em_ExFumePOW 0/14/7
+ObjectTemplate.addArmorEffect 150 em_ExFumePOW 0/14/7
+ObjectTemplate.addArmorEffect 150 em_ExFumePOW 0/14/-7
 ObjectTemplate.addArmorEffect 150 em_FletcherDamage 0/0/0
 ObjectTemplate.addArmorEffect 150 em_FletcherDamage 0/0/20
 ObjectTemplate.addArmorEffect 150 em_FletcherDamage 0/0/-30
@@ -778,9 +800,265 @@ ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
 ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
 ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_depthcharge.tga"
 ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTDestroyer
 ObjectTemplate.setToolTipType  TTDestroyer
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
 ObjectTemplate.setMinimapIconSize 32
+
+
+
+rem *** Fletcher3DriverSoldierSpawn ***
+ObjectTemplate.create SpawnPoint Fletcher3DriverSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 48
+rem ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** Fletcher3SoldierSpawn ***
+ObjectTemplate.create SpawnPoint Fletcher3SoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 49
+rem ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** Fletcher4DriverSoldierSpawn ***
+ObjectTemplate.create SpawnPoint Fletcher4DriverSoldierSpawnAlt
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 60
+rem ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** Fletcher4SoldierSpawn ***
+ObjectTemplate.create SpawnPoint Fletcher4SoldierSpawnAlt
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 61
+rem ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+rem *** Fletcher3 ***
+ObjectTemplate.create PlayerControlObject Fletcher3
+ObjectTemplate.setNetworkableInfo FletcherBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 3
+ObjectTemplate.mass 2100000
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 55
+ObjectTemplate.criticalDamage 50
+ObjectTemplate.hpLostWhileCriticalDamage 5
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.addArmorEffect 200 em_ExFumePOW 0/14/-7
+ObjectTemplate.addArmorEffect 200 em_ExFumePOW 0/14/7
+ObjectTemplate.addArmorEffect 150 em_ExFumePOW 0/14/7
+ObjectTemplate.addArmorEffect 150 em_ExFumePOW 0/14/-7
+ObjectTemplate.addArmorEffect 150 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 150 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 150 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 100 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 100 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 100 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 100 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 100 e_waterBoatSink 0/0/0
+ObjectTemplate.addArmorEffect 50 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 50 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 50 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 50 e_waterBoatSink 0/5/0
+ObjectTemplate.addArmorEffect 50 e_waterBoatSinkEf 0/-2/-5
+ObjectTemplate.addArmorEffect 50 e_waterBoatSinkEf 0/-2/25
+ObjectTemplate.addArmorEffect 50 e_waterBoatSinkEf 0/-2/-35
+ObjectTemplate.timetoliveafterdeath 600
+ObjectTemplate.timeToStartFadeAfterDeath 570
+ObjectTemplate.aiTemplate FletcherAI
+rem -------------------------------------
+ObjectTemplate.addTemplate lodFletcher
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition -1.999/7.5/50
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition 2/7.5/50
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition -4.999/7.5/17
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition 5/7.5/17
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition -4.999/7.5/-16.999
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition 5/7.5/-16.999
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition -1.999/7.5/-49.999
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition 2/7.5/-49.999
+ObjectTemplate.addTemplate Fletcher3DriverSoldierSpawn
+ObjectTemplate.setPosition 0/5/32.5
+ObjectTemplate.addTemplate Fletcher3SoldierSpawn
+ObjectTemplate.setPosition 3/5/-43.699
+ObjectTemplate.addTemplate Fletcher3SoldierSpawn
+ObjectTemplate.setPosition -2.999/5/-43.699
+ObjectTemplate.addTemplate FletcherLcvpSpawner
+ObjectTemplate.setPosition 7.2/0.3/-43.699
+ObjectTemplate.setRotation 6/0/0
+ObjectTemplate.addTemplate FletcherLcvpSpawner
+ObjectTemplate.setPosition -7.2/0.3/-43.699
+ObjectTemplate.setRotation -5.999/0/0
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.addPcoPosId 1
+rem ObjectTemplate.addPcoPosId 2
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setSoldierExitLocation -0.2/7.5/20 0/0/0
+ObjectTemplate.GUIIndex 40
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_fletcher.tga"
+ObjectTemplate.setVehicleIconPos 95/95
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_depthcharge.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+
+rem *** Fletcher4 ***
+ObjectTemplate.create PlayerControlObject Fletcher4
+ObjectTemplate.setNetworkableInfo FletcherBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 3
+ObjectTemplate.mass 2100000
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 55
+ObjectTemplate.criticalDamage 50
+ObjectTemplate.hpLostWhileCriticalDamage 5
+ObjectTemplate.explosionForceMod 10
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.addArmorEffect 200 em_ExFumePOW 0/14/-7
+ObjectTemplate.addArmorEffect 200 em_ExFumePOW 0/14/7
+ObjectTemplate.addArmorEffect 150 em_ExFumePOW 0/14/7
+ObjectTemplate.addArmorEffect 150 em_ExFumePOW 0/14/-7
+ObjectTemplate.addArmorEffect 150 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 150 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 150 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 100 em_ExFumePOW 0/17/-9
+ObjectTemplate.addArmorEffect 100 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 100 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 100 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 100 e_waterBoatSink 0/0/0
+ObjectTemplate.addArmorEffect 50 em_FletcherDamage 0/0/0
+ObjectTemplate.addArmorEffect 50 em_FletcherDamage 0/0/20
+ObjectTemplate.addArmorEffect 50 em_FletcherDamage 0/0/-30
+ObjectTemplate.addArmorEffect 50 e_waterBoatSink 0/5/0
+ObjectTemplate.addArmorEffect 50 e_waterBoatSinkEf 0/-2/-5
+ObjectTemplate.addArmorEffect 50 e_waterBoatSinkEf 0/-2/25
+ObjectTemplate.addArmorEffect 50 e_waterBoatSinkEf 0/-2/-35
+ObjectTemplate.timetoliveafterdeath 600
+ObjectTemplate.timeToStartFadeAfterDeath 570
+ObjectTemplate.aiTemplate FletcherStaticAI
+rem -------------------------------------
+ObjectTemplate.addTemplate lodFletcher
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition -1.999/7.5/50
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition 2/7.5/50
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition -4.999/7.5/17
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition 5/7.5/17
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition -4.999/7.5/-16.999
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition 5/7.5/-16.999
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition -1.999/7.5/-49.999
+ObjectTemplate.addTemplate Fletcher_Floater
+ObjectTemplate.setPosition 2/7.5/-49.999
+ObjectTemplate.addTemplate Fletcher4DriverSoldierSpawnAlt
+ObjectTemplate.setPosition 0/5/32.5
+ObjectTemplate.addTemplate Fletcher4SoldierSpawnAlt
+ObjectTemplate.setPosition 3/5/-43.699
+ObjectTemplate.addTemplate Fletcher4SoldierSpawnAlt
+ObjectTemplate.setPosition -2.999/5/-43.699
+ObjectTemplate.addTemplate FletcherLcvpSpawner
+ObjectTemplate.setPosition 7.2/0.3/-43.699
+ObjectTemplate.setRotation 6/0/0
+ObjectTemplate.addTemplate FletcherLcvpSpawner
+ObjectTemplate.setPosition -7.2/0.3/-43.699
+ObjectTemplate.setRotation -5.999/0/0
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.addPcoPosId 1
+rem ObjectTemplate.addPcoPosId 2
+ObjectTemplate.sonarPos 1
+ObjectTemplate.setSoldierExitLocation -0.2/7.5/20 0/0/0
+ObjectTemplate.GUIIndex 40
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_fletcher.tga"
+ObjectTemplate.setVehicleIconPos 95/95
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABReloadBarOnly
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_depthcharge.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTDestroyer
+ObjectTemplate.setToolTipType  TTDestroyer
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_destoyer_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+
+
+
+
+
+beginrem
+rem ************** Delete this padding as room is needed for editing within winRFA **************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem *********************************************************************************************
+rem ************** Delete this padding as room is needed for editing within winRFA **************
+endrem

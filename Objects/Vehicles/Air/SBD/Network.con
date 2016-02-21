@@ -10,5 +10,6 @@ NetworkableInfo.setPredictionMode PMLinear
 NetworkableInfo.createNewInfo SBDTurretInfo
 NetworkableInfo.setPredictionMode PMLinear
 
-
-
+NetworkableInfo.createNewInfo SBDFlapInfo
+NetworkableInfo.setPredictionMode PMUsePhysics
+NetworkableInfo.setForceNetworkableId 1

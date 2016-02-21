@@ -1,0 +1,26 @@
+rem ----------------------------------------- 
+rem ---  Allies_WestAirfield_Spawn Group  ---
+rem ----------------------------------------- 
+beginrem
+spawnPointManager.group 97
+spawnPointManager.groupTeam 2
+spawnPointManager.groupEnableToChangeTeam 0
+spawnPointManager.groupIcon test2.tga
+endrem
+
+rem *** Allies_Factory_Spawn ***
+ObjectTemplate.create Bundle Allies_WestAirfield_Spawn
+rem ----------------------------------------- 
+ObjectTemplate.addTemplate WestAirfield_SoldierSpawn
+ObjectTemplate.setPosition -5/0/5
+ObjectTemplate.setRotation 0/0/0
+
+
+rem *** FactorySoldierSpawn1 ***
+ObjectTemplate.create SpawnPoint WestAirfield_SoldierSpawn
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 97
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 0
+ObjectTemplate.setSpawnAsParaTroper 0
+

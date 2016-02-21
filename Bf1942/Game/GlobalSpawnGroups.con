@@ -143,3 +143,148 @@ spawnPointManager.groupIcon test2.tga
 rem spawnPointManager.groupStatus 0
 
 rem -------------------------------------------------------------------
+rem -------------------------------------------------------------------
+
+beginrem
+rem *** Yamato2 ***
+spawnPointManager.group 44
+spawnPointManager.groupTeam 1
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem *** Yamato2 Driver ***
+spawnPointManager.group 45
+spawnPointManager.groupTeam 1
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem -------------------------------------------------------------------
+
+rem *** PrinceOW2 Driver ***
+spawnPointManager.group 46
+spawnPointManager.groupTeam 2
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem *** PrinceOW2 ***
+spawnPointManager.group 47
+spawnPointManager.groupTeam 2
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem -------------------------------------------------------------------
+
+rem *** Fletcher3 Driver ***
+spawnPointManager.group 48
+spawnPointManager.groupTeam 2
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem *** Fletcher3 ***
+spawnPointManager.group 49
+spawnPointManager.groupTeam 2
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem -------------------------------------------------------------------
+
+rem *** Hatsuzuki3 Driver ***
+spawnPointManager.group 50
+spawnPointManager.groupTeam 1
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem *** Hatsuzuki3 ***
+spawnPointManager.group 51
+spawnPointManager.groupTeam 1
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem -------------------------------------------------------------------
+
+rem *** Enterprise2 Driver ***
+spawnPointManager.group 52
+spawnPointManager.groupTeam 2
+spawnPointManager.groupIcon test2.tga
+spawnPointManager.onlyForHuman 1
+rem spawnPointManager.groupStatus 0
+
+rem *** Enterprise2 Lcvp ***
+spawnPointManager.group 53
+spawnPointManager.groupTeam 2
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem *** Enterprise2 AirCraft ***
+spawnPointManager.group 54
+spawnPointManager.groupTeam 2
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem -------------------------------------------------------------------
+
+rem *** Shokaku2 Driver ***
+spawnPointManager.group 55
+spawnPointManager.groupTeam 1
+spawnPointManager.groupIcon test2.tga
+spawnPointManager.onlyForHuman 1
+rem spawnPointManager.groupStatus 0
+
+rem *** Shokaku2 Lcvp ***
+spawnPointManager.group 56
+spawnPointManager.groupTeam 1
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem *** Shokaku2 AirCraft ***
+spawnPointManager.group 57
+spawnPointManager.groupTeam 1
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem -------------------------------------------------------------------
+
+rem *** Sub7c2 Driver ***
+spawnPointManager.group 58
+spawnPointManager.groupTeam 1
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem -------------------------------------------------------------------
+
+rem *** Gato2 Driver ***
+spawnPointManager.group 59
+spawnPointManager.groupTeam 2
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem -------------------------------------------------------------------
+
+rem *** Alternative Fletcher4 Driver ***
+spawnPointManager.group 60
+spawnPointManager.groupTeam 2
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem *** Alternative Fletcher4 ***
+spawnPointManager.group 61
+spawnPointManager.groupTeam 2
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem -------------------------------------------------------------------
+
+rem *** Alternative Hatsuzuki4 Driver ***
+spawnPointManager.group 62
+spawnPointManager.groupTeam 1
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem *** Alternative Hatsuzuki4 ***
+spawnPointManager.group 63
+spawnPointManager.groupTeam 1
+spawnPointManager.groupIcon test2.tga
+rem spawnPointManager.groupStatus 0
+
+rem -------------------------------------------------------------------
+endrem

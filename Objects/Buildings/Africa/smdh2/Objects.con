@@ -4,7 +4,7 @@ objectTemplate.aiTemplate smdh2_m1
 ObjectTemplate.addTemplate lodsmdh2
 
 LodSelectorTemplate.create DistanceSelector smdh2Selector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodsmdh2
 ObjectTemplate.lodselector smdh2Selector
 ObjectTemplate.addTemplate smdh2Interior

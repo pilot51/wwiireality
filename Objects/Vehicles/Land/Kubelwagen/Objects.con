@@ -1,5 +1,4 @@
 
-
 rem *** Kubelwagen ***
 ObjectTemplate.create PlayerControlObject Kubelwagen
 ObjectTemplate.NameTagOffset 0/-0.2/0
@@ -23,7 +22,7 @@ ObjectTemplate.maxhitpoints 50
 ObjectTemplate.material 45
 ObjectTemplate.criticalDamage 6
 ObjectTemplate.explosionForceMod 20
-ObjectTemplate.hpLostWhileCriticalDamage 2
+ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.hpLostWhileUpSideDown 5
 ObjectTemplate.hpLostWhileDamageFromWater 5
 ObjectTemplate.addArmorEffect 25 e_Kubeldamage 0/1.2/0
@@ -80,6 +79,10 @@ ObjectTemplate.addTemplate KubelwagenEntry
 ObjectTemplate.setPosition 0/0/-1
 ObjectTemplate.addTemplate KubelwagenPassangerSeat
 ObjectTemplate.setPosition 0.3/0/0
+ObjectTemplate.addTemplate KubelwagenPassangerSeat2
+ObjectTemplate.setPosition -0.3/0/-0.7
+ObjectTemplate.addTemplate KubelwagenPassangerSeat3
+ObjectTemplate.setPosition 0.3/0/-0.7
 ObjectTemplate.addTemplate KubelwagenEngine
 ObjectTemplate.addTemplate KubelwagenSteering
 ObjectTemplate.setPosition -0.276/0.368/0.546
@@ -163,6 +166,60 @@ ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
 ObjectTemplate.hasRestrictedExit 1
 
 
+rem *** KubelwagenPassangerSeat2 ***
+ObjectTemplate.create PlayerControlObject KubelwagenPassangerSeat2
+ObjectTemplate.setNetworkableInfo KubelwagenBodyInfo
+ObjectTemplate.aiTemplate KubelwagenPassenger
+rem -------------------------------------
+ObjectTemplate.addTemplate KubelwagenEntry
+ObjectTemplate.setPosition -0.3/0/1
+ObjectTemplate.addTemplate KubelwagenEntry
+ObjectTemplate.setPosition -0.3/0/-1
+ObjectTemplate.addTemplate KubelwagenCamera
+ObjectTemplate.setPosition 0/0.6/-0.4
+ObjectTemplate.addTemplate KubelwagenPassengerSeat
+ObjectTemplate.setPosition 0/0.25/0.1
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.5/0/0 0/0/0
+rem ObjectTemplate.GUIIndex 72
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_kubel.tga"
+ObjectTemplate.setVehicleIconPos 38/73
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** KubelwagenPassangerSeat3 ***
+ObjectTemplate.create PlayerControlObject KubelwagenPassangerSeat3
+ObjectTemplate.setNetworkableInfo KubelwagenBodyInfo
+ObjectTemplate.aiTemplate KubelwagenPassenger
+rem -------------------------------------
+ObjectTemplate.addTemplate KubelwagenEntry
+ObjectTemplate.setPosition -0.3/0/1
+ObjectTemplate.addTemplate KubelwagenEntry
+ObjectTemplate.setPosition -0.3/0/-1
+ObjectTemplate.addTemplate KubelwagenCamera
+ObjectTemplate.setPosition 0/0.6/-0.4
+ObjectTemplate.addTemplate KubelwagenPassengerSeat
+ObjectTemplate.setPosition 0/0.25/0.1
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.5/0/0 0/0/0
+rem ObjectTemplate.GUIIndex 72
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_kubel.tga"
+ObjectTemplate.setVehicleIconPos 26/76
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
 rem *** KubelwagenEntry2 ***
 ObjectTemplate.create EntryPoint KubelwagenEntry2
 ObjectTemplate.setEntryRadius 1.8
@@ -173,7 +230,7 @@ ObjectTemplate.create SeatObject KubelwagenPassengerSeat
 ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
 ObjectTemplate.seatFlags c_SeatIsOutside
 ObjectTemplate.seatAnimationUpperBody Ub_PassengerInKubelwagen
-ObjectTemplate.seatAnimationLowerBody Lb_PassengerInKubelwagen
+rem ObjectTemplate.seatAnimationLowerBody Lb_PassengerInKubelwagen
 
 
 rem *** KubelwagenFrontWheelL ***

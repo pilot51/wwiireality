@@ -1,0 +1,19 @@
+ObjectTemplate.create SimpleObject BaldOne_Tombstone_m1
+ObjectTemplate.geometry BaldOne_Tombstone_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject Littleman_Tombstone_m1
+ObjectTemplate.geometry Littleman_Tombstone_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject Killsoft_Tombstone_m1
+ObjectTemplate.geometry Killsoft_Tombstone_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject Chuckles_Tombstone_m1
+ObjectTemplate.geometry Chuckles_Tombstone_m1
+ObjectTemplate.setHasCollisionPhysics 1
+
+ObjectTemplate.create SimpleObject Xavos_Tombstone_m1
+ObjectTemplate.geometry Xavos_Tombstone_m1
+ObjectTemplate.setHasCollisionPhysics 1

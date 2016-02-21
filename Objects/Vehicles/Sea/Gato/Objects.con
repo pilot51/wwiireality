@@ -60,21 +60,25 @@ ObjectTemplate.addTemplate GatoDriverSoldierSpawn
 ObjectTemplate.setPosition 0/2.75/8.8
 rem -------------------------------------
 ObjectTemplate.subPos 1
+rem ObjectTemplate.sonarPos 1
 ObjectTemplate.setSoldierExitLocation 0/4.3/5 0/0/0
 ObjectTemplate.GUIIndex 86
 ObjectTemplate.setVehicleIcon "Vehicle/Icon_gato.tga"
 ObjectTemplate.setVehicleIconPos 60/85
-ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setNumberOfWeaponIcons 2
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_torpedo.tga"
 ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_torpedo.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
 ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCSea
 ObjectTemplate.setVehicleType VTSubmarine
-ObjectTemplate.setToolTipType  TTSubmarine
+ObjectTemplate.setToolTipType TTSubmarine
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_submarine_32x32.tga"
 ObjectTemplate.setMinimapIconSize 32
 rem *** <oxygenUsagerate> <oxygenFillrate> <oxygenDamageRate> <periscopeMinDepth> <periscopeMaxDepth> <maxDepth> <maxDepthDamageRate>
-ObjectTemplate.submarineData 0.009 0.03 1 10 19.5 40 5
+ObjectTemplate.submarineData 0.009 0.03 1 10 19.5 90 5
+rem ObjectTemplate.submarineData 0.1 0.1 1 1 19.5 30 5
 ObjectTemplate.setSubmarineHudDepthModifier 5.9
 ObjectTemplate.setSubmarineHudDirModifier 0.01
 
@@ -129,14 +133,21 @@ ObjectTemplate.addTemplate GatoRudderFrontR
 ObjectTemplate.setPosition 1.359/-0.776/47.214
 ObjectTemplate.addTemplate GatoRudderBackUD
 ObjectTemplate.setPosition 0/-3.317/-33.502
-ObjectTemplate.addTemplate TorpedTubBundleGato
-ObjectTemplate.setPosition 0/0/60
-rem ObjectTemplate.addTemplate TorpedTub
-rem ObjectTemplate.setPosition 1.6/-0.499/57.7
-rem ObjectTemplate.addTemplate TorpedTub
-rem ObjectTemplate.setPosition -1.6/-0.499/57.7
+ObjectTemplate.addTemplate TorpedTub1Gato
+ObjectTemplate.setPosition 0/0/56
+ObjectTemplate.addTemplate TorpedTub2Gato
+ObjectTemplate.setPosition 0/0/-41.5
+ObjectTemplate.setRotation 180/0/0
 ObjectTemplate.addTemplate GatoRadar
 ObjectTemplate.setPosition 0/10.177/19.022
+ObjectTemplate.addTemplate Gato_AA
+rem ObjectTemplate.setPosition 0/2.5/28
+ObjectTemplate.addTemplate GatoPropeller2
+ObjectTemplate.setPosition -2.08/-3.28/-31.5
+ObjectTemplate.addTemplate GatoPropeller1
+ObjectTemplate.setPosition 2.08/-3.28/-31.5
+ObjectTemplate.addTemplate Gato_Rud
+ObjectTemplate.setPosition 0/-3.85/-34.6
 rem -------------------------------------
 
 rem *** GatoDriverSoldierSpawn ***
@@ -156,6 +167,7 @@ ObjectTemplate.create EntryPoint GatoEntry
 ObjectTemplate.setEntryRadius 8
 
 
+beginrem
 rem *** GatoDaiHatsuSpawner ***
 ObjectTemplate.create ObjectSpawner GatoDaiHatsuSpawner
 ObjectTemplate.geometry spawnbutton_m1
@@ -169,6 +181,7 @@ ObjectTemplate.Distance 20
 ObjectTemplate.useButtonRadius 2
 ObjectTemplate.spawnOffset -5.5/-2/0
 ObjectTemplate.damageWhenLost 10
+endrem
 
 
 rem *** GatoCamera ***
@@ -189,6 +202,33 @@ ObjectTemplate.setAcceleration 10000/0/0
 ObjectTemplate.setContinousRotationSpeed 100/0/0
 
 
+rem *** GatoPropeller ***
+ObjectTemplate.create RotationalBundle GatoPropeller1
+ObjectTemplate.setNetworkableInfo GatoEngineInfo
+ObjectTemplate.geometry Gato_Prop01_m1
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/-1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+
+ObjectTemplate.create RotationalBundle GatoPropeller2
+ObjectTemplate.setNetworkableInfo GatoEngineInfo
+ObjectTemplate.geometry Gato_Prop02_m1
+ObjectTemplate.setMaxSpeed 0/0/1000
+ObjectTemplate.setAcceleration 0/0/1000
+ObjectTemplate.setInputToRoll c_PIThrottle
+
+rem *** Gato_Rud ***
+ObjectTemplate.create RotationalBundle Gato_Rud
+ObjectTemplate.setNetworkableInfo GatoWingInfo
+ObjectTemplate.geometry Gato_Rodder_m1
+ObjectTemplate.setMinRotation -20/0/0
+ObjectTemplate.setMaxRotation 20/0/0
+ObjectTemplate.setMaxSpeed 12/0/0
+ObjectTemplate.setAcceleration -9/0/0
+ObjectTemplate.setAutomaticReset 1
+ObjectTemplate.setInputToYaw c_PIYaw
+
+
 rem *** GatoSimple ***
 ObjectTemplate.create SimpleObject GatoSimple
 ObjectTemplate.geometry Gato_Hull_m1
@@ -197,3 +237,126 @@ ObjectTemplate.geometry Gato_Hull_m1
 rem *** GatoLodSelector ***
 LodSelectorTemplate.create DistCompareSelector2 GatoLodSelector
 LodSelectorTemplate.addLodDistance 5000
+
+
+
+rem *** Gato2DriverSoldierSpawn ***
+ObjectTemplate.create SpawnPoint Gato2DriverSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 59
+rem ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** Gato_AA ***
+ObjectTemplate.create PlayerControlObject Gato_AA
+ObjectTemplate.setNetworkableInfo GatoBodyInfo
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.addTemplate Carrier_AA_Base
+ObjectTemplate.setPosition 0/2.5/28
+ObjectTemplate.subPos 1
+ObjectTemplate.setSoldierExitLocation 1/2.7/26 0/0/0
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_gato.tga"
+ObjectTemplate.setVehicleIconPos 80/97
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTSubmarine
+ObjectTemplate.setToolTipType  TTSubmarine
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_submarine_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+rem *** <oxygenUsagerate> <oxygenFillrate> <oxygenDamageRate> <periscopeMinDepth> <periscopeMaxDepth> <maxDepth> <maxDepthDamageRate>
+ObjectTemplate.submarineData 0 0 0 0 3 90 0
+ObjectTemplate.setSubmarineHudDepthModifier -0.46
+
+
+
+rem *** Gato2 ***
+ObjectTemplate.create PlayerControlObject Gato2
+ObjectTemplate.setNetworkableInfo GatoBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 0.2
+ObjectTemplate.mass 1549000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 200
+ObjectTemplate.maxhitpoints 200
+ObjectTemplate.material 57
+ObjectTemplate.criticalDamage 100
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 50
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.speedMod 0.05
+ObjectTemplate.addArmorEffect 137 em_GatoDamage 0/0/0
+ObjectTemplate.addArmorEffect 0 WaterExplosionSub  0/0/0
+ObjectTemplate.timetoliveafterdeath 600
+ObjectTemplate.timeToStartFadeAfterDeath 570
+rem -------------------------------------
+ObjectTemplate.addTemplate lodGato
+ObjectTemplate.addTemplate GatoFloater
+ObjectTemplate.setPosition 0/2/32
+ObjectTemplate.addTemplate GatoFloater
+ObjectTemplate.setPosition -2.499/2/16
+ObjectTemplate.addTemplate GatoFloater
+ObjectTemplate.setPosition 2.5/2/16
+ObjectTemplate.addTemplate GatoFloater
+ObjectTemplate.setPosition -3.499/2/0
+ObjectTemplate.addTemplate GatoFloater
+ObjectTemplate.setPosition 3.5/2/0
+ObjectTemplate.addTemplate GatoFloater
+ObjectTemplate.setPosition -2.499/2/-15.999
+ObjectTemplate.addTemplate GatoFloater
+ObjectTemplate.setPosition 2.5/2/-15.999
+ObjectTemplate.addTemplate GatoFloater
+ObjectTemplate.setPosition 0/2/-31.999
+ObjectTemplate.addTemplate e_waterfrontBigSub
+ObjectTemplate.setPosition 0/1/54
+ObjectTemplate.addTemplate e_Water06Dive
+ObjectTemplate.setPosition 0/6/20
+ObjectTemplate.addTemplate e_Water510Dive
+ObjectTemplate.setPosition 0/3/23
+ObjectTemplate.addTemplate e_Water10BDive
+ObjectTemplate.setPosition 0/0/55
+ObjectTemplate.addTemplate e_Water10BDiveBack
+ObjectTemplate.setPosition 0/0/-25.999
+ObjectTemplate.addTemplate e_waterBoatSvallSub
+ObjectTemplate.setPosition 0/0/55
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate e_waterBoatSvallSub
+ObjectTemplate.setPosition 0/0/-26
+ObjectTemplate.setRotation 270/0/0
+ObjectTemplate.addTemplate Gato2DriverSoldierSpawn
+ObjectTemplate.setPosition 0/2.75/8.8
+rem -------------------------------------
+ObjectTemplate.subPos 1
+rem ObjectTemplate.sonarPos 1
+ObjectTemplate.setSoldierExitLocation 0/4.3/5 0/0/0
+ObjectTemplate.GUIIndex 86
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_gato.tga"
+ObjectTemplate.setVehicleIconPos 60/85
+ObjectTemplate.setNumberOfWeaponIcons 2
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_torpedo.tga"
+ObjectTemplate.setPrimaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setSecondaryAmmoIcon "Ammo/Icon_torpedo.tga"
+ObjectTemplate.setSecondaryAmmoBar ABAmmoBarReloadBar
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTSubmarine
+ObjectTemplate.setToolTipType TTSubmarine
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_submarine_32x32.tga"
+ObjectTemplate.setMinimapIconSize 32
+rem *** <oxygenUsagerate> <oxygenFillrate> <oxygenDamageRate> <periscopeMinDepth> <periscopeMaxDepth> <maxDepth> <maxDepthDamageRate>
+ObjectTemplate.submarineData 0.009 0.03 1 10 19.5 90 5
+ObjectTemplate.setSubmarineHudDepthModifier 5.9
+ObjectTemplate.setSubmarineHudDirModifier 0.01
+ObjectTemplate.disableSpawnPointsOnEnter 1

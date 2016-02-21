@@ -22,7 +22,7 @@ ObjectTemplate.hitpoints 50
 ObjectTemplate.maxhitpoints 50
 ObjectTemplate.material 45
 ObjectTemplate.criticalDamage 6
-ObjectTemplate.hpLostWhileCriticalDamage 2
+ObjectTemplate.hpLostWhileCriticalDamage 0
 ObjectTemplate.explosionForceMod 20
 ObjectTemplate.hpLostWhileUpSideDown 5
 ObjectTemplate.hpLostWhileDamageFromWater 5
@@ -80,6 +80,10 @@ ObjectTemplate.addTemplate WillyEntry
 ObjectTemplate.setPosition 0/0/-1
 ObjectTemplate.addTemplate WillyPassengerPCO
 ObjectTemplate.setPosition 0/0.35/-0.25
+ObjectTemplate.addTemplate WillyPassengerPCO2
+ObjectTemplate.setPosition 0/0.35/-1.2
+ObjectTemplate.addTemplate WillyPassengerPCO3
+ObjectTemplate.setPosition 0/0.35/-1.2
 ObjectTemplate.addTemplate WillyEngine
 ObjectTemplate.setPosition 0/0.35/-0.25
 ObjectTemplate.addTemplate WillySteeringDummy
@@ -168,13 +172,72 @@ ObjectTemplate.setToolTipType  TTScoutCar
 ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
 ObjectTemplate.hasRestrictedExit 1
 
+rem *** WillyPassengerPCO2 ***
+ObjectTemplate.create PlayerControlObject WillyPassengerPCO2
+ObjectTemplate.setNetworkableInfo WillyBodyInfo
+ObjectTemplate.aiTemplate WillyPassenger
+rem -------------------------------------
+
+ObjectTemplate.addTemplate WillyEntry
+ObjectTemplate.setPosition 0/-0.35/1.25
+ObjectTemplate.addTemplate WillyEntry
+ObjectTemplate.setPosition 0/-0.35/-0.75
+ObjectTemplate.addTemplate WillyCamera
+ObjectTemplate.setPosition -0.3/0.6/-0.999
+ObjectTemplate.addTemplate WillyPassengerSeat
+ObjectTemplate.setPosition -0.3/0.25/-0.499
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.5/0/-0.8 0/0/0
+rem ObjectTemplate.hasRestrictedExit 1
+rem ObjectTemplate.altSoldierExitPosition 5.5/0/0
+rem ObjectTemplate.GUIIndex 53
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_willy.tga"
+ObjectTemplate.setVehicleIconPos 31/71
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** WillyPassengerPCO3 ***
+ObjectTemplate.create PlayerControlObject WillyPassengerPCO3
+ObjectTemplate.setNetworkableInfo WillyBodyInfo
+ObjectTemplate.aiTemplate WillyPassenger
+rem -------------------------------------
+
+ObjectTemplate.addTemplate WillyEntry
+ObjectTemplate.setPosition 0/-0.35/1.25
+ObjectTemplate.addTemplate WillyEntry
+ObjectTemplate.setPosition 0/-0.35/-0.75
+ObjectTemplate.addTemplate WillyCamera
+ObjectTemplate.setPosition 0.3/0.6/-0.999
+ObjectTemplate.addTemplate WillyPassengerSeat
+ObjectTemplate.setPosition 0.3/0.25/-0.499
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.5/0/-0.8 0/0/0
+rem ObjectTemplate.hasRestrictedExit 1
+rem ObjectTemplate.altSoldierExitPosition 5.5/0/0
+rem ObjectTemplate.GUIIndex 53
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_willy.tga"
+ObjectTemplate.setVehicleIconPos 18/74
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTScoutCar
+ObjectTemplate.setToolTipType  TTScoutCar
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_common_16x16.tga"
+ObjectTemplate.hasRestrictedExit 1
+
 
 rem *** WillyPassengerSeat ***
 ObjectTemplate.create SeatObject WillyPassengerSeat
 ObjectTemplate.seatFlags c_SeatShowFullBodySoldier
 ObjectTemplate.seatFlags c_SeatIsOutside
 ObjectTemplate.seatAnimationUpperBody Ub_PassengerInWilly
-ObjectTemplate.seatAnimationLowerBody Lb_PassengerInWilly
+rem ObjectTemplate.seatAnimationLowerBody Lb_PassengerInWilly
 
 
 rem *** WillyFrontWheelR ***

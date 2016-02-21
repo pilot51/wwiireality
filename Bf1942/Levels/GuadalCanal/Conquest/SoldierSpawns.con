@@ -1,0 +1,285 @@
+rem *****************************************
+rem ****          AXIS BASE1           *****
+rem ****************************************
+
+Object.create AxisSpawnPoint_barack1
+Object.absolutePosition 2475.6/84.4673/1286.74
+Object.rotation 178.776/-3.25941e-007/-1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_barack2
+Object.absolutePosition 2391.86/92.9464/1268.04
+Object.rotation -2.44794/6.51721e-007/0.0279846
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_barack3
+Object.absolutePosition 2258.91/87.988/1218.95
+Object.rotation -59.5439/1.31534e-005/0.0279846
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_Hangar
+Object.absolutePosition 2264.22/94.58/1368.85
+Object.rotation -143.784/9.0154e-006/-0.03427122
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_1
+Object.absolutePosition 2468.67/84.2358/1263.47
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_2
+Object.absolutePosition 2399.17/92.757/1223.3
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_3
+Object.absolutePosition 2394.03/92.7912/1258.2
+Object.rotation 0/0/1.52588e-005
+
+
+
+rem *****************************************
+rem ****        ALLIES Base2           *****
+rem ****************************************
+
+
+Object.create ALLIESSpawnPoint_barack5
+Object.absolutePosition 1477.3/80.188/2550.21
+Object.rotation 87.4082/-1.52432e-005/0.0342712
+rem
+rem ***  ***
+rem
+Object.create ALLIESSpawnPoint_barack6
+Object.absolutePosition 1474.72/80.162/2523.24
+Object.rotation 87.4082/-1.52432e-005/0.0342712
+rem
+rem ***  ***
+rem
+Object.create ALLIESSpawnPoint_bunker1
+Object.absolutePosition 1565.83/83.216/2638.02
+Object.rotation -165.888/3.72041e-006/-0.0395813
+rem
+rem ***  ***
+rem
+Object.create ALLIESSpawnPoint_Hangar2
+Object.absolutePosition 1406.98/82.502/2387.92
+Object.rotation -48.4197/1.1414e-005/0.0279846
+rem
+rem ***  ***
+rem
+Object.create ALLIESSpawnPoint_1
+Object.absolutePosition 1465.25/79.4947/2567.85
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create ALLIESSpawnPoint_2
+Object.absolutePosition 1321.91/80.212/2427.9
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create ALLIESSpawnPoint_3
+Object.absolutePosition 1321.91/80.212/2426.14
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+
+rem *****************************************
+rem ****       open base3              *****
+rem ****************************************
+
+
+Object.create OpenSpawnPoint_bunkerNest3_1
+Object.absolutePosition 2201.97/117.196/1614.5
+Object.rotation -0.683563/1.82074e-007/0.0523529
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_bunkerNest3_2
+Object.absolutePosition 2201.69/117.249/1614.86
+Object.rotation -144.576/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_bunkerNest3_3
+Object.absolutePosition 2199.93/117.249/1613.33
+Object.rotation 95.04/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_bunkerNest3_4
+Object.absolutePosition 2203/117.249/1613.06
+Object.rotation -144.576/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_bunkerNest3_5
+Object.absolutePosition 2202.3/117.249/1613.67
+Object.rotation -144.576/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_bunkerNest3_6
+Object.absolutePosition 2201.44/117.249/1612.45
+Object.rotation -144.576/0/0.0395813
+rem
+rem ***  ***
+rem
+Object.create OpenSpawnPoint_bunkerNest3_7
+Object.absolutePosition 2202.73/117.249/1611.53
+Object.rotation -144.576/0/0.0395813
+rem
+rem ***  ***
+rem
+
+
+
+rem *****************************************
+rem ****       open base4              *****
+rem ****************************************
+
+Object.create openSpawnPoint_barack7
+Object.absolutePosition 2075.41/82.016/1893.54
+Object.rotation 88.2363/-1.52516e-005/0.0395813
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_barack8
+Object.absolutePosition 2108.39/81.964/1894.87
+Object.rotation -91.4757/1.52537e-005/-0.0342712
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_barack9
+Object.absolutePosition 2109.04/81.952/1902.8
+Object.rotation 161.964/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_barack10
+Object.absolutePosition 2096.07/81.919/1921.63
+Object.rotation 161.964/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_barack11
+Object.absolutePosition 2082.34/81.886/1885.34
+Object.rotation 161.964/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_barack12
+Object.absolutePosition 2090.44/81.919/1921.63
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_barack13
+Object.absolutePosition 2092.25/81.919/1921.63
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+rem *****************************************
+rem ****       open base5              *****
+rem ****************************************
+
+Object.create openSpawnPoint_BunkerNest5_0
+Object.absolutePosition 1726.91/116.764/2103.33
+Object.rotation 5.86832/-1.56012e-006/0.0484619
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_BunkerNest5_1
+Object.absolutePosition 1725.41/116.708/2105.14
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_BunkerNest5_2
+Object.absolutePosition 1718.17/116.319/2101.78
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_BunkerNest5_3
+Object.absolutePosition 1718.38/116.509/2104.61
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_BunkerNest5_4
+Object.absolutePosition 1719.92/116.287/2102.87
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_BunkerNest5_5
+Object.absolutePosition 1726.6/116.708/2102.19
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_BunkerNest5_6
+Object.absolutePosition 1726.6/116.708/2105.14
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+rem *****************************************
+rem ****       open base6              *****
+rem ****************************************
+
+Object.create openSpawnPoint_nest6
+Object.absolutePosition 1765.48/92.8353/1742.5
+Object.rotation -108.324/1.44851e-005/-0.0685425
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_nest7
+Object.absolutePosition 1773.9/88.277/1723.85
+Object.rotation 144.576/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_nest8
+Object.absolutePosition 1767.67/88.826/1725.96
+Object.rotation -74.844/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_nest9
+Object.absolutePosition 1759.22/91.4074/1734.82
+Object.rotation -74.844/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_nest10
+Object.absolutePosition 1761.6/91.7582/1738.62
+Object.rotation -74.844/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_nest11
+Object.absolutePosition 1771.5/88.1957/1725.3
+Object.rotation 144.576/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create openSpawnPoint_nest12
+Object.absolutePosition 1763.52/90.4182/1735.09
+Object.rotation 144.576/0/1.52588e-005
+rem
+rem ***  ***
+rem
+
+
+rem EndOfFile

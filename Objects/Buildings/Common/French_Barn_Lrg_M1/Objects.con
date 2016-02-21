@@ -4,7 +4,7 @@ objectTemplate.aiTemplate French_Barn_Lrg_m1
 ObjectTemplate.addTemplate lodFrench_Barn_Lrg
 
 LodSelectorTemplate.create DistanceSelector French_Barn_LrgSelector
-LodSelectorTemplate.addLodDistance 100
+rem LodSelectorTemplate.addLodDistance 100
 ObjectTemplate.create LodObject lodFrench_Barn_Lrg
 ObjectTemplate.lodselector French_Barn_LrgSelector
 ObjectTemplate.addTemplate French_Barn_LrgInterior

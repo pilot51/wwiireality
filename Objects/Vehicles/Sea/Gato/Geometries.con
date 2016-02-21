@@ -24,4 +24,16 @@ GeometryTemplate.file Gato_Radar_m1
 geometryTemplate.cullFactor 0.02
 GeometryTemplate.setLodDistance 0 0
 
+GeometryTemplate.create StandardMesh Gato_Prop01_m1
+GeometryTemplate.file Gato_Prop01_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Gato_Prop02_m1
+GeometryTemplate.file Gato_Prop02_m1
+GeometryTemplate.setLodDistance 0 0
+
+GeometryTemplate.create StandardMesh Gato_Rodder_m1
+GeometryTemplate.file Gato_Rodder_m1
+GeometryTemplate.setLodDistance 0 0
+
 renderer.endGlobalCluster

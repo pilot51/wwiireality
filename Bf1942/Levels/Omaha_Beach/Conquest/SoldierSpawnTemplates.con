@@ -1,0 +1,167 @@
+rem *****************************************
+rem ****          the_beach            *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint beach1
+ObjectTemplate.setSpawnId 1
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint beach2
+ObjectTemplate.setSpawnId 2
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint beach3
+ObjectTemplate.setSpawnId 3
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint beach4
+ObjectTemplate.setSpawnId 4
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint beach5
+ObjectTemplate.setSpawnId 5
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint beach6
+ObjectTemplate.setSpawnId 6
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint beach7
+ObjectTemplate.setSpawnId 7
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint beach8
+ObjectTemplate.setSpawnId 8
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint beach9
+ObjectTemplate.setSpawnId 9
+ObjectTemplate.setGroup 1
+
+
+
+
+rem *****************************************
+rem ****        the_wall            *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint wall1
+ObjectTemplate.setSpawnId 18
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint wall2
+ObjectTemplate.setSpawnId 19
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint wall3
+ObjectTemplate.setSpawnId 20
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint wall4
+ObjectTemplate.setSpawnId 21
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint wall5
+ObjectTemplate.setSpawnId 22
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint wall6
+ObjectTemplate.setSpawnId 23
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint wall7
+ObjectTemplate.setSpawnId 24
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint wall8
+ObjectTemplate.setSpawnId 25
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint wall9
+ObjectTemplate.setSpawnId 10
+ObjectTemplate.setGroup 3
+
+ObjectTemplate.create SpawnPoint wall10
+ObjectTemplate.setSpawnId 11
+ObjectTemplate.setGroup 3
+rem *****************************************
+rem ****        the_CITYENTRY              *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint City_entry_1
+ObjectTemplate.setSpawnId 26
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint City_entry_2
+ObjectTemplate.setSpawnId 27
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint City_entry_3
+ObjectTemplate.setSpawnId 28
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint City_entry_4
+ObjectTemplate.setSpawnId 29
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint City_entry_5
+ObjectTemplate.setSpawnId 30
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint City_entry_6
+ObjectTemplate.setSpawnId 31
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint City_entry_7
+ObjectTemplate.setSpawnId 32
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint City_entry_8
+ObjectTemplate.setSpawnId 33
+ObjectTemplate.setGroup 4
+
+ObjectTemplate.create SpawnPoint City_entry_9
+ObjectTemplate.setSpawnId 50
+ObjectTemplate.setGroup 4
+
+rem *****************************************
+rem ****        the_axisbase            *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint axisbase1
+ObjectTemplate.setSpawnId 34
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint axisbase2
+ObjectTemplate.setSpawnId 35
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint axisbase3
+ObjectTemplate.setSpawnId 36
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint axisbase4
+ObjectTemplate.setSpawnId 37
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint axisbase5
+ObjectTemplate.setSpawnId 38
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint axisbase6
+ObjectTemplate.setSpawnId 39
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint axisbase7
+ObjectTemplate.setSpawnId 40
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint axisbase8
+ObjectTemplate.setSpawnId 41
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint axisbase9
+ObjectTemplate.setSpawnId 42
+ObjectTemplate.setGroup 5
+
+rem EndOfFile

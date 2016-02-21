@@ -1,0 +1,432 @@
+
+
+rem *** Hornet ***
+ObjectTemplate.create PlayerControlObject Hornet
+ObjectTemplate.setNetworkableInfo EnterpriseBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 2.6
+ObjectTemplate.mass 25000000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
+ObjectTemplate.material 55
+ObjectTemplate.criticalDamage 100
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 5
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.addArmorEffect 300 em_EnterpriseDamage 0/0/0
+ObjectTemplate.addArmorEffect 150 em_EnterpriseDamage 0/0/0
+ObjectTemplate.addArmorEffect 150 e_waterBoatSink 0/10/0
+ObjectTemplate.addArmorEffect 100 em_EnterpriseDamage 0/0/0
+ObjectTemplate.addArmorEffect 100 e_waterBoatSink 0/10/0
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 19/6/-5
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 17/2/-45
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 14/2/-85
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 10/2/-125
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 13/3/25
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 18/3/45
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 16/2/65
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 14/2/85
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/3/125
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/6/35
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/5/-25
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/15/-5
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/3/-90
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -19/6/-5
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -17/3/-35
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -14/2/-75
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -10/2/-125
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -13/3/25
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -18/3/45
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -16/2/65
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -14/2/85
+ObjectTemplate.aiTemplate Enterprise
+rem -------------------------------------
+ObjectTemplate.addTemplate lodHornet
+ObjectTemplate.addTemplate Enterprise_Floater
+ObjectTemplate.setPosition 0/14.8/140
+ObjectTemplate.addTemplate Enterprise_Floater
+ObjectTemplate.setPosition -14/14.8/70
+ObjectTemplate.addTemplate Enterprise_Floater
+ObjectTemplate.setPosition 14/14.8/70
+ObjectTemplate.addTemplate Enterprise_Floater
+ObjectTemplate.setPosition -17/14.8/0
+ObjectTemplate.addTemplate Enterprise_Floater
+ObjectTemplate.setPosition 17/14.8/0
+ObjectTemplate.addTemplate Enterprise_Floater
+ObjectTemplate.setPosition -14/14.8/-70
+ObjectTemplate.addTemplate Enterprise_Floater
+ObjectTemplate.setPosition 14/14.8/-70
+ObjectTemplate.addTemplate Enterprise_Floater
+ObjectTemplate.setPosition 0/14.8/-140
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.setSoldierExitLocation 5/28/10 0/0/0
+ObjectTemplate.GUIIndex 35
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_enterprise.tga"
+ObjectTemplate.setVehicleIconPos 45/65
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTCarrier
+ObjectTemplate.setToolTipType  TTCarrier
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aircraft_carrier_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+rem *** lodEnterprise ***
+ObjectTemplate.create LodObject lodHornet
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate HornetComplex
+ObjectTemplate.addTemplate EnterpriseSimple
+rem -------------------------------------
+ObjectTemplate.lodSelector EnterpriseLodSelector
+
+
+rem *** HornetComplex ***
+ObjectTemplate.create Bundle HornetComplex
+rem ObjectTemplate.setNetworkableInfo EnterpriseBodyInfo
+ObjectTemplate.geometry Enterprise_hull_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate ClimbingNet_6m
+ObjectTemplate.setPosition 14.21/3.82/-121.7
+ObjectTemplate.setRotation -80.499/0/0
+ObjectTemplate.addTemplate ClimbingNet_6m
+ObjectTemplate.setPosition -13.01/3.82/-121.7
+ObjectTemplate.setRotation 80.5/0/0
+ObjectTemplate.addTemplate ClimbingNet_6m
+ObjectTemplate.setPosition 11.42/3.8/106.584
+ObjectTemplate.setRotation -93.5/0/0
+ObjectTemplate.addTemplate ClimbingNet_6m
+ObjectTemplate.setPosition -10.2/3.8/106.584
+ObjectTemplate.setRotation 93.5/0/0
+ObjectTemplate.addTemplate Hornet_DriverSoldierSpawn
+ObjectTemplate.setPosition 11/26/35
+ObjectTemplate.addTemplate Hornet_DriverSoldierSpawn
+ObjectTemplate.setPosition 10/26/35
+ObjectTemplate.addTemplate Hornet_DriverSoldierSpawn
+ObjectTemplate.setPosition 9/26/35
+ObjectTemplate.addTemplate Hornet_AirCraftSoldierSpawn
+ObjectTemplate.setPosition -1.5/20.4/-113.5
+ObjectTemplate.addTemplate Hornet_AirCraftSoldierSpawn
+ObjectTemplate.setPosition 3.9/20.4/-100.5
+ObjectTemplate.addTemplate Hornet_LcvpSoldierSpawn
+ObjectTemplate.setPosition -13.949/12.4/-67.999
+ObjectTemplate.addTemplate Hornet_LcvpSoldierSpawn
+ObjectTemplate.setPosition 13.95/12.4/-67.999
+ObjectTemplate.addTemplate Hornet_corsairSpawner
+ObjectTemplate.setPosition -4.999/19.63/-110.999
+ObjectTemplate.setRotation -3/-13/0
+ObjectTemplate.addTemplate Hornet_sbdSpawner
+ObjectTemplate.setPosition 7.2/20.04/-94.999
+ObjectTemplate.setRotation -15/-12.7/0
+rem ObjectTemplate.addTemplate Enterprise_lcvpSpawner
+rem ObjectTemplate.setPosition -17.35/8.75/-69.748
+rem ObjectTemplate.addTemplate Enterprise_lcvpSpawner
+rem ObjectTemplate.setPosition 18.47/8.75/-69.748
+rem ObjectTemplate.addTemplate Enterprise_Engine
+rem ObjectTemplate.setPosition 0/-3.999/-89.999
+ObjectTemplate.addTemplate Enterprise_Rudder1
+ObjectTemplate.setPosition 0/-6/-110
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Enterprise_HullWing
+ObjectTemplate.setPosition 0/-6/110
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate Enterprise_rod
+ObjectTemplate.setPosition 0.649/-5.017/-126.06
+ObjectTemplate.addTemplate Enterprise_Bridge
+ObjectTemplate.setPosition 10/28.1/33.5
+ObjectTemplate.addTemplate Enterprise_rad
+ObjectTemplate.setPosition 11.134/46.534/20.174
+ObjectTemplate.addTemplate Enterprise_AABattery1
+ObjectTemplate.setPosition -17.032/15.219/81.317
+ObjectTemplate.addTemplate Enterprise_AABattery2
+ObjectTemplate.setPosition -20.6/14.775/-103.968
+ObjectTemplate.addTemplate Enterprise_AABattery3
+ObjectTemplate.setPosition 20.357/14.775/-103.968
+ObjectTemplate.addTemplate Enterprise_AABattery4
+ObjectTemplate.setPosition 17.302/15.219/81.317
+ObjectTemplate.addTemplate e_waterfrontBig
+ObjectTemplate.setPosition 0/0/130
+ObjectTemplate.addTemplate e_waterBoatSvall
+ObjectTemplate.setPosition 0/-1/135
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate e_waterBoatSvall
+ObjectTemplate.setPosition 0/-1/-145
+ObjectTemplate.setRotation 270/0/0
+ObjectTemplate.addTemplate e_waterBackBig
+ObjectTemplate.setPosition 0/0.5/-140
+ObjectTemplate.addTemplate Ammobox
+ObjectTemplate.setPosition 6.685/18.605/-8.397
+ObjectTemplate.setRotation 87/0/0
+ObjectTemplate.addTemplate Ammobox
+ObjectTemplate.setPosition 11.7/18.605/-118.999
+ObjectTemplate.addTemplate EnterpriseAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/15/-100
+ObjectTemplate.addTemplate EnterpriseAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/15/-70
+ObjectTemplate.addTemplate EnterpriseAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/15/-40
+ObjectTemplate.addTemplate EnterpriseAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/15/-10
+ObjectTemplate.addTemplate EnterpriseAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/15/20
+ObjectTemplate.addTemplate EnterpriseAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/15/50
+ObjectTemplate.addTemplate EnterpriseAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/15/70
+ObjectTemplate.addTemplate EnterpriseAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/15/100
+ObjectTemplate.addTemplate ShipLadder02
+ObjectTemplate.setPosition -15.489/15.935/-51.694
+ObjectTemplate.setRotation -90/4/0
+rem -------------------------------------
+
+beginrem
+
+rem *** EnterpriseAirplaneSupplyDepot ***
+ObjectTemplate.create SupplyDepot EnterpriseAirplaneSupplyDepot
+ObjectTemplate.radius 20
+ObjectTemplate.team 0
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 10 -1 20 0
+ObjectTemplate.addAmmoType 9 -1 2 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+
+endrem
+
+rem *** Hornet_DriverSoldierSpawn ***
+ObjectTemplate.create SpawnPoint Hornet_DriverSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 72
+ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** Hornet_AirCraftSoldierSpawn ***
+ObjectTemplate.create SpawnPoint Hornet_AirCraftSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 73
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** Hornet_LcvpSoldierSpawn ***
+ObjectTemplate.create SpawnPoint Hornet_LcvpSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 74
+ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** Hornet_corsairSpawner ***
+ObjectTemplate.create ObjectSpawner Hornet_corsairSpawner
+ObjectTemplate.setObjectTemplate 1 corsair
+ObjectTemplate.setObjectTemplate 2 corsair
+ObjectTemplate.minSpawnDelay 10
+ObjectTemplate.maxSpawnDelay 10
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.holdObject 1
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 6
+
+rem *** Hornet_sbdSpawner ***
+ObjectTemplate.create ObjectSpawner Hornet_sbdSpawner
+ObjectTemplate.setObjectTemplate 1 SBD
+ObjectTemplate.setObjectTemplate 2 SBD
+ObjectTemplate.minSpawnDelay 10
+ObjectTemplate.maxSpawnDelay 10
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.holdObject 1
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 6
+
+beginrem
+
+rem *** Enterprise_LcvpSpawner ***
+ObjectTemplate.create ObjectSpawner Enterprise_LcvpSpawner
+ObjectTemplate.setObjectTemplate 1 Lcvp
+ObjectTemplate.setObjectTemplate 2 Lcvp
+ObjectTemplate.minSpawnDelay 20
+ObjectTemplate.maxSpawnDelay 20
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.holdObject 1
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 3
+ObjectTemplate.damageWhenLost 10
+
+
+rem *** Enterprise_hatch ***
+ObjectTemplate.create SimpleObject Enterprise_hatch
+ObjectTemplate.geometry Enterprise_hatch_m1
+
+
+rem *** Enterprise_rod ***
+ObjectTemplate.create RotationalBundle Enterprise_rod
+ObjectTemplate.geometry enterprise_rod_m1
+ObjectTemplate.setMinRotation -20/0/0
+ObjectTemplate.setMaxRotation 20/0/0
+ObjectTemplate.setMaxSpeed 20/90/90
+ObjectTemplate.setAcceleration 10/-10/10
+
+
+rem *** Enterprise_Bridge ***
+ObjectTemplate.create Bundle Enterprise_Bridge
+rem -------------------------------------
+ObjectTemplate.addTemplate Enterprise_Entry
+ObjectTemplate.setPosition 1.4/-1.499/-3.499
+ObjectTemplate.addTemplate Enterprise_Camera
+rem -------------------------------------
+
+
+rem *** Enterprise_Entry ***
+ObjectTemplate.create EntryPoint Enterprise_Entry
+ObjectTemplate.setEntryRadius 9
+
+
+rem *** Enterprise_Camera ***
+ObjectTemplate.create Camera Enterprise_Camera
+ObjectTemplate.setMinRotation -80/-20/0
+ObjectTemplate.setMaxRotation 90/20/0
+ObjectTemplate.setMaxSpeed 50/50/0
+ObjectTemplate.setAcceleration 100000/100000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** Enterprise_rad ***
+ObjectTemplate.create RotationalBundle Enterprise_rad
+ObjectTemplate.geometry enterprise_rad_m1
+ObjectTemplate.setMaxSpeed 90/90/90
+ObjectTemplate.setContinousRotationSpeed 10/0/0
+ObjectTemplate.setInputToYaw 
+ObjectTemplate.setInputToPitch 
+ObjectTemplate.setInputToRoll 
+
+endrem
+
+rem *** Enterprise_AABattery1 ***
+ObjectTemplate.create PlayerControlObject Enterprise_AABattery1
+ObjectTemplate.aiTemplate EnterpriseAA2
+ObjectTemplate.setNetworkableInfo EnterpriseBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate AA_Allies_Base
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.2/0.2/0 0/0/0
+ObjectTemplate.GUIIndex 36
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_enterprise.tga"
+ObjectTemplate.setVehicleIconPos 95/82
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTCarrier
+ObjectTemplate.setToolTipType  TTCarrier
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aircraft_carrier_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+rem *** Enterprise_AABattery2 ***
+ObjectTemplate.create PlayerControlObject Enterprise_AABattery2
+ObjectTemplate.aiTemplate EnterpriseAA3
+ObjectTemplate.setNetworkableInfo EnterpriseBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate AA_Allies_Base
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.2/0.2/0 0/0/0
+ObjectTemplate.GUIIndex 37
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_enterprise.tga"
+ObjectTemplate.setVehicleIconPos 50/57
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTCarrier
+ObjectTemplate.setToolTipType  TTCarrier
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aircraft_carrier_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+
+rem *** Enterprise_AABattery3 ***
+ObjectTemplate.create PlayerControlObject Enterprise_AABattery3
+ObjectTemplate.aiTemplate EnterpriseAA4
+ObjectTemplate.setNetworkableInfo EnterpriseBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate AA_Allies_Base
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.2/0.2/0 0/0/0
+ObjectTemplate.GUIIndex 38
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_enterprise.tga"
+ObjectTemplate.setVehicleIconPos 12/57
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTCarrier
+ObjectTemplate.setToolTipType  TTCarrier
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aircraft_carrier_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+
+rem *** Enterprise_AABattery4 ***
+ObjectTemplate.create PlayerControlObject Enterprise_AABattery4
+ObjectTemplate.aiTemplate EnterpriseAA5
+ObjectTemplate.setNetworkableInfo EnterpriseBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate AA_Allies_Base
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 1.2/0.2/0 0/0/0
+ObjectTemplate.GUIIndex 39
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_enterprise.tga"
+ObjectTemplate.setVehicleIconPos 62/90
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTCarrier
+ObjectTemplate.setToolTipType  TTCarrier
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aircraft_carrier_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+beginrem
+
+rem *** EnterpriseSimple ***
+ObjectTemplate.create SimpleObject EnterpriseSimple
+ObjectTemplate.geometry Enterprise_hull_L1
+
+
+rem *** EnterpriseLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 EnterpriseLodSelector
+LodSelectorTemplate.addLodDistance 450
+
+endrem

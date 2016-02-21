@@ -11,7 +11,7 @@ ObjectTemplate.autoReload 0
 ObjectTemplate.GUIIndex 15
 ObjectTemplate.setHudAmmoType ATIcon
 ObjectTemplate.setAmmoIcon "Ammo/Icon_demokit.tga"
-ObjectTemplate.setCrossHairType CHTIcon
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setHasMag 0
 ObjectTemplate.hasDynamicShadow 1
 ObjectTemplate.soldierCameraPosition 0.06/-0.07/0.3
@@ -39,9 +39,3 @@ ObjectTemplate.create LodObject DetonatorLod
 ObjectTemplate.lodselector HandWeaponLodSelector
 ObjectTemplate.addTemplate DetonatorComplex
 ObjectTemplate.addTemplate DetonatorSimple
-
-
-
-
-
-

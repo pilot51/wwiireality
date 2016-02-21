@@ -17,7 +17,7 @@ ObjectTemplate.setVehicleIcon "Vehicle/Icon_MG42.tga"
 ObjectTemplate.setNumberOfWeaponIcons 1
 ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_bullet.tga"
 ObjectTemplate.setPrimaryAmmoBar ABHeatBarOnly
-ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTNone
 ObjectTemplate.setVehicleCategory VCLand
 ObjectTemplate.setVehicleType VTStationaryMG
 ObjectTemplate.setToolTipType TTStationaryMG

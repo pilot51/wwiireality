@@ -11,7 +11,7 @@ ObjectTemplate.magSize 16
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 0
 ObjectTemplate.autoReload 1
-ObjectTemplate.reloadtime 15
+ObjectTemplate.reloadtime 30
 ObjectTemplate.roundOfFire 4
 ObjectTemplate.setAsynchronyFire 1
 ObjectTemplate.setInputFire c_PIAltFire
@@ -40,6 +40,10 @@ ObjectTemplate.addFireArmsPosition -0.2/0.02/0.75 0/0/0
 ObjectTemplate.AmmoType 10
 ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
 
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 0.2/0/0
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition -0.2/0/0
 
 rem *** B17_GunT_Projectile ***
 ObjectTemplate.create Projectile B17_GunT_Projectile
@@ -50,6 +54,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.material 224
 ObjectTemplate.material2 -1
@@ -77,6 +82,11 @@ ObjectTemplate.addFireArmsPosition -0.3/0/0.95 0/0/0
 ObjectTemplate.AmmoType 10
 ObjectTemplate.setFireCameraShakeAnimationState FireMachineGunShake
 
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition 0.3/0/0
+ObjectTemplate.addTemplate e_shellAir
+ObjectTemplate.setPosition -0.3/0/0
+
 rem *** B17_GunB_Projectile ***
 ObjectTemplate.create Projectile B17_GunB_Projectile
 ObjectTemplate.createNotInGrid 1
@@ -86,6 +96,7 @@ ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.gravityModifier 1
 ObjectTemplate.material 224
 ObjectTemplate.material2 -1

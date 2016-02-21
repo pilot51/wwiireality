@@ -1,0 +1,478 @@
+
+
+rem *** Hiryu ***
+ObjectTemplate.create PlayerControlObject Hiryu
+ObjectTemplate.setNetworkableInfo ShokakuBodyInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.drag 1.97
+ObjectTemplate.mass 25000000
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.hitpoints 1200
+ObjectTemplate.maxhitpoints 1200
+ObjectTemplate.material 55
+ObjectTemplate.criticalDamage 100
+ObjectTemplate.hpLostWhileCriticalDamage 1.5
+ObjectTemplate.explosionForceMod 5
+ObjectTemplate.dontClearTeamOnExit 1
+ObjectTemplate.addArmorEffect 500 em_ExFumePOW 21/10/-2
+ObjectTemplate.addArmorEffect 500 em_ExFumePOW 22/10/8
+ObjectTemplate.addArmorEffect 350 em_ExFumePOW 21/10/-2
+ObjectTemplate.addArmorEffect 350 em_ExFumePOW 22/10/8
+ObjectTemplate.addArmorEffect 350 em_ShokakuDamage 0/0/0
+ObjectTemplate.addArmorEffect 150 em_ShokakuDamage 0/0/0
+ObjectTemplate.addArmorEffect 150 e_waterBoatSink 0/5/0
+ObjectTemplate.addArmorEffect 100 em_ShokakuDamage 0/0/0
+ObjectTemplate.addArmorEffect 100 e_waterBoatSink 0/5/0
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 19/6/-5
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 17/2/-45
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 14/2/-85
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 10/2/-115
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 13/3/25
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 18/3/45
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 16/2/65
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 14/2/85
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/3/120
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/6/35
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/5/-25
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/15/-5
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf 0/3/-90
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -19/6/-5
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -17/3/-35
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -14/2/-75
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -10/2/-115
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -13/3/25
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -18/3/45
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -16/2/65
+ObjectTemplate.addArmorEffect 100 e_waterBoatSinkEf -14/2/85
+ObjectTemplate.aiTemplate Shokaku
+rem -------------------------------------
+ObjectTemplate.addTemplate lodHiryu
+ObjectTemplate.addTemplate ShokakuFloater
+ObjectTemplate.setPosition 0/11/130
+ObjectTemplate.addTemplate ShokakuFloater
+ObjectTemplate.setPosition -7.999/11/60
+ObjectTemplate.addTemplate ShokakuFloater
+ObjectTemplate.setPosition 8/11/60
+ObjectTemplate.addTemplate ShokakuFloater
+ObjectTemplate.setPosition -9.999/11/0
+ObjectTemplate.addTemplate ShokakuFloater
+ObjectTemplate.setPosition 10/11/0
+ObjectTemplate.addTemplate ShokakuFloater
+ObjectTemplate.setPosition -7.999/11/-59.999
+ObjectTemplate.addTemplate ShokakuFloater
+ObjectTemplate.setPosition 8/11/-59.999
+ObjectTemplate.addTemplate ShokakuFloater
+ObjectTemplate.setPosition 0/11/-129.999
+rem -------------------------------------
+ObjectTemplate.setSoldierExitLocation 15.39/17.93/35.77 180/0/0
+ObjectTemplate.GUIIndex 94
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_shokaku.tga"
+ObjectTemplate.setVehicleIconPos 65/85
+ObjectTemplate.setPrimaryAmmoBar ABNone
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTCarrier
+ObjectTemplate.setToolTipType TTCarrier
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aircraft_carrier_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+
+rem *** lodHiryu ***
+ObjectTemplate.create LodObject lodHiryu
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate HiryuComplex
+ObjectTemplate.addTemplate ShokakuSimple
+rem -------------------------------------
+ObjectTemplate.lodSelector ShokakuLodSelector
+
+
+rem *** HiryuComplex ***
+ObjectTemplate.create Bundle HiryuComplex
+rem ObjectTemplate.setNetworkableInfo ShokakuBodyInfo
+ObjectTemplate.geometry Shokaku_M1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasMobilePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate HiryuDriverSoldierSpawn
+ObjectTemplate.setPosition 8.5/13/35
+ObjectTemplate.addTemplate HiryuDriverSoldierSpawn
+ObjectTemplate.setPosition 8.5/13/38
+ObjectTemplate.addTemplate HiryuDaihatsuSoldierSpawn
+ObjectTemplate.setPosition 5.6/3.47/-122.7
+ObjectTemplate.addTemplate HiryuDaihatsuSoldierSpawn
+ObjectTemplate.setPosition -5.6/3.47/-122.7
+ObjectTemplate.addTemplate HiryuAirCraftSoldierSpawn
+ObjectTemplate.setPosition -6.779/13.5/-50
+ObjectTemplate.addTemplate HiryuAirCraftSoldierSpawn
+ObjectTemplate.setPosition 5.9/13.5/-33
+ObjectTemplate.addTemplate HiryuZeroSpawner
+ObjectTemplate.setPosition -7.899/13.655/-47
+ObjectTemplate.setRotation 0/-12.2/0
+ObjectTemplate.addTemplate HiryuAichivalSpawner
+ObjectTemplate.setPosition 7.2/13.715/-30
+ObjectTemplate.setRotation -9.999/-11.499/0.02
+rem ObjectTemplate.addTemplate ShokakuDaiHatsuSpawner
+rem ObjectTemplate.setPosition -10.159/2.46/-117.394
+rem ObjectTemplate.setRotation -10/0/0
+rem ObjectTemplate.addTemplate ShokakuDaiHatsuSpawner
+rem ObjectTemplate.setPosition 10.159/2.64/-117.394
+rem ObjectTemplate.setRotation 10/0/0
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition -9.5/0.98/-107.6
+ObjectTemplate.setRotation 81/0/0
+ObjectTemplate.addTemplate ClimbingNet_3mx4m
+ObjectTemplate.setPosition 9.5/1.17/-107.6
+ObjectTemplate.setRotation -80.999/0/0
+ObjectTemplate.addTemplate ClimbingNet_6mx11m
+ObjectTemplate.setPosition -5.71/-0.2/123.699
+ObjectTemplate.setRotation 96/0/0
+ObjectTemplate.addTemplate ClimbingNet_6mx11m
+ObjectTemplate.setPosition 5.71/-0.1/123.699
+ObjectTemplate.setRotation -96/0/0
+rem ObjectTemplate.addTemplate ShokakuEngine
+rem ObjectTemplate.setPosition 0/-3.999/-89.999
+ObjectTemplate.addTemplate ShokakuEntry
+ObjectTemplate.setPosition 12.4/14.5/38
+ObjectTemplate.addTemplate ShokakuRudder
+ObjectTemplate.setPosition 0/-6/-110
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate ShokakuHullWing
+ObjectTemplate.setPosition 0/-6/110
+ObjectTemplate.setRotation 0/0/-90
+ObjectTemplate.addTemplate ShokakuCamera
+ObjectTemplate.setPosition 10/24/40
+ObjectTemplate.addTemplate ShokakuRadar
+ObjectTemplate.setPosition 12.5/23.8/36.6
+ObjectTemplate.addTemplate ShipLadder03
+ObjectTemplate.setPosition 11.1/8.8/69.264
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate ShipLadder03
+ObjectTemplate.setPosition 11.7/8.8/58.12
+ObjectTemplate.addTemplate ShipLadder03
+ObjectTemplate.setPosition 11.7/8.8/58.12
+ObjectTemplate.addTemplate ShipLadder01
+ObjectTemplate.setPosition 12.02/8.55/49.9
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate ShipLadder01
+ObjectTemplate.setPosition 11.32/10.7/49
+ObjectTemplate.setRotation -103/0/0
+ObjectTemplate.addTemplate ShipLadder02
+ObjectTemplate.setPosition 11/12.92/46.4
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ShipLadder02
+ObjectTemplate.setPosition 10.59/13.01/31.22
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ShipLadder02
+ObjectTemplate.setPosition 15.62/10.8/15.5
+ObjectTemplate.setRotation -89.999/0/0
+ObjectTemplate.addTemplate ShipLadder02
+ObjectTemplate.setPosition -15.699/10.45/23
+ObjectTemplate.setRotation 90/0/0
+rem trappa
+ObjectTemplate.addTemplate ShipStair01
+ObjectTemplate.setPosition -12.097/7.94/58.025
+ObjectTemplate.setRotation 16/0/0
+ObjectTemplate.addTemplate ShipStair01
+ObjectTemplate.setPosition -11.577/7.98/69.445
+ObjectTemplate.setRotation 171/0/0
+rem
+ObjectTemplate.addTemplate ShipLadder04
+ObjectTemplate.setPosition -12.399/9.6/49.9
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate ShipLadder04
+ObjectTemplate.setPosition 14.3/9.93/-42.318
+ObjectTemplate.setRotation -2.999/0/0.02
+ObjectTemplate.addTemplate ShipLadder02
+ObjectTemplate.setPosition -12.869/7.45/-65.429
+ObjectTemplate.setRotation 11/0/0
+ObjectTemplate.addTemplate ShipLadder03
+ObjectTemplate.setPosition -13.369/10.15/-59.999
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate ShipLadder02
+ObjectTemplate.setPosition -16.168/7.4/-46.148
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate ShipLadder02
+ObjectTemplate.setPosition -12.967/7.4/-54.347
+ObjectTemplate.setRotation 158/0/0
+ObjectTemplate.addTemplate ShipLadder02
+ObjectTemplate.setPosition 13.49/15.84/31.61
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate ShipLadder02
+ObjectTemplate.setPosition 9.79/18.69/36.45
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate ShipLadder02
+ObjectTemplate.setPosition 15.331/10.32/-79.028
+ObjectTemplate.setRotation -88/0/0
+
+ObjectTemplate.addTemplate ShokakuAABattery1
+ObjectTemplate.setPosition -17.066/6.13/-50.146
+ObjectTemplate.setRotation 158/0/0
+ObjectTemplate.addTemplate ShokakuAABattery2
+ObjectTemplate.setPosition 17.462/8.1/-52.245
+ObjectTemplate.setRotation 158/0/0
+ObjectTemplate.addTemplate ShokakuAABattery3
+ObjectTemplate.setPosition -14.51/7.156/53.702
+ObjectTemplate.setRotation 158/0/0
+ObjectTemplate.addTemplate ShokakuAABattery4
+ObjectTemplate.setPosition 13.977/7.49/54.267
+ObjectTemplate.setRotation 158/0/0
+
+ObjectTemplate.addTemplate e_waterfrontBig
+ObjectTemplate.setPosition 0/0/130
+ObjectTemplate.addTemplate e_waterBoatSvallNarrow
+ObjectTemplate.setPosition 0/-1/135
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate e_waterBoatSvall
+ObjectTemplate.setPosition 0/-1/-135
+ObjectTemplate.setRotation 270/0/0
+ObjectTemplate.addTemplate e_waterBackBig
+ObjectTemplate.setPosition 0/0.5/-130
+
+ObjectTemplate.addTemplate Ammobox
+ObjectTemplate.setPosition 9.94/11.81/33.27
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Ammobox
+ObjectTemplate.setPosition 13.109/11.81/-55.479
+
+ObjectTemplate.addTemplate ShokakuAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/10/-120
+ObjectTemplate.addTemplate ShokakuAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/10/-90
+ObjectTemplate.addTemplate ShokakuAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/10/-60
+ObjectTemplate.addTemplate ShokakuAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/10/-30
+ObjectTemplate.addTemplate ShokakuAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/10/-0
+ObjectTemplate.addTemplate ShokakuAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/10/30
+ObjectTemplate.addTemplate ShokakuAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/10/60
+ObjectTemplate.addTemplate ShokakuAirplaneSupplyDepot
+ObjectTemplate.setPosition 0/10/90
+rem -------------------------------------
+
+beginrem
+
+rem *** ShokakuAirplaneSupplyDepot ***
+ObjectTemplate.create SupplyDepot ShokakuAirplaneSupplyDepot
+ObjectTemplate.radius 20
+ObjectTemplate.team 0
+ObjectTemplate.setHealth 0 0 0
+ObjectTemplate.addAmmoType 8 -1 20 0
+ObjectTemplate.addAmmoType 7 -1 2 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0
+
+endrem
+
+rem *** HiryuDriverSoldierSpawn ***
+ObjectTemplate.create SpawnPoint HiryuDriverSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 75
+rem ObjectTemplate.setEnterOnSpawn 1
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** HiryuDaihatsuSoldierSpawn ***
+ObjectTemplate.create SpawnPoint HiryuDaihatsuSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 76
+rem ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** HiryuAirCraftSoldierSpawn ***
+ObjectTemplate.create SpawnPoint HiryuAirCraftSoldierSpawn
+ObjectTemplate.setSpawnRotation 0/0/0
+ObjectTemplate.setSpawnPositionOffset 0/0/0
+ObjectTemplate.setSpawnPreventionDelay 0
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 77
+rem ObjectTemplate.setEnterOnSpawn 0
+ObjectTemplate.setAIEnterOnSpawn 1
+ObjectTemplate.setSpawnAsParaTroper 0
+
+
+rem *** HiryuZeroSpawner ***
+ObjectTemplate.create ObjectSpawner HiryuZeroSpawner
+ObjectTemplate.setObjectTemplate 1 Zero
+ObjectTemplate.setObjectTemplate 2 Zero
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 10
+ObjectTemplate.maxSpawnDelay 10
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 200
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 6
+
+rem *** HiryuAichiValSpawner ***
+ObjectTemplate.create ObjectSpawner HiryuAichiValSpawner
+ObjectTemplate.setObjectTemplate 1 AichiVal
+ObjectTemplate.setObjectTemplate 2 AichiVal
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 10
+ObjectTemplate.maxSpawnDelay 10
+ObjectTemplate.TimeToLive 120
+ObjectTemplate.Distance 200
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 6
+
+beginrem
+
+rem *** ShokakuDaiHatsuSpawner ***
+ObjectTemplate.create ObjectSpawner ShokakuDaiHatsuSpawner
+ObjectTemplate.setObjectTemplate 1 DaiHatsu
+ObjectTemplate.setObjectTemplate 2 DaiHatsu
+ObjectTemplate.holdObject 1
+ObjectTemplate.minSpawnDelay 20
+ObjectTemplate.maxSpawnDelay 20
+ObjectTemplate.TimeToLive 30
+ObjectTemplate.Distance 20
+ObjectTemplate.spawnOffset 0/0/0
+ObjectTemplate.team 1
+ObjectTemplate.MaxNrOfObjectSpawned 3
+ObjectTemplate.damageWhenLost 10
+
+rem *** ShokakuEntry ***
+ObjectTemplate.create EntryPoint ShokakuEntry
+ObjectTemplate.setEntryRadius 7.5
+
+
+rem *** ShokakuCamera ***
+ObjectTemplate.create Camera ShokakuCamera
+ObjectTemplate.setMinRotation -80/-20/0
+ObjectTemplate.setMaxRotation 90/20/0
+ObjectTemplate.setMaxSpeed 70/70/0
+ObjectTemplate.setAcceleration 100000/100000/0
+ObjectTemplate.setInputToYaw c_PIMouseLookX
+ObjectTemplate.setInputToPitch c_PIMouseLookY
+
+
+rem *** ShokakuRadar ***
+ObjectTemplate.create RotationalBundle ShokakuRadar
+ObjectTemplate.geometry Shokaku_Radar_m1
+ObjectTemplate.setMaxSpeed 110/0/0
+ObjectTemplate.setAcceleration 10/0/0
+ObjectTemplate.setContinousRotationSpeed 15/0/0
+
+
+rem *** ShokakuSimple ***
+ObjectTemplate.create SimpleObject ShokakuSimple
+ObjectTemplate.geometry Shokaku_L1
+
+
+rem *** ShokakuLodSelector ***
+LodSelectorTemplate.create DistCompareSelector2 ShokakuLodSelector
+LodSelectorTemplate.addLodDistance 700
+
+endrem
+
+rem *** Enterprise_AABattery1 ***
+ObjectTemplate.create PlayerControlObject ShokakuAABattery1
+ObjectTemplate.aiTemplate ShokakuAA2
+ObjectTemplate.setNetworkableInfo ShokakuBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate AA_Allies_Base
+ObjectTemplate.setPosition 0/0.5/0
+rem -------------------------------------
+ObjectTemplate.CanBeRepaiedAsDestroyed c_True
+ObjectTemplate.setSoldierExitLocation 1.2/0.2/0 0/0/0
+ObjectTemplate.GUIIndex 95
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_shokaku.tga"
+ObjectTemplate.setVehicleIconPos 50/65
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTCarrier
+ObjectTemplate.setToolTipType TTCarrier
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aircraft_carrier_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+rem *** ShokakuAABattery2 ***
+ObjectTemplate.create PlayerControlObject ShokakuAABattery2
+ObjectTemplate.aiTemplate ShokakuAA3
+ObjectTemplate.setNetworkableInfo ShokakuBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate AA_Allies_Base
+ObjectTemplate.setPosition 0/0.5/0
+rem -------------------------------------
+ObjectTemplate.CanBeRepaiedAsDestroyed c_True
+ObjectTemplate.setSoldierExitLocation 1.2/0.2/0 0/0/0
+ObjectTemplate.GUIIndex 96
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_shokaku.tga"
+ObjectTemplate.setVehicleIconPos 30/70
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTCarrier
+ObjectTemplate.setToolTipType TTCarrier
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aircraft_carrier_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+rem *** ShokakuAABattery3 ***
+ObjectTemplate.create PlayerControlObject ShokakuAABattery3
+ObjectTemplate.aiTemplate ShokakuAA4
+ObjectTemplate.setNetworkableInfo ShokakuBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate AA_Allies_Base
+ObjectTemplate.setPosition 0/0.5/0
+rem -------------------------------------
+ObjectTemplate.CanBeRepaiedAsDestroyed c_True
+ObjectTemplate.setSoldierExitLocation 1.2/0.2/0 0/0/0
+ObjectTemplate.GUIIndex 97
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_shokaku.tga"
+ObjectTemplate.setVehicleIconPos 99/91
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTCarrier
+ObjectTemplate.setToolTipType TTCarrier
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aircraft_carrier_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64
+
+rem *** ShokakuAABattery4 ***
+ObjectTemplate.create PlayerControlObject ShokakuAABattery4
+ObjectTemplate.aiTemplate ShokakuAA5
+ObjectTemplate.setNetworkableInfo ShokakuBodyInfo
+rem -------------------------------------
+ObjectTemplate.addTemplate AA_Allies_Base
+ObjectTemplate.setPosition 0/0.5/0
+rem -------------------------------------
+ObjectTemplate.CanBeRepaiedAsDestroyed c_True
+ObjectTemplate.setSoldierExitLocation 1.2/0.2/0 0/0/0
+ObjectTemplate.GUIIndex 98
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_shokaku.tga"
+ObjectTemplate.setVehicleIconPos 80/100
+ObjectTemplate.setNumberOfWeaponIcons 1
+ObjectTemplate.setPrimaryAmmoIcon "Ammo/Icon_cannon.tga"
+ObjectTemplate.setPrimaryAmmoBar ABIconOnly
+ObjectTemplate.setCrossHairType CHTNone
+ObjectTemplate.setVehicleCategory VCSea
+ObjectTemplate.setVehicleType VTCarrier
+ObjectTemplate.setToolTipType TTCarrier
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_aircraft_carrier_64x64.tga"
+ObjectTemplate.setMinimapIconSize 64

@@ -1,0 +1,47 @@
+beginrem
+
+GeometryTemplate.create StandardMesh Enterprise_hull_M1
+GeometryTemplate.file Enterprise_hull_M1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh Enterprise_hull_L1
+GeometryTemplate.file Enterprise_hull_L1
+
+renderer.beginGlobalCluster Enterprise
+
+GeometryTemplate.create StandardMesh enterprise_rad_m1
+GeometryTemplate.file enterprise_rad_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+GeometryTemplate.create StandardMesh enterprise_rod_m1
+GeometryTemplate.file enterprise_rod_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+
+GeometryTemplate.create StandardMesh Enterprise_hatch_m1
+GeometryTemplate.file enterprise_hatch_m1
+GeometryTemplate.setLodDistance 0 0
+GeometryTemplate.setLodDistance 1 30
+GeometryTemplate.setLodDistance 2 50
+GeometryTemplate.setLodDistance 3 100
+GeometryTemplate.setLodDistance 4 200
+GeometryTemplate.setLodDistance 5 500
+
+renderer.endGlobalCluster
+
+endrem

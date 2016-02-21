@@ -1,0 +1,8 @@
+ObjectTemplate.create SupplyDepot Ju88A_Repairpoint
+ObjectTemplate.radius 20
+ObjectTemplate.team 0
+ObjectTemplate.addVehicleType Ju88A -1 4 0
+
+ObjectTemplate.addAmmoType 0 -1 10 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.workOnSoldiers 0

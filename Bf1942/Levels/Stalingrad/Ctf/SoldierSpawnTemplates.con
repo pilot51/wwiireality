@@ -1,0 +1,101 @@
+rem *****************************************
+rem ****          AXIS_BASE            *****
+rem ****************************************
+
+rem 
+rem setup spawnpoints templates
+rem 
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_1
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_2
+ObjectTemplate.setSpawnId 1
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_3
+ObjectTemplate.setSpawnId 2
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_4
+ObjectTemplate.setSpawnId 3
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_5
+ObjectTemplate.setSpawnId 4
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_6
+ObjectTemplate.setSpawnId 5
+ObjectTemplate.setGroup 1
+
+ObjectTemplate.create SpawnPoint AxisSpawnPoint_storagebuild_7
+ObjectTemplate.setSpawnId 6
+ObjectTemplate.setGroup 1
+
+
+
+
+rem *****************************************
+rem ****       RUSSIAN_BASE       *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_storagebuild_1
+ObjectTemplate.setSpawnId 7
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_storagebuild_2
+ObjectTemplate.setSpawnId 8
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_storagebuild_3
+ObjectTemplate.setSpawnId 9
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_storagebuild_4
+ObjectTemplate.setSpawnId 10
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_storagebuild_5
+ObjectTemplate.setSpawnId 11
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_storagebuild_6
+ObjectTemplate.setSpawnId 12
+ObjectTemplate.setGroup 2
+
+ObjectTemplate.create SpawnPoint alliesSpawnPoint_storagebuild_7
+ObjectTemplate.setSpawnId 13
+ObjectTemplate.setGroup 2
+
+rem ****************************************
+rem ****    CONTROLPOINT_stalingrad    *****
+rem ****************************************
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_stalingrad_1
+ObjectTemplate.setSpawnId 33
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_stalingrad_2
+ObjectTemplate.setSpawnId 34
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_stalingrad_3
+ObjectTemplate.setSpawnId 35
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_stalingrad_4
+ObjectTemplate.setSpawnId 36
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_stalingrad_5
+ObjectTemplate.setSpawnId 37
+ObjectTemplate.setGroup 5
+
+ObjectTemplate.create SpawnPoint OpenSpawnPoint_stalingrad_6
+ObjectTemplate.setSpawnId 38
+ObjectTemplate.setGroup 5
+
+
+rem EndOfFile

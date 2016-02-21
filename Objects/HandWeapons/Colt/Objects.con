@@ -11,11 +11,11 @@ ObjectTemplate.reloadtime 4
 ObjectTemplate.roundOfFire 6
 ObjectTemplate.fireOnce 1
 objectTemplate.aiTemplate ColtAI
-ObjectTemplate.zoomFov 0.7
+ObjectTemplate.zoomFov 1
 ObjectTemplate.altFireOnce 1
-ObjectTemplate.soldierZoomFov 0.5 
+ObjectTemplate.soldierZoomFov 1
 ObjectTemplate.hasDynamicShadow 1
-ObjectTemplate.soldierZoomPosition -0.01/-0.01/0.1
+ObjectTemplate.soldierZoomPosition -0.072/0.025/-0.1
 ObjectTemplate.soldierCameraPosition 0.02/-0.05/0.2
 ObjectTemplate.addRootSpeed 1
 ObjectTemplate.AmmoType 1
@@ -34,7 +34,7 @@ ObjectTemplate.setAmomBarPosX 5
 ObjectTemplate.setAmomBarPosY -11
 ObjectTemplate.setAmomBarTextPosX 6
 ObjectTemplate.setAmomBarTextPosY 4
-ObjectTemplate.setCrossHairType CHTCrossHair
+ObjectTemplate.setCrossHairType CHTNone
 
 Rem *** Deviation Begin *****
 
@@ -60,6 +60,7 @@ ObjectTemplate.loadSoundScript Sounds/colt.ssc
 ObjectTemplate.createSkeleton animations/Colt.ske
 ObjectTemplate.useSkeletonPartAsMain Colt
 ObjectTemplate.addTemplate ColtLod
+ObjectTemplate.SetRotation 4.4/2/0
 
 ObjectTemplate.addTemplate e_MuzzGun
 ObjectTemplate.setInputId -1

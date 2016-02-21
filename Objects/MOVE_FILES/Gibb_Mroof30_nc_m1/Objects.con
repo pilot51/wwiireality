@@ -5,9 +5,8 @@ ObjectTemplate.setHasResponsePhysics 0
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.destroyed 1
 rem ObjectTemplate.sinkInToLandAfterDeathSpeed 10
-TimeToLiveAfterDeath 3
-FadeAtTimeToLiveAfterDeath 1
-TimeToStartFadeAfterDeath 2
+ObjectTemplate.TimeToLiveAfterDeath 3
+ObjectTemplate.FadeAtTimeToLiveAfterDeath 1
+ObjectTemplate.TimeToStartFadeAfterDeath 2
 
 ObjectTemplate.addTemplate e_GibbSmokePlane
-

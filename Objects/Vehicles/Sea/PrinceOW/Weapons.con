@@ -2,29 +2,36 @@ rem *** PrinceOW_CannonPipe ***
 ObjectTemplate.create FireArms PrinceOW_CannonPipes4
 ObjectTemplate.loadSoundScript ../Common/Sounds/fire.ssc
 ObjectTemplate.geometry PrinceOW_BigGun_m1
+ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.aiTemplate PrinceOWGunAI
 rem -------------------------------------
-rem ObjectTemplate.visibleBarrelTemplate e_MuzzHeavy
+ObjectTemplate.visibleBarrelTemplate e_MuzzBigGun
 
+beginrem
 ObjectTemplate.addTemplate e_MuzzDefGun
-ObjectTemplate.setPosition 3.344/0/16
+rem ObjectTemplate.setPosition 3.344/0/16
+ObjectTemplate.setPosition 3.344/0/13.5
 ObjectTemplate.setRotation -179.999/0/0
 
 ObjectTemplate.addTemplate e_MuzzDefGun
-ObjectTemplate.setPosition -3.344/0/16
+rem ObjectTemplate.setPosition -3.344/0/16
+ObjectTemplate.setPosition -3.344/0/13.5
 ObjectTemplate.setRotation -179.999/0/0
 
 ObjectTemplate.addTemplate e_MuzzDefGun
-ObjectTemplate.setPosition 1.124/0/16
+rem ObjectTemplate.setPosition 1.124/0/16
+ObjectTemplate.setPosition 1.124/0/13.5
 ObjectTemplate.setRotation -179.999/0/0
 
 ObjectTemplate.addTemplate e_MuzzDefGun
-ObjectTemplate.setPosition -1.124/0/16
+rem ObjectTemplate.setPosition -1.124/0/16
+ObjectTemplate.setPosition -1.124/0/13.5
 ObjectTemplate.setRotation -179.999/0/0
+endrem
 
 rem -------------------------------------
 ObjectTemplate.projectileTemplate POWProjectile
-ObjectTemplate.projectilePosition 0/0/16
+rem ObjectTemplate.projectilePosition 0/0/16
 ObjectTemplate.magSize 400
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 732
@@ -32,29 +39,40 @@ ObjectTemplate.RecoilSize 50
 ObjectTemplate.RecoilSpeed 5
 ObjectTemplate.fireingForce 9
 ObjectTemplate.reloadtime 1
-ObjectTemplate.roundOfFire 0.033
+rem ObjectTemplate.roundOfFire 0.033
+ObjectTemplate.roundOfFire 0.133
 ObjectTemplate.setMinDev 2
-rem ObjectTemplate.SetAsynchronyFire 1
+ObjectTemplate.SetAsynchronyFire 1
+beginrem
 ObjectTemplate.addFireArmsPosition -3.344/0/0 0/0/0
 ObjectTemplate.addFireArmsPosition 3.344/0/0 0/0/0
 ObjectTemplate.addFireArmsPosition 1.124/0/0 0/0/0
 ObjectTemplate.addFireArmsPosition -1.124/0/0 0/0/0
+endrem
+ObjectTemplate.addFireArmsPosition -3.344/0/13.5 0/0/0
+ObjectTemplate.addFireArmsPosition 3.344/0/13.5 0/0/0
+ObjectTemplate.addFireArmsPosition 1.124/0/13.5 0/0/0
+ObjectTemplate.addFireArmsPosition -1.124/0/13.5 0/0/0
 
 rem *** PrinceOW_CannonPipe ***
 ObjectTemplate.create FireArms PrinceOW_CannonPipes2
 ObjectTemplate.loadSoundScript ../Common/Sounds/fire.ssc
 ObjectTemplate.geometry PrinceOW_SmlGun_m1
+ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.aiTemplate PrinceOWGunAI
 rem -------------------------------------
+ObjectTemplate.visibleBarrelTemplate e_MuzzBigGun
+beginrem
 ObjectTemplate.addTemplate e_MuzzDefGun
 ObjectTemplate.setPosition 1.12/0/16
 ObjectTemplate.setRotation -179.999/0/0
 ObjectTemplate.addTemplate e_MuzzDefGun
 ObjectTemplate.setPosition -1.12/0/16
 ObjectTemplate.setRotation -179.999/0/0
+endrem
 rem -------------------------------------
 ObjectTemplate.projectileTemplate POWProjectile
-ObjectTemplate.projectilePosition 0/0/16
+rem ObjectTemplate.projectilePosition 0/0/16
 ObjectTemplate.magSize 200
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 732
@@ -62,11 +80,14 @@ ObjectTemplate.RecoilSize 50
 ObjectTemplate.RecoilSpeed 5
 ObjectTemplate.fireingForce 9
 ObjectTemplate.reloadtime 1
-ObjectTemplate.roundOfFire 0.033
+rem ObjectTemplate.roundOfFire 0.033
+ObjectTemplate.roundOfFire 0.067
 ObjectTemplate.setMinDev 2
-rem ObjectTemplate.SetAsynchronyFire 1
-ObjectTemplate.addFireArmsPosition 1.12/0/0 0/0/0
-ObjectTemplate.addFireArmsPosition -1.12/0/0 0/0/0
+ObjectTemplate.SetAsynchronyFire 1
+rem ObjectTemplate.addFireArmsPosition 1.12/0/0 0/0/0
+rem ObjectTemplate.addFireArmsPosition -1.12/0/0 0/0/0
+ObjectTemplate.addFireArmsPosition 1.12/0/13.5 0/0/0
+ObjectTemplate.addFireArmsPosition -1.12/0/13.5 0/0/0
 
 
 rem *** POWProjectile ***
@@ -77,6 +98,7 @@ ObjectTemplate.geometry projectile_m1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.timeToLive CRD_NONE/600/0/0
 ObjectTemplate.damageType 1
 ObjectTemplate.material 254
@@ -88,27 +110,35 @@ rem ObjectTemplate.addTemplate e_PanzShootTrail
 rem *** AA_POW_GunBarrel ***
 ObjectTemplate.create FireArms AA_POW_GunBarrel2
 ObjectTemplate.loadSoundScript ../Common/Sounds/aafire.ssc
+ObjectTemplate.geometry PrinceOW_aag1_bar1_M1
 ObjectTemplate.aiTemplate PrinceOWAAGunAI
 rem -------------------------------------
+beginrem
 ObjectTemplate.addTemplate e_MuzzAAGunB
 ObjectTemplate.setPosition -1.08/0/0
 
 ObjectTemplate.addTemplate e_MuzzAAGunB
 ObjectTemplate.setPosition 1.08/0/0
+endrem
 
-rem ObjectTemplate.visibleBarrelTemplate e_MuzzAAGunB
+ObjectTemplate.visibleBarrelTemplate e_MuzzBigAAGun
 rem -------------------------------------
 ObjectTemplate.projectileTemplate AA_POW_Projectile
-ObjectTemplate.projectilePosition 0/0/1
+rem ObjectTemplate.projectilePosition 0/0/1
 ObjectTemplate.magSize 400
 ObjectTemplate.numOfMag 1
 ObjectTemplate.velocity 792
+ObjectTemplate.RecoilSize 10
+ObjectTemplate.RecoilSpeed 10
 ObjectTemplate.reloadtime 1
-ObjectTemplate.roundOfFire 0.13
+rem ObjectTemplate.roundOfFire 0.13
+ObjectTemplate.roundOfFire 0.27
 ObjectTemplate.setMinDev 1
-rem ObjectTemplate.SetAsynchronyFire 1
-ObjectTemplate.addFireArmsPosition -1.08/0/0
-ObjectTemplate.addFireArmsPosition 1.08/0/0
+ObjectTemplate.SetAsynchronyFire 1
+rem ObjectTemplate.addFireArmsPosition -1.08/0/0
+rem ObjectTemplate.addFireArmsPosition 1.08/0/0
+ObjectTemplate.addFireArmsPosition -1/0/5.8 0/0/0
+ObjectTemplate.addFireArmsPosition 1/0/5.8 0/0/0
 
 
 rem *** AA_POW_Projectile ***
@@ -119,6 +149,7 @@ ObjectTemplate.geometry tracklight_M1
 ObjectTemplate.hasMobilePhysics 1
 ObjectTemplate.hasCollisionPhysics 1
 ObjectTemplate.hasResponsePhysics 1
+rem ObjectTemplate.drag 0.001
 ObjectTemplate.timeToLive CRD_UNIFORM/0.8/1.4/0
 ObjectTemplate.endEffectTemplate e_FlakBig
 ObjectTemplate.gravityModifier 1

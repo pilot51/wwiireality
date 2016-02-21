@@ -1,0 +1,142 @@
+rem *** Factory ***
+
+
+ObjectTemplate.create PlayerControlObject Britain_Factory_AI
+ObjectTemplate.setNetworkableInfo FactoryBodyInfo
+rem -------------------------------------
+objectTemplate.cullRadiusScale 5
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.explosionRadius 20
+ObjectTemplate.explosionDamage 5
+ObjectTemplate.drag 2
+ObjectTemplate.dragOffset 0/0/0
+ObjectTemplate.mass 4500
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.hasArmor 1
+ObjectTemplate.speedMod 2
+ObjectTemplate.hitpoints 1000
+ObjectTemplate.maxhitpoints 1000
+ObjectTemplate.aiTemplate AlliedFactory
+ObjectTemplate.timeToLiveAfterDeath 10
+ObjectTemplate.material 45
+ObjectTemplate.criticalDamage 50
+ObjectTemplate.explosionForceMod 15
+ObjectTemplate.hpLostWhileCriticalDamage 2
+ObjectTemplate.hpLostWhileUpSideDown 5
+ObjectTemplate.hpLostWhileDamageFromWater 5
+rem -------------------------------------
+ObjectTemplate.addArmorEffect 750 e_DefGunDamage -1.499/15.1/5
+ObjectTemplate.addArmorEffect 500 e_DefGunDamage -1.499/15.1/5
+ObjectTemplate.addArmorEffect 500 e_DefGunDamage -10.099/15.1/5
+ObjectTemplate.addArmorEffect 250 e_DefGunDamage -1.499/15.1/5
+ObjectTemplate.addArmorEffect 250 e_DefGunDamage -10.099/15.1/5
+ObjectTemplate.addArmorEffect 250 e_DefGunDamage 8.5/15.1/5
+ObjectTemplate.addArmorEffect 50 e_DefGunDamage -1.499/15.1/5
+ObjectTemplate.addArmorEffect 50 e_DefGunDamage -10.099/15.1/5
+ObjectTemplate.addArmorEffect 50 e_DefGunDamage 8.5/15.1/5
+ObjectTemplate.addArmorEffect 50 e_PanzFire -18.498/3.3/-9.998
+ObjectTemplate.addArmorEffect 0 e_BritainFactory_SmokeStacks 12.5/14.5/0
+ObjectTemplate.addArmorEffect -1 WaterWaterExplosion 0/-1/0
+ObjectTemplate.damageFromWater 1
+rem -------------------------------------
+ObjectTemplate.addTemplate lodfactoryAI
+rem -------------------------------------
+ObjectTemplate.setPcoId 0
+ObjectTemplate.GUIIndex 30
+ObjectTemplate.setVehicleIcon "Vehicle/Icon_wespe.tga"
+ObjectTemplate.setSoldierExitLocation 6/12/-7 180/0/0
+ObjectTemplate.setVehicleIconPos 40/60
+ObjectTemplate.setNumberOfWeaponIcons 0
+ObjectTemplate.setVehicleCategory VCLand
+ObjectTemplate.setVehicleType  VTArtillery
+ObjectTemplate.setToolTipType  TTArtillery
+ObjectTemplate.setMinimapIcon "Minimap/minimap_icon_Factory_32x32.tga"
+ObjectTemplate.hasRestrictedExit 1
+
+
+rem *** lodFactory ***
+ObjectTemplate.create LodObject lodFactoryAI
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+rem -------------------------------------
+ObjectTemplate.addTemplate FactoryComplexAI
+ObjectTemplate.addTemplate FactorySimple
+ObjectTemplate.addTemplate FactoryWreck
+rem -------------------------------------
+ObjectTemplate.lodSelector FactoryLodSelector
+
+rem ----factorycomplex----
+ObjectTemplate.create Bundle factorycomplexAI
+ObjectTemplate.geometry Britain_factory_m1
+ObjectTemplate.setHasCollisionPhysics 1
+ObjectTemplate.addTemplate Allies_Factory_Seat
+ObjectTemplate.addTemplate Allies_Factory_Camera
+ObjectTemplate.addTemplate e_ExFumeFact
+ObjectTemplate.setPosition 16/34/3.8
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate e_ExFumeFact
+ObjectTemplate.setPosition 16.2/28/-3.2
+ObjectTemplate.setRotation 0/0/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 13.022/2.5/12.3
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate ladder_5m_m1
+ObjectTemplate.setPosition 11.307/8.2/11
+ObjectTemplate.setRotation -90/0/0
+
+ObjectTemplate.addTemplate Allies_Factory_Spawn
+ObjectTemplate.setPosition 30/0/5
+ObjectTemplate.setRotation 90/0/0
+ObjectTemplate.addTemplate Allies_Factory_Spawn
+ObjectTemplate.setPosition -30/0/-2
+ObjectTemplate.setRotation -90/0/0
+ObjectTemplate.addTemplate Allies_Factory_Spawn
+ObjectTemplate.setPosition 3.4/0/-30
+ObjectTemplate.setRotation 180/0/0
+ObjectTemplate.addTemplate Allies_Factory_AI_Spawn_Bundle
+ObjectTemplate.setPosition 30/0/5
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.addTemplate Siren 
+
+rem ObjectTemplate.addTemplate Allies_WestAirfield_Spawn
+rem ObjectTemplate.setPosition -292.576/0.674/-217.919
+rem ObjectTemplate.setPosition -310.077/0.674/-194.92
+rem Spawn Position - Factory position
+rem Position calculations 861.993 - 1243.57/105.416 - 104.742/1516.8 - 1803.52
+
+rem ObjectTemplate.addTemplate Allies_EastAirfield_Spawn
+rem ObjectTemplate.setPosition 392.62/0.258/-62.909
+rem Spawn Position - Factory position
+rem Position calculations 1610.69 - 1243.57/105 - 104.742/1663.61 - 1803.52
+
+objectTemplate.loadSoundScript Sounds/Factory.ssc
+
+
+rem *** Allies_Factory_Spawn_Bundle ***
+ObjectTemplate.create Bundle Allies_Factory_AI_Spawn_Bundle
+ObjectTemplate.addTemplate Allies_Factory_AISpawn
+ObjectTemplate.addTemplate Allies_Factory_Entry
+
+rem *** Allies_Factory_Entry ***
+ObjectTemplate.create EntryPoint Allies_Factory_Entry
+ObjectTemplate.setEntryRadius 1
+
+rem *** Allies_Factory_Seat ***
+ObjectTemplate.create SeatObject Allies_Factory_Seat
+
+rem *** Allies_Factory_Camera ***
+ObjectTemplate.create Camera Allies_Factory_Camera
+ObjectTemplate.setMinRotation 0/0/0
+ObjectTemplate.setMaxRotation 0/0/0
+ObjectTemplate.setMaxSpeed 0/0/0
+ObjectTemplate.setAcceleration 0/0/0
+
+
+rem *** Allies_Factory_AISpawn ***
+ObjectTemplate.create SpawnPoint Allies_Factory_AISpawn
+ObjectTemplate.setSpawnId 0
+ObjectTemplate.setGroup 68
+ObjectTemplate.setAIEnterOnSpawn 1

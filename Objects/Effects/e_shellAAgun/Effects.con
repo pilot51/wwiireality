@@ -17,7 +17,7 @@ ObjectTemplate.emitterSpeedScale 1
 ObjectTemplate.lodDistance 200
 ObjectTemplate.timeToLive CRD_NONE/0.1/0/0
 ObjectTemplate.intensity CRD_NONE/10/0/0
-ObjectTemplate.positionalSpeedInDof CRD_NONE/-2/0/0
+ObjectTemplate.positionalSpeedInDof CRD_NONE/-4/0/0
 ObjectTemplate.rotationalSpeedInDof CRD_NONE/8/0/0
 ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/2/2/1
 ObjectTemplate.rotationalSpeedInRight CRD_NONE/2/0/1
@@ -32,3 +32,5 @@ ObjectTemplate.drag 0.01
 ObjectTemplate.dragOffset 1.73028e-039/1.73028e-039/1.73028e-039
 ObjectTemplate.mass 2
 ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.Destroyed 1
+ObjectTemplate.TimeToLiveAfterDeath 20

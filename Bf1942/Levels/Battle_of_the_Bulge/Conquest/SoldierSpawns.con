@@ -1,0 +1,284 @@
+
+rem *****************************************
+rem ****          AXIS BASE         *****
+rem ****************************************
+
+Object.create AxisSpawnPoint_bunker3
+Object.absolutePosition 827.411/56.3164/1108.13
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_bunker3b
+Object.absolutePosition 890.068/55.6144/989.503
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_BIGBUNKER1
+Object.absolutePosition 871.008/55.123/1008.87
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_bunkernest
+Object.absolutePosition 858.577/54.9219/1031.05
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_bunkernest2 
+Object.absolutePosition 879.956/54.9528/1010.02
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_6
+Object.absolutePosition 888.237/55.6671/1007.26
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create AxisSpawnPoint_7 
+Object.absolutePosition 813.27/56.3164/1099.36
+Object.rotation 0/0/1.52588e-005
+
+
+rem *****************************************
+rem ****          ALLIES BASE       *****
+rem ****************************************
+
+
+
+
+Object.create alliesSpawnPoint_bunker1
+Object.absolutePosition 620.645/74.2573/254.583
+Object.rotation -178.776/0/0.0342712
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_bunker2
+Object.absolutePosition 638.633/74.2573/254.198
+Object.rotation  -178.776/0/0.0342712
+rem
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_hospital1
+Object.absolutePosition 637.604/75.0113/218.36
+Object.rotation 88.56/0/0.0713348
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_reportdepo1
+Object.absolutePosition 751.571/74.9255/269.263
+Object.rotation 0.108352/0/0.0884857
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_reportdepo2
+Object.absolutePosition 695.257/75.0555/264.312
+Object.rotation -92.5561/0/0.100876
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_6
+Object.absolutePosition 708.098/73.9375/266.089
+Object.rotation 0/0/1.52588e-005
+rem  
+rem ***  ***
+rem
+Object.create alliesSpawnPoint_7
+Object.absolutePosition 743.379/73.9375/270.794
+Object.rotation 0/0/1.52588e-005
+rem  
+rem ***  ***
+rem
+
+
+rem *****************************************
+rem ****  	cammo_bunker  		****
+rem ****************************************
+
+Object.create cammo_bunker_1
+Object.absolutePosition 976.816/54.9276/776.977
+Object.rotation -96.624/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create cammo_bunker_2
+Object.absolutePosition 970.703/54.9258/773.019
+Object.rotation -22.572/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create cammo_bunker_3
+Object.absolutePosition 984.398/54.9258/777.101
+Object.rotation -98.6041/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create cammo_bunker_4
+Object.absolutePosition 972.441/54.9257/765.381
+Object.rotation -98.6041/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create cammo_bunker_5
+Object.absolutePosition 979.939/54.931/778.727
+Object.rotation -98.6041/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create cammo_bunker_6
+Object.absolutePosition 977.957/54.9258/771.609
+Object.rotation -98.6041/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create cammo_bunker_7
+Object.absolutePosition 965.83/54.9257/759.901
+Object.rotation -98.6041/0/1.52588e-005
+rem
+rem ***  ***
+rem
+
+rem *****************************************
+rem *             city     *****
+rem ****************************************
+
+Object.create city_1
+Object.absolutePosition 860.816/59.871/576.801
+Object.rotation -96.624/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create city_2
+Object.absolutePosition 862.639/59.871/567.211
+Object.rotation -96.624/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create city_3
+Object.absolutePosition 865.238/59.871/581.356
+Object.rotation  -96.624/0/0.0197906
+rem
+rem ***  ***
+rem
+Object.create city_4
+Object.absolutePosition 826.473/59.8671/589.123
+Object.rotation 40.392/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create city_5
+Object.absolutePosition 893.455/59.871/557.101
+Object.rotation -153.288/0/0.0559692
+rem
+rem ***  ***
+rem
+Object.create city_6
+Object.absolutePosition 860.327/59.871/621.666
+Object.rotation 28.512/0/0.0279846
+rem
+rem ***  ***
+rem
+Object.create city_7
+Object.absolutePosition 888.432/59.871/568.838
+Object.rotation -97.812/0/1.52588e-005
+
+
+
+rem *****************************************
+rem ***		bridgebunker           *****
+rem ****************************************
+
+Object.create brigebunker_1
+Object.absolutePosition 645.405/59.6245/620.682
+Object.rotation -78.804/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create brigebunker_2
+Object.absolutePosition 630.871/59.5601/618.951
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create brigebunker_3
+Object.absolutePosition 639.997/59.5709/623.964
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create brigebunker_4
+Object.absolutePosition 640.042/59.6401/616.752
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create brigebunker_5
+Object.absolutePosition 642.653/59.6021/610.951
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create brigebunker_6
+Object.absolutePosition 646.761/59.4865/607.674
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create brigebunker_7
+Object.absolutePosition 655.788/59.5385/610.087
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+
+
+rem *****************************************
+rem **the windmill   ***
+rem ****************************************
+
+Object.create windmill_1
+Object.absolutePosition 746.993/82.5703/869.31
+Object.rotation -60.984/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create windmill_2
+Object.absolutePosition 764.163/82.5703/878.247
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create windmill_3
+Object.absolutePosition 760.232/82.5703/879.869
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create windmill_4
+Object.absolutePosition 767.675/82.5703/875.197
+Object.rotation 0/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create windmill_5
+Object.absolutePosition 758.214/82.8782/873.89
+Object.rotation -60.984/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create windmill_6
+Object.absolutePosition 759.717/82.8233/874.797
+Object.rotation -60.984/0/1.52588e-005
+rem
+rem ***  ***
+rem
+Object.create windmill_7
+Object.absolutePosition 752.348/82.5703/868.092
+Object.rotation -60.984/0/1.52588e-005
+rem
+rem ***  ***
+rem

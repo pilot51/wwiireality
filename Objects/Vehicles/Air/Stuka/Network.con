@@ -7,3 +7,6 @@ NetworkableInfo.setPredictionMode PMLinear
 NetworkableInfo.createNewInfo Stuka_body_info
 NetworkableInfo.setPredictionMode PMLinear
 
+NetworkableInfo.createNewInfo Stuka_flap_info
+NetworkableInfo.setPredictionMode PMUsePhysics
+NetworkableInfo.setForceNetworkableId 1

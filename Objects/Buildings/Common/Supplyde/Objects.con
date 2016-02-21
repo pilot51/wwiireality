@@ -4,7 +4,7 @@ objectTemplate.aiTemplate Supplyde_m1
 ObjectTemplate.addTemplate lodSupplyde
 
 LodSelectorTemplate.create DistanceSelector SupplydeSelector
-LodSelectorTemplate.addLodDistance 70
+rem LodSelectorTemplate.addLodDistance 70
 ObjectTemplate.create LodObject lodSupplyde
 ObjectTemplate.lodselector SupplydeSelector
 ObjectTemplate.addTemplate SupplydeInterior
