@@ -29,7 +29,7 @@ AnimationStateMachine.setFlag c_AsmIsLying
 
 AnimationStateMachine.createState Ub_CrouchToLieThompson
 AnimationStateMachine.addAnimation Animations/Lie/3p/Thompson/3PCrouch2LieUpperThompson.baf 1.6 c_AsmPlayOnce
-AnimationStateMachine.addTransitionWhenDone Ub_LieThompson
+AnimationStateMachine.addTransitionWhenDone Ub_Lie
 AnimationStateMachine.setMorphFactor 4.0
 AnimationStateMachine.setFlag c_AsmIsLying
 include copyToallWeapons.inc Thompson 
@@ -176,8 +176,8 @@ AnimationStateMachine.addTransitionOne c_PIMouseLookX  -1 -0.01 Ub_LieTurnLeftTh
 AnimationStateMachine.addTransitionOne c_PIMouseLookX  0.01 1 Ub_LieTurnRightThompson
 AnimationStateMachine.addTransitionOne c_PIFire 0.5 1 Ub_LieFireThompson
 AnimationStateMachine.addTransitionOne c_PIAltFire 0.5 1 Ub_LieAltFireThompson
-AnimationStateMachine.returnToState Ub_LieThompson
-AnimationStateMachine.setMorphFactor 0.7
+rem AnimationStateMachine.returnToState Ub_Lie
+rem AnimationStateMachine.setMorphFactor 0.7
 include copyToallWeapons.inc Thompson
 endrem
 
@@ -193,10 +193,8 @@ AnimationStateMachine.addTransitionOne c_PIMouseLookX  -1 -0.01 Ub_LieTurnLeftTh
 AnimationStateMachine.addTransitionOne c_PIMouseLookX  0.01 1 Ub_LieTurnRightThompson
 AnimationStateMachine.addTransitionOne c_PIFire 0.5 1 Ub_FireThompson
 AnimationStateMachine.addTransitionOne c_PIAltFire 0.5 1 Ub_AltFireThompson
-rem AnimationStateMachine.returnToState Ub_LieThompson
-AnimationStateMachine.returnToState Ub_Lie
-rem AnimationStateMachine.setMorphFactor 0.7
-AnimationStateMachine.setMorphFactor 7
+rem AnimationStateMachine.returnToState Ub_Lie
+rem AnimationStateMachine.setMorphFactor 7
 rem AnimationStateMachine.setFlag c_AsmIsLying
 include copyToallWeapons.inc Thompson
 
@@ -207,7 +205,7 @@ AnimationStateMachine.addAnimation Animations/StandWalkRun/1p/Thompson/1pCrawlTh
 AnimationStateMachine.addTransitionOne c_PIFire 0.5 1 Ub_LieFireThompson
 AnimationStateMachine.addTransitionOne c_PIAltFire 0.5 1 Ub_LieAltFireThompson
 AnimationStateMachine.addTransitionOne c_PIThrottle 0.5 1 Ub_LieForwardThompson
-AnimationStateMachine.returnToState Ub_LieThompson
+AnimationStateMachine.returnToState Ub_Lie
 AnimationStateMachine.setMorphFactor 0.5
 include copyToallWeapons.inc Thompson
 
@@ -217,7 +215,7 @@ AnimationStateMachine.addAnimation Animations/StandWalkRun/1p/Thompson/1pCrawlTh
 AnimationStateMachine.addTransitionOne c_PIFire 0.5 1 Ub_LieFireThompson
 AnimationStateMachine.addTransitionOne c_PIAltFire 0.5 1 Ub_LieAltFireThompson
 AnimationStateMachine.addTransitionOne c_PIThrottle -1 -0.5 Ub_LieBackwardThompson
-AnimationStateMachine.returnToState Ub_LieThompson
+AnimationStateMachine.returnToState Ub_Lie
 AnimationStateMachine.setMorphFactor 0.5
 include copyToallWeapons.inc Thompson
 
@@ -230,7 +228,7 @@ AnimationStateMachine.addTransitionOne c_PIAltFire 0.5 1 Ub_LieAltFireThompson
 AnimationStateMachine.addTransitionOne c_PIThrottle 0.5 1 Ub_LieForwardThompson
 AnimationStateMachine.addTransitionOne c_PIThrottle -1 -0.5 Ub_LieBackwardThompson
 AnimationStateMachine.addTransitionOne c_PIMouseLookX  -1 -0.01 Ub_LieTurnLeftThompson
-AnimationStateMachine.returnToState Ub_LieThompson
+AnimationStateMachine.returnToState Ub_Lie
 AnimationStateMachine.setMorphFactor 0.5
 include copyToallWeapons.inc Thompson
 
@@ -242,7 +240,7 @@ AnimationStateMachine.addTransitionOne c_PIAltFire 0.5 1 Ub_LieAltFireThompson
 AnimationStateMachine.addTransitionOne c_PIThrottle 0.5 1 Ub_LieForwardThompson
 AnimationStateMachine.addTransitionOne c_PIThrottle -1 -0.5 Ub_LieBackwardThompson
 AnimationStateMachine.addTransitionOne c_PIMouseLookX  0.01 1 Ub_LieTurnRightThompson
-AnimationStateMachine.returnToState Ub_LieThompson
+AnimationStateMachine.returnToState Ub_Lie
 AnimationStateMachine.setMorphFactor 0.5
 include copyToallWeapons.inc Thompson
 
@@ -257,7 +255,7 @@ AnimationStateMachine.addTransitionOne c_PIYaw  -1 -0.01 Ub_LieStrafeLeftThompso
 AnimationStateMachine.addTransitionOne c_PIYaw  0.01 1 Ub_LieStrafeRightThompson
 AnimationStateMachine.addTransitionOne c_PIMouseLookX  0.01 1 Ub_LieTurnRightThompson
 AnimationStateMachine.addTransitionOne c_PIMouseLookX  -1 -0.01 Ub_LieTurnLeftThompson
-AnimationStateMachine.returnToState Ub_LieThompson
+AnimationStateMachine.returnToState Ub_Lie
 AnimationStateMachine.setMorphFactor 0.5
 include copyToallWeapons.inc Thompson
 
@@ -271,7 +269,7 @@ AnimationStateMachine.addTransitionOne c_PIYaw  -1 -0.01 Ub_LieStrafeLeftThompso
 AnimationStateMachine.addTransitionOne c_PIYaw  0.01 1 Ub_LieStrafeRightThompson
 AnimationStateMachine.addTransitionOne c_PIMouseLookX  0.01 1 Ub_LieTurnRightThompson
 AnimationStateMachine.addTransitionOne c_PIMouseLookX  -1 -0.01 Ub_LieTurnLeftThompson
-AnimationStateMachine.returnToState Ub_LieThompson
+AnimationStateMachine.returnToState Ub_Lie
 AnimationStateMachine.setMorphFactor 0.5
 include copyToallWeapons.inc Thompson
 
@@ -296,6 +294,6 @@ AnimationStateMachine.addTransitionItem
 
 AnimationStateMachine.createState Ub_RunStandToLieThompson
 AnimationStateMachine.addAnimation Animations/Lie/3p/Thompson/3PJump2LieUpperThompson.baf 1.5 c_AsmPlayOnce
-AnimationStateMachine.addTransitionWhenDone Ub_LieThompson
+AnimationStateMachine.addTransitionWhenDone Ub_Lie
 AnimationStateMachine.setMorphFactor 4.0
 include copyToallWeapons.inc Thompson

@@ -28,8 +28,8 @@ AnimationStateMachine.addTransitionOne c_PIAction 0.5 1 Ub_StandJumpThompson
 AnimationStateMachine.addTransitionOne c_PIYaw  0.01 1 Ub_StrafeRightThompson
 AnimationStateMachine.addTransitionOne c_PIMouseLookX -1000 -0.0001 Ub_TurnThompson
 AnimationStateMachine.addTransitionOne c_PIMouseLookX 0.0001 1000 Ub_TurnThompson
-AnimationStateMachine.returnToState Ub_StandThompson
-AnimationStateMachine.setMorphFactor 0.3
+AnimationStateMachine.returnToState Ub_Stand
+AnimationStateMachine.setMorphFactor 7
 include copyToallWeapons.inc Thompson
 endrem
 
@@ -45,7 +45,7 @@ AnimationStateMachine.addTransitionOne c_PIAction 0.5 1 Ub_StandJumpThompson
 AnimationStateMachine.addTransitionOne c_PIYaw  0.01 1 Ub_StrafeRightThompson
 rem AnimationStateMachine.addTransitionOne c_PIMouseLookX -1000 -0.0001 Ub_TurnThompson
 rem AnimationStateMachine.addTransitionOne c_PIMouseLookX 0.0001 1000 Ub_TurnThompson
-AnimationStateMachine.returnToState Ub_StandThompson
+AnimationStateMachine.returnToState Ub_Stand
 AnimationStateMachine.setMorphFactor 0.3
 include copyToallWeapons.inc Thompson
 
@@ -61,7 +61,7 @@ AnimationStateMachine.addTransitionOne c_PIAction 0.5 1 Ub_StandJumpThompson
 AnimationStateMachine.addTransitionOne c_PIYaw  0.01 1 Ub_StrafeRightThompson
 AnimationStateMachine.addTransitionOne c_PIMouseLookX 1 0.01 Ub_TurnThompson
 AnimationStateMachine.addTransitionOne c_PIMouseLookX 0.01 1 Ub_TurnThompson
-AnimationStateMachine.returnToState Ub_StandAimThompson
+AnimationStateMachine.returnToState Ub_StandAim
 AnimationStateMachine.setMorphFactor 2.0
 include copyToallWeapons.inc Thompson
 
@@ -80,8 +80,8 @@ AnimationStateMachine.addTransitionOne c_PIThrottle -1 -0.5 Ub_RunBackwardThomps
 AnimationStateMachine.addTransitionOne c_PIYaw  -1 -0.01 Ub_StrafeLeftThompson
 AnimationStateMachine.addTransitionOne c_PIAction 0.5 1 Ub_StandJumpThompson
 AnimationStateMachine.addTransitionOne c_PIYaw  0.01 1 Ub_StrafeRightThompson
-AnimationStateMachine.returnToState Ub_StandAimThompson
-AnimationStateMachine.setMorphFactor 0.7
+rem AnimationStateMachine.returnToState Ub_StandAim
+rem AnimationStateMachine.setMorphFactor 7
 include copyToallWeapons.inc Thompson
 endrem
 
@@ -99,10 +99,8 @@ AnimationStateMachine.addTransitionOne c_PIThrottle -1 -0.5 Ub_RunBackwardThomps
 AnimationStateMachine.addTransitionOne c_PIYaw  -1 -0.01 Ub_StrafeLeftThompson
 AnimationStateMachine.addTransitionOne c_PIAction 0.5 1 Ub_StandJumpThompson
 AnimationStateMachine.addTransitionOne c_PIYaw  0.01 1 Ub_StrafeRightThompson
-rem AnimationStateMachine.returnToState Ub_StandAimThompson
-AnimationStateMachine.returnToState Ub_StandAim
-rem AnimationStateMachine.setMorphFactor 0.7
-AnimationStateMachine.setMorphFactor 7
+rem AnimationStateMachine.returnToState Ub_StandAim
+rem AnimationStateMachine.setMorphFactor 7
 include copyToallWeapons.inc Thompson
 
 rem --- Walk ----
@@ -116,7 +114,7 @@ AnimationStateMachine.addToLatestTransition c_PIWalk 0.5 1
 AnimationStateMachine.addTransitionOne c_PIThrottle -9999 -0.5 Ub_WalkBackwardThompson
 AnimationStateMachine.addToLatestTransition c_PIWalk 0.5 1
 AnimationStateMachine.addTransitionOne c_PIAction 0.5 1 Ub_StandJumpThompson
-AnimationStateMachine.returnToState Ub_StandAimThompson
+AnimationStateMachine.returnToState Ub_StandAim
 AnimationStateMachine.setMorphFactor 0.5
 include copyToallWeapons.inc Thompson
 
@@ -129,7 +127,7 @@ AnimationStateMachine.addTransitionOne c_PIThrottle 0.5 1 Ub_WalkForwardThompson
 AnimationStateMachine.addToLatestTransition c_PIWalk 0.5 1
 AnimationStateMachine.addTransitionOne c_PIThrottle -9999 -0.5 Ub_WalkBackwardThompson
 AnimationStateMachine.addToLatestTransition c_PIWalk 0.5 1
-AnimationStateMachine.returnToState Ub_StandAimThompson
+AnimationStateMachine.returnToState Ub_StandAim
 AnimationStateMachine.setMorphFactor 0.5
 include copyToallWeapons.inc Thompson
 
@@ -142,7 +140,7 @@ AnimationStateMachine.addTransitionOne c_PIAltFire 0.5 1 Ub_AltFire
 AnimationStateMachine.addTransitionOne c_PIWalk 0.5 9999 Ub_WalkForwardThompson
 AnimationStateMachine.addTransitionOne c_PIAction 0.5 1 Ub_RunJumpThompson
 AnimationStateMachine.addTransitionOne c_PIThrottle 0.5 1 Ub_RunForwardThompson
-AnimationStateMachine.returnToState Ub_StandAimThompson
+AnimationStateMachine.returnToState Ub_StandAim
 AnimationStateMachine.setMorphFactor 0.5
 include copyToallWeapons.inc Thompson
 
@@ -153,7 +151,7 @@ AnimationStateMachine.addTransitionOne c_PIFire 0.5 1 Ub_Fire
 AnimationStateMachine.addTransitionOne c_PIAltFire 0.5 1 Ub_AltFire
 AnimationStateMachine.addTransitionOne c_PIWalk 0.5 9999 Ub_WalkBackwardThompson
 AnimationStateMachine.addTransitionOne c_PIThrottle -1 -0.5  Ub_RunBackwardThompson
-AnimationStateMachine.returnToState Ub_StandAimThompson
+AnimationStateMachine.returnToState Ub_StandAim
 AnimationStateMachine.setMorphFactor 0.5
 include copyToallWeapons.inc Thompson
 
@@ -164,7 +162,7 @@ AnimationStateMachine.addAnimation Animations/StandWalkRun/1p/Thompson/1pRunThom
 AnimationStateMachine.addTransitionOne c_PIFire 0.5 1 Ub_Fire
 AnimationStateMachine.addTransitionOne c_PIAltFire 0.5 1 Ub_AltFire
 AnimationStateMachine.addTransitionOne c_PIYaw  -1 -0.01 Ub_StrafeLeftThompson
-AnimationStateMachine.returnToState Ub_StandAimThompson
+AnimationStateMachine.returnToState Ub_StandAim
 AnimationStateMachine.setMorphFactor 0.5
 include copyToallWeapons.inc Thompson
 
@@ -174,7 +172,7 @@ AnimationStateMachine.addAnimation Animations/StandWalkRun/1p/Thompson/1pRunThom
 AnimationStateMachine.addTransitionOne c_PIFire 0.5 1 Ub_Fire
 AnimationStateMachine.addTransitionOne c_PIAltFire 0.5 1 Ub_AltFire
 AnimationStateMachine.addTransitionOne c_PIYaw  0.01 1 Ub_StrafeRightThompson
-AnimationStateMachine.returnToState Ub_StandAimThompson
+AnimationStateMachine.returnToState Ub_StandAim
 AnimationStateMachine.setMorphFactor 0.5
 include copyToallWeapons.inc Thompson
 
